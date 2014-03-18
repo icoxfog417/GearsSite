@@ -80,7 +80,8 @@
                     </li>
                 </ul>
                 <br/>
-                <a href="./document/GearsFrameWorkDoc.xls" class="ppp-link-item">仕様書ダウンロードはこちら</a>
+                <a href="./document/Help/Index.aspx" class="ppp-link-item">Gears API</a><br/>
+                <a href="./document/GearsFrameWorkDoc.xls" class="ppp-link-item">解説ドキュメント</a>
 
             </div>
             <div class="ppp-menu-content-item">

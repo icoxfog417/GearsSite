@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shfbBuild product="Sandcastle Help File Builder" version="1.9.7.0" projectFile="D:\project\GearsSite\document\GearsAPI.shfbproj" started="2014/03/17 20:00:19">
+<shfbBuild product="Sandcastle Help File Builder" version="1.9.7.0" projectFile="D:\project\GearsSite\document\GearsAPI.shfbproj" started="2014/03/18 11:53:22">
 <buildStep step="Initializing">
 Finding tools...
 Found Sandcastle tools in &#39;D:\Applications\Sandcastle\&#39;
@@ -17,11 +17,11 @@ Copying XML comments files
 </buildStep>
 <buildStep step="GenerateSharedContent">
 Generating shared content files (en-US, 英語 (米国))...
-    Last step completed in 00:00:00.0130
+    Last step completed in 00:00:00.0110
 </buildStep>
 <buildStep step="GenerateApiFilter">
 Generating API filter for MRefBuilder...
-    Last step completed in 00:00:00.0020
+    Last step completed in 00:00:00.0030
 </buildStep>
 <buildStep step="GenerateReflectionInfo">
 Generating reflection information...
@@ -30,12 +30,12 @@ Generating reflection information...
   Copyright c 2006-2013, Microsoft Corporation, All Rights Reserved.
   Portions Copyright c 2006-2013, Eric Woodruff, All Rights Reserved.
   Info: Loaded 1 assemblies for reflection and 1 dependency assemblies.
-  Info: Wrote information on 7 namespaces, 70 types, and 635 members
+  Info: Wrote information on 7 namespaces, 70 types, and 634 members
   XslTransform (v2.7.3.0)
   Copyright c 2006-2013, Microsoft Corporation, All Rights Reserved.
   Portions Copyright c 2006-2013, Eric Woodruff, All Rights Reserved.
   Info: Applying XSL transformation &#39;D:\Applications\Sandcastle\ProductionTransforms\MergeDuplicates.xsl&#39;.
-    Last step completed in 00:00:00.9501
+    Last step completed in 00:00:01.0291
 </buildStep>
 <buildStep step="GenerateNamespaceSummaries">
 Generating namespace summary information...
@@ -60,12 +60,12 @@ Transforming reflection output...
   Copyright c 2006-2013, Microsoft Corporation, All Rights Reserved.
   Portions Copyright c 2006-2013, Eric Woodruff, All Rights Reserved.
   Info: Applying XSL transformation &#39;D:\Applications\Sandcastle\ProductionTransforms\ReflectionToManifest.xsl&#39;.
-    Last step completed in 00:00:01.0111
+    Last step completed in 00:00:01.0911
 </buildStep>
 <buildStep step="ModifyHelpTopicFilenames">
 Modifying help topic filenames in reflection information file
     No changes required
-    Last step completed in 00:00:00.0420
+    Last step completed in 00:00:00.0520
 </buildStep>
 <buildStep step="CopyStandardContent">
 Copying standard help content...
@@ -457,7 +457,7 @@ D:\Applications\Sandcastle\\Presentation\VS2010\branding -&gt; D:\project\GearsS
     D:\Applications\Sandcastle\Presentation\VS2010\branding\ps-instrumentedLink.xslt -> D:\project\GearsSite\document\Help\Working\branding\ps-instrumentedLink.xslt
     D:\Applications\Sandcastle\Presentation\VS2010\branding\ps-languageSpecificText.xslt -> D:\project\GearsSite\document\Help\Working\branding\ps-languageSpecificText.xslt
     D:\Applications\Sandcastle\Presentation\VS2010\branding\ps-codesnippet.xslt -> D:\project\GearsSite\document\Help\Working\branding\ps-codesnippet.xslt
-    Last step completed in 00:00:01.2081
+    Last step completed in 00:00:01.2581
 </buildStep>
 <buildStep step="CopyAdditionalContent">
 Copying additional content files...
@@ -476,17 +476,17 @@ Generating intermediate table of contents file...
   Portions Copyright c 2006-2013, Eric Woodruff, All Rights Reserved.
   Info: Applying XSL transformation &#39;D:\Applications\Sandcastle\\ProductionTransforms\CreateVSToc.xsl&#39;.
 Generating conceptual content intermediate TOC file...
-    Last step completed in 00:00:00.3210
+    Last step completed in 00:00:00.3330
 </buildStep>
 <buildStep step="CreateBuildAssemblerConfigs">
 Creating Sandcastle configuration files...
     sandcastle.config
-    Last step completed in 00:00:00.0730
+    Last step completed in 00:00:00.0900
 </buildStep>
 <buildStep step="MergeCustomConfigs">
 Merging custom build component configurations
 D:\project\GearsSite\document\Help\Working\sandcastle.config
-    Last step completed in 00:00:00.0270
+    Last step completed in 00:00:00.0260
 </buildStep>
 <buildStep step="BuildReferenceTopics">
 Building reference help topics...
@@ -908,6 +908,14 @@ Building reference help topics...
   Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsException] MSDN URL not found for target &#39;T:System.Exception&#39;.
   Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsException] MSDN URL not found for target &#39;P:System.Exception.InnerException&#39;.
   Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsException] MSDN URL not found for target &#39;T:System.Exception&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsException] MSDN URL not found for target &#39;P:System.Exception.Message&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsException] MSDN URL not found for target &#39;T:System.Exception&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsException] MSDN URL not found for target &#39;P:System.Exception.Source&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsException] MSDN URL not found for target &#39;T:System.Exception&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsException] MSDN URL not found for target &#39;P:System.Exception.StackTrace&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsException] MSDN URL not found for target &#39;T:System.Exception&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsException] MSDN URL not found for target &#39;P:System.Exception.TargetSite&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsException] MSDN URL not found for target &#39;T:System.Exception&#39;.
   Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsException] MSDN web service failed.  No further look ups will be performed for this build.
   Reason: HTTP ステータス 407: Proxy Authentication Required ( The ISA Server requires authorization to fulfill the request. Access to the Web Proxy filter is denied.  ) で要求が失敗しました。
   Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsException] MSDN URL not found for target &#39;M:System.Object.Equals(System.Object)&#39;.
@@ -935,19 +943,73 @@ Building reference help topics...
   Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsException] MSDN URL not found for target &#39;T:System.Exception&#39;.
   Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsException] MSDN URL not found for target &#39;P:System.Exception.Message&#39;.
   Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsException] MSDN URL not found for target &#39;T:System.Exception&#39;.
-  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsException] MSDN web service failed.  No further look ups will be performed for this build.
-  Reason: HTTP ステータス 407: Proxy Authentication Required ( The ISA Server requires authorization to fulfill the request. Access to the Web Proxy filter is denied.  ) で要求が失敗しました。
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsException] MSDN URL not found for target &#39;P:System.Exception.Source&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsException] MSDN URL not found for target &#39;T:System.Exception&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsException] MSDN URL not found for target &#39;P:System.Exception.StackTrace&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsException] MSDN URL not found for target &#39;T:System.Exception&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsException] MSDN URL not found for target &#39;P:System.Exception.TargetSite&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsException] MSDN URL not found for target &#39;T:System.Exception&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsException] MSDN URL not found for target &#39;E:System.Exception.SerializeObjectState&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsException] MSDN URL not found for target &#39;T:System.Exception&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsException] MSDN URL not found for target &#39;M:System.Object.Equals(System.Object)&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsException] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsException] MSDN URL not found for target &#39;M:System.Object.Finalize&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsException] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsException] MSDN URL not found for target &#39;M:System.Exception.GetBaseException&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsException] MSDN URL not found for target &#39;T:System.Exception&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsException] MSDN URL not found for target &#39;M:System.Object.GetHashCode&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsException] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsException] MSDN URL not found for target &#39;M:System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsException] MSDN URL not found for target &#39;T:System.Exception&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsException] MSDN URL not found for target &#39;M:System.Exception.GetType&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsException] MSDN URL not found for target &#39;T:System.Exception&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsException] MSDN URL not found for target &#39;M:System.Object.MemberwiseClone&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsException] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsException] MSDN URL not found for target &#39;M:System.Exception.ToString&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Properties.T:Gears.GearsException] MSDN URL not found for target &#39;P:System.Exception.Data&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Properties.T:Gears.GearsException] MSDN URL not found for target &#39;T:System.Exception&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Properties.T:Gears.GearsException] MSDN URL not found for target &#39;P:System.Exception.HelpLink&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Properties.T:Gears.GearsException] MSDN URL not found for target &#39;T:System.Exception&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Properties.T:Gears.GearsException] MSDN URL not found for target &#39;P:System.Exception.HResult&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Properties.T:Gears.GearsException] MSDN URL not found for target &#39;T:System.Exception&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Properties.T:Gears.GearsException] MSDN URL not found for target &#39;P:System.Exception.InnerException&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Properties.T:Gears.GearsException] MSDN URL not found for target &#39;T:System.Exception&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Properties.T:Gears.GearsException] MSDN URL not found for target &#39;P:System.Exception.Message&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Properties.T:Gears.GearsException] MSDN URL not found for target &#39;T:System.Exception&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Properties.T:Gears.GearsException] MSDN URL not found for target &#39;P:System.Exception.Source&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Properties.T:Gears.GearsException] MSDN URL not found for target &#39;T:System.Exception&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Properties.T:Gears.GearsException] MSDN URL not found for target &#39;P:System.Exception.StackTrace&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Properties.T:Gears.GearsException] MSDN URL not found for target &#39;T:System.Exception&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Properties.T:Gears.GearsException] MSDN URL not found for target &#39;P:System.Exception.TargetSite&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Properties.T:Gears.GearsException] MSDN URL not found for target &#39;T:System.Exception&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Events.T:Gears.GearsException] MSDN URL not found for target &#39;E:System.Exception.SerializeObjectState&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Events.T:Gears.GearsException] MSDN URL not found for target &#39;T:System.Exception&#39;.
   Warn: ShowMissingComponent: [M:Gears.GearsException.#ctor(System.String,System.Exception)] Missing &lt;param name=&quot;message&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsException.#ctor(System.String,System.Exception)] Missing &lt;param name=&quot;innerException&quot;/&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsException.#ctor(System.String,System.Exception)] MSDN URL not found for target &#39;T:System.String&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsException.#ctor(System.String,System.Exception)] MSDN URL not found for target &#39;T:System.Exception&#39;.
   Warn: ShowMissingComponent: [M:Gears.GearsException.#ctor(System.String,System.String[])] Missing &lt;param name=&quot;message&quot;/&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsException.#ctor(System.String,System.String[])] MSDN URL not found for target &#39;T:System.String&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsException.#ctor(System.String,System.String[])] MSDN URL not found for target &#39;T:System.String&#39;.
   Warn: ShowMissingComponent: [M:Gears.GearsException.addDetail(System.String,System.String[])] Missing &lt;param name=&quot;detailKey&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsException.addDetail(System.String,System.String[])] Missing &lt;param name=&quot;msg&quot;/&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsException.addDetail(System.String,System.String[])] MSDN URL not found for target &#39;T:System.String&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsException.addDetail(System.String,System.String[])] MSDN URL not found for target &#39;T:System.String&#39;.
   Warn: ShowMissingComponent: [M:Gears.GearsException.addDetail(System.String[])] Missing &lt;param name=&quot;msg&quot;/&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsException.addDetail(System.String[])] MSDN URL not found for target &#39;T:System.String&#39;.
   Warn: ShowMissingComponent: [M:Gears.GearsException.clearDetail(System.String)] Missing &lt;param name=&quot;detailKey&quot;/&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsException.clearDetail(System.String)] MSDN URL not found for target &#39;T:System.String&#39;.
   Warn: ShowMissingComponent: [M:Gears.GearsException.getLocalSource] Missing &lt;returns&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsException.getLocalSource] MSDN URL not found for target &#39;T:System.String&#39;.
   Warn: ShowMissingComponent: [M:Gears.GearsException.MessageDetail] Missing &lt;returns&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsException.MessageDetail] MSDN URL not found for target &#39;T:System.String&#39;.
+  Warn: ResolveReferenceLinksComponent2: [F:Gears.GearsException.MSG_DETAIL] MSDN URL not found for target &#39;T:System.String&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsException.setLocalSource(System.Int32)] MSDN URL not found for target &#39;T:System.Int32&#39;.
   Warn: ShowMissingComponent: [M:Gears.GearsException.ToString] Missing &lt;summary&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsException.ToString] Missing &lt;returns&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsException.ToString] MSDN URL not found for target &#39;T:System.String&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsException.ToString] MSDN web service failed.  No further look ups will be performed for this build.
+  Reason: HTTP ステータス 407: Proxy Authentication Required ( The ISA Server requires authorization to fulfill the request. Access to the Web Proxy filter is denied.  ) で要求が失敗しました。
   Warn: ShowMissingComponent: [M:Gears.GearsException.toStringDetail(System.String)] Missing &lt;returns&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsException.toStringDetail(System.String)] Missing &lt;param name=&quot;detailKey&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsLogStack.getLogStack] Missing &lt;returns&gt; documentation
@@ -1139,7 +1201,6 @@ Building reference help topics...
   Warn: ShowMissingComponent: [M:Gears.gSourceExpression.Where(Gears.GearsDTO)] Missing &lt;param name=&quot;dto&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.gSourceExpression.Where(System.Collections.Generic.List{{Gears.DataSource.SqlFilterItem}})] Missing &lt;returns&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.gSourceExpression.Where(System.Collections.Generic.List{{Gears.DataSource.SqlFilterItem}})] Missing &lt;param name=&quot;filter&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [T:Gears.IAttributeMarker] Missing &lt;summary&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Binder.GearsDataAttachException.#ctor(System.Web.UI.Control@,System.Exception)] Missing &lt;param name=&quot;con&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Binder.GearsDataAttachException.#ctor(System.Web.UI.Control@,System.Exception)] Missing &lt;param name=&quot;innerException&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Binder.GearsDataBinder.compositBind(System.Web.UI.WebControls.CompositeDataBoundControl@,System.Data.DataTable@)] Missing &lt;returns&gt; documentation
@@ -1372,6 +1433,11 @@ Building reference help topics...
   Warn: ShowMissingComponent: [M:Gears.DataSource.SqlDataSource.#ctor(Gears.DataSource.SqlDataSource)] Missing &lt;param name=&quot;ds&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.DataSource.SqlDataSource.#ctor(System.String,System.String)] Missing &lt;param name=&quot;ds&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.DataSource.SqlDataSource.#ctor(System.String,System.String)] Missing &lt;param name=&quot;sf&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.DataSource.SqlDataSource.addParameter(Gears.DataSource.SqlItem)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.DataSource.SqlDataSource.addParameter(Gears.DataSource.SqlItem)] Missing &lt;param name=&quot;item&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.DataSource.SqlDataSource.addParameter(System.String,System.Object)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.DataSource.SqlDataSource.addParameter(System.String,System.Object)] Missing &lt;param name=&quot;pname&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.DataSource.SqlDataSource.addParameter(System.String,System.Object)] Missing &lt;param name=&quot;value&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.DataSource.SqlDataSource.getJoinKey(System.String)] Missing &lt;returns&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.DataSource.SqlDataSource.getJoinKey(System.String)] Missing &lt;param name=&quot;target&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.DataSource.SqlDataSource.getRelation(System.String)] Missing &lt;returns&gt; documentation
@@ -1382,14 +1448,9 @@ Building reference help topics...
   Warn: ShowMissingComponent: [M:Gears.DataSource.SqlDataSource.inSchema(System.String)] Missing &lt;param name=&quot;strSchema&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.DataSource.SqlDataSource.leftOuterJoin(Gears.DataSource.SqlDataSource@,Gears.DataSource.SqlFilterItem[])] Missing &lt;returns&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.DataSource.SqlDataSource.leftOuterJoin(System.String,System.String,Gears.DataSource.SqlFilterItem[])] Missing &lt;returns&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.DataSource.SqlDataSource.readValues(System.Collections.Generic.Dictionary{{System.String,System.Object}}@)] Missing &lt;param name=&quot;params&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.DataSource.SqlDataSource.readParameter(System.Collections.Generic.Dictionary{{System.String,System.Object}}@)] Missing &lt;param name=&quot;params&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.DataSource.SqlDataSource.setLockCheckColumn(System.String,Gears.DataSource.LockType)] Missing &lt;param name=&quot;colname&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.DataSource.SqlDataSource.setLockCheckColumn(System.String,Gears.DataSource.LockType)] Missing &lt;param name=&quot;ltype&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.DataSource.SqlDataSource.setValue(Gears.DataSource.SqlItem)] Missing &lt;returns&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.DataSource.SqlDataSource.setValue(Gears.DataSource.SqlItem)] Missing &lt;param name=&quot;item&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.DataSource.SqlDataSource.setValue(System.String,System.Object)] Missing &lt;returns&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.DataSource.SqlDataSource.setValue(System.String,System.Object)] Missing &lt;param name=&quot;pname&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.DataSource.SqlDataSource.setValue(System.String,System.Object)] Missing &lt;param name=&quot;pval&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.DataSource.SqlFilterGroup.#ctor(System.String,System.Boolean)] Missing &lt;param name=&quot;groupName&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.DataSource.SqlFilterGroup.#ctor(System.String,System.Boolean)] Missing &lt;param name=&quot;isOr&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.DataSource.SqlFilterGroup.Ands(Gears.DataSource.SqlFilterItem[])] Missing &lt;returns&gt; documentation
@@ -1510,7 +1571,6 @@ Building reference help topics...
   Warn: ShowMissingComponent: [M:Gears.DataSource.SqlSelectItem.toFilter] Missing &lt;returns&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.DataSource.SqlSelectItem.ToString] Missing &lt;summary&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.DataSource.SqlSelectItem.ToString] Missing &lt;returns&gt; documentation
-  Warn: ShowMissingComponent: [N:Gears.Util] Missing &lt;summary&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Util.ControlSearcher.fetchControls(System.Web.UI.Control,Gears.Util.ControlSearcher.fetchControl,Gears.Util.ControlSearcher.isFetchTgt,Gears.GearsDTO@)] Missing &lt;param name=&quot;parent&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Util.ControlSearcher.fetchControls(System.Web.UI.Control,Gears.Util.ControlSearcher.fetchControl,Gears.Util.ControlSearcher.isFetchTgt,Gears.GearsDTO@)] Missing &lt;param name=&quot;callback&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Util.ControlSearcher.fetchControls(System.Web.UI.Control,Gears.Util.ControlSearcher.fetchControl,Gears.Util.ControlSearcher.isFetchTgt,Gears.GearsDTO@)] Missing &lt;param name=&quot;isTarget&quot;/&gt; documentation
@@ -1558,208 +1618,111 @@ Building reference help topics...
   Warn: ShowMissingComponent: [M:Gears.Util.RelationNode.visitParents(Gears.Util.RelationNode.nodeHandler)] Missing &lt;returns&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Util.RelationNode.visitParents(Gears.Util.RelationNode.nodeHandler)] Missing &lt;param name=&quot;func&quot;/&gt; documentation
   Warn: ShowMissingComponent: [T:Gears.Util.RelationNode.nodeHandler] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [T:Gears.Validation.AbsModelValidator] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [P:Gears.Validation.AbsModelValidator.ErrorMessage] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [P:Gears.Validation.AbsModelValidator.ErrorSource] Missing &lt;summary&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.AbsModelValidator.getValidateeValue(Gears.DataSource.SqlBuilder,System.String,System.Boolean)] Missing &lt;returns&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.AbsModelValidator.getValidateeValue(Gears.DataSource.SqlBuilder,System.String,System.Boolean)] Missing &lt;param name=&quot;sqlb&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.AbsModelValidator.getValidateeValue(Gears.DataSource.SqlBuilder,System.String,System.Boolean)] Missing &lt;param name=&quot;colName&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.AbsModelValidator.getValidateeValue(Gears.DataSource.SqlBuilder,System.String,System.Boolean)] Missing &lt;param name=&quot;nothingAsSpace&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [P:Gears.Validation.AbsModelValidator.IsValid] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [P:Gears.Validation.AbsModelValidator.IsValidIgnoreAlert] Missing &lt;summary&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.AbsModelValidator.setUpValidation(Gears.DataSource.SqlBuilder)] Missing &lt;param name=&quot;sqlb&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.AbsModelValidator.tearDownValidation(Gears.DataSource.SqlBuilder)] Missing &lt;param name=&quot;sqlb&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.Validation.AbsModelValidator.throwException] Missing &lt;summary&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.AbsModelValidator.throwException] Missing &lt;returns&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.AbsModelValidator.Validate(Gears.DataSource.SqlBuilder,System.Boolean)] Missing &lt;returns&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.AbsModelValidator.Validate(Gears.DataSource.SqlBuilder,System.Collections.Generic.List{{Gears.Validation.AbsModelValidator.ModelValidator}},System.Boolean)] Missing &lt;returns&gt; documentation
-  Warn: ShowMissingComponent: [P:Gears.Validation.AbsModelValidator.ValidResults] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [T:Gears.Validation.AbsModelValidator.ModelValidator] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [T:Gears.Validation.GAttributeHolderTemplate] Missing &lt;summary&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.GAttributeHolderTemplate.#ctor(System.String,Gears.Validation.GearsAttribute)] Missing &lt;param name=&quot;v&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.GAttributeHolderTemplate.#ctor(System.String,Gears.Validation.GearsAttribute)] Missing &lt;param name=&quot;attr&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.GAttributeHolderTemplate.#ctor(System.String,System.String)] Missing &lt;param name=&quot;v&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.GAttributeHolderTemplate.#ctor(System.String,System.String)] Missing &lt;param name=&quot;css&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [P:Gears.Validation.GAttributeHolderTemplate.GAttribute] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [P:Gears.Validation.GAttributeHolderTemplate.GCssClass] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.Validation.GAttributeHolderTemplate.getValidatedMsg] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.Validation.GAttributeHolderTemplate.getValidatedMsg] Missing &lt;returns&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.Validation.GAttributeHolderTemplate.isValidateOk] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.Validation.GAttributeHolderTemplate.getValidationError] Missing &lt;returns&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.GAttributeHolderTemplate.isValidateOk] Missing &lt;returns&gt; documentation
-  Warn: ShowMissingComponent: [P:Gears.Validation.GAttributeHolderTemplate.validateeValue] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [T:Gears.Validation.GearsAttribute] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [P:Gears.Validation.GearsAttribute.CssClass] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [F:Gears.Validation.GearsAttribute.ERR_STYLE] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [P:Gears.Validation.GearsAttribute.ErrorMessage] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttribute.hasMarker(System.Type)] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.Validation.GAttributeHolderTemplate.setValue(System.String)] Missing &lt;param name=&quot;value&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttribute.hasMarker(System.Type)] Missing &lt;returns&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttribute.hasMarker(System.Type)] Missing &lt;param name=&quot;marker&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttribute.initProperty(System.Boolean)] Missing &lt;summary&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttribute.initProperty(System.Boolean)] Missing &lt;param name=&quot;defaultResult&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [P:Gears.Validation.GearsAttribute.IsValid] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttribute.isValidateOk(System.String)] Missing &lt;summary&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttribute.isValidateOk(System.String)] Missing &lt;returns&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttribute.isValidateOk(System.String)] Missing &lt;param name=&quot;validateeValue&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttribute.ListUp] Missing &lt;summary&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttribute.ListUp] Missing &lt;returns&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttribute.Validate] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [P:Gears.Validation.GearsAttribute.ValidateeValue] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [T:Gears.Validation.GearsAttributeContainer] Missing &lt;summary&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttributeContainer.#ctor(Gears.Validation.GearsAttributeContainer)] Missing &lt;param name=&quot;ga&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttributeContainer.addAttribute(Gears.Validation.GearsAttribute)] Missing &lt;summary&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttributeContainer.addAttribute(Gears.Validation.GearsAttribute)] Missing &lt;param name=&quot;a&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttributeContainer.clearAttributes] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [P:Gears.Validation.GearsAttributeContainer.CssClass] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttributeContainer.hasMarker(System.Type)] Missing &lt;summary&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttributeContainer.hasMarker(System.Type)] Missing &lt;returns&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttributeContainer.hasMarker(System.Type)] Missing &lt;param name=&quot;m&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttributeContainer.ListUp] Missing &lt;summary&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttributeContainer.ListUp] Missing &lt;returns&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttributeContainer.Validate] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [T:Gears.Validation.GearsAttributeCreator] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttributeCreator.#ctor(System.String)] Missing &lt;param name=&quot;subNamespace&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttributeCreator.createAttributesFromString(System.String)] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttributeCreator.#ctor(System.String)] Missing &lt;param name=&quot;attrNamespace&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttributeCreator.createAttributesFromString(System.String)] Missing &lt;returns&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttributeCreator.createAttributesFromString(System.String)] Missing &lt;param name=&quot;cs&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [F:Gears.Validation.GearsAttributeCreator.CSS_HEAD] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttributeCreator.getCssClass] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttributeCreator.createAttributesFromString(System.String)] Missing &lt;param name=&quot;css&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttributeCreator.getCssClass] Missing &lt;returns&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttributeCreator.isComp(System.String,System.String)] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttributeCreator.isComp(System.String,System.String)] Missing &lt;returns&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttributeCreator.isComp(System.String,System.String)] Missing &lt;param name=&quot;targetValue&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttributeCreator.isComp(System.String,System.String)] Missing &lt;param name=&quot;compType&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttributeCreator.isDate] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttributeCreator.isCompare(System.String,System.String)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttributeCreator.isCompare(System.String,System.String)] Missing &lt;param name=&quot;expected&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttributeCreator.isCompare(System.String,System.String)] Missing &lt;param name=&quot;operatorType&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttributeCreator.isDate] Missing &lt;returns&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttributeCreator.isLength(System.Int32)] Missing &lt;summary&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttributeCreator.isLength(System.Int32)] Missing &lt;returns&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttributeCreator.isLength(System.Int32)] Missing &lt;param name=&quot;i&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttributeCreator.isLengthBetween(System.Int32,System.Int32)] Missing &lt;summary&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttributeCreator.isLengthBetween(System.Int32,System.Int32)] Missing &lt;returns&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttributeCreator.isLengthBetween(System.Int32,System.Int32)] Missing &lt;param name=&quot;min&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttributeCreator.isLengthBetween(System.Int32,System.Int32)] Missing &lt;param name=&quot;max&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttributeCreator.isMatch(System.String,System.Boolean)] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttributeCreator.isMatch(System.String,System.Boolean)] Missing &lt;returns&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttributeCreator.isMatch(System.String,System.Boolean)] Missing &lt;param name=&quot;pattern&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttributeCreator.isMatch(System.String,System.Boolean)] Missing &lt;param name=&quot;whenMatch&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttributeCreator.isNumeric] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttributeCreator.isMatch(System.String)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttributeCreator.isMatch(System.String)] Missing &lt;param name=&quot;pattern&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttributeCreator.isNumeric] Missing &lt;returns&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttributeCreator.isPeriodPositionOk(System.Int32,System.Int32)] Missing &lt;summary&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttributeCreator.isPeriodPositionOk(System.Int32,System.Int32)] Missing &lt;returns&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttributeCreator.isPeriodPositionOk(System.Int32,System.Int32)] Missing &lt;param name=&quot;beforep&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttributeCreator.isPeriodPositionOk(System.Int32,System.Int32)] Missing &lt;param name=&quot;afterp&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttributeCreator.isRequired] Missing &lt;summary&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttributeCreator.isRequired] Missing &lt;returns&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttributeCreator.isStartWith(System.String)] Missing &lt;summary&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttributeCreator.isStartWith(System.String)] Missing &lt;returns&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttributeCreator.isStartWith(System.String)] Missing &lt;param name=&quot;s&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttributeCreator.pack] Missing &lt;summary&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.GearsAttributeCreator.pack] Missing &lt;returns&gt; documentation
-  Warn: ShowMissingComponent: [P:Gears.Validation.GearsAttributeCreator.SubstituteNamespace] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [T:Gears.Validation.GearsDataValidationException] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.Validation.GearsDataValidationException.#ctor(System.String,System.Exception)] Missing &lt;param name=&quot;message&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.Validation.GearsDataValidationException.#ctor(System.String,System.Exception)] Missing &lt;param name=&quot;innerException&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.Validation.GearsDataValidationException.#ctor(System.String,System.String[])] Missing &lt;param name=&quot;message&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.Validation.GearsDataValidationException.#ctor(System.String,System.String[])] Missing &lt;param name=&quot;detail&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [T:Gears.Validation.GearsModelValidationException] Missing &lt;summary&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.GearsModelValidationException.#ctor(Gears.Validation.ValidationResults)] Missing &lt;param name=&quot;result&quot;/&gt; documentation
   Warn: ShowMissingComponent: [P:Gears.Validation.GearsModelValidationException.Result] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [T:Gears.Validation.IAttributeHolder] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [P:Gears.Validation.IAttributeHolder.GAttribute] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [P:Gears.Validation.IAttributeHolder.GCssClass] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.Validation.IAttributeHolder.getValidationError] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.Validation.GearsValidationException.#ctor(System.String,System.Exception)] Missing &lt;param name=&quot;message&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.Validation.GearsValidationException.#ctor(System.String,System.Exception)] Missing &lt;param name=&quot;innerException&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.Validation.GearsValidationException.#ctor(System.String,System.String[])] Missing &lt;param name=&quot;message&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.Validation.GearsValidationException.#ctor(System.String,System.String[])] Missing &lt;param name=&quot;detail&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.IAttributeHolder.getValidationError] Missing &lt;returns&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.Validation.IAttributeHolder.isValidateOk] Missing &lt;summary&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.IAttributeHolder.isValidateOk] Missing &lt;returns&gt; documentation
-  Warn: ShowMissingComponent: [P:Gears.Validation.IAttributeHolder.validateeValue] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [F:Gears.Validation.ModelValidationMethod.DEFAULT_ORDER] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [P:Gears.Validation.ModelValidationMethod.FalseAsAlert] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [P:Gears.Validation.ModelValidationMethod.OnlyWhenTheseValueExist] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [P:Gears.Validation.ModelValidationMethod.Order] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.Validation.ValidationResult.#ctor(Gears.Validation.ValidationResultType,System.String,System.String)] Missing &lt;param name=&quot;vR&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.Validation.ValidationResult.#ctor(Gears.Validation.ValidationResultType,System.String,System.String)] Missing &lt;param name=&quot;vResult&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.ValidationResult.#ctor(Gears.Validation.ValidationResultType,System.String,System.String)] Missing &lt;param name=&quot;msg&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.ValidationResult.#ctor(Gears.Validation.ValidationResultType,System.String,System.String)] Missing &lt;param name=&quot;source&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [P:Gears.Validation.ValidationResult.ErrorMessage] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [P:Gears.Validation.ValidationResult.ErrorSource] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [P:Gears.Validation.ValidationResult.ValidResult] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.Validation.ValidationResults.Add(Gears.Validation.ValidationResultType,System.String,System.String)] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.Validation.ValidationResults.Add(Gears.Validation.ValidationResultType,System.String,System.String)] Missing &lt;param name=&quot;vR&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.Validation.ValidationResults.Add(Gears.Validation.ValidationResultType,System.String,System.String)] Missing &lt;param name=&quot;vResult&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.ValidationResults.Add(Gears.Validation.ValidationResultType,System.String,System.String)] Missing &lt;param name=&quot;msg&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.ValidationResults.Add(Gears.Validation.ValidationResultType,System.String,System.String)] Missing &lt;param name=&quot;source&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.ValidationResults.Clear] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [P:Gears.Validation.ValidationResults.ErrorMessage] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [P:Gears.Validation.ValidationResults.ErrorSource] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.Validation.ValidationResults.GetFails] Missing &lt;summary&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.ValidationResults.GetFails] Missing &lt;returns&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.Validation.ValidationResults.IsValid] Missing &lt;summary&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.ValidationResults.IsValid] Missing &lt;returns&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.Validation.ValidationResults.IsValidIgnoreAlert] Missing &lt;summary&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.ValidationResults.IsValidIgnoreAlert] Missing &lt;returns&gt; documentation
-  Warn: ShowMissingComponent: [T:Gears.Validation.Marker.GMarkerNumeric] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [F:Gears.Validation.Marker.GMarkerNumeric.CSS_STYLE] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [T:Gears.Validation.Marker.MarkerNumeric] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [F:Gears.Validation.Marker.MarkerNumeric.CSS_STYLE] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [T:Gears.Validation.Validator.GByteLength] Missing &lt;summary&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.Validator.GByteLength.#ctor(System.Int32)] Missing &lt;param name=&quot;len&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [F:Gears.Validation.Validator.GByteLength.CSS_STYLE] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.Validation.Validator.GByteLength.LenB(System.String)] Missing &lt;summary&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.Validator.GByteLength.LenB(System.String)] Missing &lt;returns&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.Validator.GByteLength.LenB(System.String)] Missing &lt;param name=&quot;st&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [P:Gears.Validation.Validator.GByteLength.Length] Missing &lt;summary&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.Validator.GByteLength.Validate] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [T:Gears.Validation.Validator.GByteLengthBetween] Missing &lt;summary&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.Validator.GByteLengthBetween.#ctor(System.Int32)] Missing &lt;param name=&quot;len&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.Validator.GByteLengthBetween.#ctor(System.Int32,System.Int32)] Missing &lt;param name=&quot;min&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.Validator.GByteLengthBetween.#ctor(System.Int32,System.Int32)] Missing &lt;param name=&quot;max&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [P:Gears.Validation.Validator.GByteLengthBetween.MinLength] Missing &lt;summary&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.Validator.GByteLengthBetween.Validate] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [T:Gears.Validation.Validator.GComp] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [P:Gears.Validation.Validator.GComp.CompType] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.Validation.Validator.GComp.isValidateOk(System.String,System.String,System.String)] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.Validation.Validator.GComp.isValidateOk(System.String,System.String,System.String)] Missing &lt;returns&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.Validation.Validator.GComp.isValidateOk(System.String,System.String,System.String)] Missing &lt;param name=&quot;leftValue&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.Validation.Validator.GComp.isValidateOk(System.String,System.String,System.String)] Missing &lt;param name=&quot;rightValue&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.Validation.Validator.GComp.isValidateOk(System.String,System.String,System.String)] Missing &lt;param name=&quot;ct&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [P:Gears.Validation.Validator.GComp.TgtValue] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.Validation.Validator.GComp.Validate] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [T:Gears.Validation.Validator.GDate] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [F:Gears.Validation.Validator.GDate.CSS_STYLE] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [P:Gears.Validation.Validator.GDate.Format] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.Validation.Validator.GCompare.isValidateOk(System.String,System.String,System.String)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.Validation.Validator.GCompare.isValidateOk(System.String,System.String,System.String)] Missing &lt;param name=&quot;leftValue&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.Validation.Validator.GCompare.isValidateOk(System.String,System.String,System.String)] Missing &lt;param name=&quot;rightValue&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.Validation.Validator.GCompare.isValidateOk(System.String,System.String,System.String)] Missing &lt;param name=&quot;opr&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.Validation.Validator.GCompare.Validate] Missing &lt;summary&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.Validator.GDate.Validate] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [T:Gears.Validation.Validator.GMatch] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.Validation.Validator.GMatch.#ctor(System.String,System.Boolean)] Missing &lt;param name=&quot;p&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.Validation.Validator.GMatch.#ctor(System.String,System.Boolean)] Missing &lt;param name=&quot;wm&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [P:Gears.Validation.Validator.GMatch.Pattern] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.Validation.Validator.GMatch.#ctor(System.String)] Missing &lt;param name=&quot;p&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.Validator.GMatch.Validate] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [P:Gears.Validation.Validator.GMatch.WhenMatch] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [T:Gears.Validation.Validator.GNumber] Missing &lt;summary&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.Validator.GNumber.Validate] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [T:Gears.Validation.Validator.GNumeric] Missing &lt;summary&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.Validator.GNumeric.Validate] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [P:Gears.Validation.Validator.GNumeric.WithSign] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [T:Gears.Validation.Validator.GPeriodPositionOk] Missing &lt;summary&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.Validator.GPeriodPositionOk.#ctor(System.Int32,System.Int32)] Missing &lt;param name=&quot;beforep&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.Validator.GPeriodPositionOk.#ctor(System.Int32,System.Int32)] Missing &lt;param name=&quot;afterp&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [P:Gears.Validation.Validator.GPeriodPositionOk.AfterP] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [P:Gears.Validation.Validator.GPeriodPositionOk.BeforeP] Missing &lt;summary&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.Validator.GPeriodPositionOk.Validate] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [T:Gears.Validation.Validator.GRequired] Missing &lt;summary&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.Validator.GRequired.Validate] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [T:Gears.Validation.Validator.GStartWith] Missing &lt;summary&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.Validator.GStartWith.#ctor(System.String)] Missing &lt;param name=&quot;p&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [P:Gears.Validation.Validator.GStartWith.Prefix] Missing &lt;summary&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.Validator.GStartWith.Validate] Missing &lt;summary&gt; documentation
-  Info: Processed 949 topic(s)
-  Info: 1250 warning(s)
+  Info: Processed 946 topic(s)
+  Info: 1213 warning(s)
   Diagnostic: CopyFromIndexComponent: &quot;reflection&quot; in-memory cache entries used: 10 of 15.
   Diagnostic: CopyFromIndexComponent: &quot;comments&quot; in-memory cache entries used: 1 of 30.
-  Diagnostic: ResolveReferenceLinksComponent2: New MSDN content ID cache size: 73 entries
-    Last step completed in 00:00:28.3348
+  Diagnostic: ResolveReferenceLinksComponent2: New MSDN content ID cache size: 77 entries
+    Last step completed in 00:00:30.8360
 </buildStep>
 <buildStep step="CombiningIntermediateTocFiles">
 Combining conceptual and API intermediate TOC files...
 
 Clearing any prior web output
-    Last step completed in 00:00:00.3800
+    Last step completed in 00:00:00.4710
 </buildStep>
 <buildStep step="ExtractingHtmlInfo">
 Extracting HTML info for HTML Help 1 and/or website...
@@ -1771,25 +1734,25 @@ E-Mail: Eric@EWoodruff.us
 Using LCID &#39;1033&#39;, code page &#39;65001&#39;, encoding charset &#39;UTF-8&#39;.
 
 Processing Help 1 files in D:\project\GearsSite\document\Help\Working\Output\HtmlHelp1
-Processed 949 HTML files
+Processed 946 HTML files
 Sorting keywords and generating See Also indices
 Saving HTML Help 1 keyword index to D:\project\GearsSite\document\Help\Working\GearsAPI.hhk
 Saving HTML Help 1 table of contents to D:\project\GearsSite\document\Help\Working\GearsAPI.hhc
 
 Processing website files in D:\project\GearsSite\document\Help\Working\Output\Website
-Processed 949 HTML files
+Processed 946 HTML files
 Sorting keywords and generating See Also indices
 Saving website keyword index to D:\project\GearsSite\document\Help\Working\WebKI.xml
 Saving website table of contents to D:\project\GearsSite\document\Help\Working\WebTOC.xml
-    Last step completed in 00:00:03.3333
+    Last step completed in 00:00:03.9640
 </buildStep>
 <buildStep step="GenerateHelpFormatTableOfContents">
 Generating HTML Help 1 table of contents file...
-    Last step completed in 00:00:00.0020
+    Last step completed in 00:00:00.0010
 </buildStep>
 <buildStep step="GenerateHelpFileIndex">
 Generating HTML Help 1 index file...
-    Last step completed in 00:00:00.0010
+    Last step completed in 00:00:00.0020
 </buildStep>
 <buildStep step="GenerateHelpProject">
 Generating HTML Help 1 project file...
@@ -1810,9 +1773,9 @@ Compiling HTML Help 1 file...
   
   Compile time: 0 minutes, 7 seconds
   
-  951	Topics
+  948	Topics
   
-  11,530	Local links
+  11,481	Local links
   
   4	Internet links
   
@@ -1822,11 +1785,11 @@ Compiling HTML Help 1 file...
   
   
   
-  Created d:\project\GearsSite\document\Help\Working\Output\HtmlHelp1\GearsAPI.chm, 1,293,717 bytes
+  Created d:\project\GearsSite\document\Help\Working\Output\HtmlHelp1\GearsAPI.chm, 1,308,769 bytes
   
-  Compression decreased file by 8,139,221 bytes.
+  Compression decreased file by 8,135,436 bytes.
   
-    Last step completed in 00:00:08.4258
+    Last step completed in 00:00:08.2120
 </buildStep>
 <buildStep step="GenerateHelpFormatTableOfContents">
 Generating website table of contents file...
@@ -1835,7 +1798,7 @@ Generating website table of contents file...
 <buildStep step="GenerateFullTextIndex">
 Generating full-text index for the website...
 
-    Last step completed in 00:00:02.3652
+    Last step completed in 00:00:02.5840
 </buildStep>
 <buildStep step="CopyingWebsiteFiles">
 Copying website files to output folder...
@@ -1851,16 +1814,16 @@ Copied 800 files
 Copied 900 files
 Copied 1000 files
 Copied 1100 files
-Copied 1174 files for the website content
-    Last step completed in 00:00:05.1945
+Copied 1190 files for the website content
+    Last step completed in 00:00:06.0510
 </buildStep>
 <buildStep step="CleanIntermediates">
 Removing intermediate files...
-    Last step completed in 00:00:00.8611
+    Last step completed in 00:00:00.6770
 </buildStep>
 <buildStep step="Completed">
 
-Build completed successfully at 03/17/2014 08:01 午後.  Total time: 00:00:52.7303
+Build completed successfully at 03/18/2014 11:54 午前.  Total time: 00:00:56.8604
 
 </buildStep>
 </shfbBuild>

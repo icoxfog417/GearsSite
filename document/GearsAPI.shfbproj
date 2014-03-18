@@ -40,12 +40,14 @@
     <HelpTitle>GearsAPI</HelpTitle>
     <ContentPlacement>AboveNamespaces</ContentPlacement>
     <NamespaceSummaries>
-      <NamespaceSummaryItem name="Gears" isDocumented="True" xmlns="">Gearsのコアコンポーネント</NamespaceSummaryItem>
-<NamespaceSummaryItem name="Gears.Binder" isDocumented="True" xmlns="">コントロールにデータをバインドするためのクラス</NamespaceSummaryItem>
-<NamespaceSummaryItem name="Gears.DataSource" isDocumented="True" xmlns="">データベースからデータを抽出するためのクラス</NamespaceSummaryItem>
-<NamespaceSummaryItem name="Gears.Validation" isDocumented="True" xmlns="">バリデーションを行うためのクラス</NamespaceSummaryItem>
-<NamespaceSummaryItem name="Gears.Validation.Marker" isDocumented="True" xmlns="">コントロールの属性を表すマーカー</NamespaceSummaryItem>
-<NamespaceSummaryItem name="Gears.Validation.Validator" isDocumented="True" xmlns="">バリデーション処理を行うクラス</NamespaceSummaryItem></NamespaceSummaries>
+      <NamespaceSummaryItem name="Gears" isDocumented="True">Gearsのコアコンポーネント</NamespaceSummaryItem>
+<NamespaceSummaryItem name="Gears.Binder" isDocumented="True">コントロールにデータをバインドするためのクラス</NamespaceSummaryItem>
+<NamespaceSummaryItem name="Gears.DataSource" isDocumented="True">データベースからデータを抽出するためのクラス</NamespaceSummaryItem>
+<NamespaceSummaryItem name="Gears.Validation" isDocumented="True">バリデーションを行うためのクラス</NamespaceSummaryItem>
+<NamespaceSummaryItem name="Gears.Validation.Marker" isDocumented="True">コントロールの属性を表すマーカー</NamespaceSummaryItem>
+<NamespaceSummaryItem name="Gears.Validation.Validator" isDocumented="True">バリデーション処理を行うクラス</NamespaceSummaryItem>
+<NamespaceSummaryItem name="Gears.Util" isDocumented="True">ユーティリティ用クラス</NamespaceSummaryItem></NamespaceSummaries>
+    <MissingTags>Summary, Parameter, Returns, AutoDocumentCtors, Namespace, TypeParameter, AutoDocumentDispose</MissingTags>
   </PropertyGroup>
   <!-- There are no properties for these groups.  AnyCPU needs to appear in
        order for Visual Studio to perform the build.  The others are optional
