@@ -38,14 +38,14 @@
   <HelpKINode Title="addDictionarySafe(Of T, K) method" Url="html/07ebea6a-c317-16e0-85b1-cbd3f74105c5.htm" />
   <HelpKINode Title="addDictionarySafe&lt;T, K&gt; method" Url="html/07ebea6a-c317-16e0-85b1-cbd3f74105c5.htm" />
   <HelpKINode Title="addExcept method" Url="html/a1a0ac8d-cefc-20a7-8ef5-a20beaf58f23.htm" />
-  <HelpKINode Title="addFilter method" Url="html/e3dfb02d-163f-396f-dbeb-e3ac84136784.htm" />
+  <HelpKINode Title="addFilter method" Url="html/cfdda122-0ea9-117d-69cb-f012d8f32e13.htm" />
   <HelpKINode Title="addLockValue method" Url="html/f5e42b0a-928e-4c5d-525e-4e64f864f53a.htm" />
   <HelpKINode Title="addParameter method" Url="html/58b5ea8b-1e1a-4e0c-5a98-81dee67fdc68.htm" />
   <HelpKINode Title="addRelation method" Url="html/05e93b9b-e161-c0fe-d58c-5c43e710150b.htm" />
   <HelpKINode Title="addRule method" Url="html/980ad383-dc2b-aa4a-77bd-4e4ef041b2df.htm" />
   <HelpKINode Title="addRuleWhenToCol method" Url="html/fe1c41e4-6573-9618-9a06-98a2d60646dd.htm" />
   <HelpKINode Title="addRuleWhenToItem method" Url="html/f0976eb1-fb09-3267-095c-fbd9e481104e.htm" />
-  <HelpKINode Title="addSelection method" Url="html/2ee5f441-f2cd-0959-0523-60a60ce68f1d.htm" />
+  <HelpKINode Title="addSelection method" Url="html/cc17f6ca-a476-c384-b4ac-e069c6e20ccf.htm" />
   <HelpKINode Title="afterExecute method" Url="html/0711b49a-e298-1341-f98a-c0e2caf3e4ea.htm" />
   <HelpKINode Title="AfterP property" Url="html/64dda4de-100d-e4bd-98a4-8466addd15cb.htm" />
   <HelpKINode Title="Alert enumeration member">
@@ -89,6 +89,7 @@
   <HelpKINode Title="clearDetail method" Url="html/96b8e29d-0174-494d-187c-e6c4f914e3a7.htm" />
   <HelpKINode Title="clearExcept method" Url="html/7449200b-6e6e-1d8e-331f-10c1f99facac.htm" />
   <HelpKINode Title="clearLogStack method" Url="html/d016456d-4202-1640-66b7-f820a0e8be30.htm" />
+  <HelpKINode Title="clearRelation method" Url="html/061f5972-7af1-8af3-be93-8a8973e4f69f.htm" />
   <HelpKINode Title="clearSourceControl method" Url="html/6f60dcc2-6993-f523-3557-ab8f0a32137e.htm" />
   <HelpKINode Title="ColAlias property" Url="html/320ab38a-b423-081b-539c-78f34779e44f.htm" />
   <HelpKINode Title="Column property" Url="html/42fc67d6-36d6-344b-20eb-de19c83984c0.htm" />
@@ -107,6 +108,7 @@
     <HelpKINode Title="GearsDataSource.ConnectionName Property " Url="html/e8363f4c-9b54-6aac-9475-eb5697b47664.htm" />
     <HelpKINode Title="GearsMediator.ConnectionName Property " Url="html/ed215f36-663f-4b2c-da99-0dacdbe8e180.htm" />
     <HelpKINode Title="GearsSqlExecutor.ConnectionName Property " Url="html/ca33e159-9ade-1821-1f48-e6b298f93028.htm" />
+    <HelpKINode Title="IFormItem.ConnectionName Property " Url="html/aed498c8-0ae5-5f14-7352-abe5289becac.htm" />
   </HelpKINode>
   <HelpKINode Title="ConnectionString property" Url="html/b6dc4e91-8e55-6854-54d9-532e57fc927e.htm" />
   <HelpKINode Title="Control method" Url="html/66c1be3b-7bf3-1c52-56c0-045ce5054ef3.htm" />
@@ -136,7 +138,6 @@
   <HelpKINode Title="convertToDataSource method" Url="html/d8fdf74a-b40b-2cff-a80a-6093df96a979.htm" />
   <HelpKINode Title="count method" Url="html/e366e212-4ce4-7f52-d34c-24f93a9b2a29.htm" />
   <HelpKINode Title="createAttributesFromString method" Url="html/99c9fdd3-b221-dbfd-d932-036d7332a687.htm" />
-  <HelpKINode Title="createControlInfo method" Url="html/d3a4975a-4bcd-f05e-2bf7-4c5463047432.htm" />
   <HelpKINode Title="createSelectCount method" Url="html/33dd2a84-e2bb-f029-9960-8a98189aec6a.htm" />
   <HelpKINode Title="createSqlCommand method" Url="html/91c82f71-39e0-bb08-79cd-8ace06cf6c01.htm" />
   <HelpKINode Title="Critical enumeration member">
@@ -195,6 +196,7 @@
     <HelpKINode Title="GearsControl.DsNameSpace Property " Url="html/44a0a3af-2088-eed9-7bd0-b03a9d91c4dc.htm" />
     <HelpKINode Title="GearsMediator.DsNameSpace Property " Url="html/d091d3fd-641a-0b17-5734-7a80ff847899.htm" />
   </HelpKINode>
+  <HelpKINode Title="DsNamespace property" Url="html/ac2e7071-ac59-8172-a299-8c338ea4ec19.htm" />
   <HelpKINode Title="Encode property" Url="html/1efddff2-8c43-67b0-5bf1-fe67aa24887e.htm" />
   <HelpKINode Title="eq method" Url="html/1b84c5b8-4016-faa1-15e4-6ae6f77094b3.htm" />
   <HelpKINode Title="ErrorMessage property">
@@ -228,9 +230,8 @@
   <HelpKINode Title="filterAs method" Url="html/1dceaaf8-0ca8-4ea5-3bdf-6cfe7e41fa04.htm" />
   <HelpKINode Title="findControl method" Url="html/7af91c84-2292-28d8-4aec-51a07d93428b.htm" />
   <HelpKINode Title="findNode method" Url="html/d8ff5cc6-3f85-e278-3ddf-d95c68d6e85f.htm" />
-  <HelpKINode Title="FirstLog method" Url="html/b753bb2d-18f9-a05c-bd4d-bdcfc0e9e9cc.htm" />
+  <HelpKINode Title="FirstLog method" Url="html/aa1183e1-6827-df9e-d6b7-15294baaf09b.htm" />
   <HelpKINode Title="Format property" Url="html/9fb3c661-d726-95de-18c9-99431e8a61ef.htm" />
-  <HelpKINode Title="From method" Url="html/0f125551-6ef3-e9d4-fad6-20a870c7dc07.htm" />
   <HelpKINode Title="GAdd method" Url="html/1dee8ddd-f583-a812-0153-6605954deb9d.htm" />
   <HelpKINode Title="GAttribute property">
     <HelpKINode Title="GAttributeHolderTemplate.GAttribute Property " Url="html/d6fb25c3-1768-fdd2-79b6-3e4554c58a36.htm" />
@@ -402,6 +403,10 @@
     <HelpKINode Title="GearsControl Class" Url="html/f92199b1-c4ab-6b0f-0c70-deff6d1fce07.htm" />
     <HelpKINode Title="GearsControl Members" Url="html/5910bb32-a773-d960-aa70-27f71bf89fba.htm" />
   </HelpKINode>
+  <HelpKINode Title="Gears.GearsControlExtension class">
+    <HelpKINode Title="GearsControlExtension Class" Url="html/a64e1ede-877d-3582-a1a7-ab8343dfdf62.htm" />
+    <HelpKINode Title="GearsControlExtension Members" Url="html/e89a50e4-1b1a-cce1-27ae-b8993c768f87.htm" />
+  </HelpKINode>
   <HelpKINode Title="Gears.GearsControlInfo class">
     <HelpKINode Title="GearsControlInfo Class" Url="html/9b815f42-f1da-f523-eb56-60861ad0bd20.htm" />
     <HelpKINode Title="GearsControlInfo Members" Url="html/3a4dbb8f-9e4c-49d4-fbb4-cb5ae711f1af.htm" />
@@ -426,17 +431,13 @@
     <HelpKINode Title="GearsPage Class" Url="html/e560fa82-2b11-a5b4-3db3-ea572cae404c.htm" />
     <HelpKINode Title="GearsPage Members" Url="html/778d955a-70c7-279d-172b-e620bb3e8cb3.htm" />
   </HelpKINode>
-  <HelpKINode Title="Gears.GearsPageExtendModule class">
-    <HelpKINode Title="GearsPageExtendModule Class" Url="html/31468264-d8db-703e-8b3f-6a4758f0a225.htm" />
-    <HelpKINode Title="GearsPageExtendModule Members" Url="html/8a7d408c-8d00-29fd-07d6-05d0d80b30d0.htm" />
+  <HelpKINode Title="Gears.GearsPageExtension class">
+    <HelpKINode Title="GearsPageExtension Class" Url="html/9e245274-fe3b-d63a-19a0-792bf7469d64.htm" />
+    <HelpKINode Title="GearsPageExtension Members" Url="html/5df4f84b-1244-4167-0fd4-f009e98418c6.htm" />
   </HelpKINode>
   <HelpKINode Title="Gears.gRuleExpression class">
     <HelpKINode Title="gRuleExpression Class" Url="html/17fc698b-9c52-ebe3-3449-fc364e786932.htm" />
     <HelpKINode Title="gRuleExpression Members" Url="html/36c7c259-5ef2-5709-1378-c69b3d617600.htm" />
-  </HelpKINode>
-  <HelpKINode Title="Gears.gSelectExpression class">
-    <HelpKINode Title="gSelectExpression Class" Url="html/9f72b471-9425-6fd4-19d1-815b362ca167.htm" />
-    <HelpKINode Title="gSelectExpression Members" Url="html/e4fc2bf4-4cc5-253d-e3a3-3dbc6ef1bcab.htm" />
   </HelpKINode>
   <HelpKINode Title="Gears.gSendExpression class">
     <HelpKINode Title="gSendExpression Class" Url="html/f3fbc05d-c29f-157b-7015-fe8224d6a5e0.htm" />
@@ -644,7 +645,6 @@
   <HelpKINode Title="GearsControl.ConnectionName property" Url="html/8da516a2-4517-d4a7-8a00-9052da007784.htm" />
   <HelpKINode Title="GearsControl.Control method" Url="html/66c1be3b-7bf3-1c52-56c0-045ce5054ef3.htm" />
   <HelpKINode Title="GearsControl.ControlID property" Url="html/26a094cc-6878-d01a-2233-f7ec2c7ebed1.htm" />
-  <HelpKINode Title="GearsControl.createControlInfo method" Url="html/d3a4975a-4bcd-f05e-2bf7-4c5463047432.htm" />
   <HelpKINode Title="GearsControl.dataAttach method" Url="html/032ff8bf-9b9e-144a-6aaa-07d99c451086.htm" />
   <HelpKINode Title="GearsControl.dataBind method" Url="html/ed21f25a-15e0-16cc-e121-0d47bdfad8f6.htm" />
   <HelpKINode Title="GearsControl.DataBinder property" Url="html/911c839f-25c2-1017-46e8-ebbcd4216e7c.htm" />
@@ -677,8 +677,17 @@
   <HelpKINode Title="GearsControl.OperatorAttribute property" Url="html/5e83ffbc-c5f4-04e6-78df-a252b10c1323.htm" />
   <HelpKINode Title="GearsControl.serializeValue method" Url="html/35136a36-75a7-43de-a14f-9f56ed2f5e11.htm" />
   <HelpKINode Title="GearsControl.setValue method" Url="html/b3295d4a-b7c7-dbfd-947a-910f7a7338cf.htm" />
+  <HelpKINode Title="GearsControl.toControlInfo method" Url="html/74270f06-763b-7250-c223-4f62184c1e57.htm" />
   <HelpKINode Title="GearsControl.validateeValue property" Url="html/7f9f1e00-1c36-7169-fa2c-8a367acae2b3.htm" />
   <HelpKINode Title="GearsControl.VALUE_SEPARATOR field" Url="html/f07ecea9-9dfa-f4b3-fdc6-5c8d6d0a2726.htm" />
+  <HelpKINode Title="GearsControlExtension class">
+    <HelpKINode Title="GearsControlExtension Class" Url="html/a64e1ede-877d-3582-a1a7-ab8343dfdf62.htm" />
+    <HelpKINode Title="GearsControlExtension Members" Url="html/e89a50e4-1b1a-cce1-27ae-b8993c768f87.htm" />
+    <HelpKINode Title="about GearsControlExtension class" Url="html/a64e1ede-877d-3582-a1a7-ab8343dfdf62.htm" />
+    <HelpKINode Title="all members" Url="html/e89a50e4-1b1a-cce1-27ae-b8993c768f87.htm" />
+    <HelpKINode Title="methods" Url="html/6f7bcc86-5276-390b-e40a-21b922afda76.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GearsControlExtension.toGControl method" Url="html/5e73986c-3685-f2b8-3558-ddd3a2cb6d40.htm" />
   <HelpKINode Title="GearsControlInfo class">
     <HelpKINode Title="GearsControlInfo Class" Url="html/9b815f42-f1da-f523-eb56-60861ad0bd20.htm" />
     <HelpKINode Title="GearsControlInfo Members" Url="html/3a4dbb8f-9e4c-49d4-fbb4-cb5ae711f1af.htm" />
@@ -696,6 +705,8 @@
   <HelpKINode Title="GearsControlInfo.IsKey property" Url="html/34575687-6925-c1dd-44ee-8ab4996e33a4.htm" />
   <HelpKINode Title="GearsControlInfo.LoadedValue property" Url="html/126e7326-33c3-bcd6-c37b-e4dcc1c6d48c.htm" />
   <HelpKINode Title="GearsControlInfo.OperatorAttribute property" Url="html/cbf0625a-7306-b576-3912-bdd4530abcee.htm" />
+  <HelpKINode Title="GearsControlInfo.toFilter method" Url="html/e1d8faf2-02eb-08b8-65ed-17e6a00ae31f.htm" />
+  <HelpKINode Title="GearsControlInfo.toSelection method" Url="html/d2dd8590-8603-cd1f-b36a-f638c8222415.htm" />
   <HelpKINode Title="GearsControlInfo.ToString method" Url="html/026c3c15-24b9-ecfd-35eb-b9c2f708add6.htm" />
   <HelpKINode Title="GearsControlInfo.Value property" Url="html/fb019db4-955e-a3b9-b3b0-b3740fb34072.htm" />
   <HelpKINode Title="GearsDataAttachException class">
@@ -844,6 +855,7 @@
   <HelpKINode Title="GearsMediator.addExcept method" Url="html/a1a0ac8d-cefc-20a7-8ef5-a20beaf58f23.htm" />
   <HelpKINode Title="GearsMediator.addRelation method" Url="html/05e93b9b-e161-c0fe-d58c-5c43e710150b.htm" />
   <HelpKINode Title="GearsMediator.clearExcept method" Url="html/7449200b-6e6e-1d8e-331f-10c1f99facac.htm" />
+  <HelpKINode Title="GearsMediator.clearRelation method" Url="html/061f5972-7af1-8af3-be93-8a8973e4f69f.htm" />
   <HelpKINode Title="GearsMediator.ConnectionName property" Url="html/ed215f36-663f-4b2c-da99-0dacdbe8e180.htm" />
   <HelpKINode Title="GearsMediator.DsNameSpace property" Url="html/d091d3fd-641a-0b17-5734-7a80ff847899.htm" />
   <HelpKINode Title="GearsMediator.execute method" Url="html/c2cbddef-6c30-6077-52ec-a3ac75126511.htm" />
@@ -914,7 +926,7 @@
   <HelpKINode Title="GearsPage.GPack method" Url="html/e024da12-b5a3-dd0e-6d85-b0f1de30ad0a.htm" />
   <HelpKINode Title="GearsPage.GRule method" Url="html/b706c8e8-2649-aea3-224d-538ed5c57c1d.htm" />
   <HelpKINode Title="GearsPage.GSave method" Url="html/c32ac9ca-a9cb-1b03-9c65-55aac1e5cc02.htm" />
-  <HelpKINode Title="GearsPage.GSelect method" Url="html/fcb80cd9-91cc-ddca-f522-98353e717a19.htm" />
+  <HelpKINode Title="GearsPage.GSource method" Url="html/a2e34b86-3dce-e447-e002-c646d17576cf.htm" />
   <HelpKINode Title="GearsPage.GUpdate method" Url="html/e019230a-6601-938d-9ae2-c35a60a6102e.htm" />
   <HelpKINode Title="GearsPage.IsLoggingMode method" Url="html/40f3ca33-8d2b-8319-5309-ccd54011c25e.htm" />
   <HelpKINode Title="GearsPage.IsNeedJudgeReload property" Url="html/e2eea231-ae79-6c9a-70bb-540197d6b338.htm" />
@@ -935,14 +947,14 @@
   <HelpKINode Title="GearsPage.V_LOCKCOL field" Url="html/8e85b0d1-b0b1-25d4-72ea-9e2e4648fe18.htm" />
   <HelpKINode Title="GearsPage.V_S_TIME_STAMP field" Url="html/4b0b3b3e-2c92-a3d9-177c-f5d6ef35b33a.htm" />
   <HelpKINode Title="GearsPage.V_VALIDATORS field" Url="html/114d2376-f941-d983-559d-80b5d95f72d3.htm" />
-  <HelpKINode Title="GearsPageExtendModule class">
-    <HelpKINode Title="GearsPageExtendModule Class" Url="html/31468264-d8db-703e-8b3f-6a4758f0a225.htm" />
-    <HelpKINode Title="GearsPageExtendModule Members" Url="html/8a7d408c-8d00-29fd-07d6-05d0d80b30d0.htm" />
-    <HelpKINode Title="about GearsPageExtendModule class" Url="html/31468264-d8db-703e-8b3f-6a4758f0a225.htm" />
-    <HelpKINode Title="all members" Url="html/8a7d408c-8d00-29fd-07d6-05d0d80b30d0.htm" />
-    <HelpKINode Title="methods" Url="html/8407f74b-4507-2618-5cf5-58194235f458.htm" />
+  <HelpKINode Title="GearsPageExtension class">
+    <HelpKINode Title="GearsPageExtension Class" Url="html/9e245274-fe3b-d63a-19a0-792bf7469d64.htm" />
+    <HelpKINode Title="GearsPageExtension Members" Url="html/5df4f84b-1244-4167-0fd4-f009e98418c6.htm" />
+    <HelpKINode Title="about GearsPageExtension class" Url="html/9e245274-fe3b-d63a-19a0-792bf7469d64.htm" />
+    <HelpKINode Title="all members" Url="html/5df4f84b-1244-4167-0fd4-f009e98418c6.htm" />
+    <HelpKINode Title="methods" Url="html/af9b351b-5950-8b40-d393-d6fb9d6f432f.htm" />
   </HelpKINode>
-  <HelpKINode Title="GearsPageExtendModule.FirstLog method" Url="html/b753bb2d-18f9-a05c-bd4d-bdcfc0e9e9cc.htm" />
+  <HelpKINode Title="GearsPageExtension.FirstLog method" Url="html/aa1183e1-6827-df9e-d6b7-15294baaf09b.htm" />
   <HelpKINode Title="GearsSqlException class">
     <HelpKINode Title="GearsSqlException Class" Url="html/eaed038f-d88c-be96-8242-f11fdaaff199.htm" />
     <HelpKINode Title="GearsSqlException Members" Url="html/efc44406-0776-fcc7-116c-f4bbeda5f38b.htm" />
@@ -1139,9 +1151,8 @@
   <HelpKINode Title="gRuleExpression.gRuleExpression constructor" Url="html/0c60216d-c240-f703-b081-aaf804d74795.htm" />
   <HelpKINode Title="gRuleExpression.Relate method" Url="html/a3f15c46-9e38-e8ff-f1e4-00b1d3f27948.htm" />
   <HelpKINode Title="gRuleExpression.When method" Url="html/b3e7646f-918b-86be-67a6-1319645c4d88.htm" />
-  <HelpKINode Title="gSave method" Url="html/6afd87ba-dae7-c469-1c0c-a929ead93359.htm" />
   <HelpKINode Title="GSave method" Url="html/c32ac9ca-a9cb-1b03-9c65-55aac1e5cc02.htm" />
-  <HelpKINode Title="GSelect method" Url="html/fcb80cd9-91cc-ddca-f522-98353e717a19.htm" />
+  <HelpKINode Title="gSave method" Url="html/6afd87ba-dae7-c469-1c0c-a929ead93359.htm" />
   <HelpKINode Title="gSelect method">
     <HelpKINode Title="GearsDataSource.gSelect Method " Url="html/90513a49-047c-d5c8-1d15-0102b7f44776.htm" />
     <HelpKINode Title="IDataSource.gSelect Method " Url="html/1c6135f9-11a3-3943-3a27-f38551a0f83d.htm" />
@@ -1150,16 +1161,6 @@
     <HelpKINode Title="GearsDataSource.gSelectCount Method " Url="html/c9923e2e-98ed-c7a5-0833-f53c3dc48bdc.htm" />
     <HelpKINode Title="IDataSource.gSelectCount Method " Url="html/be402c55-c89d-c343-0af4-5497687de0c8.htm" />
   </HelpKINode>
-  <HelpKINode Title="gSelectExpression class">
-    <HelpKINode Title="gSelectExpression Class" Url="html/9f72b471-9425-6fd4-19d1-815b362ca167.htm" />
-    <HelpKINode Title="gSelectExpression Members" Url="html/e4fc2bf4-4cc5-253d-e3a3-3dbc6ef1bcab.htm" />
-    <HelpKINode Title="about gSelectExpression class" Url="html/9f72b471-9425-6fd4-19d1-815b362ca167.htm" />
-    <HelpKINode Title="all members" Url="html/e4fc2bf4-4cc5-253d-e3a3-3dbc6ef1bcab.htm" />
-    <HelpKINode Title="constructor" Url="html/89854c22-2b4d-2e49-0d6b-244f95e5f288.htm" />
-    <HelpKINode Title="methods" Url="html/0510bc1f-f2e6-7305-73c8-2be6ab6d2f3a.htm" />
-  </HelpKINode>
-  <HelpKINode Title="gSelectExpression.From method" Url="html/0f125551-6ef3-e9d4-fad6-20a870c7dc07.htm" />
-  <HelpKINode Title="gSelectExpression.gSelectExpression constructor" Url="html/89854c22-2b4d-2e49-0d6b-244f95e5f288.htm" />
   <HelpKINode Title="gSelectPageBy method">
     <HelpKINode Title="GearsDataSource.gSelectPageBy Method " Url="html/ed1eff21-1965-14b7-053b-73f2247dbccc.htm" />
     <HelpKINode Title="IDataSource.gSelectPageBy Method " Url="html/aa2ad8f9-366e-5ff5-1389-80751891771b.htm" />
@@ -1177,15 +1178,16 @@
   <HelpKINode Title="gSendExpression.ToAll method" Url="html/1ccfecd4-5319-639d-2e4a-db9f95a3496d.htm" />
   <HelpKINode Title="gSendExpression.ToMyself method" Url="html/be5219aa-3f0c-91d2-6737-8cced532c207.htm" />
   <HelpKINode Title="gSendExpression.ToThe method" Url="html/1fce94b2-a3b3-f365-6375-bf97103f2983.htm" />
+  <HelpKINode Title="GSource method" Url="html/a2e34b86-3dce-e447-e002-c646d17576cf.htm" />
   <HelpKINode Title="gSourceExpression class">
     <HelpKINode Title="gSourceExpression Class" Url="html/e7ea4292-6c34-b673-593e-fb2816d043f9.htm" />
     <HelpKINode Title="gSourceExpression Members" Url="html/77c359e7-a3d8-81cd-0543-8eb6f85667eb.htm" />
     <HelpKINode Title="about gSourceExpression class" Url="html/e7ea4292-6c34-b673-593e-fb2816d043f9.htm" />
     <HelpKINode Title="all members" Url="html/77c359e7-a3d8-81cd-0543-8eb6f85667eb.htm" />
-    <HelpKINode Title="constructor" Url="html/44461ffe-faae-5dc9-9024-52334a63af8a.htm" />
+    <HelpKINode Title="constructor" Url="html/c7bc66b9-e9ab-1e9c-10cc-03a41431d5a8.htm" />
     <HelpKINode Title="methods" Url="html/565c42e3-41cd-d80c-9da7-f22394baba9b.htm" />
   </HelpKINode>
-  <HelpKINode Title="gSourceExpression.gSourceExpression constructor" Url="html/44461ffe-faae-5dc9-9024-52334a63af8a.htm" />
+  <HelpKINode Title="gSourceExpression.gSourceExpression constructor" Url="html/c7bc66b9-e9ab-1e9c-10cc-03a41431d5a8.htm" />
   <HelpKINode Title="gSourceExpression.Where method" Url="html/bf4ee691-c324-4aa6-0ad7-65db7469cdf3.htm" />
   <HelpKINode Title="GStartWith class">
     <HelpKINode Title="GStartWith Class" Url="html/5651d29a-b151-7c9c-36ef-61457f8b0912.htm" />
@@ -1201,11 +1203,11 @@
   <HelpKINode Title="GStartWith.Validate method" Url="html/61b808fd-9d50-d6d5-97ee-f7a7f2e8b31b.htm" />
   <HelpKINode Title="gt method" Url="html/27f911bf-ea23-db1e-f851-dae70abff210.htm" />
   <HelpKINode Title="gteq method" Url="html/b0acc5d5-4d06-c118-77de-67a518df02e8.htm" />
+  <HelpKINode Title="GUpdate method" Url="html/e019230a-6601-938d-9ae2-c35a60a6102e.htm" />
   <HelpKINode Title="gUpdate method">
     <HelpKINode Title="GearsDataSource.gUpdate Method " Url="html/f1d4adf3-8ee9-d2cb-ea18-c5548d2b0c9e.htm" />
     <HelpKINode Title="IDataSource.gUpdate Method " Url="html/85a6665a-a271-ddff-6c7d-82bc4427ade5.htm" />
   </HelpKINode>
-  <HelpKINode Title="GUpdate method" Url="html/e019230a-6601-938d-9ae2-c35a60a6102e.htm" />
   <HelpKINode Title="hasMarker method">
     <HelpKINode Title="GearsAttribute.hasMarker Method " Url="html/78b1b1ca-ccfb-92ba-509e-20843f2fee33.htm" />
     <HelpKINode Title="GearsAttributeContainer.hasMarker Method " Url="html/f6b9054c-3110-7a9f-fe48-380fd10b8940.htm" />
@@ -1273,9 +1275,11 @@
     <HelpKINode Title="methods" Url="html/79288ebe-6e8c-b5ba-b429-e7b7215cd093.htm" />
     <HelpKINode Title="properties" Url="html/dcad21aa-b8e1-5426-a52f-2bf5cebd9b4b.htm" />
   </HelpKINode>
+  <HelpKINode Title="IFormItem.ConnectionName property" Url="html/aed498c8-0ae5-5f14-7352-abe5289becac.htm" />
   <HelpKINode Title="IFormItem.ControlId property" Url="html/d8dc256b-67d5-0f68-ddaf-3a69dde31c1d.htm" />
   <HelpKINode Title="IFormItem.ControlKind property" Url="html/ebe27345-a003-1aac-4ea7-67988bfd754b.htm" />
   <HelpKINode Title="IFormItem.CssClass property" Url="html/0e045921-96b0-bab7-e117-23e72328c207.htm" />
+  <HelpKINode Title="IFormItem.DsNamespace property" Url="html/ac2e7071-ac59-8172-a299-8c338ea4ec19.htm" />
   <HelpKINode Title="IFormItem.getControl method" Url="html/efcaf017-858a-c64e-390d-e3fef90211b2.htm" />
   <HelpKINode Title="IFormItem.getValue method" Url="html/accc2437-c54b-843b-89d3-a9f40bae97ea.htm" />
   <HelpKINode Title="IFormItem.Height property" Url="html/bc660fe8-3c41-31ce-2f05-963daace260f.htm" />
@@ -1708,8 +1712,8 @@
   <HelpKINode Title="SqlItemContainer.ActionToString method" Url="html/1e5db0ff-b4c4-6d9b-0e7e-ff8473e78f13.htm" />
   <HelpKINode Title="SqlItemContainer.Add method" Url="html/8409c5d6-9a4e-5a66-4a9c-2dbdd8256e94.htm" />
   <HelpKINode Title="SqlItemContainer.addAttrInfo method" Url="html/2dc1bb5c-294d-298a-5a13-b0dae6348fa4.htm" />
-  <HelpKINode Title="SqlItemContainer.addFilter method" Url="html/e3dfb02d-163f-396f-dbeb-e3ac84136784.htm" />
-  <HelpKINode Title="SqlItemContainer.addSelection method" Url="html/2ee5f441-f2cd-0959-0523-60a60ce68f1d.htm" />
+  <HelpKINode Title="SqlItemContainer.addFilter method" Url="html/cfdda122-0ea9-117d-69cb-f012d8f32e13.htm" />
+  <HelpKINode Title="SqlItemContainer.addSelection method" Url="html/cc17f6ca-a476-c384-b4ac-e069c6e20ccf.htm" />
   <HelpKINode Title="SqlItemContainer.AttrInfo method" Url="html/73c12934-82b6-7863-eba3-dbbe4b20576e.htm" />
   <HelpKINode Title="SqlItemContainer.CommandTimeout property" Url="html/3957ea2d-2a43-8347-98a2-bf0eb7bfa163.htm" />
   <HelpKINode Title="SqlItemContainer.Filter method" Url="html/e965a59b-7648-2be8-6b73-fe12ac68b057.htm" />
@@ -1759,8 +1763,14 @@
   <HelpKINode Title="tearDownValidation method" Url="html/e37c507a-bae2-346e-4bfe-aac5ab8febd5.htm" />
   <HelpKINode Title="throwException method" Url="html/07a4bccf-ed3b-0cf7-6c64-9fef6fdcef33.htm" />
   <HelpKINode Title="ToAll method" Url="html/1ccfecd4-5319-639d-2e4a-db9f95a3496d.htm" />
-  <HelpKINode Title="toFilter method" Url="html/27ddb7de-1e07-4265-10c3-e81f67da70e5.htm" />
+  <HelpKINode Title="toControlInfo method" Url="html/74270f06-763b-7250-c223-4f62184c1e57.htm" />
+  <HelpKINode Title="toFilter method">
+    <HelpKINode Title="GearsControlInfo.toFilter Method " Url="html/e1d8faf2-02eb-08b8-65ed-17e6a00ae31f.htm" />
+    <HelpKINode Title="SqlSelectItem.toFilter Method " Url="html/27ddb7de-1e07-4265-10c3-e81f67da70e5.htm" />
+  </HelpKINode>
+  <HelpKINode Title="toGControl method" Url="html/5e73986c-3685-f2b8-3558-ddd3a2cb6d40.htm" />
   <HelpKINode Title="ToMyself method" Url="html/be5219aa-3f0c-91d2-6737-8cced532c207.htm" />
+  <HelpKINode Title="toSelection method" Url="html/d2dd8590-8603-cd1f-b36a-f638c8222415.htm" />
   <HelpKINode Title="toSqlBuilder method" Url="html/d7bd1dde-993f-2a04-a74d-29cc382fd5c2.htm" />
   <HelpKINode Title="ToString method">
     <HelpKINode Title="GearsControlInfo.ToString Method " Url="html/026c3c15-24b9-ecfd-35eb-b9c2f708add6.htm" />

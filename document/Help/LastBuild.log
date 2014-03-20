@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shfbBuild product="Sandcastle Help File Builder" version="1.9.7.0" projectFile="D:\project\GearsSite\document\GearsAPI.shfbproj" started="2014/03/18 11:53:22">
+<shfbBuild product="Sandcastle Help File Builder" version="1.9.7.0" projectFile="D:\project\GearsSite\document\GearsAPI.shfbproj" started="2014/03/20 21:07:04">
 <buildStep step="Initializing">
 Finding tools...
 Found Sandcastle tools in &#39;D:\Applications\Sandcastle\&#39;
@@ -17,11 +17,11 @@ Copying XML comments files
 </buildStep>
 <buildStep step="GenerateSharedContent">
 Generating shared content files (en-US, 英語 (米国))...
-    Last step completed in 00:00:00.0110
+    Last step completed in 00:00:00.0440
 </buildStep>
 <buildStep step="GenerateApiFilter">
 Generating API filter for MRefBuilder...
-    Last step completed in 00:00:00.0030
+    Last step completed in 00:00:00.0060
 </buildStep>
 <buildStep step="GenerateReflectionInfo">
 Generating reflection information...
@@ -30,23 +30,23 @@ Generating reflection information...
   Copyright c 2006-2013, Microsoft Corporation, All Rights Reserved.
   Portions Copyright c 2006-2013, Eric Woodruff, All Rights Reserved.
   Info: Loaded 1 assemblies for reflection and 1 dependency assemblies.
-  Info: Wrote information on 7 namespaces, 70 types, and 634 members
+  Info: Wrote information on 7 namespaces, 70 types, and 649 members
   XslTransform (v2.7.3.0)
   Copyright c 2006-2013, Microsoft Corporation, All Rights Reserved.
   Portions Copyright c 2006-2013, Eric Woodruff, All Rights Reserved.
   Info: Applying XSL transformation &#39;D:\Applications\Sandcastle\ProductionTransforms\MergeDuplicates.xsl&#39;.
-    Last step completed in 00:00:01.0291
+    Last step completed in 00:00:01.8946
 </buildStep>
 <buildStep step="GenerateNamespaceSummaries">
 Generating namespace summary information...
-    Last step completed in 00:00:00.0040
+    Last step completed in 00:00:00.0070
 </buildStep>
 <buildStep step="ApplyVisibilityProperties">
 Applying visibility properties to reflection information file
-    2 attribute nodes removed
+    3 attribute nodes removed
     0 explicit interface implementations removed
     16 local and base class EII elements removed
-    Last step completed in 00:00:00.0430
+    Last step completed in 00:00:00.0440
 </buildStep>
 <buildStep step="TransformReflectionInfo">
 Transforming reflection output...
@@ -60,12 +60,12 @@ Transforming reflection output...
   Copyright c 2006-2013, Microsoft Corporation, All Rights Reserved.
   Portions Copyright c 2006-2013, Eric Woodruff, All Rights Reserved.
   Info: Applying XSL transformation &#39;D:\Applications\Sandcastle\ProductionTransforms\ReflectionToManifest.xsl&#39;.
-    Last step completed in 00:00:01.0911
+    Last step completed in 00:00:01.4604
 </buildStep>
 <buildStep step="ModifyHelpTopicFilenames">
 Modifying help topic filenames in reflection information file
     No changes required
-    Last step completed in 00:00:00.0520
+    Last step completed in 00:00:00.0440
 </buildStep>
 <buildStep step="CopyStandardContent">
 Copying standard help content...
@@ -457,12 +457,12 @@ D:\Applications\Sandcastle\\Presentation\VS2010\branding -&gt; D:\project\GearsS
     D:\Applications\Sandcastle\Presentation\VS2010\branding\ps-instrumentedLink.xslt -> D:\project\GearsSite\document\Help\Working\branding\ps-instrumentedLink.xslt
     D:\Applications\Sandcastle\Presentation\VS2010\branding\ps-languageSpecificText.xslt -> D:\project\GearsSite\document\Help\Working\branding\ps-languageSpecificText.xslt
     D:\Applications\Sandcastle\Presentation\VS2010\branding\ps-codesnippet.xslt -> D:\project\GearsSite\document\Help\Working\branding\ps-codesnippet.xslt
-    Last step completed in 00:00:01.2581
+    Last step completed in 00:00:01.3724
 </buildStep>
 <buildStep step="CopyAdditionalContent">
 Copying additional content files...
 No additional content to copy
-    Last step completed in 00:00:00.0030
+    Last step completed in 00:00:00.0060
 </buildStep>
 <buildStep step="MergeTablesOfContents">
 Merging conceptual and additional tables of contents...
@@ -476,17 +476,17 @@ Generating intermediate table of contents file...
   Portions Copyright c 2006-2013, Eric Woodruff, All Rights Reserved.
   Info: Applying XSL transformation &#39;D:\Applications\Sandcastle\\ProductionTransforms\CreateVSToc.xsl&#39;.
 Generating conceptual content intermediate TOC file...
-    Last step completed in 00:00:00.3330
+    Last step completed in 00:00:00.3331
 </buildStep>
 <buildStep step="CreateBuildAssemblerConfigs">
 Creating Sandcastle configuration files...
     sandcastle.config
-    Last step completed in 00:00:00.0900
+    Last step completed in 00:00:00.2951
 </buildStep>
 <buildStep step="MergeCustomConfigs">
 Merging custom build component configurations
 D:\project\GearsSite\document\Help\Working\sandcastle.config
-    Last step completed in 00:00:00.0260
+    Last step completed in 00:00:00.1050
 </buildStep>
 <buildStep step="BuildReferenceTopics">
 Building reference help topics...
@@ -569,15 +569,12 @@ Building reference help topics...
   Warn: ResolveReferenceLinksComponent2: [F:Gears.GearsControl.ATTR_OPERATOR] MSDN URL not found for target &#39;T:System.String&#39;.
   Warn: ResolveReferenceLinksComponent2: [P:Gears.GearsControl.ConnectionName] MSDN URL not found for target &#39;T:System.String&#39;.
   Warn: ResolveReferenceLinksComponent2: [P:Gears.GearsControl.ConnectionName] MSDN URL not found for target &#39;T:System.String&#39;.
-  Warn: ShowMissingComponent: [M:Gears.GearsControl.Control``1] Missing &lt;returns&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsControl.Control] Missing &lt;returns&gt; documentation
   Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsControl.Control] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
   Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsControl.Control] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ShowMissingComponent: [M:Gears.GearsControl.Control``1] Missing &lt;returns&gt; documentation
   Warn: ResolveReferenceLinksComponent2: [P:Gears.GearsControl.ControlID] MSDN URL not found for target &#39;T:System.String&#39;.
   Warn: ResolveReferenceLinksComponent2: [P:Gears.GearsControl.ControlID] MSDN URL not found for target &#39;T:System.String&#39;.
-  Warn: ShowMissingComponent: [M:Gears.GearsControl.createControlInfo] Missing &lt;returns&gt; documentation
-  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsControl.createControlInfo] MSDN URL not found for target &#39;T:System.Collections.Generic.List`1&#39;.
-  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsControl.createControlInfo] MSDN URL not found for target &#39;T:System.Collections.Generic.List`1&#39;.
   Warn: ShowMissingComponent: [M:Gears.GearsControl.dataAttach(Gears.DataSource.GearsDataSource@)] Missing &lt;returns&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsControl.dataAttach(Gears.DataSource.GearsDataSource@)] Missing &lt;param name=&quot;gds&quot;/&gt; documentation
   Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsControl.dataAttach(Gears.DataSource.GearsDataSource@)] MSDN URL not found for target &#39;T:System.Boolean&#39;.
@@ -724,10 +721,81 @@ Building reference help topics...
   Warn: ShowMissingComponent: [M:Gears.GearsControl.setValue(System.Object)] Missing &lt;param name=&quot;value&quot;/&gt; documentation
   Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsControl.setValue(System.Object)] MSDN URL not found for target &#39;T:System.Object&#39;.
   Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsControl.setValue(System.Object)] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ShowMissingComponent: [M:Gears.GearsControl.toControlInfo] Missing &lt;returns&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsControl.toControlInfo] MSDN URL not found for target &#39;T:System.Collections.Generic.List`1&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsControl.toControlInfo] MSDN URL not found for target &#39;T:System.Collections.Generic.List`1&#39;.
   Warn: ResolveReferenceLinksComponent2: [P:Gears.GearsControl.validateeValue] MSDN URL not found for target &#39;T:System.String&#39;.
   Warn: ResolveReferenceLinksComponent2: [P:Gears.GearsControl.validateeValue] MSDN URL not found for target &#39;T:System.String&#39;.
   Warn: ResolveReferenceLinksComponent2: [F:Gears.GearsControl.VALUE_SEPARATOR] MSDN URL not found for target &#39;T:System.String&#39;.
   Warn: ResolveReferenceLinksComponent2: [F:Gears.GearsControl.VALUE_SEPARATOR] MSDN URL not found for target &#39;T:System.String&#39;.
+  Warn: ResolveReferenceLinksComponent2: [T:Gears.GearsControlExtension] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [T:Gears.GearsControlExtension] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsControlExtension] MSDN URL not found for target &#39;M:System.Object.Equals(System.Object)&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsControlExtension] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsControlExtension] MSDN URL not found for target &#39;M:System.Object.Finalize&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsControlExtension] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsControlExtension] MSDN URL not found for target &#39;M:System.Object.GetHashCode&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsControlExtension] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsControlExtension] MSDN URL not found for target &#39;M:System.Object.GetType&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsControlExtension] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsControlExtension] MSDN URL not found for target &#39;M:System.Object.MemberwiseClone&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsControlExtension] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsControlExtension] MSDN URL not found for target &#39;M:System.Object.ToString&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsControlExtension] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsControlExtension] MSDN URL not found for target &#39;M:System.Object.Equals(System.Object)&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsControlExtension] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsControlExtension] MSDN URL not found for target &#39;M:System.Object.Finalize&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsControlExtension] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsControlExtension] MSDN URL not found for target &#39;M:System.Object.GetHashCode&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsControlExtension] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsControlExtension] MSDN URL not found for target &#39;M:System.Object.GetType&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsControlExtension] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsControlExtension] MSDN URL not found for target &#39;M:System.Object.MemberwiseClone&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsControlExtension] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsControlExtension] MSDN URL not found for target &#39;M:System.Object.ToString&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsControlExtension] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsControlExtension] MSDN URL not found for target &#39;M:System.Object.Equals(System.Object)&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsControlExtension] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsControlExtension] MSDN URL not found for target &#39;M:System.Object.Finalize&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsControlExtension] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsControlExtension] MSDN URL not found for target &#39;M:System.Object.GetHashCode&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsControlExtension] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsControlExtension] MSDN URL not found for target &#39;M:System.Object.GetType&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsControlExtension] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsControlExtension] MSDN URL not found for target &#39;M:System.Object.MemberwiseClone&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsControlExtension] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsControlExtension] MSDN URL not found for target &#39;M:System.Object.ToString&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsControlExtension] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsControlExtension] MSDN URL not found for target &#39;M:System.Object.Equals(System.Object)&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsControlExtension] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsControlExtension] MSDN URL not found for target &#39;M:System.Object.Finalize&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsControlExtension] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsControlExtension] MSDN URL not found for target &#39;M:System.Object.GetHashCode&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsControlExtension] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsControlExtension] MSDN URL not found for target &#39;M:System.Object.GetType&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsControlExtension] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsControlExtension] MSDN URL not found for target &#39;M:System.Object.MemberwiseClone&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsControlExtension] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsControlExtension] MSDN URL not found for target &#39;M:System.Object.ToString&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsControlExtension] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ShowMissingComponent: [M:Gears.GearsControlExtension.toGControl(System.Web.UI.Control)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.GearsControlExtension.toGControl(System.Web.UI.Control)] Missing &lt;param name=&quot;con&quot;/&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsControlExtension.toGControl(System.Web.UI.Control)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsControlExtension.toGControl(System.Web.UI.Control)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsControlExtension.toGControl(System.Web.UI.Control)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsControlExtension.toGControl(System.Web.UI.Control)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ShowMissingComponent: [M:Gears.GearsControlExtension.toGControl(System.Web.UI.Control,System.String,System.String)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.GearsControlExtension.toGControl(System.Web.UI.Control,System.String,System.String)] Missing &lt;param name=&quot;con&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.GearsControlExtension.toGControl(System.Web.UI.Control,System.String,System.String)] Missing &lt;param name=&quot;conName&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.GearsControlExtension.toGControl(System.Web.UI.Control,System.String,System.String)] Missing &lt;param name=&quot;dns&quot;/&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsControlExtension.toGControl(System.Web.UI.Control,System.String,System.String)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsControlExtension.toGControl(System.Web.UI.Control,System.String,System.String)] MSDN URL not found for target &#39;T:System.String&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsControlExtension.toGControl(System.Web.UI.Control,System.String,System.String)] MSDN URL not found for target &#39;T:System.String&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsControlExtension.toGControl(System.Web.UI.Control,System.String,System.String)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsControlExtension.toGControl(System.Web.UI.Control,System.String,System.String)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsControlExtension.toGControl(System.Web.UI.Control,System.String,System.String)] MSDN URL not found for target &#39;T:System.String&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsControlExtension.toGControl(System.Web.UI.Control,System.String,System.String)] MSDN URL not found for target &#39;T:System.String&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsControlExtension.toGControl(System.Web.UI.Control,System.String,System.String)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
   Warn: ResolveReferenceLinksComponent2: [T:Gears.GearsControlInfo] MSDN URL not found for target &#39;T:System.Object&#39;.
   Warn: ResolveReferenceLinksComponent2: [T:Gears.GearsControlInfo] MSDN URL not found for target &#39;T:System.Object&#39;.
   Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsControlInfo] MSDN URL not found for target &#39;M:System.Object.Equals(System.Object)&#39;.
@@ -799,6 +867,8 @@ Building reference help topics...
   Warn: ResolveReferenceLinksComponent2: [P:Gears.GearsControlInfo.LoadedValue] MSDN URL not found for target &#39;T:System.String&#39;.
   Warn: ResolveReferenceLinksComponent2: [P:Gears.GearsControlInfo.OperatorAttribute] MSDN URL not found for target &#39;T:System.String&#39;.
   Warn: ResolveReferenceLinksComponent2: [P:Gears.GearsControlInfo.OperatorAttribute] MSDN URL not found for target &#39;T:System.String&#39;.
+  Warn: ShowMissingComponent: [M:Gears.GearsControlInfo.toFilter] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.GearsControlInfo.toSelection] Missing &lt;returns&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsControlInfo.ToString] Missing &lt;summary&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsControlInfo.ToString] Missing &lt;returns&gt; documentation
   Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsControlInfo.ToString] MSDN URL not found for target &#39;T:System.String&#39;.
@@ -916,8 +986,8 @@ Building reference help topics...
   Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsException] MSDN URL not found for target &#39;T:System.Exception&#39;.
   Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsException] MSDN URL not found for target &#39;P:System.Exception.TargetSite&#39;.
   Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsException] MSDN URL not found for target &#39;T:System.Exception&#39;.
-  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsException] MSDN web service failed.  No further look ups will be performed for this build.
-  Reason: HTTP ステータス 407: Proxy Authentication Required ( The ISA Server requires authorization to fulfill the request. Access to the Web Proxy filter is denied.  ) で要求が失敗しました。
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsException] MSDN URL not found for target &#39;E:System.Exception.SerializeObjectState&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsException] MSDN URL not found for target &#39;T:System.Exception&#39;.
   Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsException] MSDN URL not found for target &#39;M:System.Object.Equals(System.Object)&#39;.
   Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsException] MSDN URL not found for target &#39;T:System.Object&#39;.
   Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsException] MSDN URL not found for target &#39;M:System.Object.Finalize&#39;.
@@ -966,6 +1036,37 @@ Building reference help topics...
   Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsException] MSDN URL not found for target &#39;M:System.Object.MemberwiseClone&#39;.
   Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsException] MSDN URL not found for target &#39;T:System.Object&#39;.
   Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsException] MSDN URL not found for target &#39;M:System.Exception.ToString&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsException] MSDN URL not found for target &#39;M:System.Object.Equals(System.Object)&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsException] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsException] MSDN URL not found for target &#39;M:System.Object.Finalize&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsException] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsException] MSDN URL not found for target &#39;M:System.Exception.GetBaseException&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsException] MSDN URL not found for target &#39;T:System.Exception&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsException] MSDN URL not found for target &#39;M:System.Object.GetHashCode&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsException] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsException] MSDN URL not found for target &#39;M:System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsException] MSDN URL not found for target &#39;T:System.Exception&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsException] MSDN URL not found for target &#39;M:System.Exception.GetType&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsException] MSDN URL not found for target &#39;T:System.Exception&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsException] MSDN URL not found for target &#39;M:System.Object.MemberwiseClone&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsException] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsException] MSDN URL not found for target &#39;M:System.Exception.ToString&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Properties.T:Gears.GearsException] MSDN URL not found for target &#39;P:System.Exception.Data&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Properties.T:Gears.GearsException] MSDN URL not found for target &#39;T:System.Exception&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Properties.T:Gears.GearsException] MSDN URL not found for target &#39;P:System.Exception.HelpLink&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Properties.T:Gears.GearsException] MSDN URL not found for target &#39;T:System.Exception&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Properties.T:Gears.GearsException] MSDN URL not found for target &#39;P:System.Exception.HResult&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Properties.T:Gears.GearsException] MSDN URL not found for target &#39;T:System.Exception&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Properties.T:Gears.GearsException] MSDN URL not found for target &#39;P:System.Exception.InnerException&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Properties.T:Gears.GearsException] MSDN URL not found for target &#39;T:System.Exception&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Properties.T:Gears.GearsException] MSDN URL not found for target &#39;P:System.Exception.Message&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Properties.T:Gears.GearsException] MSDN URL not found for target &#39;T:System.Exception&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Properties.T:Gears.GearsException] MSDN URL not found for target &#39;P:System.Exception.Source&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Properties.T:Gears.GearsException] MSDN URL not found for target &#39;T:System.Exception&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Properties.T:Gears.GearsException] MSDN URL not found for target &#39;P:System.Exception.StackTrace&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Properties.T:Gears.GearsException] MSDN URL not found for target &#39;T:System.Exception&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Properties.T:Gears.GearsException] MSDN URL not found for target &#39;P:System.Exception.TargetSite&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Properties.T:Gears.GearsException] MSDN URL not found for target &#39;T:System.Exception&#39;.
   Warn: ResolveReferenceLinksComponent2: [Properties.T:Gears.GearsException] MSDN URL not found for target &#39;P:System.Exception.Data&#39;.
   Warn: ResolveReferenceLinksComponent2: [Properties.T:Gears.GearsException] MSDN URL not found for target &#39;T:System.Exception&#39;.
   Warn: ResolveReferenceLinksComponent2: [Properties.T:Gears.GearsException] MSDN URL not found for target &#39;P:System.Exception.HelpLink&#39;.
@@ -984,112 +1085,371 @@ Building reference help topics...
   Warn: ResolveReferenceLinksComponent2: [Properties.T:Gears.GearsException] MSDN URL not found for target &#39;T:System.Exception&#39;.
   Warn: ResolveReferenceLinksComponent2: [Events.T:Gears.GearsException] MSDN URL not found for target &#39;E:System.Exception.SerializeObjectState&#39;.
   Warn: ResolveReferenceLinksComponent2: [Events.T:Gears.GearsException] MSDN URL not found for target &#39;T:System.Exception&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Events.T:Gears.GearsException] MSDN URL not found for target &#39;E:System.Exception.SerializeObjectState&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Events.T:Gears.GearsException] MSDN URL not found for target &#39;T:System.Exception&#39;.
   Warn: ShowMissingComponent: [M:Gears.GearsException.#ctor(System.String,System.Exception)] Missing &lt;param name=&quot;message&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsException.#ctor(System.String,System.Exception)] Missing &lt;param name=&quot;innerException&quot;/&gt; documentation
   Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsException.#ctor(System.String,System.Exception)] MSDN URL not found for target &#39;T:System.String&#39;.
   Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsException.#ctor(System.String,System.Exception)] MSDN URL not found for target &#39;T:System.Exception&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsException.#ctor(System.String,System.Exception)] MSDN URL not found for target &#39;T:System.String&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsException.#ctor(System.String,System.Exception)] MSDN URL not found for target &#39;T:System.Exception&#39;.
   Warn: ShowMissingComponent: [M:Gears.GearsException.#ctor(System.String,System.String[])] Missing &lt;param name=&quot;message&quot;/&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsException.#ctor(System.String,System.String[])] MSDN URL not found for target &#39;T:System.String&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsException.#ctor(System.String,System.String[])] MSDN URL not found for target &#39;T:System.String&#39;.
   Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsException.#ctor(System.String,System.String[])] MSDN URL not found for target &#39;T:System.String&#39;.
   Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsException.#ctor(System.String,System.String[])] MSDN URL not found for target &#39;T:System.String&#39;.
   Warn: ShowMissingComponent: [M:Gears.GearsException.addDetail(System.String,System.String[])] Missing &lt;param name=&quot;detailKey&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsException.addDetail(System.String,System.String[])] Missing &lt;param name=&quot;msg&quot;/&gt; documentation
   Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsException.addDetail(System.String,System.String[])] MSDN URL not found for target &#39;T:System.String&#39;.
   Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsException.addDetail(System.String,System.String[])] MSDN URL not found for target &#39;T:System.String&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsException.addDetail(System.String,System.String[])] MSDN URL not found for target &#39;T:System.String&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsException.addDetail(System.String,System.String[])] MSDN URL not found for target &#39;T:System.String&#39;.
   Warn: ShowMissingComponent: [M:Gears.GearsException.addDetail(System.String[])] Missing &lt;param name=&quot;msg&quot;/&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsException.addDetail(System.String[])] MSDN URL not found for target &#39;T:System.String&#39;.
   Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsException.addDetail(System.String[])] MSDN URL not found for target &#39;T:System.String&#39;.
   Warn: ShowMissingComponent: [M:Gears.GearsException.clearDetail(System.String)] Missing &lt;param name=&quot;detailKey&quot;/&gt; documentation
   Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsException.clearDetail(System.String)] MSDN URL not found for target &#39;T:System.String&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsException.clearDetail(System.String)] MSDN URL not found for target &#39;T:System.String&#39;.
   Warn: ShowMissingComponent: [M:Gears.GearsException.getLocalSource] Missing &lt;returns&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsException.getLocalSource] MSDN URL not found for target &#39;T:System.String&#39;.
   Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsException.getLocalSource] MSDN URL not found for target &#39;T:System.String&#39;.
   Warn: ShowMissingComponent: [M:Gears.GearsException.MessageDetail] Missing &lt;returns&gt; documentation
   Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsException.MessageDetail] MSDN URL not found for target &#39;T:System.String&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsException.MessageDetail] MSDN URL not found for target &#39;T:System.String&#39;.
   Warn: ResolveReferenceLinksComponent2: [F:Gears.GearsException.MSG_DETAIL] MSDN URL not found for target &#39;T:System.String&#39;.
+  Warn: ResolveReferenceLinksComponent2: [F:Gears.GearsException.MSG_DETAIL] MSDN URL not found for target &#39;T:System.String&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsException.setLocalSource(System.Int32)] MSDN URL not found for target &#39;T:System.Int32&#39;.
   Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsException.setLocalSource(System.Int32)] MSDN URL not found for target &#39;T:System.Int32&#39;.
   Warn: ShowMissingComponent: [M:Gears.GearsException.ToString] Missing &lt;summary&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsException.ToString] Missing &lt;returns&gt; documentation
   Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsException.ToString] MSDN URL not found for target &#39;T:System.String&#39;.
-  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsException.ToString] MSDN web service failed.  No further look ups will be performed for this build.
-  Reason: HTTP ステータス 407: Proxy Authentication Required ( The ISA Server requires authorization to fulfill the request. Access to the Web Proxy filter is denied.  ) で要求が失敗しました。
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsException.ToString] MSDN URL not found for target &#39;M:System.Runtime.InteropServices._Exception.ToString&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsException.ToString] MSDN URL not found for target &#39;T:System.String&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsException.ToString] MSDN URL not found for target &#39;M:System.Runtime.InteropServices._Exception.ToString&#39;.
   Warn: ShowMissingComponent: [M:Gears.GearsException.toStringDetail(System.String)] Missing &lt;returns&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsException.toStringDetail(System.String)] Missing &lt;param name=&quot;detailKey&quot;/&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsException.toStringDetail(System.String)] MSDN URL not found for target &#39;T:System.String&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsException.toStringDetail(System.String)] MSDN URL not found for target &#39;T:System.String&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsException.toStringDetail(System.String)] MSDN URL not found for target &#39;T:System.String&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsException.toStringDetail(System.String)] MSDN URL not found for target &#39;T:System.String&#39;.
+  Warn: ResolveReferenceLinksComponent2: [T:Gears.GearsLogStack] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [T:Gears.GearsLogStack] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsLogStack] MSDN URL not found for target &#39;M:System.Object.Equals(System.Object)&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsLogStack] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsLogStack] MSDN URL not found for target &#39;M:System.Object.Finalize&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsLogStack] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsLogStack] MSDN URL not found for target &#39;M:System.Object.GetHashCode&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsLogStack] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsLogStack] MSDN URL not found for target &#39;M:System.Object.GetType&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsLogStack] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsLogStack] MSDN URL not found for target &#39;M:System.Object.MemberwiseClone&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsLogStack] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsLogStack] MSDN URL not found for target &#39;M:System.Object.ToString&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsLogStack] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsLogStack] MSDN URL not found for target &#39;M:System.Object.Equals(System.Object)&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsLogStack] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsLogStack] MSDN URL not found for target &#39;M:System.Object.Finalize&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsLogStack] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsLogStack] MSDN URL not found for target &#39;M:System.Object.GetHashCode&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsLogStack] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsLogStack] MSDN URL not found for target &#39;M:System.Object.GetType&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsLogStack] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsLogStack] MSDN URL not found for target &#39;M:System.Object.MemberwiseClone&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsLogStack] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsLogStack] MSDN URL not found for target &#39;M:System.Object.ToString&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsLogStack] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsLogStack] MSDN URL not found for target &#39;M:System.Object.Equals(System.Object)&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsLogStack] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsLogStack] MSDN URL not found for target &#39;M:System.Object.Finalize&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsLogStack] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsLogStack] MSDN URL not found for target &#39;M:System.Object.GetHashCode&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsLogStack] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsLogStack] MSDN URL not found for target &#39;M:System.Object.GetType&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsLogStack] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsLogStack] MSDN URL not found for target &#39;M:System.Object.MemberwiseClone&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsLogStack] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsLogStack] MSDN URL not found for target &#39;M:System.Object.ToString&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsLogStack] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsLogStack] MSDN URL not found for target &#39;M:System.Object.Equals(System.Object)&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsLogStack] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsLogStack] MSDN URL not found for target &#39;M:System.Object.Finalize&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsLogStack] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsLogStack] MSDN URL not found for target &#39;M:System.Object.GetHashCode&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsLogStack] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsLogStack] MSDN URL not found for target &#39;M:System.Object.GetType&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsLogStack] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsLogStack] MSDN URL not found for target &#39;M:System.Object.MemberwiseClone&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsLogStack] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsLogStack] MSDN URL not found for target &#39;M:System.Object.ToString&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsLogStack] MSDN URL not found for target &#39;T:System.Object&#39;.
   Warn: ShowMissingComponent: [M:Gears.GearsLogStack.getLogStack] Missing &lt;returns&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsLogStack.getLogStack] MSDN URL not found for target &#39;T:System.Collections.Generic.List`1&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsLogStack.getLogStack] MSDN URL not found for target &#39;T:System.Collections.Generic.List`1&#39;.
   Warn: ShowMissingComponent: [M:Gears.GearsLogStack.IsTraceOn] Missing &lt;returns&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsLogStack.IsTraceOn] MSDN URL not found for target &#39;T:System.Boolean&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsLogStack.IsTraceOn] MSDN URL not found for target &#39;T:System.Boolean&#39;.
   Warn: ShowMissingComponent: [M:Gears.GearsLogStack.makeDisplayString] Missing &lt;returns&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsLogStack.makeDisplayString] MSDN URL not found for target &#39;T:System.String&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsLogStack.makeDisplayString] MSDN URL not found for target &#39;T:System.String&#39;.
   Warn: ShowMissingComponent: [M:Gears.GearsLogStack.setLog(Gears.GearsException@)] Missing &lt;param name=&quot;msg&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsLogStack.setLog(System.String,System.String[])] Missing &lt;param name=&quot;msg&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsLogStack.setLog(System.String,System.String[])] Missing &lt;param name=&quot;msgDetail&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.GearsMediator.#ctor(System.String,System.String)] Missing &lt;param name=&quot;con&quot;/&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsLogStack.setLog(System.String,System.String[])] MSDN URL not found for target &#39;T:System.String&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsLogStack.setLog(System.String,System.String[])] MSDN URL not found for target &#39;T:System.String&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsLogStack.setLog(System.String,System.String[])] MSDN URL not found for target &#39;T:System.String&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsLogStack.setLog(System.String,System.String[])] MSDN URL not found for target &#39;T:System.String&#39;.
+  Warn: ResolveReferenceLinksComponent2: [T:Gears.GearsMediator] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [T:Gears.GearsMediator] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsMediator] MSDN URL not found for target &#39;M:System.Object.Equals(System.Object)&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsMediator] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsMediator] MSDN URL not found for target &#39;M:System.Object.Finalize&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsMediator] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsMediator] MSDN URL not found for target &#39;M:System.Object.GetHashCode&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsMediator] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsMediator] MSDN URL not found for target &#39;M:System.Object.GetType&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsMediator] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsMediator] MSDN URL not found for target &#39;M:System.Object.MemberwiseClone&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsMediator] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsMediator] MSDN URL not found for target &#39;M:System.Object.ToString&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsMediator] MSDN URL not found for target &#39;M:System.Object.Equals(System.Object)&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsMediator] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsMediator] MSDN URL not found for target &#39;M:System.Object.Finalize&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsMediator] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsMediator] MSDN URL not found for target &#39;M:System.Object.GetHashCode&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsMediator] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsMediator] MSDN URL not found for target &#39;M:System.Object.GetType&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsMediator] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsMediator] MSDN URL not found for target &#39;M:System.Object.MemberwiseClone&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsMediator] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsMediator] MSDN URL not found for target &#39;M:System.Object.ToString&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsMediator] MSDN URL not found for target &#39;M:System.Object.Equals(System.Object)&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsMediator] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsMediator] MSDN URL not found for target &#39;M:System.Object.Finalize&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsMediator] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsMediator] MSDN URL not found for target &#39;M:System.Object.GetHashCode&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsMediator] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsMediator] MSDN URL not found for target &#39;M:System.Object.GetType&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsMediator] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsMediator] MSDN URL not found for target &#39;M:System.Object.MemberwiseClone&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsMediator] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsMediator] MSDN URL not found for target &#39;M:System.Object.ToString&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsMediator] MSDN URL not found for target &#39;M:System.Object.Equals(System.Object)&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsMediator] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsMediator] MSDN URL not found for target &#39;M:System.Object.Finalize&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsMediator] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsMediator] MSDN URL not found for target &#39;M:System.Object.GetHashCode&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsMediator] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsMediator] MSDN URL not found for target &#39;M:System.Object.GetType&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsMediator] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsMediator] MSDN URL not found for target &#39;M:System.Object.MemberwiseClone&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsMediator] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:Gears.GearsMediator] MSDN URL not found for target &#39;M:System.Object.ToString&#39;.
+  Warn: ShowMissingComponent: [M:Gears.GearsMediator.#ctor(System.String,System.String)] Missing &lt;param name=&quot;conName&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.#ctor(System.String,System.String)] Missing &lt;param name=&quot;dsn&quot;/&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.#ctor(System.String,System.String)] MSDN URL not found for target &#39;T:System.String&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.#ctor(System.String,System.String)] MSDN URL not found for target &#39;T:System.String&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.#ctor(System.String,System.String)] MSDN URL not found for target &#39;T:System.String&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.#ctor(System.String,System.String)] MSDN URL not found for target &#39;T:System.String&#39;.
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.addControl(Gears.GearsControl)] Missing &lt;returns&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.addControl(Gears.GearsControl)] Missing &lt;param name=&quot;gcon&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.addControl(System.Web.UI.Control,System.Boolean)] Missing &lt;returns&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.addControl(System.Web.UI.Control,System.Boolean)] Missing &lt;param name=&quot;con&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.addControl(System.Web.UI.Control,System.Boolean)] Missing &lt;param name=&quot;isAutoLoadAttr&quot;/&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.addControl(System.Web.UI.Control,System.Boolean)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.addControl(System.Web.UI.Control,System.Boolean)] MSDN URL not found for target &#39;T:System.Boolean&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.addControl(System.Web.UI.Control,System.Boolean)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.addControl(System.Web.UI.Control,System.Boolean)] MSDN URL not found for target &#39;T:System.Boolean&#39;.
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.addControls(System.Web.UI.Control,System.Boolean)] Missing &lt;returns&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.addControls(System.Web.UI.Control,System.Boolean)] Missing &lt;param name=&quot;parent&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.addControls(System.Web.UI.Control,System.Boolean)] Missing &lt;param name=&quot;isAutoLoadAttr&quot;/&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.addControls(System.Web.UI.Control,System.Boolean)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.addControls(System.Web.UI.Control,System.Boolean)] MSDN URL not found for target &#39;T:System.Boolean&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.addControls(System.Web.UI.Control,System.Boolean)] MSDN URL not found for target &#39;T:System.Collections.Generic.List`1&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.addControls(System.Web.UI.Control,System.Boolean)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.addControls(System.Web.UI.Control,System.Boolean)] MSDN URL not found for target &#39;T:System.Boolean&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.addControls(System.Web.UI.Control,System.Boolean)] MSDN URL not found for target &#39;T:System.Collections.Generic.List`1&#39;.
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.addExcept(System.Web.UI.Control,System.Web.UI.Control,System.Collections.Generic.List{{System.String}})] Missing &lt;param name=&quot;fromControl&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.addExcept(System.Web.UI.Control,System.Web.UI.Control,System.Collections.Generic.List{{System.String}})] Missing &lt;param name=&quot;toControl&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.addExcept(System.Web.UI.Control,System.Web.UI.Control,System.Collections.Generic.List{{System.String}})] Missing &lt;param name=&quot;excepts&quot;/&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.addExcept(System.Web.UI.Control,System.Web.UI.Control,System.Collections.Generic.List{{System.String}})] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.addExcept(System.Web.UI.Control,System.Web.UI.Control,System.Collections.Generic.List{{System.String}})] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.addExcept(System.Web.UI.Control,System.Web.UI.Control,System.Collections.Generic.List{{System.String}})] MSDN URL not found for target &#39;T:System.Collections.Generic.List`1&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.addExcept(System.Web.UI.Control,System.Web.UI.Control,System.Collections.Generic.List{{System.String}})] MSDN URL not found for target &#39;T:System.String&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.addExcept(System.Web.UI.Control,System.Web.UI.Control,System.Collections.Generic.List{{System.String}})] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.addExcept(System.Web.UI.Control,System.Web.UI.Control,System.Collections.Generic.List{{System.String}})] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.addExcept(System.Web.UI.Control,System.Web.UI.Control,System.Collections.Generic.List{{System.String}})] MSDN URL not found for target &#39;T:System.Collections.Generic.List`1&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.addExcept(System.Web.UI.Control,System.Web.UI.Control,System.Collections.Generic.List{{System.String}})] MSDN URL not found for target &#39;T:System.String&#39;.
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.addExcept(System.Web.UI.Control,System.Web.UI.Control,System.Collections.Generic.List{{System.Web.UI.Control}})] Missing &lt;param name=&quot;fromControl&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.addExcept(System.Web.UI.Control,System.Web.UI.Control,System.Collections.Generic.List{{System.Web.UI.Control}})] Missing &lt;param name=&quot;toControl&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.addExcept(System.Web.UI.Control,System.Web.UI.Control,System.Collections.Generic.List{{System.Web.UI.Control}})] Missing &lt;param name=&quot;excepts&quot;/&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.addExcept(System.Web.UI.Control,System.Web.UI.Control,System.Collections.Generic.List{{System.Web.UI.Control}})] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.addExcept(System.Web.UI.Control,System.Web.UI.Control,System.Collections.Generic.List{{System.Web.UI.Control}})] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.addExcept(System.Web.UI.Control,System.Web.UI.Control,System.Collections.Generic.List{{System.Web.UI.Control}})] MSDN URL not found for target &#39;T:System.Collections.Generic.List`1&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.addExcept(System.Web.UI.Control,System.Web.UI.Control,System.Collections.Generic.List{{System.Web.UI.Control}})] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.addExcept(System.Web.UI.Control,System.Web.UI.Control,System.Collections.Generic.List{{System.Web.UI.Control}})] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.addExcept(System.Web.UI.Control,System.Web.UI.Control,System.Collections.Generic.List{{System.Web.UI.Control}})] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.addExcept(System.Web.UI.Control,System.Web.UI.Control,System.Collections.Generic.List{{System.Web.UI.Control}})] MSDN URL not found for target &#39;T:System.Collections.Generic.List`1&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.addExcept(System.Web.UI.Control,System.Web.UI.Control,System.Collections.Generic.List{{System.Web.UI.Control}})] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.addExcept(System.Web.UI.Control,System.Web.UI.Control,System.Web.UI.Control[])] Missing &lt;param name=&quot;fromControl&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.addExcept(System.Web.UI.Control,System.Web.UI.Control,System.Web.UI.Control[])] Missing &lt;param name=&quot;toControl&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.addExcept(System.Web.UI.Control,System.Web.UI.Control,System.Web.UI.Control[])] Missing &lt;param name=&quot;excepts&quot;/&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.addExcept(System.Web.UI.Control,System.Web.UI.Control,System.Web.UI.Control[])] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.addExcept(System.Web.UI.Control,System.Web.UI.Control,System.Web.UI.Control[])] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.addExcept(System.Web.UI.Control,System.Web.UI.Control,System.Web.UI.Control[])] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.addExcept(System.Web.UI.Control,System.Web.UI.Control,System.Web.UI.Control[])] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.addExcept(System.Web.UI.Control,System.Web.UI.Control,System.Web.UI.Control[])] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.addExcept(System.Web.UI.Control,System.Web.UI.Control,System.Web.UI.Control[])] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.addRelation(Gears.GearsControl,Gears.GearsControl)] Missing &lt;summary&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.addRelation(Gears.GearsControl,Gears.GearsControl)] Missing &lt;param name=&quot;fromControl&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.addRelation(Gears.GearsControl,Gears.GearsControl)] Missing &lt;param name=&quot;toControl&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.addRelation(System.String,System.String)] Missing &lt;param name=&quot;fromControlId&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.addRelation(System.String,System.String)] Missing &lt;param name=&quot;toControlId&quot;/&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.addRelation(System.String,System.String)] MSDN URL not found for target &#39;T:System.String&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.addRelation(System.String,System.String)] MSDN URL not found for target &#39;T:System.String&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.addRelation(System.String,System.String)] MSDN URL not found for target &#39;T:System.String&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.addRelation(System.String,System.String)] MSDN URL not found for target &#39;T:System.String&#39;.
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.addRelation(System.Web.UI.Control,System.Web.UI.Control)] Missing &lt;param name=&quot;fromControl&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.addRelation(System.Web.UI.Control,System.Web.UI.Control)] Missing &lt;param name=&quot;toControl&quot;/&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.addRelation(System.Web.UI.Control,System.Web.UI.Control)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.addRelation(System.Web.UI.Control,System.Web.UI.Control)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.addRelation(System.Web.UI.Control,System.Web.UI.Control)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.addRelation(System.Web.UI.Control,System.Web.UI.Control)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.clearExcept(System.Web.UI.Control,System.Web.UI.Control)] Missing &lt;param name=&quot;fromControl&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.clearExcept(System.Web.UI.Control,System.Web.UI.Control)] Missing &lt;param name=&quot;toControl&quot;/&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.clearExcept(System.Web.UI.Control,System.Web.UI.Control)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.clearExcept(System.Web.UI.Control,System.Web.UI.Control)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.clearExcept(System.Web.UI.Control,System.Web.UI.Control)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.clearExcept(System.Web.UI.Control,System.Web.UI.Control)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ShowMissingComponent: [M:Gears.GearsMediator.clearRelation(System.Web.UI.Control)] Missing &lt;param name=&quot;con&quot;/&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.clearRelation(System.Web.UI.Control)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.clearRelation(System.Web.UI.Control)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:Gears.GearsMediator.ConnectionName] MSDN URL not found for target &#39;T:System.String&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:Gears.GearsMediator.ConnectionName] MSDN URL not found for target &#39;T:System.String&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:Gears.GearsMediator.DsNameSpace] MSDN URL not found for target &#39;T:System.String&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:Gears.GearsMediator.DsNameSpace] MSDN URL not found for target &#39;T:System.String&#39;.
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.execute(System.Web.UI.Control,Gears.ActionType)] Missing &lt;returns&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.execute(System.Web.UI.Control,Gears.ActionType)] Missing &lt;param name=&quot;control&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.execute(System.Web.UI.Control,Gears.ActionType)] Missing &lt;param name=&quot;aType&quot;/&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.execute(System.Web.UI.Control,Gears.ActionType)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.execute(System.Web.UI.Control,Gears.ActionType)] MSDN URL not found for target &#39;T:System.Boolean&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.execute(System.Web.UI.Control,Gears.ActionType)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.execute(System.Web.UI.Control,Gears.ActionType)] MSDN URL not found for target &#39;T:System.Boolean&#39;.
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.execute(System.Web.UI.Control,Gears.GearsDTO)] Missing &lt;returns&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.execute(System.Web.UI.Control,Gears.GearsDTO)] Missing &lt;param name=&quot;control&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.execute(System.Web.UI.Control,Gears.GearsDTO)] Missing &lt;param name=&quot;dto&quot;/&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.execute(System.Web.UI.Control,Gears.GearsDTO)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.execute(System.Web.UI.Control,Gears.GearsDTO)] MSDN URL not found for target &#39;T:System.Boolean&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.execute(System.Web.UI.Control,Gears.GearsDTO)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.execute(System.Web.UI.Control,Gears.GearsDTO)] MSDN URL not found for target &#39;T:System.Boolean&#39;.
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.GControl(System.String)] Missing &lt;returns&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.GControl(System.String)] Missing &lt;param name=&quot;id&quot;/&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.GControl(System.String)] MSDN URL not found for target &#39;T:System.String&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.GControl(System.String)] MSDN URL not found for target &#39;T:System.String&#39;.
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.GControl(System.Web.UI.Control)] Missing &lt;summary&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.GControl(System.Web.UI.Control)] Missing &lt;returns&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.GControl(System.Web.UI.Control)] Missing &lt;param name=&quot;con&quot;/&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.GControl(System.Web.UI.Control)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.GControl(System.Web.UI.Control)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:Gears.GearsMediator.GControls] MSDN URL not found for target &#39;T:System.Collections.Generic.Dictionary`2&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:Gears.GearsMediator.GControls] MSDN URL not found for target &#39;T:System.String&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:Gears.GearsMediator.GControls] MSDN URL not found for target &#39;T:System.Collections.Generic.Dictionary`2&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:Gears.GearsMediator.GControls] MSDN URL not found for target &#39;T:System.String&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:Gears.GearsMediator.GLog] MSDN URL not found for target &#39;T:System.Collections.Generic.Dictionary`2&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:Gears.GearsMediator.GLog] MSDN URL not found for target &#39;T:System.String&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:Gears.GearsMediator.GLog] MSDN URL not found for target &#39;T:System.Collections.Generic.Dictionary`2&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:Gears.GearsMediator.GLog] MSDN URL not found for target &#39;T:System.String&#39;.
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.isInputControl(System.Web.UI.Control)] Missing &lt;returns&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.isInputControl(System.Web.UI.Control)] Missing &lt;param name=&quot;control&quot;/&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.isInputControl(System.Web.UI.Control)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.isInputControl(System.Web.UI.Control)] MSDN URL not found for target &#39;T:System.Boolean&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.isInputControl(System.Web.UI.Control)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.isInputControl(System.Web.UI.Control)] MSDN URL not found for target &#39;T:System.Boolean&#39;.
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.isRegisteredAsInput(System.Web.UI.Control)] Missing &lt;returns&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.isRegisteredAsInput(System.Web.UI.Control)] Missing &lt;param name=&quot;control&quot;/&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.isRegisteredAsInput(System.Web.UI.Control)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.isRegisteredAsInput(System.Web.UI.Control)] MSDN URL not found for target &#39;T:System.Boolean&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.isRegisteredAsInput(System.Web.UI.Control)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.isRegisteredAsInput(System.Web.UI.Control)] MSDN URL not found for target &#39;T:System.Boolean&#39;.
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.isRegisteredControl(System.Web.UI.Control)] Missing &lt;returns&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.isRegisteredControl(System.Web.UI.Control)] Missing &lt;param name=&quot;control&quot;/&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.isRegisteredControl(System.Web.UI.Control)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.isRegisteredControl(System.Web.UI.Control)] MSDN URL not found for target &#39;T:System.Boolean&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.isRegisteredControl(System.Web.UI.Control)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.isRegisteredControl(System.Web.UI.Control)] MSDN URL not found for target &#39;T:System.Boolean&#39;.
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.lockDtoWhenSend(Gears.GearsDTO@)] Missing &lt;param name=&quot;dto&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.makeDTO(System.Web.UI.Control,System.Web.UI.Control,Gears.GearsDTO)] Missing &lt;returns&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.makeDTO(System.Web.UI.Control,System.Web.UI.Control,Gears.GearsDTO)] Missing &lt;param name=&quot;fromControl&quot;/&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.makeDTO(System.Web.UI.Control,System.Web.UI.Control,Gears.GearsDTO)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.makeDTO(System.Web.UI.Control,System.Web.UI.Control,Gears.GearsDTO)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.makeDTO(System.Web.UI.Control,System.Web.UI.Control,Gears.GearsDTO)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.makeDTO(System.Web.UI.Control,System.Web.UI.Control,Gears.GearsDTO)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.makeRelationMap(System.Web.UI.Control)] Missing &lt;returns&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.makeRelationMap(System.Web.UI.Control)] Missing &lt;param name=&quot;con&quot;/&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.makeRelationMap(System.Web.UI.Control)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.makeRelationMap(System.Web.UI.Control)] MSDN URL not found for target &#39;T:System.Collections.Generic.List`1&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.makeRelationMap(System.Web.UI.Control)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.makeRelationMap(System.Web.UI.Control)] MSDN URL not found for target &#39;T:System.Collections.Generic.List`1&#39;.
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.Relation(System.String)] Missing &lt;returns&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.Relation(System.String)] Missing &lt;param name=&quot;conid&quot;/&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.Relation(System.String)] MSDN URL not found for target &#39;T:System.String&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.Relation(System.String)] MSDN URL not found for target &#39;T:System.Collections.Generic.List`1&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.Relation(System.String)] MSDN URL not found for target &#39;T:System.String&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.Relation(System.String)] MSDN URL not found for target &#39;T:System.Collections.Generic.List`1&#39;.
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.Relation(System.Web.UI.Control)] Missing &lt;summary&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.Relation(System.Web.UI.Control)] Missing &lt;returns&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.Relation(System.Web.UI.Control)] Missing &lt;param name=&quot;con&quot;/&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.Relation(System.Web.UI.Control)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.Relation(System.Web.UI.Control)] MSDN URL not found for target &#39;T:System.Collections.Generic.List`1&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.Relation(System.Web.UI.Control)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.Relation(System.Web.UI.Control)] MSDN URL not found for target &#39;T:System.Collections.Generic.List`1&#39;.
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.replaceControl(Gears.GearsControl)] Missing &lt;param name=&quot;gcon&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.send(System.Web.UI.Control,Gears.ActionType)] Missing &lt;returns&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.send(System.Web.UI.Control,Gears.ActionType)] Missing &lt;param name=&quot;fromControl&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.send(System.Web.UI.Control,Gears.ActionType)] Missing &lt;param name=&quot;aType&quot;/&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.send(System.Web.UI.Control,Gears.ActionType)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.send(System.Web.UI.Control,Gears.ActionType)] MSDN URL not found for target &#39;T:System.Boolean&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.send(System.Web.UI.Control,Gears.ActionType)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.send(System.Web.UI.Control,Gears.ActionType)] MSDN URL not found for target &#39;T:System.Boolean&#39;.
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.send(System.Web.UI.Control,Gears.GearsDTO)] Missing &lt;returns&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.send(System.Web.UI.Control,Gears.GearsDTO)] Missing &lt;param name=&quot;fromControl&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.send(System.Web.UI.Control,Gears.GearsDTO)] Missing &lt;param name=&quot;dto&quot;/&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.send(System.Web.UI.Control,Gears.GearsDTO)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.send(System.Web.UI.Control,Gears.GearsDTO)] MSDN URL not found for target &#39;T:System.Boolean&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.send(System.Web.UI.Control,Gears.GearsDTO)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.send(System.Web.UI.Control,Gears.GearsDTO)] MSDN URL not found for target &#39;T:System.Boolean&#39;.
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.send(System.Web.UI.Control,System.Web.UI.Control,Gears.ActionType)] Missing &lt;returns&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.send(System.Web.UI.Control,System.Web.UI.Control,Gears.ActionType)] Missing &lt;param name=&quot;fromControl&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.send(System.Web.UI.Control,System.Web.UI.Control,Gears.ActionType)] Missing &lt;param name=&quot;toControl&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.send(System.Web.UI.Control,System.Web.UI.Control,Gears.ActionType)] Missing &lt;param name=&quot;aType&quot;/&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.send(System.Web.UI.Control,System.Web.UI.Control,Gears.ActionType)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.send(System.Web.UI.Control,System.Web.UI.Control,Gears.ActionType)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.send(System.Web.UI.Control,System.Web.UI.Control,Gears.ActionType)] MSDN URL not found for target &#39;T:System.Boolean&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.send(System.Web.UI.Control,System.Web.UI.Control,Gears.ActionType)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.send(System.Web.UI.Control,System.Web.UI.Control,Gears.ActionType)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.send(System.Web.UI.Control,System.Web.UI.Control,Gears.ActionType)] MSDN URL not found for target &#39;T:System.Boolean&#39;.
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.send(System.Web.UI.Control,System.Web.UI.Control,Gears.GearsDTO)] Missing &lt;returns&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.send(System.Web.UI.Control,System.Web.UI.Control,Gears.GearsDTO)] Missing &lt;param name=&quot;fromControl&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.send(System.Web.UI.Control,System.Web.UI.Control,Gears.GearsDTO)] Missing &lt;param name=&quot;toControl&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.send(System.Web.UI.Control,System.Web.UI.Control,Gears.GearsDTO)] Missing &lt;param name=&quot;dto&quot;/&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.send(System.Web.UI.Control,System.Web.UI.Control,Gears.GearsDTO)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.send(System.Web.UI.Control,System.Web.UI.Control,Gears.GearsDTO)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.send(System.Web.UI.Control,System.Web.UI.Control,Gears.GearsDTO)] MSDN URL not found for target &#39;T:System.Boolean&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.send(System.Web.UI.Control,System.Web.UI.Control,Gears.GearsDTO)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.send(System.Web.UI.Control,System.Web.UI.Control,Gears.GearsDTO)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.send(System.Web.UI.Control,System.Web.UI.Control,Gears.GearsDTO)] MSDN URL not found for target &#39;T:System.Boolean&#39;.
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.ToString] Missing &lt;summary&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.ToString] Missing &lt;returns&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.ToString] MSDN URL not found for target &#39;T:System.String&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.ToString] MSDN URL not found for target &#39;T:System.String&#39;.
+  Warn: ResolveReferenceLinksComponent2: [T:Gears.GearsPage] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [T:Gears.GearsPage] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [T:Gears.GearsPage] MSDN web service failed.  No further look ups will be performed for this build.
+  Reason: HTTP ステータス 407: Proxy Authentication Required ( The ISA Server requires authorization to fulfill the request. Access to the Web Proxy filter is denied.  ) で要求が失敗しました。
+  Warn: ResolveReferenceLinksComponent2: [T:Gears.GearsPage] MSDN URL not found for target &#39;T:System.Object&#39;.
+  Warn: ResolveReferenceLinksComponent2: [T:Gears.GearsPage] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [T:Gears.GearsPage] MSDN URL not found for target &#39;T:System.Web.UI.TemplateControl&#39;.
+  Warn: ResolveReferenceLinksComponent2: [T:Gears.GearsPage] MSDN web service failed.  No further look ups will be performed for this build.
+  Reason: HTTP ステータス 407: Proxy Authentication Required ( The ISA Server requires authorization to fulfill the request. Access to the Web Proxy filter is denied.  ) で要求が失敗しました。
   Warn: ShowMissingComponent: [M:Gears.GearsPage.GAdd(System.Web.UI.Control,Gears.DataSource.GearsDataSource)] Missing &lt;returns&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsPage.GAdd(System.Web.UI.Control,Gears.DataSource.GearsDataSource)] Missing &lt;param name=&quot;con&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsPage.GAdd(System.Web.UI.Control,Gears.DataSource.GearsDataSource)] Missing &lt;param name=&quot;ds&quot;/&gt; documentation
@@ -1109,8 +1469,8 @@ Building reference help topics...
   Warn: ShowMissingComponent: [M:Gears.GearsPage.GFindControl(System.String)] Missing &lt;param name=&quot;conid&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsPage.GGet(System.String)] Missing &lt;returns&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsPage.GGet(System.String)] Missing &lt;param name=&quot;id&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.GearsPage.GGet(System.Web.UI.Control@)] Missing &lt;returns&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.GearsPage.GGet(System.Web.UI.Control@)] Missing &lt;param name=&quot;con&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.GearsPage.GGet(System.Web.UI.Control)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.GearsPage.GGet(System.Web.UI.Control)] Missing &lt;param name=&quot;con&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsPage.GInsert(System.Web.UI.Control)] Missing &lt;returns&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsPage.GInsert(System.Web.UI.Control)] Missing &lt;param name=&quot;form&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsPage.GIsAuth(System.Web.UI.Control)] Missing &lt;param name=&quot;con&quot;/&gt; documentation
@@ -1137,10 +1497,8 @@ Building reference help topics...
   Warn: ShowMissingComponent: [M:Gears.GearsPage.GRule(System.Web.UI.Control)] Missing &lt;param name=&quot;fromCon&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsPage.GSave(System.Web.UI.Control)] Missing &lt;returns&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsPage.GSave(System.Web.UI.Control)] Missing &lt;param name=&quot;form&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.GearsPage.GSelect(Gears.DataSource.SqlSelectItem[])] Missing &lt;returns&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.GearsPage.GSelect(Gears.DataSource.SqlSelectItem[])] Missing &lt;param name=&quot;selection&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.GearsPage.GSelect(System.Collections.Generic.List{{Gears.DataSource.SqlSelectItem}})] Missing &lt;returns&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.GearsPage.GSelect(System.Collections.Generic.List{{Gears.DataSource.SqlSelectItem}})] Missing &lt;param name=&quot;selection&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.GearsPage.GSource(System.Web.UI.Control)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.GearsPage.GSource(System.Web.UI.Control)] Missing &lt;param name=&quot;con&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsPage.GUpdate(System.Web.UI.Control)] Missing &lt;returns&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsPage.GUpdate(System.Web.UI.Control)] Missing &lt;param name=&quot;form&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsPage.IsLoggingMode] Missing &lt;returns&gt; documentation
@@ -1157,8 +1515,8 @@ Building reference help topics...
   Warn: ShowMissingComponent: [M:Gears.GearsPage.QueryToDictionary(System.Boolean)] Missing &lt;returns&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsPage.QueryValue(System.String)] Missing &lt;returns&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsPage.QueryValue(System.String)] Missing &lt;param name=&quot;keyname&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.GearsPageExtendModule.FirstLog(System.Collections.Generic.Dictionary{{System.String,Gears.GearsException}})] Missing &lt;returns&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.GearsPageExtendModule.FirstLog(System.Collections.Generic.Dictionary{{System.String,Gears.GearsException}})] Missing &lt;param name=&quot;log&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.GearsPageExtension.FirstLog(System.Collections.Generic.Dictionary{{System.String,Gears.GearsException}})] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.GearsPageExtension.FirstLog(System.Collections.Generic.Dictionary{{System.String,Gears.GearsException}})] Missing &lt;param name=&quot;log&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.gRuleExpression.#ctor(System.Web.UI.Control,Gears.GearsMediator)] Missing &lt;param name=&quot;con&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.gRuleExpression.#ctor(System.Web.UI.Control,Gears.GearsMediator)] Missing &lt;param name=&quot;mediator&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.gRuleExpression.Except(System.Web.UI.Control[])] Missing &lt;param name=&quot;excepts&quot;/&gt; documentation
@@ -1168,14 +1526,6 @@ Building reference help topics...
   Warn: ShowMissingComponent: [M:Gears.gRuleExpression.Relate(System.Web.UI.Control[])] Missing &lt;param name=&quot;cons&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.gRuleExpression.When(System.Web.UI.Control)] Missing &lt;returns&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.gRuleExpression.When(System.Web.UI.Control)] Missing &lt;param name=&quot;toControl&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.gSelectExpression.#ctor(System.Collections.Generic.List{{Gears.DataSource.SqlSelectItem}},Gears.GearsMediator)] Missing &lt;param name=&quot;selection&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.gSelectExpression.#ctor(System.Collections.Generic.List{{Gears.DataSource.SqlSelectItem}},Gears.GearsMediator)] Missing &lt;param name=&quot;mediator&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.gSelectExpression.From(Gears.DataSource.GearsDataSource)] Missing &lt;returns&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.gSelectExpression.From(Gears.DataSource.GearsDataSource)] Missing &lt;param name=&quot;source&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.gSelectExpression.From(System.String)] Missing &lt;returns&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.gSelectExpression.From(System.String)] Missing &lt;param name=&quot;sourceName&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.gSelectExpression.From(System.Web.UI.Control)] Missing &lt;returns&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.gSelectExpression.From(System.Web.UI.Control)] Missing &lt;param name=&quot;fromControl&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.gSendExpression.#ctor(Gears.GearsDTO,Gears.gSendExpression.ExecuteSend)] Missing &lt;param name=&quot;dto&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.gSendExpression.#ctor(Gears.GearsDTO,Gears.gSendExpression.ExecuteSend)] Missing &lt;param name=&quot;executor&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.gSendExpression.#ctor(System.Web.UI.Control,Gears.gSendExpression.ExecuteSend)] Missing &lt;param name=&quot;con&quot;/&gt; documentation
@@ -1188,19 +1538,17 @@ Building reference help topics...
   Warn: ShowMissingComponent: [M:Gears.gSendExpression.ToThe(System.Web.UI.Control,Gears.GearsDTO)] Missing &lt;param name=&quot;toControl&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.gSendExpression.ToThe(System.Web.UI.Control,Gears.GearsDTO)] Missing &lt;param name=&quot;dto&quot;/&gt; documentation
   Warn: ShowMissingComponent: [T:Gears.gSendExpression.ExecuteSend] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.gSourceExpression.#ctor(Gears.DataSource.GearsDataSource,System.Collections.Generic.List{{Gears.DataSource.SqlSelectItem}})] Missing &lt;param name=&quot;source&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.gSourceExpression.#ctor(Gears.DataSource.GearsDataSource,System.Collections.Generic.List{{Gears.DataSource.SqlSelectItem}})] Missing &lt;param name=&quot;selection&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.gSourceExpression.#ctor(Gears.GearsControl,System.Collections.Generic.List{{Gears.DataSource.SqlSelectItem}})] Missing &lt;param name=&quot;gcon&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.gSourceExpression.#ctor(Gears.GearsControl,System.Collections.Generic.List{{Gears.DataSource.SqlSelectItem}})] Missing &lt;param name=&quot;selection&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.gSourceExpression.#ctor(System.String,System.String,System.Collections.Generic.List{{Gears.DataSource.SqlSelectItem}})] Missing &lt;param name=&quot;conName&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.gSourceExpression.#ctor(System.String,System.String,System.Collections.Generic.List{{Gears.DataSource.SqlSelectItem}})] Missing &lt;param name=&quot;sourceName&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.gSourceExpression.#ctor(System.String,System.String,System.Collections.Generic.List{{Gears.DataSource.SqlSelectItem}})] Missing &lt;param name=&quot;selection&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.gSourceExpression.#ctor(Gears.DataSource.GearsDataSource,Gears.ActionType,System.Collections.Generic.List{{Gears.DataSource.SqlSelectItem}})] Missing &lt;param name=&quot;source&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.gSourceExpression.#ctor(Gears.DataSource.GearsDataSource,Gears.ActionType,System.Collections.Generic.List{{Gears.DataSource.SqlSelectItem}})] Missing &lt;param name=&quot;action&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.gSourceExpression.#ctor(Gears.DataSource.GearsDataSource,Gears.ActionType,System.Collections.Generic.List{{Gears.DataSource.SqlSelectItem}})] Missing &lt;param name=&quot;selection&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.gSourceExpression.Where(Gears.DataSource.SqlFilterItem[])] Missing &lt;returns&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.gSourceExpression.Where(Gears.DataSource.SqlFilterItem[])] Missing &lt;param name=&quot;filter&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.gSourceExpression.Where(Gears.GearsDTO)] Missing &lt;returns&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.gSourceExpression.Where(Gears.GearsDTO)] Missing &lt;param name=&quot;dto&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.gSourceExpression.Where(System.Collections.Generic.List{{Gears.DataSource.SqlFilterItem}})] Missing &lt;returns&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.gSourceExpression.Where(System.Collections.Generic.List{{Gears.DataSource.SqlFilterItem}})] Missing &lt;param name=&quot;filter&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.gSourceExpression.Where(System.Collections.Generic.List{{System.Web.UI.Control}})] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.gSourceExpression.Where(System.Collections.Generic.List{{System.Web.UI.Control}})] Missing &lt;param name=&quot;cons&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.gSourceExpression.Where(System.Web.UI.Control[])] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.gSourceExpression.Where(System.Web.UI.Control[])] Missing &lt;param name=&quot;cons&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Binder.GearsDataAttachException.#ctor(System.Web.UI.Control@,System.Exception)] Missing &lt;param name=&quot;con&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Binder.GearsDataAttachException.#ctor(System.Web.UI.Control@,System.Exception)] Missing &lt;param name=&quot;innerException&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Binder.GearsDataBinder.compositBind(System.Web.UI.WebControls.CompositeDataBoundControl@,System.Data.DataTable@)] Missing &lt;returns&gt; documentation
@@ -1278,11 +1626,23 @@ Building reference help topics...
   Warn: ShowMissingComponent: [M:Gears.DataSource.GearsDataSource.gInsert(Gears.GearsDTO)] Missing &lt;param name=&quot;data&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.DataSource.GearsDataSource.gResultSet] Missing &lt;returns&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.DataSource.GearsDataSource.gSave(Gears.DataSource.SqlBuilder)] Missing &lt;param name=&quot;sqlb&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.DataSource.GearsDataSource.gSave(Gears.DataSource.SqlSelectItem[])] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.DataSource.GearsDataSource.gSave(Gears.DataSource.SqlSelectItem[])] Missing &lt;param name=&quot;selection&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.DataSource.GearsDataSource.gSave(Gears.GearsDTO)] Missing &lt;param name=&quot;data&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.DataSource.GearsDataSource.gSave(System.Collections.Generic.List{{Gears.DataSource.SqlSelectItem}})] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.DataSource.GearsDataSource.gSave(System.Collections.Generic.List{{Gears.DataSource.SqlSelectItem}})] Missing &lt;param name=&quot;selection&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.DataSource.GearsDataSource.gSave(System.Web.UI.Control[])] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.DataSource.GearsDataSource.gSave(System.Web.UI.Control[])] Missing &lt;param name=&quot;cons&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.DataSource.GearsDataSource.gSelect(Gears.DataSource.SqlBuilder)] Missing &lt;returns&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.DataSource.GearsDataSource.gSelect(Gears.DataSource.SqlBuilder)] Missing &lt;param name=&quot;sqlb&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.DataSource.GearsDataSource.gSelect(Gears.DataSource.SqlSelectItem[])] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.DataSource.GearsDataSource.gSelect(Gears.DataSource.SqlSelectItem[])] Missing &lt;param name=&quot;selection&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.DataSource.GearsDataSource.gSelect(Gears.GearsDTO)] Missing &lt;returns&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.DataSource.GearsDataSource.gSelect(Gears.GearsDTO)] Missing &lt;param name=&quot;data&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.DataSource.GearsDataSource.gSelect(System.Collections.Generic.List{{Gears.DataSource.SqlSelectItem}})] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.DataSource.GearsDataSource.gSelect(System.Collections.Generic.List{{Gears.DataSource.SqlSelectItem}})] Missing &lt;param name=&quot;selection&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.DataSource.GearsDataSource.gSelect(System.Web.UI.Control[])] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.DataSource.GearsDataSource.gSelect(System.Web.UI.Control[])] Missing &lt;param name=&quot;cons&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.DataSource.GearsDataSource.gSelectCount(Gears.DataSource.SqlBuilder)] Missing &lt;returns&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.DataSource.GearsDataSource.gSelectCount(Gears.DataSource.SqlBuilder)] Missing &lt;param name=&quot;sqlb&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.DataSource.GearsDataSource.gSelectCount(Gears.GearsDTO)] Missing &lt;returns&gt; documentation
@@ -1521,13 +1881,20 @@ Building reference help topics...
   Warn: ShowMissingComponent: [M:Gears.DataSource.SqlItemContainer.ActionToString(Gears.ActionType)] Missing &lt;param name=&quot;atype&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.DataSource.SqlItemContainer.ActionToString(Gears.DataSource.SqlItemContainer@)] Missing &lt;returns&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.DataSource.SqlItemContainer.ActionToString(Gears.DataSource.SqlItemContainer@)] Missing &lt;param name=&quot;dto&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.DataSource.SqlItemContainer.Add(Gears.DataSource.SqlItem)] Missing &lt;param name=&quot;item&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.DataSource.SqlItemContainer.Add``1(System.Collections.Generic.List{{``0}})] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.DataSource.SqlItemContainer.Add``1(System.Collections.Generic.List{{``0}})] Missing &lt;param name=&quot;items&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.DataSource.SqlItemContainer.Add(Gears.DataSource.SqlFilterItem[])] Missing &lt;param name=&quot;items&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.DataSource.SqlItemContainer.Add(Gears.DataSource.SqlSelectItem[])] Missing &lt;param name=&quot;items&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.DataSource.SqlItemContainer.Add(System.Collections.Generic.List{{Gears.DataSource.SqlFilterItem}})] Missing &lt;param name=&quot;items&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.DataSource.SqlItemContainer.Add(System.Collections.Generic.List{{Gears.DataSource.SqlSelectItem}})] Missing &lt;param name=&quot;items&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.DataSource.SqlItemContainer.addAttrInfo(System.String,System.String)] Missing &lt;param name=&quot;id&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.DataSource.SqlItemContainer.addAttrInfo(System.String,System.String)] Missing &lt;param name=&quot;value&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.DataSource.SqlItemContainer.addFilter(Gears.DataSource.SqlFilterItem)] Missing &lt;param name=&quot;item&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.DataSource.SqlItemContainer.addSelection(Gears.DataSource.SqlSelectItem)] Missing &lt;param name=&quot;item&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.DataSource.SqlItemContainer.addFilter(Gears.DataSource.SqlFilterItem[])] Missing &lt;param name=&quot;items&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.DataSource.SqlItemContainer.addFilter(System.Collections.Generic.List{{Gears.DataSource.SqlFilterItem}})] Missing &lt;param name=&quot;items&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.DataSource.SqlItemContainer.addFilter(System.Collections.Generic.List{{System.Web.UI.Control}})] Missing &lt;param name=&quot;cons&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.DataSource.SqlItemContainer.addFilter(System.Web.UI.Control[])] Missing &lt;param name=&quot;cons&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.DataSource.SqlItemContainer.addSelection(Gears.DataSource.SqlSelectItem[])] Missing &lt;param name=&quot;items&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.DataSource.SqlItemContainer.addSelection(System.Collections.Generic.List{{Gears.DataSource.SqlSelectItem}})] Missing &lt;param name=&quot;items&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.DataSource.SqlItemContainer.addSelection(System.Collections.Generic.List{{System.Web.UI.Control}})] Missing &lt;param name=&quot;cons&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.DataSource.SqlItemContainer.addSelection(System.Web.UI.Control[])] Missing &lt;param name=&quot;cons&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.DataSource.SqlItemContainer.AttrInfo] Missing &lt;returns&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.DataSource.SqlItemContainer.AttrInfo(System.String)] Missing &lt;returns&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.DataSource.SqlItemContainer.AttrInfo(System.String)] Missing &lt;param name=&quot;id&quot;/&gt; documentation
@@ -1711,18 +2078,18 @@ Building reference help topics...
   Warn: ShowMissingComponent: [M:Gears.Validation.Validator.GRequired.Validate] Missing &lt;summary&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.Validator.GStartWith.#ctor(System.String)] Missing &lt;param name=&quot;p&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.Validator.GStartWith.Validate] Missing &lt;summary&gt; documentation
-  Info: Processed 946 topic(s)
-  Info: 1213 warning(s)
+  Info: Processed 961 topic(s)
+  Info: 1580 warning(s)
   Diagnostic: CopyFromIndexComponent: &quot;reflection&quot; in-memory cache entries used: 10 of 15.
   Diagnostic: CopyFromIndexComponent: &quot;comments&quot; in-memory cache entries used: 1 of 30.
-  Diagnostic: ResolveReferenceLinksComponent2: New MSDN content ID cache size: 77 entries
-    Last step completed in 00:00:30.8360
+  Diagnostic: ResolveReferenceLinksComponent2: New MSDN content ID cache size: 79 entries
+    Last step completed in 00:00:30.8721
 </buildStep>
 <buildStep step="CombiningIntermediateTocFiles">
 Combining conceptual and API intermediate TOC files...
 
 Clearing any prior web output
-    Last step completed in 00:00:00.4710
+    Last step completed in 00:00:00.5801
 </buildStep>
 <buildStep step="ExtractingHtmlInfo">
 Extracting HTML info for HTML Help 1 and/or website...
@@ -1734,29 +2101,29 @@ E-Mail: Eric@EWoodruff.us
 Using LCID &#39;1033&#39;, code page &#39;65001&#39;, encoding charset &#39;UTF-8&#39;.
 
 Processing Help 1 files in D:\project\GearsSite\document\Help\Working\Output\HtmlHelp1
-Processed 946 HTML files
+Processed 961 HTML files
 Sorting keywords and generating See Also indices
 Saving HTML Help 1 keyword index to D:\project\GearsSite\document\Help\Working\GearsAPI.hhk
 Saving HTML Help 1 table of contents to D:\project\GearsSite\document\Help\Working\GearsAPI.hhc
 
 Processing website files in D:\project\GearsSite\document\Help\Working\Output\Website
-Processed 946 HTML files
+Processed 961 HTML files
 Sorting keywords and generating See Also indices
 Saving website keyword index to D:\project\GearsSite\document\Help\Working\WebKI.xml
 Saving website table of contents to D:\project\GearsSite\document\Help\Working\WebTOC.xml
-    Last step completed in 00:00:03.9640
+    Last step completed in 00:00:03.5327
 </buildStep>
 <buildStep step="GenerateHelpFormatTableOfContents">
 Generating HTML Help 1 table of contents file...
-    Last step completed in 00:00:00.0010
+    Last step completed in 00:00:00.0030
 </buildStep>
 <buildStep step="GenerateHelpFileIndex">
 Generating HTML Help 1 index file...
-    Last step completed in 00:00:00.0020
+    Last step completed in 00:00:00.0030
 </buildStep>
 <buildStep step="GenerateHelpProject">
 Generating HTML Help 1 project file...
-    Last step completed in 00:00:00.0150
+    Last step completed in 00:00:00.0180
 </buildStep>
 <buildStep step="CompilingHelpFile">
 Compiling HTML Help 1 file...
@@ -1773,11 +2140,11 @@ Compiling HTML Help 1 file...
   
   Compile time: 0 minutes, 7 seconds
   
-  948	Topics
+  963	Topics
   
-  11,481	Local links
+  11,721	Local links
   
-  4	Internet links
+  8	Internet links
   
   0	Graphics
   
@@ -1785,20 +2152,20 @@ Compiling HTML Help 1 file...
   
   
   
-  Created d:\project\GearsSite\document\Help\Working\Output\HtmlHelp1\GearsAPI.chm, 1,308,769 bytes
+  Created d:\project\GearsSite\document\Help\Working\Output\HtmlHelp1\GearsAPI.chm, 1,332,557 bytes
   
-  Compression decreased file by 8,135,436 bytes.
+  Compression decreased file by 8,315,106 bytes.
   
-    Last step completed in 00:00:08.2120
+    Last step completed in 00:00:09.1238
 </buildStep>
 <buildStep step="GenerateHelpFormatTableOfContents">
 Generating website table of contents file...
-    Last step completed in 00:00:00.0020
+    Last step completed in 00:00:00.0040
 </buildStep>
 <buildStep step="GenerateFullTextIndex">
 Generating full-text index for the website...
 
-    Last step completed in 00:00:02.5840
+    Last step completed in 00:00:02.6235
 </buildStep>
 <buildStep step="CopyingWebsiteFiles">
 Copying website files to output folder...
@@ -1814,16 +2181,17 @@ Copied 800 files
 Copied 900 files
 Copied 1000 files
 Copied 1100 files
-Copied 1190 files for the website content
-    Last step completed in 00:00:06.0510
+Copied 1200 files
+Copied 1206 files for the website content
+    Last step completed in 00:00:06.1672
 </buildStep>
 <buildStep step="CleanIntermediates">
 Removing intermediate files...
-    Last step completed in 00:00:00.6770
+    Last step completed in 00:00:00.7051
 </buildStep>
 <buildStep step="Completed">
 
-Build completed successfully at 03/18/2014 11:54 午前.  Total time: 00:00:56.8604
+Build completed successfully at 03/20/2014 09:08 午後.  Total time: 00:00:59.5024
 
 </buildStep>
 </shfbBuild>

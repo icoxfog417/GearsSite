@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <HelpTOC>
 
-  <HelpTOCNode Id="675bdb8f-db16-4328-8c8f-43ddcc724682" Title="Gears Namespace" Url="html/0fba4094-7899-1c1a-9894-7b9a357e7117.htm">
+  <HelpTOCNode Id="8066183f-6ef2-41c8-a940-07157685df66" Title="Gears Namespace" Url="html/0fba4094-7899-1c1a-9894-7b9a357e7117.htm">
     <HelpTOCNode Title="ActionType Enumeration" Url="html/d69200e1-ff26-2347-e147-51c5aacf2b28.htm" />
     <HelpTOCNode Title="ExceptionLevel Enumeration" Url="html/311303d3-bcc6-0f96-255c-4f5c81f06c34.htm" />
-    <HelpTOCNode Id="2e21c9d2-8c20-40dc-9409-eb289f207803" Title="GearsControl Class" Url="html/f92199b1-c4ab-6b0f-0c70-deff6d1fce07.htm">
+    <HelpTOCNode Id="c08b941d-e94c-46a0-bf2e-9dec520d59fd" Title="GearsControl Class" Url="html/f92199b1-c4ab-6b0f-0c70-deff6d1fce07.htm">
       <HelpTOCNode Title="GearsControl Members" Url="html/5910bb32-a773-d960-aa70-27f71bf89fba.htm" />
-      <HelpTOCNode Id="36bb0241-f68a-4676-8362-f23decf463bf" Title="GearsControl Constructor " Url="html/24450df4-8c79-06c5-e5a1-18676f85aa9e.htm">
+      <HelpTOCNode Id="f55ed485-fe34-4828-a822-c3422fcc02b2" Title="GearsControl Constructor " Url="html/24450df4-8c79-06c5-e5a1-18676f85aa9e.htm">
         <HelpTOCNode Title="GearsControl Constructor (Control, GearsDataSource, Boolean)" Url="html/bcf22004-f736-0ff1-cbf0-3a45fd44ae45.htm" />
         <HelpTOCNode Title="GearsControl Constructor (Control, String, String, Boolean)" Url="html/565c0e20-3bde-4f1c-366d-cda430708173.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="8a899c05-13fb-4d21-a58f-9b3ade36d8f5" Title="GearsControl Fields" Url="html/31906dc9-e221-525b-f094-d10266df615c.htm">
+      <HelpTOCNode Id="520f5e46-e71a-494d-b9e9-d14f6f096918" Title="GearsControl Fields" Url="html/31906dc9-e221-525b-f094-d10266df615c.htm">
         <HelpTOCNode Title="ATTR_DS_CONNECTION_NAME Field" Url="html/179cbba2-a64f-c7fa-7aa3-3e4f27c2f636.htm" />
         <HelpTOCNode Title="ATTR_DS_NAMESPACE Field" Url="html/b3f5236e-c15d-3fd7-b8a8-049b10d8bd17.htm" />
         <HelpTOCNode Title="ATTR_OPERATOR Field" Url="html/5c9845f0-fe81-84ca-cf34-08f7ac65fb87.htm" />
@@ -21,18 +21,17 @@
         <HelpTOCNode Title="ID_ATTR_KEY Field" Url="html/c8929951-a0c3-44c1-dab2-23b158046b2a.htm" />
         <HelpTOCNode Title="VALUE_SEPARATOR Field" Url="html/f07ecea9-9dfa-f4b3-fdc6-5c8d6d0a2726.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="82322fda-0aa6-41e4-9ba5-045f4a184255" Title="GearsControl Methods" Url="html/603df31d-e2a5-46b4-278a-4a31a751676f.htm">
+      <HelpTOCNode Id="a86502f2-5b92-45c8-8a3c-0ca35611072f" Title="GearsControl Methods" Url="html/603df31d-e2a5-46b4-278a-4a31a751676f.htm">
         <HelpTOCNode Title="asKey Method " Url="html/d13501d1-fc85-698f-2f65-e93f828a713f.htm" />
-        <HelpTOCNode Id="c709b093-4469-4bfe-b347-67d21b3f8833" Title="Control Method " Url="html/66c1be3b-7bf3-1c52-56c0-045ce5054ef3.htm">
-          <HelpTOCNode Title="Control(T) Method " Url="html/69d9ec3a-b875-353d-1b1c-59bfc1714224.htm" />
+        <HelpTOCNode Id="848a346f-6703-4121-bfa1-cb9f69df28e7" Title="Control Method " Url="html/66c1be3b-7bf3-1c52-56c0-045ce5054ef3.htm">
           <HelpTOCNode Title="Control Method " Url="html/b7906f79-6091-3851-0235-4fabb847b9a9.htm" />
+          <HelpTOCNode Title="Control(T) Method " Url="html/69d9ec3a-b875-353d-1b1c-59bfc1714224.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Title="createControlInfo Method " Url="html/d3a4975a-4bcd-f05e-2bf7-4c5463047432.htm" />
-        <HelpTOCNode Id="a07e40de-6610-44f2-bcb7-4c3450ea0be2" Title="dataAttach Method " Url="html/032ff8bf-9b9e-144a-6aaa-07d99c451086.htm">
+        <HelpTOCNode Id="8813597b-43db-4943-bba8-ff75d4fdfcb9" Title="dataAttach Method " Url="html/032ff8bf-9b9e-144a-6aaa-07d99c451086.htm">
           <HelpTOCNode Title="dataAttach Method (DataTable)" Url="html/3cae885e-9f8b-ce36-20dc-5a4dda15defd.htm" />
           <HelpTOCNode Title="dataAttach Method (GearsDataSource)" Url="html/513c947f-67a9-05a5-02e2-9ca33cc17976.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="05c67e38-6946-481c-bf9f-41a3b8a64d1d" Title="dataBind Method " Url="html/ed21f25a-15e0-16cc-e121-0d47bdfad8f6.htm">
+        <HelpTOCNode Id="b7d496cf-4170-4ec8-90e4-dd29941ae868" Title="dataBind Method " Url="html/ed21f25a-15e0-16cc-e121-0d47bdfad8f6.htm">
           <HelpTOCNode Title="dataBind Method (DataTable)" Url="html/91bdd2b4-0ef3-22fb-1c07-2b4f4432044e.htm" />
           <HelpTOCNode Title="dataBind Method (GearsDTO)" Url="html/67b3b73c-9044-ab9e-05bd-8d41d05ff706.htm" />
         </HelpTOCNode>
@@ -40,27 +39,28 @@
         <HelpTOCNode Title="extractControl Method " Url="html/1c4367ca-e497-d2f7-1e1a-bed5b28b9fe9.htm" />
         <HelpTOCNode Title="extractControlType Method " Url="html/2575efda-59b7-3375-5336-6a2d1479f524.htm" />
         <HelpTOCNode Title="extractDataSourceid Method " Url="html/9dbcd547-4f3e-5b78-b5a9-f39123d0afb5.htm" />
-        <HelpTOCNode Id="440637a3-bc86-411a-893e-258ce46f18c2" Title="getControlAttribute Method " Url="html/c42ff844-9281-c193-8bf1-74e50a07d9d7.htm">
+        <HelpTOCNode Id="efcff74c-9de0-432d-b2a3-a54f30b521f3" Title="getControlAttribute Method " Url="html/c42ff844-9281-c193-8bf1-74e50a07d9d7.htm">
           <HelpTOCNode Title="getControlAttribute Method (String)" Url="html/5a9e1553-4ed5-c272-d1c4-f7e918f2a512.htm" />
           <HelpTOCNode Title="getControlAttribute Method (Control, String)" Url="html/19d1921b-3dcb-7909-1a19-062388b86583.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="getValidationError Method " Url="html/d7d02cf6-a8a5-755f-27cf-56ec1de04174.htm" />
         <HelpTOCNode Title="getValue Method " Url="html/385c6d2b-ec6f-dbc5-0352-7f4122464ad0.htm" />
-        <HelpTOCNode Id="ba0d5721-ce20-4ac4-a03c-48dfdb19abcc" Title="isIdAttributeExist Method " Url="html/7ec24f86-e53c-88e4-794c-c4840f4d9f66.htm">
+        <HelpTOCNode Id="611decf6-24e1-431d-9e54-1b4d99ef5fec" Title="isIdAttributeExist Method " Url="html/7ec24f86-e53c-88e4-794c-c4840f4d9f66.htm">
           <HelpTOCNode Title="isIdAttributeExist Method (String)" Url="html/aec800d0-cc4d-0eba-de23-197f313b07c7.htm" />
           <HelpTOCNode Title="isIdAttributeExist Method (String, String)" Url="html/c5a7eebd-6ab0-0d09-da77-9cc81bd7548e.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="isValidateOk Method " Url="html/587690bb-19c5-c09a-b853-b4612996e1e1.htm" />
         <HelpTOCNode Title="loadAttribute Method " Url="html/6e356fb9-aee0-4723-8889-71054cb612bb.htm" />
-        <HelpTOCNode Id="6b15805b-50d7-45cc-841d-6ff917e61543" Title="serializeValue Method " Url="html/35136a36-75a7-43de-a14f-9f56ed2f5e11.htm">
+        <HelpTOCNode Id="004b5c94-0de0-4747-95ef-bb1d8ef436aa" Title="serializeValue Method " Url="html/35136a36-75a7-43de-a14f-9f56ed2f5e11.htm">
           <HelpTOCNode Title="serializeValue Method (ArrayList)" Url="html/6fd1c809-275e-32fc-86f8-14558013e390.htm" />
           <HelpTOCNode Title="serializeValue Method (DataKey)" Url="html/19fb13f3-f101-a93c-1ef4-5edc33fe89d1.htm" />
           <HelpTOCNode Title="serializeValue Method (ListControl)" Url="html/a066f71a-10e3-9439-e9e8-6eb689b86624.htm" />
           <HelpTOCNode Title="serializeValue Method (DataTable, Int32)" Url="html/bbac4682-2723-a910-f32b-1297368eb59d.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="setValue Method " Url="html/b3295d4a-b7c7-dbfd-947a-910f7a7338cf.htm" />
+        <HelpTOCNode Title="toControlInfo Method " Url="html/74270f06-763b-7250-c223-4f62184c1e57.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="a4cf1bc1-f430-4b3d-9589-8cd9a0427fbf" Title="GearsControl Properties" Url="html/f50214f9-8b19-94f4-772b-c7162a6f52ff.htm">
+      <HelpTOCNode Id="e1ba6589-ce6f-4d6d-97c4-5f5565c1afae" Title="GearsControl Properties" Url="html/f50214f9-8b19-94f4-772b-c7162a6f52ff.htm">
         <HelpTOCNode Title="ConnectionName Property " Url="html/8da516a2-4517-d4a7-8a00-9052da007784.htm" />
         <HelpTOCNode Title="ControlID Property " Url="html/26a094cc-6878-d01a-2233-f7ec2c7ebed1.htm" />
         <HelpTOCNode Title="DataBinder Property " Url="html/911c839f-25c2-1017-46e8-ebbcd4216e7c.htm" />
@@ -78,17 +78,28 @@
         <HelpTOCNode Title="validateeValue Property " Url="html/7f9f1e00-1c36-7169-fa2c-8a367acae2b3.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="80c07eab-8418-4346-acde-fc1417df1fa3" Title="GearsControlInfo Class" Url="html/9b815f42-f1da-f523-eb56-60861ad0bd20.htm">
+    <HelpTOCNode Id="c1b9018f-5a0b-426c-9929-d5e42885a0fe" Title="GearsControlExtension Class" Url="html/a64e1ede-877d-3582-a1a7-ab8343dfdf62.htm">
+      <HelpTOCNode Title="GearsControlExtension Members" Url="html/e89a50e4-1b1a-cce1-27ae-b8993c768f87.htm" />
+      <HelpTOCNode Id="40365b88-d7ef-40bd-9720-a5d1eb84461b" Title="GearsControlExtension Methods" Url="html/6f7bcc86-5276-390b-e40a-21b922afda76.htm">
+        <HelpTOCNode Id="2c16be0d-61bc-4255-a1ae-4189d9572c7b" Title="toGControl Method " Url="html/5e73986c-3685-f2b8-3558-ddd3a2cb6d40.htm">
+          <HelpTOCNode Title="toGControl Method (Control)" Url="html/f06db923-ea92-945b-4cb0-cf6649633b7b.htm" />
+          <HelpTOCNode Title="toGControl Method (Control, String, String)" Url="html/e026e855-4e87-3e95-ba48-05540258ada0.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="358800fe-dc7a-4d61-9078-2ab7c63bb5e1" Title="GearsControlInfo Class" Url="html/9b815f42-f1da-f523-eb56-60861ad0bd20.htm">
       <HelpTOCNode Title="GearsControlInfo Members" Url="html/3a4dbb8f-9e4c-49d4-fbb4-cb5ae711f1af.htm" />
-      <HelpTOCNode Id="a242377f-545d-4bdb-b833-c26784824d80" Title="GearsControlInfo Constructor " Url="html/59dda6a3-7dc2-5fae-3729-155b074f03f2.htm">
+      <HelpTOCNode Id="88a3885a-b6d2-4fd8-9587-2da35348b16e" Title="GearsControlInfo Constructor " Url="html/59dda6a3-7dc2-5fae-3729-155b074f03f2.htm">
         <HelpTOCNode Title="GearsControlInfo Constructor (GearsControl)" Url="html/a4ca0b02-994d-3368-49b6-5965cb3dac7b.htm" />
         <HelpTOCNode Title="GearsControlInfo Constructor (GearsControlInfo)" Url="html/f211319d-5c53-2645-68d9-507cef5f3261.htm" />
         <HelpTOCNode Title="GearsControlInfo Constructor (String, String, String)" Url="html/96acf4ea-d369-f78b-1804-0a9a82f3d03c.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="ed49b3c5-0ce0-42c8-bc83-6464c102b3e9" Title="GearsControlInfo Methods" Url="html/bb25626c-493f-f583-d38b-70b073821114.htm">
+      <HelpTOCNode Id="059856a5-bee9-4a72-93b1-5028ff426250" Title="GearsControlInfo Methods" Url="html/bb25626c-493f-f583-d38b-70b073821114.htm">
+        <HelpTOCNode Title="toFilter Method " Url="html/e1d8faf2-02eb-08b8-65ed-17e6a00ae31f.htm" />
+        <HelpTOCNode Title="toSelection Method " Url="html/d2dd8590-8603-cd1f-b36a-f638c8222415.htm" />
         <HelpTOCNode Title="ToString Method " Url="html/026c3c15-24b9-ecfd-35eb-b9c2f708add6.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="c96ac80e-0344-43f2-9d4e-7af651c0e377" Title="GearsControlInfo Properties" Url="html/54f89c1b-12b8-3150-dffd-a895489809e7.htm">
+      <HelpTOCNode Id="e3569143-198a-41db-aa6c-65850688c738" Title="GearsControlInfo Properties" Url="html/54f89c1b-12b8-3150-dffd-a895489809e7.htm">
         <HelpTOCNode Title="ControlID Property " Url="html/a43bf03f-65e4-072b-9a80-de3b1aa958cb.htm" />
         <HelpTOCNode Title="DataSourceID Property " Url="html/633a4a6a-98ee-fa93-4475-825d4e861324.htm" />
         <HelpTOCNode Title="IsFilterAttribute Property " Url="html/eccd1c3c-320e-4ce2-2eec-5509e3e07346.htm" />
@@ -99,19 +110,19 @@
         <HelpTOCNode Title="Value Property " Url="html/fb019db4-955e-a3b9-b3b0-b3740fb34072.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="510ba08f-1305-4fa6-98fc-caab2587fa47" Title="GearsDTO Class" Url="html/ffdbbc80-ef37-4597-7211-07373284c35e.htm">
+    <HelpTOCNode Id="81564f27-f426-439b-ba7e-a9bd6cef3acc" Title="GearsDTO Class" Url="html/ffdbbc80-ef37-4597-7211-07373284c35e.htm">
       <HelpTOCNode Title="GearsDTO Members" Url="html/ed3391f2-fd40-a2d9-dd19-4c5f1e05a545.htm" />
-      <HelpTOCNode Id="a1680f72-4a27-4e62-9329-92c69b328463" Title="GearsDTO Constructor " Url="html/08c97634-2fcf-68e3-8a64-8b51f9bfbb85.htm">
+      <HelpTOCNode Id="49e316d8-35f1-4e2f-91d3-c1c9e89ed4f0" Title="GearsDTO Constructor " Url="html/08c97634-2fcf-68e3-8a64-8b51f9bfbb85.htm">
         <HelpTOCNode Title="GearsDTO Constructor (ActionType)" Url="html/744ea70f-280d-46f3-5922-0c89ac1daa82.htm" />
         <HelpTOCNode Title="GearsDTO Constructor (GearsDTO)" Url="html/47de4ab3-ea82-03f4-1a63-b1b8f08bf1c9.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="75a74650-5eb6-4724-ba29-8ae0a0e44266" Title="GearsDTO Methods" Url="html/40f68e20-7c93-4a0c-1422-69d2fdc487fe.htm">
-        <HelpTOCNode Id="95862a6c-019e-44a8-9f0b-c08280dedbb8" Title="addControlInfo Method " Url="html/2f367063-265c-d18c-3190-fa4acf454008.htm">
+      <HelpTOCNode Id="672e33eb-cd3b-4d14-a262-c73be5511dcc" Title="GearsDTO Methods" Url="html/40f68e20-7c93-4a0c-1422-69d2fdc487fe.htm">
+        <HelpTOCNode Id="a5487cab-5822-46a1-a931-2533df08d6a1" Title="addControlInfo Method " Url="html/2f367063-265c-d18c-3190-fa4acf454008.htm">
           <HelpTOCNode Title="addControlInfo Method (GearsControl)" Url="html/841951f0-0941-6144-d7fb-6ce0436418bf.htm" />
           <HelpTOCNode Title="addControlInfo Method (GearsControlInfo)" Url="html/2aa08717-2c09-a68d-548c-799f15d637ed.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="confirmSql Method " Url="html/30c5a45f-56bf-ce33-a866-19b09863866c.htm" />
-        <HelpTOCNode Id="bef160b6-1dd7-4ce9-b75d-0649ea2911be" Title="ControlInfo Method " Url="html/c7c44692-1f65-afc8-71a8-36ff66147c6e.htm">
+        <HelpTOCNode Id="5cfac7bf-b017-4bae-9200-6ff60c20aece" Title="ControlInfo Method " Url="html/c7c44692-1f65-afc8-71a8-36ff66147c6e.htm">
           <HelpTOCNode Title="ControlInfo Method " Url="html/b868b09a-fa87-c834-917d-71a0795f62a5.htm" />
           <HelpTOCNode Title="ControlInfo Method (String)" Url="html/cc7284db-d593-4f40-d66d-0af22c701e75.htm" />
         </HelpTOCNode>
@@ -121,22 +132,22 @@
       </HelpTOCNode>
       <HelpTOCNode Title="GearsDTO Properties" Url="html/0e01715f-b3da-cce3-264b-333ffe9cf3b6.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="011b0ffc-b51c-43c5-9d6e-ad0081781ad4" Title="GearsException Class" Url="html/e18fe774-34e7-cef1-2d0b-3adc767e4ff6.htm">
+    <HelpTOCNode Id="ad0f99f8-266e-41da-ac19-2329ff157bb0" Title="GearsException Class" Url="html/e18fe774-34e7-cef1-2d0b-3adc767e4ff6.htm">
       <HelpTOCNode Title="GearsException Members" Url="html/ac22c5a6-2714-6fe5-399a-8df51694a1ca.htm" />
-      <HelpTOCNode Id="312097c2-de25-4b65-afb0-7d7db7256f44" Title="GearsException Constructor " Url="html/5480ad84-8597-92e0-9fde-f50d79c40661.htm">
+      <HelpTOCNode Id="58789d13-42d3-4ad5-afb9-d9c420168657" Title="GearsException Constructor " Url="html/5480ad84-8597-92e0-9fde-f50d79c40661.htm">
         <HelpTOCNode Title="GearsException Constructor " Url="html/439b0231-ef62-e06b-2550-75d7800948f6.htm" />
         <HelpTOCNode Title="GearsException Constructor (String, Exception)" Url="html/10e5f4a2-fd5d-8622-e1b3-1e9eff3466be.htm" />
         <HelpTOCNode Title="GearsException Constructor (String, String[])" Url="html/5c806c98-ca71-e2c4-9186-b2d98d0577e3.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="44b31c9b-79d5-4298-9232-4bbc912364b8" Title="GearsException Fields" Url="html/48a4d6f7-c088-d446-6a10-9fa3689efb97.htm">
+      <HelpTOCNode Id="73561e66-c867-4a8d-b19b-f2ef62376378" Title="GearsException Fields" Url="html/48a4d6f7-c088-d446-6a10-9fa3689efb97.htm">
         <HelpTOCNode Title="MSG_DETAIL Field" Url="html/4b7c8887-6947-56c4-d5a7-bf881ca3f961.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="41cebfb8-7779-4883-94ad-9c79fd34ba1f" Title="GearsException Methods" Url="html/4934edf9-fe28-0b94-6b75-7546bffac72e.htm">
-        <HelpTOCNode Id="f7d6954c-cafc-4017-b14d-0f68248072c7" Title="addDetail Method " Url="html/093e0d10-1da4-1a07-2894-36a5432683ef.htm">
+      <HelpTOCNode Id="5fda6a1f-d572-450a-b822-099a5ad117f0" Title="GearsException Methods" Url="html/4934edf9-fe28-0b94-6b75-7546bffac72e.htm">
+        <HelpTOCNode Id="a1b29cde-d213-40b2-81dc-c07fcb37926c" Title="addDetail Method " Url="html/093e0d10-1da4-1a07-2894-36a5432683ef.htm">
           <HelpTOCNode Title="addDetail Method (String[])" Url="html/8c948683-09a3-52f0-baeb-931129e6b23a.htm" />
           <HelpTOCNode Title="addDetail Method (String, String[])" Url="html/85cf774c-8990-0879-223f-e1444b71f237.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="b07acea9-fc63-4771-9359-645b95551f78" Title="clearDetail Method " Url="html/96b8e29d-0174-494d-187c-e6c4f914e3a7.htm">
+        <HelpTOCNode Id="22126c9b-443e-4d34-826f-ad355d09ea25" Title="clearDetail Method " Url="html/96b8e29d-0174-494d-187c-e6c4f914e3a7.htm">
           <HelpTOCNode Title="clearDetail Method " Url="html/f6d639ab-59d5-0aa7-7b22-83e9072e6413.htm" />
           <HelpTOCNode Title="clearDetail Method (String)" Url="html/8daa2c1a-9599-7859-b078-673dbd7b6128.htm" />
         </HelpTOCNode>
@@ -149,14 +160,14 @@
       <HelpTOCNode Title="GearsException Properties" Url="html/42e7fe48-5a91-1f87-92eb-6776bc78efdf.htm" />
       <HelpTOCNode Title="GearsException Events" Url="html/5df4e6c8-cc97-132b-0334-ab52b83d6f32.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="ad7314bc-fb13-4d96-9c93-3a3189f4b999" Title="GearsLogStack Class" Url="html/e01c4e53-83e8-85b4-1d3b-eae30171679b.htm">
+    <HelpTOCNode Id="6bf7cc9f-17b1-4217-a56a-b72b90eb0458" Title="GearsLogStack Class" Url="html/e01c4e53-83e8-85b4-1d3b-eae30171679b.htm">
       <HelpTOCNode Title="GearsLogStack Members" Url="html/2592aa4f-8d26-b918-9f45-2ac8258beb96.htm" />
-      <HelpTOCNode Id="d1328e01-b8a7-47ad-814d-401b2354ee05" Title="GearsLogStack Methods" Url="html/e707e3b3-b7e9-9853-7a93-da259e2924a2.htm">
+      <HelpTOCNode Id="52e814ae-0212-46f9-b2f0-15dc42803b23" Title="GearsLogStack Methods" Url="html/e707e3b3-b7e9-9853-7a93-da259e2924a2.htm">
         <HelpTOCNode Title="clearLogStack Method " Url="html/d016456d-4202-1640-66b7-f820a0e8be30.htm" />
         <HelpTOCNode Title="getLogStack Method " Url="html/099f29db-a417-b732-b04c-b771855c80b9.htm" />
         <HelpTOCNode Title="IsTraceOn Method " Url="html/ec1848a9-bda4-2342-210f-abc4c8ec1034.htm" />
         <HelpTOCNode Title="makeDisplayString Method " Url="html/30997a04-7859-5eb2-0514-2cfe534e4cc4.htm" />
-        <HelpTOCNode Id="b2fb5956-3449-4425-b730-e93287ff1101" Title="setLog Method " Url="html/c1e6d6af-8c1e-c655-0b4a-e9ed6f8534c6.htm">
+        <HelpTOCNode Id="f4da2c0c-f07b-4412-839d-95ee0b505ea0" Title="setLog Method " Url="html/c1e6d6af-8c1e-c655-0b4a-e9ed6f8534c6.htm">
           <HelpTOCNode Title="setLog Method (GearsException)" Url="html/5105ae6f-c6fb-ea2c-cc13-8f76e6c0f7ae.htm" />
           <HelpTOCNode Title="setLog Method (String, String[])" Url="html/0fe5ab7c-b873-9b47-82b5-af37b27e8382.htm" />
         </HelpTOCNode>
@@ -164,31 +175,32 @@
         <HelpTOCNode Title="traceOn Method " Url="html/23e4fc39-fd97-d5f0-f719-0f57ed76fe41.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="73aa2b0c-acad-4fbf-8fdb-db68f1fca97d" Title="GearsMediator Class" Url="html/3181390c-29b0-43c3-5e96-513300bc8dcb.htm">
+    <HelpTOCNode Id="8e452831-86d6-4a5a-af8b-0f20894261a8" Title="GearsMediator Class" Url="html/3181390c-29b0-43c3-5e96-513300bc8dcb.htm">
       <HelpTOCNode Title="GearsMediator Members" Url="html/ecf49ec3-fa27-f2ee-bb62-954ff3a94345.htm" />
       <HelpTOCNode Title="GearsMediator Constructor " Url="html/defe434a-c1c2-4ef9-db08-1d203047af49.htm" />
-      <HelpTOCNode Id="a350f2ec-ea1a-4f51-92e9-b5aa8f5fa818" Title="GearsMediator Methods" Url="html/2683e8db-db4d-0d62-6c30-fcd1008ac2e6.htm">
-        <HelpTOCNode Id="f4c9bcfd-7803-414b-a415-bb35012679d3" Title="addControl Method " Url="html/c7ca939b-ce1d-e1b4-3f7c-4016dde8c613.htm">
+      <HelpTOCNode Id="9294ce6c-b784-412a-873f-700d4c6725de" Title="GearsMediator Methods" Url="html/2683e8db-db4d-0d62-6c30-fcd1008ac2e6.htm">
+        <HelpTOCNode Id="8dd00f98-cb76-4133-be9e-a370901d85f6" Title="addControl Method " Url="html/c7ca939b-ce1d-e1b4-3f7c-4016dde8c613.htm">
           <HelpTOCNode Title="addControl Method (GearsControl)" Url="html/e9621e37-e73a-7cba-23ba-3996af786328.htm" />
           <HelpTOCNode Title="addControl Method (Control, Boolean)" Url="html/d3f3b4b4-c4e3-5a68-3d80-a5a630c95c71.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="addControls Method " Url="html/2eb5b109-030d-7f9e-cc5d-19675bfe9e96.htm" />
-        <HelpTOCNode Id="75262e60-577a-46b6-8438-f7b75ba8623e" Title="addExcept Method " Url="html/a1a0ac8d-cefc-20a7-8ef5-a20beaf58f23.htm">
+        <HelpTOCNode Id="71c9b28d-bdd7-48c4-a8a8-a86866fb3104" Title="addExcept Method " Url="html/a1a0ac8d-cefc-20a7-8ef5-a20beaf58f23.htm">
           <HelpTOCNode Title="addExcept Method (Control, Control, List(String))" Url="html/7c001f51-d185-93c1-c557-39776b7465ee.htm" />
           <HelpTOCNode Title="addExcept Method (Control, Control, List(Control))" Url="html/0cb4cb88-4e88-ed94-dd72-5f008f1f5e81.htm" />
           <HelpTOCNode Title="addExcept Method (Control, Control, Control[])" Url="html/664381ec-ea04-9a8d-1a1a-904cf015489a.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="411ab8ef-dec7-4e7d-95eb-8621e1dc04cc" Title="addRelation Method " Url="html/05e93b9b-e161-c0fe-d58c-5c43e710150b.htm">
+        <HelpTOCNode Id="b3909237-2564-4484-acac-aad70bd2d8d2" Title="addRelation Method " Url="html/05e93b9b-e161-c0fe-d58c-5c43e710150b.htm">
           <HelpTOCNode Title="addRelation Method (String, String)" Url="html/3007826a-8c25-6a12-d0e5-18107e74304a.htm" />
           <HelpTOCNode Title="addRelation Method (Control, Control)" Url="html/c77aeba0-2f35-8aa6-4f94-82d862823755.htm" />
           <HelpTOCNode Title="addRelation Method (GearsControl, GearsControl)" Url="html/dc6007c7-a742-7774-8ba5-dd12d1517ea6.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="clearExcept Method " Url="html/7449200b-6e6e-1d8e-331f-10c1f99facac.htm" />
-        <HelpTOCNode Id="f54b7f66-ca5c-4fea-93a6-c8d5ad3b6a5c" Title="execute Method " Url="html/c2cbddef-6c30-6077-52ec-a3ac75126511.htm">
+        <HelpTOCNode Title="clearRelation Method " Url="html/061f5972-7af1-8af3-be93-8a8973e4f69f.htm" />
+        <HelpTOCNode Id="1a5c5275-58d1-4bb0-b70b-c4ec0b3f6c6d" Title="execute Method " Url="html/c2cbddef-6c30-6077-52ec-a3ac75126511.htm">
           <HelpTOCNode Title="execute Method (Control, ActionType)" Url="html/ce591785-3058-9216-927c-70b150869e94.htm" />
           <HelpTOCNode Title="execute Method (Control, GearsDTO)" Url="html/c61ae1ec-95a8-0f67-db8a-6a48e4925409.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="88d5e6b5-5677-4665-8a1d-86d28a7fd6f6" Title="GControl Method " Url="html/7456ea37-9a3a-6098-bea5-9775dc8e126f.htm">
+        <HelpTOCNode Id="069422f4-6192-460a-b39b-a192b45c56bb" Title="GControl Method " Url="html/7456ea37-9a3a-6098-bea5-9775dc8e126f.htm">
           <HelpTOCNode Title="GControl Method (String)" Url="html/89c57b3c-46f5-fec4-ddf7-08f87ae09858.htm" />
           <HelpTOCNode Title="GControl Method (Control)" Url="html/59e1862a-1bf7-a021-798d-fb0dcafa052d.htm" />
         </HelpTOCNode>
@@ -198,12 +210,12 @@
         <HelpTOCNode Title="lockDtoWhenSend Method " Url="html/676a18ee-61e9-840b-5262-760c9a9e2b84.htm" />
         <HelpTOCNode Title="makeDTO Method " Url="html/6ce78f7e-c700-e1c9-5ebf-ea1471d7112e.htm" />
         <HelpTOCNode Title="makeRelationMap Method " Url="html/c609e552-593f-78ab-d03a-20c95ed53cc6.htm" />
-        <HelpTOCNode Id="72c74d9c-7a71-4f44-b1d9-196abf096710" Title="Relation Method " Url="html/2b68fa8a-6426-a280-0ff9-623db151cd0b.htm">
+        <HelpTOCNode Id="caa3b28a-8f18-490f-aebf-7c12fd2c30d4" Title="Relation Method " Url="html/2b68fa8a-6426-a280-0ff9-623db151cd0b.htm">
           <HelpTOCNode Title="Relation Method (String)" Url="html/64fc5660-d860-607a-8552-b1b39744f993.htm" />
           <HelpTOCNode Title="Relation Method (Control)" Url="html/70b05882-383d-eb2f-9f4e-62bc08413a3d.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="replaceControl Method " Url="html/ffda147c-c464-39d9-6cab-374cdfd91c5a.htm" />
-        <HelpTOCNode Id="9d42913e-4cca-45af-9ac1-b251727c64f6" Title="send Method " Url="html/90216733-927e-2ed8-e7ab-c12101c4e2a1.htm">
+        <HelpTOCNode Id="34286b65-35e9-4854-8ba7-94664413a8c9" Title="send Method " Url="html/90216733-927e-2ed8-e7ab-c12101c4e2a1.htm">
           <HelpTOCNode Title="send Method (Control, ActionType)" Url="html/e25f9823-136d-3d5e-a753-b34fd68f787f.htm" />
           <HelpTOCNode Title="send Method (Control, GearsDTO)" Url="html/715d0d96-845b-4f4f-4787-d2704b1302ef.htm" />
           <HelpTOCNode Title="send Method (Control, Control, ActionType)" Url="html/e77f85af-50f0-948a-9658-f3a500b76b56.htm" />
@@ -211,17 +223,17 @@
         </HelpTOCNode>
         <HelpTOCNode Title="ToString Method " Url="html/4e2689cb-eaf5-eb46-1cb7-1b642ea24a31.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="e432a926-fd53-45cb-b116-870369a7ca6d" Title="GearsMediator Properties" Url="html/e08008d8-2341-c997-4f1c-8dfb8609ec66.htm">
+      <HelpTOCNode Id="b226f9d9-a66b-41a3-ba2a-22369bd0ae2f" Title="GearsMediator Properties" Url="html/e08008d8-2341-c997-4f1c-8dfb8609ec66.htm">
         <HelpTOCNode Title="ConnectionName Property " Url="html/ed215f36-663f-4b2c-da99-0dacdbe8e180.htm" />
         <HelpTOCNode Title="DsNameSpace Property " Url="html/d091d3fd-641a-0b17-5734-7a80ff847899.htm" />
         <HelpTOCNode Title="GControls Property " Url="html/7b7f66d7-34dd-e1fa-a805-d73e2d0947b4.htm" />
         <HelpTOCNode Title="GLog Property " Url="html/50398fa9-ace8-538d-c429-67923c81ffac.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="0b3675bb-a3ce-4d6f-9a75-74cfcd9b7db1" Title="GearsPage Class" Url="html/e560fa82-2b11-a5b4-3db3-ea572cae404c.htm">
+    <HelpTOCNode Id="07b9bbd3-b4e6-40aa-a7e2-b4a1960c240b" Title="GearsPage Class" Url="html/e560fa82-2b11-a5b4-3db3-ea572cae404c.htm">
       <HelpTOCNode Title="GearsPage Members" Url="html/778d955a-70c7-279d-172b-e620bb3e8cb3.htm" />
       <HelpTOCNode Title="GearsPage Constructor " Url="html/21a47b76-99f4-59cf-2410-7103971799ea.htm" />
-      <HelpTOCNode Id="c3b7c501-dede-4a69-98f6-7d44958da630" Title="GearsPage Fields" Url="html/137ff258-85f2-15f8-62ae-4255a8608d8d.htm">
+      <HelpTOCNode Id="404b5b18-4671-47c1-aea7-e05ba36337f9" Title="GearsPage Fields" Url="html/137ff258-85f2-15f8-62ae-4255a8608d8d.htm">
         <HelpTOCNode Title="A_ROLE_AUTH_ALLOW Field" Url="html/1ec8149c-8124-b056-34cc-a912777de12f.htm" />
         <HelpTOCNode Title="A_ROLE_EVAL_ACTION Field" Url="html/6460a3d5-d794-e162-26ea-4e1d89932ef0.htm" />
         <HelpTOCNode Title="CONFIG_CONNECTION_NAME Field" Url="html/7ce7af09-c63c-8d93-48f1-2420def220bf.htm" />
@@ -236,26 +248,26 @@
         <HelpTOCNode Title="V_VALIDATORS Field" Url="html/114d2376-f941-d983-559d-80b5d95f72d3.htm" />
         <HelpTOCNode Title="VIEW_STATE_SEPARATOR Field" Url="html/eadcf0b5-1bdb-7b16-af8e-3fe8cec70767.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="93184b79-433e-444a-ae67-20302dbe323e" Title="GearsPage Methods" Url="html/e0ba051a-b45e-b7ce-f30b-5e40c0520847.htm">
-        <HelpTOCNode Id="05b2a401-a5c8-49c3-ae49-edc9d0ee294e" Title="GAdd Method " Url="html/1dee8ddd-f583-a812-0153-6605954deb9d.htm">
+      <HelpTOCNode Id="f2053a64-592d-4e01-b543-fc1681fcbce5" Title="GearsPage Methods" Url="html/e0ba051a-b45e-b7ce-f30b-5e40c0520847.htm">
+        <HelpTOCNode Id="5eefd4d7-8433-40fc-a589-5eb59b993a97" Title="GAdd Method " Url="html/1dee8ddd-f583-a812-0153-6605954deb9d.htm">
           <HelpTOCNode Title="GAdd Method (Control, GearsDataSource)" Url="html/090f9f46-8ae4-8762-f4ad-ae1fa9d0abc0.htm" />
           <HelpTOCNode Title="GAdd Method (Control, Boolean)" Url="html/d038b0ac-b057-995b-44f9-a1606ec5f5c3.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="GDelete Method " Url="html/ab02d0be-9f91-e754-d4e1-a4dd44cab194.htm" />
-        <HelpTOCNode Id="6d09b4d6-6d7b-45a2-9b1b-39e62ad8c20c" Title="GFilterBy Method " Url="html/9e24cf74-1e7b-d61e-d003-eadd461026bd.htm">
+        <HelpTOCNode Id="704d13e9-ed6b-4087-8720-50b81016e225" Title="GFilterBy Method " Url="html/9e24cf74-1e7b-d61e-d003-eadd461026bd.htm">
           <HelpTOCNode Title="GFilterBy Method (Control, GearsDTO)" Url="html/47d90123-db6a-e5e0-72bb-79a702492e65.htm" />
           <HelpTOCNode Title="GFilterBy Method (Control, Control, GearsDTO)" Url="html/7d845bd4-b0dd-ab61-a8d4-a5138d1f3218.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="GFindControl Method " Url="html/fb3a3767-23d9-9de3-2f53-bd6916452008.htm" />
-        <HelpTOCNode Id="49e00d2f-b08f-4c26-b1bd-f383e0a418a7" Title="GGet Method " Url="html/5c081f6d-8ac8-54ce-9212-0738be39f57c.htm">
+        <HelpTOCNode Id="035d737a-98a3-4956-933b-584e9f809473" Title="GGet Method " Url="html/5c081f6d-8ac8-54ce-9212-0738be39f57c.htm">
           <HelpTOCNode Title="GGet Method (String)" Url="html/39ea388b-542f-22df-120e-c7b7a7382bde.htm" />
-          <HelpTOCNode Title="GGet Method (Control)" Url="html/349884dc-8c2c-c931-4f28-09b3dc01f382.htm" />
+          <HelpTOCNode Title="GGet Method (Control)" Url="html/32e6722d-5a14-bb7c-d164-7f8754e3548f.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="GInsert Method " Url="html/7617afd1-3ed1-4157-80d6-590c193186aa.htm" />
         <HelpTOCNode Title="GIsAuth Method " Url="html/317ee2de-0b49-4475-41f8-7753dcf71db2.htm" />
         <HelpTOCNode Title="GIsValid Method " Url="html/5d7e96f4-912b-78c9-1fd9-60a1b9e1ee4b.htm" />
         <HelpTOCNode Title="GLoad Method " Url="html/204452f0-4c22-0f7f-f65d-a6764e91e490.htm" />
-        <HelpTOCNode Id="1285d9ab-e6dc-457c-a1d0-27ae7536da89" Title="GPack Method " Url="html/e024da12-b5a3-dd0e-6d85-b0f1de30ad0a.htm">
+        <HelpTOCNode Id="b727da75-f34f-4e0c-9626-b0ec069f2806" Title="GPack Method " Url="html/e024da12-b5a3-dd0e-6d85-b0f1de30ad0a.htm">
           <HelpTOCNode Title="GPack Method (Control, ActionType)" Url="html/947b2480-1963-9860-fe57-061fd1a43443.htm" />
           <HelpTOCNode Title="GPack Method (Control, GearsDTO)" Url="html/b2d96e1d-7945-75cf-4905-0954a4c1ba27.htm" />
           <HelpTOCNode Title="GPack Method (Control, Control, ActionType)" Url="html/75ac54f2-db15-923a-218b-204c35976af1.htm" />
@@ -263,14 +275,11 @@
         </HelpTOCNode>
         <HelpTOCNode Title="GRule Method " Url="html/b706c8e8-2649-aea3-224d-538ed5c57c1d.htm" />
         <HelpTOCNode Title="GSave Method " Url="html/c32ac9ca-a9cb-1b03-9c65-55aac1e5cc02.htm" />
-        <HelpTOCNode Id="016501ee-beae-4a93-901c-ca1325d6983f" Title="GSelect Method " Url="html/fcb80cd9-91cc-ddca-f522-98353e717a19.htm">
-          <HelpTOCNode Title="GSelect Method (SqlSelectItem[])" Url="html/c831ce49-95dd-c081-a3f2-46b9bb90ea40.htm" />
-          <HelpTOCNode Title="GSelect Method (List(SqlSelectItem))" Url="html/3f01c87f-8f6c-856a-1358-8e4dcb1c1645.htm" />
-        </HelpTOCNode>
+        <HelpTOCNode Title="GSource Method " Url="html/a2e34b86-3dce-e447-e002-c646d17576cf.htm" />
         <HelpTOCNode Title="GUpdate Method " Url="html/e019230a-6601-938d-9ae2-c35a60a6102e.htm" />
         <HelpTOCNode Title="IsLoggingMode Method " Url="html/40f3ca33-8d2b-8319-5309-ccd54011c25e.htm" />
         <HelpTOCNode Title="IsPageAsync Method " Url="html/bf8e6cea-0d12-8185-7322-7d20848b6939.htm" />
-        <HelpTOCNode Id="52001eeb-c911-4538-9e50-1bcb24e94a31" Title="LogToLabel Method " Url="html/5bda36af-5eab-643e-e2e0-4021379116ea.htm">
+        <HelpTOCNode Id="414ffca7-83f3-4b9f-bea0-a4503e483dd6" Title="LogToLabel Method " Url="html/5bda36af-5eab-643e-e2e0-4021379116ea.htm">
           <HelpTOCNode Title="LogToLabel Method (Boolean)" Url="html/ff9ddfad-1658-5445-fe25-a017320bb89d.htm" />
           <HelpTOCNode Title="LogToLabel Method (Boolean, Label)" Url="html/39235f37-52db-0565-2df4-8d1c9f69eca2.htm" />
         </HelpTOCNode>
@@ -282,64 +291,50 @@
         <HelpTOCNode Title="QueryValue Method " Url="html/894d930a-e462-a82f-8ae8-9ad7a9026560.htm" />
         <HelpTOCNode Title="setUpPageControls Method " Url="html/41698db5-fdd3-3dab-b39a-301269d52dbf.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="bbb63bd7-1ed0-4fa3-88f3-dccc16d32326" Title="GearsPage Properties" Url="html/2638ff4d-e64c-d912-9612-5b434e41e304.htm">
+      <HelpTOCNode Id="765c60ea-cd60-4d30-aa02-518aa59d54d2" Title="GearsPage Properties" Url="html/2638ff4d-e64c-d912-9612-5b434e41e304.htm">
         <HelpTOCNode Title="IsNeedJudgeReload Property " Url="html/e2eea231-ae79-6c9a-70bb-540197d6b338.htm" />
         <HelpTOCNode Title="IsReload Property " Url="html/9b86930d-1743-0dd0-fcbb-a4d9f2f13def.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="GearsPage Events" Url="html/b15571f0-f215-89d5-6f19-4dcd996b789e.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="b1701fd6-2ad8-46a9-a159-20efd7b8d2ed" Title="GearsPageExtendModule Class" Url="html/31468264-d8db-703e-8b3f-6a4758f0a225.htm">
-      <HelpTOCNode Title="GearsPageExtendModule Members" Url="html/8a7d408c-8d00-29fd-07d6-05d0d80b30d0.htm" />
-      <HelpTOCNode Id="4c6d490a-05c9-4c27-b788-d4776bea3d98" Title="GearsPageExtendModule Methods" Url="html/8407f74b-4507-2618-5cf5-58194235f458.htm">
-        <HelpTOCNode Title="FirstLog Method " Url="html/b753bb2d-18f9-a05c-bd4d-bdcfc0e9e9cc.htm" />
+    <HelpTOCNode Id="8cc41ba9-9297-408d-aee8-752666cb4873" Title="GearsPageExtension Class" Url="html/9e245274-fe3b-d63a-19a0-792bf7469d64.htm">
+      <HelpTOCNode Title="GearsPageExtension Members" Url="html/5df4f84b-1244-4167-0fd4-f009e98418c6.htm" />
+      <HelpTOCNode Id="8b738074-1cd6-4842-81bd-b32e6e45de39" Title="GearsPageExtension Methods" Url="html/af9b351b-5950-8b40-d393-d6fb9d6f432f.htm">
+        <HelpTOCNode Title="FirstLog Method " Url="html/aa1183e1-6827-df9e-d6b7-15294baaf09b.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="ba5196dc-7c80-47df-a817-a43efea46f2e" Title="gRuleExpression Class" Url="html/17fc698b-9c52-ebe3-3449-fc364e786932.htm">
+    <HelpTOCNode Id="a2d41a6d-1c99-4550-b5cd-3c57b0535cc9" Title="gRuleExpression Class" Url="html/17fc698b-9c52-ebe3-3449-fc364e786932.htm">
       <HelpTOCNode Title="gRuleExpression Members" Url="html/36c7c259-5ef2-5709-1378-c69b3d617600.htm" />
       <HelpTOCNode Title="gRuleExpression Constructor " Url="html/0c60216d-c240-f703-b081-aaf804d74795.htm" />
-      <HelpTOCNode Id="86ca4a57-7e92-4129-9948-b59ac0e9e842" Title="gRuleExpression Methods" Url="html/f114acc2-b525-e209-4173-62e0c8fdabc8.htm">
+      <HelpTOCNode Id="5c71eb05-3d35-4263-81d8-a293f3126101" Title="gRuleExpression Methods" Url="html/f114acc2-b525-e209-4173-62e0c8fdabc8.htm">
         <HelpTOCNode Title="Except Method " Url="html/d1852411-86ad-e29a-b5ad-be356d1bb284.htm" />
-        <HelpTOCNode Id="d960b770-0c26-47fd-9518-a654c8e1559b" Title="Relate Method " Url="html/a3f15c46-9e38-e8ff-f1e4-00b1d3f27948.htm">
+        <HelpTOCNode Id="ec46b175-3082-49d6-8c26-05836d271dc1" Title="Relate Method " Url="html/a3f15c46-9e38-e8ff-f1e4-00b1d3f27948.htm">
           <HelpTOCNode Title="Relate Method (List(Control))" Url="html/2f1ce275-6913-4403-8c1d-a56c6518a104.htm" />
           <HelpTOCNode Title="Relate Method (Control[])" Url="html/2b0603dc-d7aa-a49e-639a-43411bef42bd.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="When Method " Url="html/b3e7646f-918b-86be-67a6-1319645c4d88.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="8263b3a8-1c81-4786-96f4-42dcbfd33a85" Title="gSelectExpression Class" Url="html/9f72b471-9425-6fd4-19d1-815b362ca167.htm">
-      <HelpTOCNode Title="gSelectExpression Members" Url="html/e4fc2bf4-4cc5-253d-e3a3-3dbc6ef1bcab.htm" />
-      <HelpTOCNode Title="gSelectExpression Constructor " Url="html/89854c22-2b4d-2e49-0d6b-244f95e5f288.htm" />
-      <HelpTOCNode Id="3ad313ec-d895-4827-9078-1be69767dbab" Title="gSelectExpression Methods" Url="html/0510bc1f-f2e6-7305-73c8-2be6ab6d2f3a.htm">
-        <HelpTOCNode Id="f6ec1dd5-1103-407a-9ef5-410f9533d94e" Title="From Method " Url="html/0f125551-6ef3-e9d4-fad6-20a870c7dc07.htm">
-          <HelpTOCNode Title="From Method (String)" Url="html/30027831-de86-414d-648c-30c489112247.htm" />
-          <HelpTOCNode Title="From Method (Control)" Url="html/2d5de8ae-6a7c-1b41-b307-f8e5ddedf1c0.htm" />
-          <HelpTOCNode Title="From Method (GearsDataSource)" Url="html/8a03190a-b2b5-e7d8-3c32-ee6a020e06af.htm" />
-        </HelpTOCNode>
-      </HelpTOCNode>
-    </HelpTOCNode>
-    <HelpTOCNode Id="8bb91e2a-a6c5-4e2b-8639-7e90fe266ed0" Title="gSendExpression Class" Url="html/f3fbc05d-c29f-157b-7015-fe8224d6a5e0.htm">
+    <HelpTOCNode Id="6bee604a-031c-4015-b90a-02dc25613659" Title="gSendExpression Class" Url="html/f3fbc05d-c29f-157b-7015-fe8224d6a5e0.htm">
       <HelpTOCNode Title="gSendExpression Members" Url="html/d5dac129-1ac1-19e6-6964-a376f21d4d91.htm" />
-      <HelpTOCNode Id="6ce0dad4-3efc-4b87-b41b-2b4dbde07cf7" Title="gSendExpression Constructor " Url="html/b517b576-2528-1dc2-a62d-8f1a10ab5716.htm">
+      <HelpTOCNode Id="b20c3433-ba70-4a50-810b-0df2fa89e2ba" Title="gSendExpression Constructor " Url="html/b517b576-2528-1dc2-a62d-8f1a10ab5716.htm">
         <HelpTOCNode Title="gSendExpression Constructor (Control, gSendExpression.ExecuteSend)" Url="html/198261b4-d691-5831-8209-8148ee2f0b34.htm" />
         <HelpTOCNode Title="gSendExpression Constructor (GearsDTO, gSendExpression.ExecuteSend)" Url="html/36ac9e6d-2542-75a4-3aa2-7c7397bec5f5.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="18ecf4f3-ae56-48ef-a071-4503297883c4" Title="gSendExpression Methods" Url="html/87e52606-d5e2-5e9f-1de7-5b60ccc3867e.htm">
+      <HelpTOCNode Id="abf16b14-b781-4eea-9369-93d3e961db8f" Title="gSendExpression Methods" Url="html/87e52606-d5e2-5e9f-1de7-5b60ccc3867e.htm">
         <HelpTOCNode Title="ToAll Method " Url="html/1ccfecd4-5319-639d-2e4a-db9f95a3496d.htm" />
         <HelpTOCNode Title="ToMyself Method " Url="html/be5219aa-3f0c-91d2-6737-8cced532c207.htm" />
         <HelpTOCNode Title="ToThe Method " Url="html/1fce94b2-a3b3-f365-6375-bf97103f2983.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
     <HelpTOCNode Title="gSendExpression.ExecuteSend Delegate" Url="html/d8a56834-97e1-5c16-6437-7f44d152cf4c.htm" />
-    <HelpTOCNode Id="cdf3b72c-8a9a-41ba-8447-e6e34c13b186" Title="gSourceExpression Class" Url="html/e7ea4292-6c34-b673-593e-fb2816d043f9.htm">
+    <HelpTOCNode Id="1823838d-072d-4d95-b9f1-aed139ab8065" Title="gSourceExpression Class" Url="html/e7ea4292-6c34-b673-593e-fb2816d043f9.htm">
       <HelpTOCNode Title="gSourceExpression Members" Url="html/77c359e7-a3d8-81cd-0543-8eb6f85667eb.htm" />
-      <HelpTOCNode Id="c9bb6833-bcb3-4612-98fb-b3b5482357b3" Title="gSourceExpression Constructor " Url="html/44461ffe-faae-5dc9-9024-52334a63af8a.htm">
-        <HelpTOCNode Title="gSourceExpression Constructor (GearsControl, List(SqlSelectItem))" Url="html/1b9ebd15-4d90-e7de-fb40-7b666646d954.htm" />
-        <HelpTOCNode Title="gSourceExpression Constructor (GearsDataSource, List(SqlSelectItem))" Url="html/b24da273-712f-2d72-9da5-885057fa3860.htm" />
-        <HelpTOCNode Title="gSourceExpression Constructor (String, String, List(SqlSelectItem))" Url="html/24ffb8bd-a450-9527-61bc-7cf82f4548e4.htm" />
-      </HelpTOCNode>
-      <HelpTOCNode Id="83ba540d-c878-4c1e-b442-f60f86886e71" Title="gSourceExpression Methods" Url="html/565c42e3-41cd-d80c-9da7-f22394baba9b.htm">
-        <HelpTOCNode Id="a9deef2a-f37d-406c-be48-ff6d37b0a498" Title="Where Method " Url="html/bf4ee691-c324-4aa6-0ad7-65db7469cdf3.htm">
-          <HelpTOCNode Title="Where Method (GearsDTO)" Url="html/409a2701-a3bd-c288-0e0b-8cb5d3b676c5.htm" />
+      <HelpTOCNode Title="gSourceExpression Constructor " Url="html/c7bc66b9-e9ab-1e9c-10cc-03a41431d5a8.htm" />
+      <HelpTOCNode Id="b33fc669-98d1-477f-ac00-154ab1680ddf" Title="gSourceExpression Methods" Url="html/565c42e3-41cd-d80c-9da7-f22394baba9b.htm">
+        <HelpTOCNode Id="233e6d56-f1c4-4738-ab05-79a05a87a968" Title="Where Method " Url="html/bf4ee691-c324-4aa6-0ad7-65db7469cdf3.htm">
+          <HelpTOCNode Title="Where Method (List(Control))" Url="html/41322975-608f-093d-f5cc-eefca5d85801.htm" />
+          <HelpTOCNode Title="Where Method (Control[])" Url="html/bc38899f-a66e-0168-ee7a-d5db2835d62d.htm" />
           <HelpTOCNode Title="Where Method (SqlFilterItem[])" Url="html/8ac91ad8-8cd4-fd6d-fb5a-3854713e1717.htm" />
           <HelpTOCNode Title="Where Method (List(SqlFilterItem))" Url="html/49735685-366b-1132-8c98-3af022a74309.htm" />
         </HelpTOCNode>
@@ -347,10 +342,10 @@
     </HelpTOCNode>
     <HelpTOCNode Title="IAttributeMarker Interface" Url="html/08a9d05f-8d72-871f-957a-68be5f233a25.htm" />
   </HelpTOCNode>
-  <HelpTOCNode Id="1d0345e4-cf4c-4f7e-9165-a6cf0fcf1dd9" Title="Gears.Binder Namespace" Url="html/6dcbf8fa-ac15-2df0-7208-cfd7d441763a.htm">
-    <HelpTOCNode Id="7b62663d-f641-497d-b0c0-81e6e07a4bd9" Title="GearsDataAttachException Class" Url="html/3cf52f1b-85ce-07fb-3b78-ffea73f2043c.htm">
+  <HelpTOCNode Id="97bbcbac-b46f-4e68-9549-2d55ad472d3f" Title="Gears.Binder Namespace" Url="html/6dcbf8fa-ac15-2df0-7208-cfd7d441763a.htm">
+    <HelpTOCNode Id="165aa189-df1d-47c6-821b-37234dc864ed" Title="GearsDataAttachException Class" Url="html/3cf52f1b-85ce-07fb-3b78-ffea73f2043c.htm">
       <HelpTOCNode Title="GearsDataAttachException Members" Url="html/55412b3a-9a7a-cd86-07fc-12ffa1370515.htm" />
-      <HelpTOCNode Id="4b55a3ab-ab01-451d-9565-0b374bf2e64d" Title="GearsDataAttachException Constructor " Url="html/685cc84d-7e35-d3c5-86c5-ff056f33a582.htm">
+      <HelpTOCNode Id="32d25e4b-cfe2-44c3-ab6e-0b8f622ced05" Title="GearsDataAttachException Constructor " Url="html/685cc84d-7e35-d3c5-86c5-ff056f33a582.htm">
         <HelpTOCNode Title="GearsDataAttachException Constructor " Url="html/661d3918-e5a6-7608-17c8-26f679469bff.htm" />
         <HelpTOCNode Title="GearsDataAttachException Constructor (Control, Exception)" Url="html/0077821c-3334-818a-ec94-d9fbeb4eb168.htm" />
       </HelpTOCNode>
@@ -358,13 +353,13 @@
       <HelpTOCNode Title="GearsDataAttachException Properties" Url="html/e5cbfe82-dafe-698c-a0c1-539ce1f06486.htm" />
       <HelpTOCNode Title="GearsDataAttachException Events" Url="html/d501dff9-c997-f7f5-aee8-da309a1d1d9d.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="cda2f157-f76c-4cdc-8fa6-40d101a365ac" Title="GearsDataBinder Class" Url="html/bf737835-1300-6656-76f0-8477f2031d12.htm">
+    <HelpTOCNode Id="751e0e5b-c94c-438a-969f-8c3f9c811e57" Title="GearsDataBinder Class" Url="html/bf737835-1300-6656-76f0-8477f2031d12.htm">
       <HelpTOCNode Title="GearsDataBinder Members" Url="html/0f6a80c8-f2a9-c641-ed2a-768204eb1899.htm" />
       <HelpTOCNode Title="GearsDataBinder Constructor " Url="html/a6013e1d-961b-6c09-9309-8e47332b94e5.htm" />
-      <HelpTOCNode Id="1136384b-84b2-4cda-a9e7-3630d87edcbe" Title="GearsDataBinder Methods" Url="html/4fc332f8-4e0a-b14c-a565-6d6ec76f1608.htm">
+      <HelpTOCNode Id="31d9aba0-8078-4e39-9a69-e8a23d7678ba" Title="GearsDataBinder Methods" Url="html/4fc332f8-4e0a-b14c-a565-6d6ec76f1608.htm">
         <HelpTOCNode Title="compositBind Method " Url="html/75db102f-0160-ad38-7abf-c4f392afe173.htm" />
         <HelpTOCNode Title="dataAttach Method " Url="html/bad3ff83-4a95-ab86-300a-f561d28fe248.htm" />
-        <HelpTOCNode Id="d556bd82-15b0-4c61-a852-6e252b5d2891" Title="dataBind Method " Url="html/16332a58-fd7e-e9e2-23e9-6471705c64da.htm">
+        <HelpTOCNode Id="a73c81c4-9f89-4a9e-8a29-31f0ed5cae61" Title="dataBind Method " Url="html/16332a58-fd7e-e9e2-23e9-6471705c64da.htm">
           <HelpTOCNode Title="dataBind Method (Control, DataTable)" Url="html/53a45891-2272-ea9a-4456-4cb3a2890804.htm" />
           <HelpTOCNode Title="dataBind Method (Control, GearsDataSource, GearsDTO)" Url="html/ce29c9f1-c1e5-2b03-f78c-8432905346ba.htm" />
         </HelpTOCNode>
@@ -375,17 +370,17 @@
         <HelpTOCNode Title="setValue Method " Url="html/f57d34a2-e722-e363-306b-d3b22bede264.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="c07be4af-8678-4d63-98e9-a54f2200d3e4" Title="GearsDataBindException Class" Url="html/667cae66-9608-c6ea-c743-e44ce5ef59d2.htm">
+    <HelpTOCNode Id="deda2eb2-b70a-4b85-9778-79c0823d2651" Title="GearsDataBindException Class" Url="html/667cae66-9608-c6ea-c743-e44ce5ef59d2.htm">
       <HelpTOCNode Title="GearsDataBindException Members" Url="html/3a3de42d-2f36-1df0-4deb-556982768b63.htm" />
-      <HelpTOCNode Id="b4b22616-1b7d-4fc1-8daa-fbcd33cd47ca" Title="GearsDataBindException Constructor " Url="html/aac18ad2-c26c-39bc-d284-9cb422f888f8.htm">
+      <HelpTOCNode Id="82953ae9-10e8-4548-b811-21f8e237732b" Title="GearsDataBindException Constructor " Url="html/aac18ad2-c26c-39bc-d284-9cb422f888f8.htm">
         <HelpTOCNode Title="GearsDataBindException Constructor " Url="html/067e364a-abc7-d25c-5567-7adf8981aeff.htm" />
         <HelpTOCNode Title="GearsDataBindException Constructor (Control, Exception)" Url="html/7efd8996-a701-e580-1663-23d04be1ed9f.htm" />
         <HelpTOCNode Title="GearsDataBindException Constructor (Control, String, Exception)" Url="html/04846f8b-3367-856b-020c-fb6564f028a6.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="117f9179-246d-4743-8568-490d2f719d3b" Title="GearsDataBindException Fields" Url="html/a7c71524-9131-8369-bbee-aae9f3f242ae.htm">
+      <HelpTOCNode Id="471cdc7e-894f-42b0-8ed8-ca063ca8299f" Title="GearsDataBindException Fields" Url="html/a7c71524-9131-8369-bbee-aae9f3f242ae.htm">
         <HelpTOCNode Title="MSG_CONTROL Field" Url="html/a94aed88-384b-812c-33d8-191cce4a5725.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="d7faebd8-396d-4340-af1f-dec4c01517a6" Title="GearsDataBindException Methods" Url="html/33c89432-d31f-2237-fd36-4cabc5dc1e4f.htm">
+      <HelpTOCNode Id="8731b37c-1916-4f31-b8f5-905b78469ae6" Title="GearsDataBindException Methods" Url="html/33c89432-d31f-2237-fd36-4cabc5dc1e4f.htm">
         <HelpTOCNode Title="clearSourceControl Method " Url="html/6f60dcc2-6993-f523-3557-ab8f0a32137e.htm" />
         <HelpTOCNode Title="getSourceControl Method " Url="html/a95935d9-28a9-5818-8d5c-7f7f77721399.htm" />
         <HelpTOCNode Title="setSourceControl Method " Url="html/06edf674-01e6-6211-7fea-565c8ccb9689.htm" />
@@ -393,9 +388,9 @@
       <HelpTOCNode Title="GearsDataBindException Properties" Url="html/7c089bd8-c822-ae94-0c99-5932f9d61fc1.htm" />
       <HelpTOCNode Title="GearsDataBindException Events" Url="html/0fd02b83-93d7-344d-1527-a35bdfb77992.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="50f3c1e3-80f3-47c3-bc08-93ec915d8a93" Title="IDataBinder Interface" Url="html/44c145ee-6995-2736-6357-0396a0231677.htm">
+    <HelpTOCNode Id="af1a70cd-5537-4dfe-a0ee-325785a16b37" Title="IDataBinder Interface" Url="html/44c145ee-6995-2736-6357-0396a0231677.htm">
       <HelpTOCNode Title="IDataBinder Members" Url="html/e7e86655-1e13-87c2-e035-770128517f43.htm" />
-      <HelpTOCNode Id="b02e172a-6618-4d69-946d-4c01fc2e8ab0" Title="IDataBinder Methods" Url="html/6a3c16c7-c1b9-3e23-7e95-d758521baff4.htm">
+      <HelpTOCNode Id="616d1ee2-4d66-44e7-815c-5d15c765d7de" Title="IDataBinder Methods" Url="html/6a3c16c7-c1b9-3e23-7e95-d758521baff4.htm">
         <HelpTOCNode Title="dataAttach Method " Url="html/75ea9c67-26b4-0ca2-e51f-7c4b4c70ca18.htm" />
         <HelpTOCNode Title="dataBind Method " Url="html/863f5f84-ff3a-c529-3189-be03a98c0473.htm" />
         <HelpTOCNode Title="getValue Method " Url="html/c5be1d52-9a0c-53cc-3fdb-9b0952ac897d.htm" />
@@ -404,55 +399,61 @@
       </HelpTOCNode>
     </HelpTOCNode>
   </HelpTOCNode>
-  <HelpTOCNode Id="a4cf4cf1-d569-4b5d-a166-aa70c9ed6f18" Title="Gears.DataSource Namespace" Url="html/34f3a3da-11fd-cbd0-64a1-ae47d59e2946.htm">
+  <HelpTOCNode Id="494aacd3-0da3-4b04-8120-af3f41724e30" Title="Gears.DataSource Namespace" Url="html/34f3a3da-11fd-cbd0-64a1-ae47d59e2946.htm">
     <HelpTOCNode Title="DbServerType Enumeration" Url="html/2b8b05ea-fa04-3b77-332d-62277134ab60.htm" />
-    <HelpTOCNode Id="81ed555d-846e-43c8-a65b-2eff14d4ba67" Title="GearsDataSource Class" Url="html/bd2f2115-f950-0ab7-48a8-9fec64b86368.htm">
+    <HelpTOCNode Id="23333cd8-9b37-42e0-b526-3b1fb919d318" Title="GearsDataSource Class" Url="html/bd2f2115-f950-0ab7-48a8-9fec64b86368.htm">
       <HelpTOCNode Title="GearsDataSource Members" Url="html/03ad72d1-af76-2505-dd21-109f2a87ea71.htm" />
-      <HelpTOCNode Id="8aaa384e-51fe-4bdd-a6e5-91dc8c62abe3" Title="GearsDataSource Constructor " Url="html/c6b7b01c-90b8-471e-8980-e92cc64a8090.htm">
+      <HelpTOCNode Id="f7754fe8-74c0-49b4-a94f-5ee5718dbd9c" Title="GearsDataSource Constructor " Url="html/c6b7b01c-90b8-471e-8980-e92cc64a8090.htm">
         <HelpTOCNode Title="GearsDataSource Constructor (String)" Url="html/bf0de2bf-eff2-92f7-e545-fe174b86db9f.htm" />
         <HelpTOCNode Title="GearsDataSource Constructor (String, SqlDataSource)" Url="html/0cf1edcd-16bd-7bab-f17f-11e1de313345.htm" />
         <HelpTOCNode Title="GearsDataSource Constructor (String, SqlDataSource, SqlDataSource)" Url="html/138bec3e-2acd-3f3f-812b-9e96747dac3c.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="d73a34df-ebdf-4b7d-ba62-288a9f07933a" Title="GearsDataSource Methods" Url="html/7c984987-2dbc-7514-9df2-1275a31dac79.htm">
+      <HelpTOCNode Id="7d4574b5-3ba4-43f0-8e99-e05406f1df2c" Title="GearsDataSource Methods" Url="html/7c984987-2dbc-7514-9df2-1275a31dac79.htm">
         <HelpTOCNode Title="addLockValue Method " Url="html/f5e42b0a-928e-4c5d-525e-4e64f864f53a.htm" />
         <HelpTOCNode Title="afterExecute Method " Url="html/0711b49a-e298-1341-f98a-c0e2caf3e4ea.htm" />
         <HelpTOCNode Title="beforeExecute Method " Url="html/71407486-4c85-3c10-885f-f077f33cffef.htm" />
-        <HelpTOCNode Id="5e5607ee-61ff-4a11-b8a2-ae2a9be30781" Title="confirmRecord Method " Url="html/3fb40e60-a3c6-6d38-aa52-f17db8e61fcf.htm">
+        <HelpTOCNode Id="fe503594-b990-4323-a9a8-521898e0a6da" Title="confirmRecord Method " Url="html/3fb40e60-a3c6-6d38-aa52-f17db8e61fcf.htm">
           <HelpTOCNode Title="confirmRecord Method (GearsDTO)" Url="html/a072d2b4-f32e-197b-c052-f9b8f11b5572.htm" />
           <HelpTOCNode Title="confirmRecord Method (SqlBuilder)" Url="html/b0fb302f-dd11-6d87-58ca-b86a3b868d1a.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="convertResultSet Method " Url="html/5c8e2558-0baf-b1f8-360a-6815586871a4.htm" />
         <HelpTOCNode Title="execute Method " Url="html/f89d8612-beeb-3dde-83b3-97c7c38ff0fd.htm" />
         <HelpTOCNode Title="executeProcess Method " Url="html/f7e52d57-fc2b-e337-4a66-1c4eddc89428.htm" />
-        <HelpTOCNode Id="2488e753-27ae-481f-a770-d8f9d6fa14e9" Title="gDelete Method " Url="html/c6946e99-df32-5c3f-0aa1-27a67e571fc2.htm">
+        <HelpTOCNode Id="24dcb3ae-d1da-4b32-bfd9-198ef15a6044" Title="gDelete Method " Url="html/c6946e99-df32-5c3f-0aa1-27a67e571fc2.htm">
           <HelpTOCNode Title="gDelete Method (GearsDTO)" Url="html/479e88bb-b4a6-25f5-bf2c-f7cdb356a315.htm" />
           <HelpTOCNode Title="gDelete Method (SqlBuilder)" Url="html/0c76e46c-8725-5a88-41aa-ed7ddd5050f7.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="getLockTypeValue Method " Url="html/80ec0c2e-d073-a364-8863-eb1ca0212841.htm" />
         <HelpTOCNode Title="getLockValue Method " Url="html/c72b4277-9cd7-2102-4c81-e27892598832.htm" />
-        <HelpTOCNode Id="3163ba20-50cd-40e5-8cd0-30c0fbd2f955" Title="gInsert Method " Url="html/116cd436-43d2-8a67-e2c6-6b4dc5f1fd90.htm">
+        <HelpTOCNode Id="84c6316e-0f00-4ec3-8817-fd02e2a58799" Title="gInsert Method " Url="html/116cd436-43d2-8a67-e2c6-6b4dc5f1fd90.htm">
           <HelpTOCNode Title="gInsert Method (GearsDTO)" Url="html/c135dc16-ab5d-09d7-092f-51a0f6429c3c.htm" />
           <HelpTOCNode Title="gInsert Method (SqlBuilder)" Url="html/51547fad-b335-dfeb-ee57-a51def301b45.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="gResultSet Method " Url="html/daee33ee-329d-2a3e-fb54-618ae737c3e5.htm" />
-        <HelpTOCNode Id="3e0ff812-5ef0-4a56-9aa3-2ff1d9bf966d" Title="gSave Method " Url="html/6afd87ba-dae7-c469-1c0c-a929ead93359.htm">
+        <HelpTOCNode Id="a51aed2a-c2e3-4ed3-8349-3bf5314244a3" Title="gSave Method " Url="html/6afd87ba-dae7-c469-1c0c-a929ead93359.htm">
+          <HelpTOCNode Title="gSave Method (Control[])" Url="html/328898ab-476e-8a10-5723-afc15e7956e1.htm" />
           <HelpTOCNode Title="gSave Method (GearsDTO)" Url="html/2dda0f06-8baa-9e5d-99b8-5fab00c4ccff.htm" />
           <HelpTOCNode Title="gSave Method (SqlBuilder)" Url="html/d943aa53-d0bd-7086-a4a5-4ca885fcac7f.htm" />
+          <HelpTOCNode Title="gSave Method (SqlSelectItem[])" Url="html/6e4940b3-d4b1-8b4b-3ac7-6e157760740d.htm" />
+          <HelpTOCNode Title="gSave Method (List(SqlSelectItem))" Url="html/a020d45a-dcdc-9a72-0f64-c2954a2f7396.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="c7c30d61-e0ee-4838-97a2-0b88b01f5d36" Title="gSelect Method " Url="html/90513a49-047c-d5c8-1d15-0102b7f44776.htm">
+        <HelpTOCNode Id="94c20300-2b39-42ac-8d1d-e20a3967624a" Title="gSelect Method " Url="html/90513a49-047c-d5c8-1d15-0102b7f44776.htm">
+          <HelpTOCNode Title="gSelect Method (Control[])" Url="html/03cf5767-2ecb-7f38-b7c6-e5822ffc171d.htm" />
           <HelpTOCNode Title="gSelect Method (GearsDTO)" Url="html/96814f95-4e8d-ed7c-a108-7aa67524ab7c.htm" />
           <HelpTOCNode Title="gSelect Method (SqlBuilder)" Url="html/a38be3ff-363f-8e7b-9afc-92790e34f99e.htm" />
+          <HelpTOCNode Title="gSelect Method (SqlSelectItem[])" Url="html/8a8e6a71-9820-c8b0-daba-54fad297ca14.htm" />
+          <HelpTOCNode Title="gSelect Method (List(SqlSelectItem))" Url="html/2245169d-81a9-8618-d024-f698fc970915.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="12b56a37-db7f-4fab-b7f0-22338bfc72c1" Title="gSelectCount Method " Url="html/c9923e2e-98ed-c7a5-0833-f53c3dc48bdc.htm">
+        <HelpTOCNode Id="412d5711-b6b9-4db3-a9e4-17f986a6b2b2" Title="gSelectCount Method " Url="html/c9923e2e-98ed-c7a5-0833-f53c3dc48bdc.htm">
           <HelpTOCNode Title="gSelectCount Method (GearsDTO)" Url="html/bc24c6d6-9859-d86d-784a-1a6bd746049b.htm" />
           <HelpTOCNode Title="gSelectCount Method (SqlBuilder)" Url="html/3f31ac8d-ed90-0902-1e7b-d915b5c56b28.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="gSelectPageBy Method " Url="html/ed1eff21-1965-14b7-053b-73f2247dbccc.htm" />
-        <HelpTOCNode Id="a0251d41-56f1-4940-abbc-39af66044323" Title="gUpdate Method " Url="html/f1d4adf3-8ee9-d2cb-ea18-c5548d2b0c9e.htm">
+        <HelpTOCNode Id="8e203ee2-1418-49b1-ba37-e09897a82e1b" Title="gUpdate Method " Url="html/f1d4adf3-8ee9-d2cb-ea18-c5548d2b0c9e.htm">
           <HelpTOCNode Title="gUpdate Method (GearsDTO)" Url="html/25d92fb0-23c5-81a4-ea8f-5284fed1eacf.htm" />
           <HelpTOCNode Title="gUpdate Method (SqlBuilder)" Url="html/f25439a0-a06c-1431-711d-00882d5fc682.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="9ce666b8-a676-458f-bf8c-0e8508b500b3" Title="Item Method " Url="html/d6398290-b4b4-24f8-ee18-99f13b24166d.htm">
+        <HelpTOCNode Id="f5efa6bd-e299-4939-8d74-846f345dee61" Title="Item Method " Url="html/d6398290-b4b4-24f8-ee18-99f13b24166d.htm">
           <HelpTOCNode Title="Item Method (Int32, Int32)" Url="html/e4eb80a1-35a1-9705-0f31-b0ab6b42abdf.htm" />
           <HelpTOCNode Title="Item Method (String, Int32)" Url="html/1df9fd5f-a3d1-3269-da34-96480fd17d0e.htm" />
         </HelpTOCNode>
@@ -462,7 +463,7 @@
         <HelpTOCNode Title="setDataSource Method " Url="html/adcfe5c9-4754-ed17-cfdc-5d7037a15467.htm" />
         <HelpTOCNode Title="setLockCheckColumn Method " Url="html/7b1a9132-d5fa-ddb9-f785-3df7c9f252f6.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="586edda8-def9-4442-8116-a29cc09aa1b7" Title="GearsDataSource Properties" Url="html/451d671e-1354-544f-8888-bb13862a48b3.htm">
+      <HelpTOCNode Id="60006d4c-66f3-4a89-abb2-1ca112457cc6" Title="GearsDataSource Properties" Url="html/451d671e-1354-544f-8888-bb13862a48b3.htm">
         <HelpTOCNode Title="ConnectionName Property " Url="html/e8363f4c-9b54-6aac-9475-eb5697b47664.htm" />
         <HelpTOCNode Title="IsMultiByte Property " Url="html/10dd3ce6-771f-ce4c-a3c6-12bf5277d309.htm" />
         <HelpTOCNode Title="ModelValidator Property " Url="html/4c256208-5197-f78b-c6f6-b8c655e07dbc.htm" />
@@ -470,9 +471,9 @@
         <HelpTOCNode Title="TargetTable Property " Url="html/e05192d5-b8e7-3362-f3bf-422626f2b3f0.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="d5c2633e-6b1e-4a49-bc8a-bb12924a672b" Title="GearsOptimisticLockException Class" Url="html/eef8cfb1-649a-e380-fc53-dfb69beb0a9a.htm">
+    <HelpTOCNode Id="91dbd7f4-f3e0-4c98-823a-0ce97b03a8f5" Title="GearsOptimisticLockException Class" Url="html/eef8cfb1-649a-e380-fc53-dfb69beb0a9a.htm">
       <HelpTOCNode Title="GearsOptimisticLockException Members" Url="html/be04b33f-5787-e485-6a34-c47109e0700b.htm" />
-      <HelpTOCNode Id="1a697fe1-04f6-46d7-9657-c843e88e26ad" Title="GearsOptimisticLockException Constructor " Url="html/f00e5bbf-6941-a07c-eea1-cdf1e0b5e82e.htm">
+      <HelpTOCNode Id="981bcd98-5c4f-49fe-979b-74efe04605ba" Title="GearsOptimisticLockException Constructor " Url="html/f00e5bbf-6941-a07c-eea1-cdf1e0b5e82e.htm">
         <HelpTOCNode Title="GearsOptimisticLockException Constructor " Url="html/39f3ee90-1c6f-464b-e90b-1ff9f52015b8.htm" />
         <HelpTOCNode Title="GearsOptimisticLockException Constructor (String[])" Url="html/06f51261-9f39-f4c1-dc1f-2f8383210fa5.htm" />
       </HelpTOCNode>
@@ -480,18 +481,18 @@
       <HelpTOCNode Title="GearsOptimisticLockException Properties" Url="html/f734a1c8-afbc-9070-5921-70f2d7056ccc.htm" />
       <HelpTOCNode Title="GearsOptimisticLockException Events" Url="html/4d754161-bdfb-65ba-3cec-48cd0807f70d.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="a343240d-3d2c-495e-bd28-16554b80f6ce" Title="GearsSqlException Class" Url="html/eaed038f-d88c-be96-8242-f11fdaaff199.htm">
+    <HelpTOCNode Id="8a2fc2f7-d7ef-440e-bebc-b550c042e813" Title="GearsSqlException Class" Url="html/eaed038f-d88c-be96-8242-f11fdaaff199.htm">
       <HelpTOCNode Title="GearsSqlException Members" Url="html/efc44406-0776-fcc7-116c-f4bbeda5f38b.htm" />
-      <HelpTOCNode Id="d1115eee-73ee-49ea-9427-0b5ca29972b5" Title="GearsSqlException Constructor " Url="html/88dc886f-1120-4a06-bafe-bc5b993361d4.htm">
+      <HelpTOCNode Id="5bdde74c-5a86-4473-b94b-3775cd754faa" Title="GearsSqlException Constructor " Url="html/88dc886f-1120-4a06-bafe-bc5b993361d4.htm">
         <HelpTOCNode Title="GearsSqlException Constructor " Url="html/53a58e88-0b68-2b40-3e26-4ff3df482ef5.htm" />
         <HelpTOCNode Title="GearsSqlException Constructor (String)" Url="html/fc7f69d5-33df-1663-bc50-ec18313be71e.htm" />
         <HelpTOCNode Title="GearsSqlException Constructor (ActionType, String, Exception)" Url="html/7a412470-4155-c9b0-c8b1-885c981c49b3.htm" />
         <HelpTOCNode Title="GearsSqlException Constructor (ActionType, String, String[])" Url="html/509c6f06-9252-763b-a782-c4f0bcc58e66.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="b9cf0e19-101a-4931-b3da-806fe33a9b5b" Title="GearsSqlException Fields" Url="html/e3574904-d679-7592-b8ef-f61dc41962df.htm">
+      <HelpTOCNode Id="304c9426-fad7-4cce-81b9-db3fc2860477" Title="GearsSqlException Fields" Url="html/e3574904-d679-7592-b8ef-f61dc41962df.htm">
         <HelpTOCNode Title="MSG_ATYPE Field" Url="html/34de3981-4879-8d8b-58e1-d69fa1fbb791.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="d55e5b14-1bb3-4dd8-87a3-ca2e0836e995" Title="GearsSqlException Methods" Url="html/f1e0b11e-eb9e-dc25-d5de-c176913aafad.htm">
+      <HelpTOCNode Id="4f23fc08-3a91-421a-aa6f-67b9ec940bc9" Title="GearsSqlException Methods" Url="html/f1e0b11e-eb9e-dc25-d5de-c176913aafad.htm">
         <HelpTOCNode Title="clearActionType Method " Url="html/fe4f430d-ae1b-baa4-fdd9-016c9dd85d30.htm" />
         <HelpTOCNode Title="getActionType Method " Url="html/4aa7c849-c099-07e9-bfba-8c17689f6b34.htm" />
         <HelpTOCNode Title="setActionType Method " Url="html/79ec0191-9bb0-3906-f1ef-7d8fe33adfca.htm" />
@@ -499,33 +500,33 @@
       <HelpTOCNode Title="GearsSqlException Properties" Url="html/9a3d950a-2e53-73e3-5589-86e59a424147.htm" />
       <HelpTOCNode Title="GearsSqlException Events" Url="html/f39cce0b-fbbc-de99-31ac-842631aa2ac1.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="98a66f34-8eae-4bf2-a7dd-b7e01f81318d" Title="GearsSqlExecutor Class" Url="html/d8d06116-f811-9d04-77e1-53a5c0a044dd.htm">
+    <HelpTOCNode Id="9441d46b-90ae-4de3-b98a-8fa00d58f7cd" Title="GearsSqlExecutor Class" Url="html/d8d06116-f811-9d04-77e1-53a5c0a044dd.htm">
       <HelpTOCNode Title="GearsSqlExecutor Members" Url="html/a9e5210b-8209-4771-37b9-7c80c443e465.htm" />
       <HelpTOCNode Title="GearsSqlExecutor Constructor " Url="html/9caa76a6-c696-c2a5-d373-c2369afb9394.htm" />
-      <HelpTOCNode Id="df9d52bb-136e-447d-95c4-a90d166e675e" Title="GearsSqlExecutor Methods" Url="html/4015b92a-6580-2708-7bf9-cb5c9b08ac3b.htm">
+      <HelpTOCNode Id="90393cec-f237-4757-8682-503209b11352" Title="GearsSqlExecutor Methods" Url="html/4015b92a-6580-2708-7bf9-cb5c9b08ac3b.htm">
         <HelpTOCNode Title="count Method " Url="html/e366e212-4ce4-7f52-d34c-24f93a9b2a29.htm" />
         <HelpTOCNode Title="createSelectCount Method " Url="html/33dd2a84-e2bb-f029-9960-8a98189aec6a.htm" />
-        <HelpTOCNode Id="93db9c7a-6e14-4846-a09f-cc859c54cc7f" Title="createSqlCommand Method " Url="html/91c82f71-39e0-bb08-79cd-8ace06cf6c01.htm">
+        <HelpTOCNode Id="1e5b844f-bd2c-4993-b28c-70200a9ae5a7" Title="createSqlCommand Method " Url="html/91c82f71-39e0-bb08-79cd-8ace06cf6c01.htm">
           <HelpTOCNode Title="createSqlCommand Method (String, Dictionary(String, Object), ActionType)" Url="html/6f98f9b2-5870-0459-bf64-2c403456edc2.htm" />
           <HelpTOCNode Title="createSqlCommand Method (SqlBuilder, ActionType, Boolean)" Url="html/493c399f-fd8a-6e4b-1499-958d0c615b98.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="ae8c795e-cb39-4110-a17e-06dbcddaef75" Title="execute Method " Url="html/2a03e680-eabe-d075-bceb-d500646843e6.htm">
+        <HelpTOCNode Id="9a1e83a6-3cfa-4287-990a-c52990dd8826" Title="execute Method " Url="html/2a03e680-eabe-d075-bceb-d500646843e6.htm">
           <HelpTOCNode Title="execute Method (SqlBuilder)" Url="html/0578ea77-10e9-bfca-7430-3d3bcaed5233.htm" />
           <HelpTOCNode Title="execute Method (List(SqlBuilder))" Url="html/3aefa3eb-7390-4744-23e0-6ab34636096e.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="GetConnectionString Method " Url="html/637409eb-a4a0-8d19-5981-dd42c1a26264.htm" />
         <HelpTOCNode Title="load Method " Url="html/c77b6d1a-e5e1-2e26-e2d3-d13374d98ed2.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="951568a2-dd13-494a-9616-fd2a4bd271ae" Title="GearsSqlExecutor Properties" Url="html/26c37730-1dfc-303c-a399-0eaf40201bdf.htm">
+      <HelpTOCNode Id="34f77ed4-5774-41f0-9f63-c613a87d547b" Title="GearsSqlExecutor Properties" Url="html/26c37730-1dfc-303c-a399-0eaf40201bdf.htm">
         <HelpTOCNode Title="ConnectionName Property " Url="html/ca33e159-9ade-1821-1f48-e6b298f93028.htm" />
         <HelpTOCNode Title="ConnectionString Property " Url="html/b6dc4e91-8e55-6854-54d9-532e57fc927e.htm" />
         <HelpTOCNode Title="DbServer Property " Url="html/4cf2d7fc-ba1c-abbe-a321-35b5ff88f902.htm" />
         <HelpTOCNode Title="DbType Property " Url="html/2794c084-9bd9-cb4f-4b42-f40b015b7698.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="f3d939aa-626b-42e5-8cca-400ef4525bdf" Title="IDataSource Interface" Url="html/fe2f572e-1d6d-75fe-2958-48c8369ff979.htm">
+    <HelpTOCNode Id="5326200c-570a-4c9f-a6b2-4da0d577f93d" Title="IDataSource Interface" Url="html/fe2f572e-1d6d-75fe-2958-48c8369ff979.htm">
       <HelpTOCNode Title="IDataSource Members" Url="html/f9112f47-6e08-8434-a9dd-ffece3ef2312.htm" />
-      <HelpTOCNode Id="08ea7393-9aaa-4d5c-b0ad-5cab36b344a3" Title="IDataSource Methods" Url="html/ab82bfe9-9c1f-f4fe-5272-86288f328896.htm">
+      <HelpTOCNode Id="4e557187-5000-4d6e-9c27-5e9fe6974317" Title="IDataSource Methods" Url="html/ab82bfe9-9c1f-f4fe-5272-86288f328896.htm">
         <HelpTOCNode Title="gDelete Method " Url="html/34c6cb7c-e77c-4874-284f-384b08644228.htm" />
         <HelpTOCNode Title="gInsert Method " Url="html/533e9f84-8d7d-1e21-a087-fc151c76deb7.htm" />
         <HelpTOCNode Title="gResultSet Method " Url="html/8bdcdb8d-b040-6769-7b9b-d341cee37422.htm" />
@@ -535,18 +536,18 @@
         <HelpTOCNode Title="gUpdate Method " Url="html/85a6665a-a271-ddff-6c7d-82bc4427ade5.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="06a5e1b1-24dd-491c-b512-35ccc02cabdc" Title="INameExchanger Interface" Url="html/99106c85-5868-d757-8d41-a04243581587.htm">
+    <HelpTOCNode Id="dc39cc1a-faa8-4f00-a59c-05b43fc0df8c" Title="INameExchanger Interface" Url="html/99106c85-5868-d757-8d41-a04243581587.htm">
       <HelpTOCNode Title="INameExchanger Members" Url="html/11df8669-1dbc-967c-2011-75934c2e94cf.htm" />
-      <HelpTOCNode Id="4c9d5686-ddf3-4df5-8ad5-f8dea1a0ba00" Title="INameExchanger Methods" Url="html/7a0f0267-2d31-6648-68ca-d59593baacd6.htm">
+      <HelpTOCNode Id="cdfe2644-9886-463b-acfe-5c7cfb343345" Title="INameExchanger Methods" Url="html/7a0f0267-2d31-6648-68ca-d59593baacd6.htm">
         <HelpTOCNode Title="changeColToItem Method " Url="html/6bce0962-e6a6-bc2f-65b9-69f086e89bdb.htm" />
         <HelpTOCNode Title="changeItemToCol Method " Url="html/78253c48-935c-212e-4fd6-061b113686a7.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
     <HelpTOCNode Title="LockType Enumeration" Url="html/a56b130b-2d34-0cfb-7b45-0cc6f15f5650.htm" />
-    <HelpTOCNode Id="d05c191c-a3a4-4060-ae3b-64bfdc4488a1" Title="NameExchangerTemplate Class" Url="html/e30254c3-b4b5-85b8-8970-fe5398b7d1c2.htm">
+    <HelpTOCNode Id="4d6a7a9c-4cef-47bb-85e8-aa67c6e49868" Title="NameExchangerTemplate Class" Url="html/e30254c3-b4b5-85b8-8970-fe5398b7d1c2.htm">
       <HelpTOCNode Title="NameExchangerTemplate Members" Url="html/638c44b2-d614-e905-c12b-e0a71506502d.htm" />
       <HelpTOCNode Title="NameExchangerTemplate Constructor " Url="html/491ab509-2d46-f457-ced5-3564296bf1fa.htm" />
-      <HelpTOCNode Id="93cf2bce-d573-4372-bb45-77245a634b30" Title="NameExchangerTemplate Methods" Url="html/2da71328-834e-6c15-050e-659fe795e290.htm">
+      <HelpTOCNode Id="f66f6bf6-f221-4008-a5d3-ab54f244aef2" Title="NameExchangerTemplate Methods" Url="html/2da71328-834e-6c15-050e-659fe795e290.htm">
         <HelpTOCNode Title="addDictionarySafe(T, K) Method " Url="html/07ebea6a-c317-16e0-85b1-cbd3f74105c5.htm" />
         <HelpTOCNode Title="addRule Method " Url="html/980ad383-dc2b-aa4a-77bd-4e4ef041b2df.htm" />
         <HelpTOCNode Title="addRuleWhenToCol Method " Url="html/fe1c41e4-6573-9618-9a06-98a2d60646dd.htm" />
@@ -558,15 +559,15 @@
     </HelpTOCNode>
     <HelpTOCNode Title="OrderKind Enumeration" Url="html/9ea25d98-bfb7-f348-8c89-f768ea451aeb.htm" />
     <HelpTOCNode Title="RelationKind Enumeration" Url="html/57401408-ff5e-87a9-3c13-3b7d26051566.htm" />
-    <HelpTOCNode Id="874c368f-71ec-45fa-a3ba-7c107c2c6055" Title="SqlBuilder Class" Url="html/3dac175c-34a0-db5e-60d3-c7c0abd29df5.htm">
+    <HelpTOCNode Id="72a2f93e-a3c1-4dd8-aba3-1dfcf89a44d6" Title="SqlBuilder Class" Url="html/3dac175c-34a0-db5e-60d3-c7c0abd29df5.htm">
       <HelpTOCNode Title="SqlBuilder Members" Url="html/d5840eee-61a5-e169-a99d-e9ea00ea2ae9.htm" />
-      <HelpTOCNode Id="27a84904-81ea-478d-8200-d8250f1408eb" Title="SqlBuilder Constructor " Url="html/32d39ffd-6682-147a-9624-04730d1baf4a.htm">
+      <HelpTOCNode Id="83025180-fd48-46e2-96db-fe18d96851bc" Title="SqlBuilder Constructor " Url="html/32d39ffd-6682-147a-9624-04730d1baf4a.htm">
         <HelpTOCNode Title="SqlBuilder Constructor (DbServerType, ActionType)" Url="html/207d35dc-5f8c-78bb-f111-b7de4748b779.htm" />
         <HelpTOCNode Title="SqlBuilder Constructor (SqlItemContainer, Boolean)" Url="html/06d3ce22-0f18-9d40-42f9-ceede723d55c.htm" />
         <HelpTOCNode Title="SqlBuilder Constructor (String, SqlDataSource, ActionType)" Url="html/60d69628-83c6-ade8-5ee8-3e80ccd09d77.htm" />
         <HelpTOCNode Title="SqlBuilder Constructor (String, String, ActionType)" Url="html/144bcdc7-a758-694a-9cfb-33294f6c468d.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="7b52996d-d508-462e-b09e-49f7716fa5b1" Title="SqlBuilder Methods" Url="html/c3a2bae6-b7fe-5bed-9c26-bafea402d0af.htm">
+      <HelpTOCNode Id="0ba1c808-093e-462c-a50d-1e5d61944446" Title="SqlBuilder Methods" Url="html/c3a2bae6-b7fe-5bed-9c26-bafea402d0af.htm">
         <HelpTOCNode Title="C Method " Url="html/28c31781-e971-2d4e-eeaf-ae8438eda01d.htm" />
         <HelpTOCNode Title="confirmSql Method " Url="html/d75e95c7-bc97-acfa-6a6e-7f2314e2069f.htm" />
         <HelpTOCNode Title="convertToDataSource Method " Url="html/d8fdf74a-b40b-2cff-a80a-6093df96a979.htm" />
@@ -583,40 +584,40 @@
         <HelpTOCNode Title="makeWhere Method " Url="html/efaea272-0883-6013-a86b-8845a7b44299.htm" />
         <HelpTOCNode Title="S Method " Url="html/8bb9ab6b-55fe-af17-5b7e-044c6dc343bd.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="1778e29d-7954-4943-ae82-cedfbaf79bfc" Title="SqlBuilder Properties" Url="html/ba76206b-a2a7-2038-91a5-9f7a2012ca25.htm">
+      <HelpTOCNode Id="462eb415-395a-4688-845c-2c69c4162516" Title="SqlBuilder Properties" Url="html/ba76206b-a2a7-2038-91a5-9f7a2012ca25.htm">
         <HelpTOCNode Title="DataSource Property " Url="html/32410b16-bb0c-13b5-4651-551573cbfb1c.htm" />
         <HelpTOCNode Title="DbServer Property " Url="html/86d4628c-008b-88a4-959d-dce4a4d9648c.htm" />
         <HelpTOCNode Title="ItemColExchanger Property " Url="html/7f8d800c-94b4-56dc-1258-ee4525c53af3.htm" />
         <HelpTOCNode Title="ValueSeparator Property " Url="html/0a764217-5c40-c966-2439-42e4a97d44df.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="7d1dd652-8afb-45fa-a72f-5b482ee98f1b" Title="SqlDataSource Class" Url="html/d5455894-ab29-e5cb-5513-73ba28b7346e.htm">
+    <HelpTOCNode Id="abcbc213-5418-4e56-8f9c-cc9f4b2230d1" Title="SqlDataSource Class" Url="html/d5455894-ab29-e5cb-5513-73ba28b7346e.htm">
       <HelpTOCNode Title="SqlDataSource Members" Url="html/a2f5e8f6-003a-8d70-9fad-1486f7dba98a.htm" />
-      <HelpTOCNode Id="d2fcd450-39d2-4ecb-8fdb-c2765de14ea9" Title="SqlDataSource Constructor " Url="html/9a19f4c9-d723-fe47-b933-d3a594b1afeb.htm">
+      <HelpTOCNode Id="369d93ee-1f2f-475f-af0c-a6dbf17aae4f" Title="SqlDataSource Constructor " Url="html/9a19f4c9-d723-fe47-b933-d3a594b1afeb.htm">
         <HelpTOCNode Title="SqlDataSource Constructor (SqlDataSource)" Url="html/a1a3dc0c-1fc5-5741-045c-e98fe25c484c.htm" />
         <HelpTOCNode Title="SqlDataSource Constructor (String, String)" Url="html/7a9cb1c2-bb86-7ea3-6cd2-1dddf57831ed.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="6ec77302-32ab-49bb-9aa9-6d2964007bfc" Title="SqlDataSource Methods" Url="html/10170930-a1be-28cd-ba02-5245fce7a7c3.htm">
-        <HelpTOCNode Id="37f5488a-02a1-4c92-ab8a-023e03e22e6a" Title="addParameter Method " Url="html/58b5ea8b-1e1a-4e0c-5a98-81dee67fdc68.htm">
+      <HelpTOCNode Id="6280bd79-0ff1-46f6-b86e-82db0fc7dc79" Title="SqlDataSource Methods" Url="html/10170930-a1be-28cd-ba02-5245fce7a7c3.htm">
+        <HelpTOCNode Id="76ade7da-91da-4939-a4e3-1975ad1dc966" Title="addParameter Method " Url="html/58b5ea8b-1e1a-4e0c-5a98-81dee67fdc68.htm">
           <HelpTOCNode Title="addParameter Method (SqlItem)" Url="html/55e5151b-eaee-3463-c2ed-7775e33b4dcd.htm" />
           <HelpTOCNode Title="addParameter Method (String, Object)" Url="html/a515bb07-6526-029d-dbbb-00e88acb7cee.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="getJoinKey Method " Url="html/6376fa76-9dcd-c8fc-c57c-6cf5e6e56ade.htm" />
         <HelpTOCNode Title="getRelation Method " Url="html/07cfacc9-7dd9-c648-b87f-c60b9c68f771.htm" />
         <HelpTOCNode Title="hasRelation Method " Url="html/da7490d1-25fa-1ac7-1c71-5b16847cc87e.htm" />
-        <HelpTOCNode Id="6b885511-f06e-4dcb-8035-ba00377fae8f" Title="innerJoin Method " Url="html/46527006-53c3-fa30-7f19-ec893c273079.htm">
+        <HelpTOCNode Id="bf35a8c6-4269-44b5-9f51-70fcb7b6e62b" Title="innerJoin Method " Url="html/46527006-53c3-fa30-7f19-ec893c273079.htm">
           <HelpTOCNode Title="innerJoin Method (SqlDataSource, SqlFilterItem[])" Url="html/63861b54-b8d9-1c94-de85-ff6a774199a0.htm" />
           <HelpTOCNode Title="innerJoin Method (String, String, SqlFilterItem[])" Url="html/1f263b89-6d9d-b095-aaf6-112f66d5071d.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="inSchema Method " Url="html/a0d85347-3d88-4110-84aa-ec6d36e16eba.htm" />
-        <HelpTOCNode Id="d27fd574-4276-43a3-80af-c26b064551d2" Title="leftOuterJoin Method " Url="html/f3c04bfb-a69e-83a7-f541-e8d1d379def0.htm">
+        <HelpTOCNode Id="e052a611-0024-49b4-857d-0f10dccb2dbb" Title="leftOuterJoin Method " Url="html/f3c04bfb-a69e-83a7-f541-e8d1d379def0.htm">
           <HelpTOCNode Title="leftOuterJoin Method (SqlDataSource, SqlFilterItem[])" Url="html/a5f98959-0da8-e6fa-8dff-06a7d7aec677.htm" />
           <HelpTOCNode Title="leftOuterJoin Method (String, String, SqlFilterItem[])" Url="html/b59dd6bb-aeae-9815-0f59-a98c752cc81e.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="readParameter Method " Url="html/db886271-e4b4-bcbc-fbe5-46651fa731d6.htm" />
         <HelpTOCNode Title="setLockCheckColumn Method " Url="html/ef3483e3-fd9e-ecf0-751b-f0cb31c54824.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="c398464e-1662-48a0-9f59-f223999d8f7d" Title="SqlDataSource Properties" Url="html/8b622ba6-f113-7e57-c7d1-bf7a12004f3d.htm">
+      <HelpTOCNode Id="421c6714-cfed-425d-b0f8-d45d4d18fef9" Title="SqlDataSource Properties" Url="html/8b622ba6-f113-7e57-c7d1-bf7a12004f3d.htm">
         <HelpTOCNode Title="JoinTargets Property " Url="html/75ad9678-cf92-df2a-f825-6a7bcb978e15.htm" />
         <HelpTOCNode Title="LockCheckColumn Property " Url="html/ece8ca0d-15cb-1ec8-126d-310530360b1c.htm" />
         <HelpTOCNode Title="Name Property " Url="html/d7126711-ddab-e60f-493e-67023b93cfdf.htm" />
@@ -625,36 +626,36 @@
         <HelpTOCNode Title="Suffix Property " Url="html/3b3e9b64-62a3-e57d-39d7-94297d4c6d2f.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="38cb322e-7595-41ea-8a03-b931d65c9bc6" Title="SqlFilterGroup Class" Url="html/e0c68d41-2cf4-052a-a6a0-8fc9a08d4609.htm">
+    <HelpTOCNode Id="4c853bf5-ce99-4c15-83b4-28a8ff2e1662" Title="SqlFilterGroup Class" Url="html/e0c68d41-2cf4-052a-a6a0-8fc9a08d4609.htm">
       <HelpTOCNode Title="SqlFilterGroup Members" Url="html/32f03456-b611-af34-0657-0606db48ace3.htm" />
       <HelpTOCNode Title="SqlFilterGroup Constructor " Url="html/0db49c8b-6229-ffa9-2c34-15cd4e5ea734.htm" />
-      <HelpTOCNode Id="b6a75cd7-4ed3-4d70-8d7c-c1219c8fe142" Title="SqlFilterGroup Methods" Url="html/18e16be4-cb72-04d8-d9bb-9d39c81079fa.htm">
-        <HelpTOCNode Id="47ebc028-a593-40a4-9dfb-c34bb02458ca" Title="Ands Method " Url="html/7f79a415-0663-f7b2-3e6b-c07e0d2e1d16.htm">
+      <HelpTOCNode Id="3d776946-ea59-4fca-a2e5-4ff021346f75" Title="SqlFilterGroup Methods" Url="html/18e16be4-cb72-04d8-d9bb-9d39c81079fa.htm">
+        <HelpTOCNode Id="030339f0-95f0-4297-b7c1-d671c57e3be8" Title="Ands Method " Url="html/7f79a415-0663-f7b2-3e6b-c07e0d2e1d16.htm">
           <HelpTOCNode Title="Ands Method (SqlFilterItem[])" Url="html/c554aa8f-6f75-2965-6cfd-9465bbedee8b.htm" />
           <HelpTOCNode Title="Ands Method (List(SqlFilterItem))" Url="html/80578ccb-e9a7-0e6e-cc18-483b8fd6e637.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="648100bc-94ec-4688-9013-842ef2e0b1bb" Title="grouping Method " Url="html/34942376-cbb9-5a49-6313-c27923f700f5.htm">
+        <HelpTOCNode Id="87cfc7d6-705d-4bff-b56e-92e6c1ce3b8d" Title="grouping Method " Url="html/34942376-cbb9-5a49-6313-c27923f700f5.htm">
           <HelpTOCNode Title="grouping Method (SqlFilterItem[])" Url="html/cf5884d9-28f1-cc37-3263-99ceaafb37e1.htm" />
           <HelpTOCNode Title="grouping Method (List(SqlFilterItem))" Url="html/2a509581-2266-c81d-2aaf-a202715be168.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="isAndGroup Method " Url="html/bac9b5b6-e087-82b1-60fa-a6cdfb4ff9ae.htm" />
         <HelpTOCNode Title="isOrGroup Method " Url="html/eb06a5c3-9770-f878-1e4a-9424f83052a2.htm" />
-        <HelpTOCNode Id="7fdc617d-b1ed-4e80-902a-d38ad36df8c0" Title="Ors Method " Url="html/aaec34f7-aa47-5e3f-170a-6db9ae792de5.htm">
+        <HelpTOCNode Id="cb459b99-8921-4c08-8633-17684d5b4a45" Title="Ors Method " Url="html/aaec34f7-aa47-5e3f-170a-6db9ae792de5.htm">
           <HelpTOCNode Title="Ors Method (SqlFilterItem[])" Url="html/02f7f21f-7326-13a9-9d75-20c9a605ef8a.htm" />
           <HelpTOCNode Title="Ors Method (List(SqlFilterItem))" Url="html/ba8377dd-a892-a197-fb64-be0012d2b914.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="fefa079b-a2d2-484a-8891-f8790c52a634" Title="SqlFilterGroup Properties" Url="html/1f41ad99-cfb8-17b6-f761-b555f8a01f0c.htm">
+      <HelpTOCNode Id="a3fb1e88-820d-4a51-a034-eea8df44bcdb" Title="SqlFilterGroup Properties" Url="html/1f41ad99-cfb8-17b6-f761-b555f8a01f0c.htm">
         <HelpTOCNode Title="Name Property " Url="html/0c412ee4-1a00-d985-10a0-85e9da3f4657.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="537dee17-8658-4244-b6eb-aadee4e14ca9" Title="SqlFilterItem Class" Url="html/41df3ddf-5b73-18de-a089-0debd39fce08.htm">
+    <HelpTOCNode Id="611d5d1e-64a0-4738-933d-4a0a9ae55415" Title="SqlFilterItem Class" Url="html/41df3ddf-5b73-18de-a089-0debd39fce08.htm">
       <HelpTOCNode Title="SqlFilterItem Members" Url="html/37d20a27-a901-85ce-f050-09d407c46bc5.htm" />
-      <HelpTOCNode Id="4c82fcb5-2c23-4563-8440-9db7a655ae48" Title="SqlFilterItem Constructor " Url="html/0b1944c7-99fd-3170-cb75-05e1e9d909ff.htm">
+      <HelpTOCNode Id="f65a08aa-d47e-46ab-b116-5925c9a050e8" Title="SqlFilterItem Constructor " Url="html/0b1944c7-99fd-3170-cb75-05e1e9d909ff.htm">
         <HelpTOCNode Title="SqlFilterItem Constructor (String, String)" Url="html/26574640-7efc-0d80-c593-d21254cfe382.htm" />
         <HelpTOCNode Title="SqlFilterItem Constructor (SqlFilterItem, Object)" Url="html/3e04daf5-0f9b-d1aa-35b3-0e4b8aab26c6.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="4eea0ede-f864-46b1-965b-0dd8c75533e1" Title="SqlFilterItem Fields" Url="html/692efdb0-b808-67ad-9ae7-877f911b5778.htm">
+      <HelpTOCNode Id="5dbe1c45-0892-4c50-b391-5891d7ef2557" Title="SqlFilterItem Fields" Url="html/692efdb0-b808-67ad-9ae7-877f911b5778.htm">
         <HelpTOCNode Title="TXT_END_WITH Field" Url="html/2ca79050-a2a9-f5b1-bc69-d22661c65e33.htm" />
         <HelpTOCNode Title="TXT_EQUAL Field" Url="html/b067cf29-eca2-68f5-04b2-b2eb27de4cc8.htm" />
         <HelpTOCNode Title="TXT_GT Field" Url="html/18bdbb29-7588-9c92-2bae-5b799d8a3de5.htm" />
@@ -665,7 +666,7 @@
         <HelpTOCNode Title="TXT_NEQUAL Field" Url="html/2214e42d-84e4-bfd2-9aa0-f58d91f56172.htm" />
         <HelpTOCNode Title="TXT_START_WITH Field" Url="html/1853c1f4-3ff1-1b81-a837-fccc6fa46e0a.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="9c5309a9-9cdf-4925-a748-5d94a5b08bbf" Title="SqlFilterItem Methods" Url="html/721685a5-86e9-7cc0-3d5a-49a5dd1b82d8.htm">
+      <HelpTOCNode Id="3f1f6ca8-d12c-4829-8ccc-8f053a58db4a" Title="SqlFilterItem Methods" Url="html/721685a5-86e9-7cc0-3d5a-49a5dd1b82d8.htm">
         <HelpTOCNode Title="asKey Method " Url="html/02131e60-5d7f-741f-ba4e-3ae286fec5a4.htm" />
         <HelpTOCNode Title="eq Method " Url="html/1b84c5b8-4016-faa1-15e4-6ae6f77094b3.htm" />
         <HelpTOCNode Title="filterAs Method " Url="html/1dceaaf8-0ca8-4ea5-3bdf-6cfe7e41fa04.htm" />
@@ -678,38 +679,38 @@
         <HelpTOCNode Title="lteq Method " Url="html/0e98790e-ad5e-4f5b-c7af-249d86517693.htm" />
         <HelpTOCNode Title="neq Method " Url="html/6ba28ef9-3458-fbe8-65b3-465fb2e68e19.htm" />
         <HelpTOCNode Title="nots Method " Url="html/1fe214ea-f46b-9150-2e4f-b999e4572996.htm" />
-        <HelpTOCNode Id="9da36185-8146-4690-92fd-e1b0b3c753dc" Title="pf Method " Url="html/371d8e25-36c5-6640-eb0a-58b5cde8a63e.htm">
+        <HelpTOCNode Id="75f9563a-b587-4ec2-a3fd-c0fd3fdb3705" Title="pf Method " Url="html/371d8e25-36c5-6640-eb0a-58b5cde8a63e.htm">
           <HelpTOCNode Title="pf Method (String)" Url="html/0d66482f-ba59-76c0-2ecf-662c47878e80.htm" />
           <HelpTOCNode Title="pf Method (SqlDataSource)" Url="html/1351f0ff-749b-bdbd-df13-f514464959da.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="ToString Method " Url="html/c619e4cb-08ba-0be4-1f7d-950656ef4a8a.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="f4ac15e4-16d4-415f-9f71-2bf168dc56c5" Title="SqlFilterItem Properties" Url="html/4af6c5da-94c1-c317-0802-ff58da463763.htm">
+      <HelpTOCNode Id="8e2ed1ff-a1bf-4a94-8606-7ae819d368dc" Title="SqlFilterItem Properties" Url="html/4af6c5da-94c1-c317-0802-ff58da463763.htm">
         <HelpTOCNode Title="Group Property " Url="html/45f05889-d56d-b2f9-1a65-4489d2eb5012.htm" />
         <HelpTOCNode Title="JoinTarget Property " Url="html/a45829d0-bb43-f7b6-c0a9-fce9d79a97ea.htm" />
         <HelpTOCNode Title="Negation Property " Url="html/561fb738-e1cc-c23c-196a-9c086e5f45e1.htm" />
         <HelpTOCNode Title="Operand Property " Url="html/9ea032d3-5965-a010-aae3-bc6fc33eb7df.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="1eea51bb-e03f-442a-bcfc-8f11eb1da5ed" Title="SqlItem Class" Url="html/b8c2a0c6-7077-97f5-4a08-35949575b7f9.htm">
+    <HelpTOCNode Id="8aec11dd-f034-4f62-9ac8-40876e10695f" Title="SqlItem Class" Url="html/b8c2a0c6-7077-97f5-4a08-35949575b7f9.htm">
       <HelpTOCNode Title="SqlItem Members" Url="html/2376d41a-2174-fa5d-c0d1-efb50f2415a9.htm" />
-      <HelpTOCNode Id="dfad4377-93b0-47e4-b9f2-f24b658ac937" Title="SqlItem Constructor " Url="html/c8c8f14e-96cf-a2b8-e816-3b97644b3c7e.htm">
+      <HelpTOCNode Id="539bdef6-ccd4-4bb3-bff3-5444b579eba3" Title="SqlItem Constructor " Url="html/c8c8f14e-96cf-a2b8-e816-3b97644b3c7e.htm">
         <HelpTOCNode Title="SqlItem Constructor " Url="html/9a6ac757-1482-bdec-24ef-5fe7a0383369.htm" />
         <HelpTOCNode Title="SqlItem Constructor (SqlItem, Object)" Url="html/fb341840-1ce8-0c88-7be5-547f4cdfb38c.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="e56b95e2-d8cc-4b9a-bcbb-2e42ebde474f" Title="SqlItem Fields" Url="html/c389ea01-bce5-e29d-3651-0695388120bb.htm">
+      <HelpTOCNode Id="1bf041bb-7e63-49a6-b179-8346468444ad" Title="SqlItem Fields" Url="html/c389ea01-bce5-e29d-3651-0695388120bb.htm">
         <HelpTOCNode Title="_column Field" Url="html/6292ff61-20dd-2fd7-6b16-99f4794cd1ae.htm" />
         <HelpTOCNode Title="_value Field" Url="html/d54d00ba-7a51-67aa-9eb1-8cd8eff1b631.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="50d01788-5b7f-456d-857c-fef0993f18ee" Title="SqlItem Methods" Url="html/a2cce65d-002e-e4e3-e8fc-2ec9c67299f9.htm">
+      <HelpTOCNode Id="24a4df1c-9a03-4530-aae5-989d48018134" Title="SqlItem Methods" Url="html/a2cce65d-002e-e4e3-e8fc-2ec9c67299f9.htm">
         <HelpTOCNode Title="baseAsKey Method " Url="html/ea06762d-2a22-a137-9d9a-cb9e2bbe1a5e.htm" />
-        <HelpTOCNode Id="3d2d5d76-bc9b-4739-b898-2b24a172ee03" Title="basePf Method " Url="html/cb096bf6-b8d1-00bf-842a-7c6ef267261a.htm">
+        <HelpTOCNode Id="1e922f4d-67e0-450b-b585-82ae102198d5" Title="basePf Method " Url="html/cb096bf6-b8d1-00bf-842a-7c6ef267261a.htm">
           <HelpTOCNode Title="basePf Method (String)" Url="html/1652c32f-dbf5-247d-d4f5-097a60b1d6c6.htm" />
           <HelpTOCNode Title="basePf Method (SqlDataSource)" Url="html/1537842e-5f35-1b44-4b30-990515b0cb18.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="hasValue Method " Url="html/182c91de-ca7d-f749-3c84-fee567c70bb6.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="c920b5bd-ebb9-476b-95a0-4fb7091b6066" Title="SqlItem Properties" Url="html/b5ca5946-159d-2b47-5ac6-bb12aee5506f.htm">
+      <HelpTOCNode Id="1be5b2fd-2cae-4290-ad80-3c1e217d6c9b" Title="SqlItem Properties" Url="html/b5ca5946-159d-2b47-5ac6-bb12aee5506f.htm">
         <HelpTOCNode Title="Column Property " Url="html/42fc67d6-36d6-344b-20eb-de19c83984c0.htm" />
         <HelpTOCNode Title="IsFunction Property " Url="html/e17b12ee-93ea-5771-ddd8-8c1f3043ea77.htm" />
         <HelpTOCNode Title="IsKey Property " Url="html/e7c2b3bd-c634-ca80-40be-a3e857a68d24.htm" />
@@ -718,30 +719,42 @@
         <HelpTOCNode Title="Value Property " Url="html/ac51d0ba-2127-cb18-ad98-606e872f5943.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="b17bf4a1-0b94-4eda-9578-32f6f413195c" Title="SqlItemContainer Class" Url="html/43d50b26-e0c7-dc6e-63ce-993221e83c38.htm">
+    <HelpTOCNode Id="0afd0077-80cd-4324-a436-992d24e06206" Title="SqlItemContainer Class" Url="html/43d50b26-e0c7-dc6e-63ce-993221e83c38.htm">
       <HelpTOCNode Title="SqlItemContainer Members" Url="html/01d5154a-f9b2-0b6d-4fdf-dc2388fd225f.htm" />
-      <HelpTOCNode Id="77c1e949-0d3f-4668-b384-e75de6d110b3" Title="SqlItemContainer Constructor " Url="html/bb60710c-96b4-a62e-07b6-4ebae5e36611.htm">
+      <HelpTOCNode Id="22e9abb7-4861-4cb1-a3d3-1e226178d788" Title="SqlItemContainer Constructor " Url="html/bb60710c-96b4-a62e-07b6-4ebae5e36611.htm">
         <HelpTOCNode Title="SqlItemContainer Constructor " Url="html/a99ff388-79e0-18b0-ee90-023e1452d829.htm" />
         <HelpTOCNode Title="SqlItemContainer Constructor (ActionType)" Url="html/9ab963fa-e283-d7ac-b66e-f2ecb26415f6.htm" />
         <HelpTOCNode Title="SqlItemContainer Constructor (SqlItemContainer, Boolean)" Url="html/0562b68b-271f-2e96-0368-b78bc63ae395.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="b9879c2c-f018-426e-b742-9fc811a09f68" Title="SqlItemContainer Methods" Url="html/85bce01b-fe0d-b0f0-b17e-fc3a5e1cabcd.htm">
-        <HelpTOCNode Id="761a61e7-24c7-496c-9a18-a56bb0800011" Title="ActionToString Method " Url="html/1e5db0ff-b4c4-6d9b-0e7e-ff8473e78f13.htm">
+      <HelpTOCNode Id="8a759be0-319d-4243-8afd-c19f9840c4a6" Title="SqlItemContainer Methods" Url="html/85bce01b-fe0d-b0f0-b17e-fc3a5e1cabcd.htm">
+        <HelpTOCNode Id="3679e5ca-ac83-44e6-84c2-a5d0a79d13a7" Title="ActionToString Method " Url="html/1e5db0ff-b4c4-6d9b-0e7e-ff8473e78f13.htm">
           <HelpTOCNode Title="ActionToString Method (ActionType)" Url="html/4dad8ccc-c9eb-54de-1aa1-aa2e001cb7d7.htm" />
           <HelpTOCNode Title="ActionToString Method (SqlItemContainer)" Url="html/d3ee2de0-9304-a7b7-7f88-931e589d99a7.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="e7d20932-f1b3-49ba-ab5f-b8f0699195e2" Title="Add Method " Url="html/8409c5d6-9a4e-5a66-4a9c-2dbdd8256e94.htm">
-          <HelpTOCNode Title="Add(T) Method (List(T))" Url="html/9cbcb344-76ca-3297-bdc0-be059ac3d9ae.htm" />
-          <HelpTOCNode Title="Add Method (SqlItem)" Url="html/558faea7-d1fe-6f70-bb27-79cfeaabfcb2.htm" />
+        <HelpTOCNode Id="1ffb61f1-6a60-467d-bf5c-efaa33c30f2c" Title="Add Method " Url="html/8409c5d6-9a4e-5a66-4a9c-2dbdd8256e94.htm">
+          <HelpTOCNode Title="Add Method (SqlFilterItem[])" Url="html/7fcb1f15-b738-ec90-8fea-e6bc3ffeded7.htm" />
+          <HelpTOCNode Title="Add Method (List(SqlFilterItem))" Url="html/b42d672d-8e97-890e-d17d-7118aec5c88a.htm" />
+          <HelpTOCNode Title="Add Method (SqlSelectItem[])" Url="html/d6472b49-05eb-7b45-2db4-43339f8a1924.htm" />
+          <HelpTOCNode Title="Add Method (List(SqlSelectItem))" Url="html/16f2e792-32b7-a87a-b081-3869d613296c.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="addAttrInfo Method " Url="html/2dc1bb5c-294d-298a-5a13-b0dae6348fa4.htm" />
-        <HelpTOCNode Title="addFilter Method " Url="html/e3dfb02d-163f-396f-dbeb-e3ac84136784.htm" />
-        <HelpTOCNode Title="addSelection Method " Url="html/2ee5f441-f2cd-0959-0523-60a60ce68f1d.htm" />
-        <HelpTOCNode Id="1f59de5d-c54e-480e-9f38-275f171fa249" Title="AttrInfo Method " Url="html/73c12934-82b6-7863-eba3-dbbe4b20576e.htm">
+        <HelpTOCNode Id="9cfc1a9c-3f52-4943-941e-9bd6da644fc3" Title="addFilter Method " Url="html/cfdda122-0ea9-117d-69cb-f012d8f32e13.htm">
+          <HelpTOCNode Title="addFilter Method (List(Control))" Url="html/50e10430-bb0b-df0c-fa4e-e463bd9da91a.htm" />
+          <HelpTOCNode Title="addFilter Method (Control[])" Url="html/3520be23-0f42-8593-6a90-fcdb32e83656.htm" />
+          <HelpTOCNode Title="addFilter Method (SqlFilterItem[])" Url="html/2b095896-245e-0e98-efd2-c404829a780c.htm" />
+          <HelpTOCNode Title="addFilter Method (List(SqlFilterItem))" Url="html/97a29674-0544-d0bb-72a3-8a550372e9bb.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="5919e8ba-1fd3-422f-8ddd-5f5de20fcada" Title="addSelection Method " Url="html/cc17f6ca-a476-c384-b4ac-e069c6e20ccf.htm">
+          <HelpTOCNode Title="addSelection Method (List(Control))" Url="html/de8e4f98-8241-880e-12a2-90be6f8d82e4.htm" />
+          <HelpTOCNode Title="addSelection Method (Control[])" Url="html/a70a928e-fdf8-3c34-62c2-3e7f2c4baf3b.htm" />
+          <HelpTOCNode Title="addSelection Method (SqlSelectItem[])" Url="html/8ef6ad23-7955-523d-4f19-d03018ece7cf.htm" />
+          <HelpTOCNode Title="addSelection Method (List(SqlSelectItem))" Url="html/0e86d996-3214-9496-d513-8a66677b07c2.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="e6067b4b-ad01-4b92-9d9f-3aa859b9c6e0" Title="AttrInfo Method " Url="html/73c12934-82b6-7863-eba3-dbbe4b20576e.htm">
           <HelpTOCNode Title="AttrInfo Method " Url="html/0420444c-e71a-c641-7f32-fb565f822cd0.htm" />
           <HelpTOCNode Title="AttrInfo Method (String)" Url="html/6dd885fd-0ed0-9d76-7263-6f8c09b5a99d.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="6268eebe-3de5-4316-b59f-8df922043a5d" Title="Filter Method " Url="html/e965a59b-7648-2be8-6b73-fe12ac68b057.htm">
+        <HelpTOCNode Id="b10886bd-a1db-47d3-a522-d0cec607c6e7" Title="Filter Method " Url="html/e965a59b-7648-2be8-6b73-fe12ac68b057.htm">
           <HelpTOCNode Title="Filter Method " Url="html/fd8b057f-3012-1175-1784-f44bc0de65e1.htm" />
           <HelpTOCNode Title="Filter Method (Int32)" Url="html/0c59d840-6a27-58e6-2a3a-dba9cc2ac41f.htm" />
           <HelpTOCNode Title="Filter Method (String)" Url="html/da95cc23-0050-0682-d718-61e79274682d.htm" />
@@ -752,14 +765,14 @@
         <HelpTOCNode Title="removeSelection Method " Url="html/eec614b2-6342-193a-6973-cb2eb2a0ae91.htm" />
         <HelpTOCNode Title="RowIndexOfPage Method " Url="html/91ae6a28-d559-df2f-15ab-b8830a868cd6.htm" />
         <HelpTOCNode Title="RowsInPage Method " Url="html/b58af1ff-f90a-ed80-fd83-7f29942e1729.htm" />
-        <HelpTOCNode Id="11ca5d4b-3120-4938-bff8-f9adc69e5e1c" Title="Selection Method " Url="html/8bb8ec7f-1e71-b696-ff46-e5a5fcbf0729.htm">
+        <HelpTOCNode Id="d7d8bcfc-deef-437f-af9b-463e3868b20e" Title="Selection Method " Url="html/8bb8ec7f-1e71-b696-ff46-e5a5fcbf0729.htm">
           <HelpTOCNode Title="Selection Method " Url="html/7934f765-5c23-f61e-4643-42eadcfdc28b.htm" />
           <HelpTOCNode Title="Selection Method (Int32)" Url="html/47a5b022-b8e4-dbb5-c867-a475970a03fb.htm" />
           <HelpTOCNode Title="Selection Method (String)" Url="html/b2d3eaaf-00e0-8880-7d9f-b91639b21b5f.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="setPaging Method " Url="html/fbcc6bb0-4787-f6eb-1314-d8b6c193b696.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="57948fbf-dcc5-4f0c-89a1-a723f154a296" Title="SqlItemContainer Properties" Url="html/21c01abf-562e-62f7-3e97-0f6e12d3484b.htm">
+      <HelpTOCNode Id="7bb22855-175c-4c0e-ab90-c607b537238e" Title="SqlItemContainer Properties" Url="html/21c01abf-562e-62f7-3e97-0f6e12d3484b.htm">
         <HelpTOCNode Title="Action Property " Url="html/961b7165-d05b-6164-7299-8911c905ecbc.htm" />
         <HelpTOCNode Title="CommandTimeout Property " Url="html/3957ea2d-2a43-8347-98a2-bf0eb7bfa163.htm" />
         <HelpTOCNode Title="IsIgnoreAlert Property " Url="html/c47b4fd2-1db7-f142-d12f-904eb7b6671d.htm" />
@@ -767,14 +780,14 @@
         <HelpTOCNode Title="IsPermitOtherKeyUpdate Property " Url="html/23e18841-31c2-68d4-ca9a-38f9e5269319.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="21cc0b40-0004-4f82-a09d-905ccb21d3cf" Title="SqlSelectItem Class" Url="html/efb2e426-cba9-9358-07e1-7b8dabf14caa.htm">
+    <HelpTOCNode Id="2910a286-2905-432a-8201-5f23fa35a5b5" Title="SqlSelectItem Class" Url="html/efb2e426-cba9-9358-07e1-7b8dabf14caa.htm">
       <HelpTOCNode Title="SqlSelectItem Members" Url="html/3738d43d-049f-9504-26e3-53ef2c600472.htm" />
-      <HelpTOCNode Id="bd88ef7c-7c04-45bc-bf34-8148075a9af0" Title="SqlSelectItem Constructor " Url="html/f3dcefdd-fe0e-2001-9ae6-3ffb8eddabd0.htm">
+      <HelpTOCNode Id="028a18d3-51b6-4a91-a10f-81eeaa26d172" Title="SqlSelectItem Constructor " Url="html/f3dcefdd-fe0e-2001-9ae6-3ffb8eddabd0.htm">
         <HelpTOCNode Title="SqlSelectItem Constructor (String, String)" Url="html/62da1ebe-7479-cc8d-1aab-db040ccc9d60.htm" />
         <HelpTOCNode Title="SqlSelectItem Constructor (SqlSelectItem, Object)" Url="html/f967c9d0-eb98-9182-1960-bb90ed628c32.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="SqlSelectItem Fields" Url="html/752f8e58-075d-429f-6dbc-89649e26c1a6.htm" />
-      <HelpTOCNode Id="052db351-a473-475d-acb1-2927326dc2cf" Title="SqlSelectItem Methods" Url="html/a7edf616-7dc6-0456-2dd0-6f7bdca06692.htm">
+      <HelpTOCNode Id="4011e2a6-b23a-417e-bf81-199511937160" Title="SqlSelectItem Methods" Url="html/a7edf616-7dc6-0456-2dd0-6f7bdca06692.htm">
         <HelpTOCNode Title="ASC Method " Url="html/50fccf7a-8f45-2e9c-e671-1c6bb1db3771.htm" />
         <HelpTOCNode Title="asKey Method " Url="html/7be5b13d-8e81-e43b-1f76-bfcdd986e8a9.htm" />
         <HelpTOCNode Title="asName Method " Url="html/4e709caf-d329-5520-110f-1eee025f5447.htm" />
@@ -783,7 +796,7 @@
         <HelpTOCNode Title="DESC Method " Url="html/2d6b5e12-15d8-7f40-5fd7-47a5ee3d9006.htm" />
         <HelpTOCNode Title="hasValue Method " Url="html/badf8821-5fd7-564a-89c7-13884e4df6b2.htm" />
         <HelpTOCNode Title="inGroup Method " Url="html/b369b7f5-1b2d-ffbc-2e05-4ae00301a1b5.htm" />
-        <HelpTOCNode Id="8cd32870-d0d4-4980-9d64-237049d0c907" Title="pf Method " Url="html/a3cbdf14-5b61-e86b-ea9b-6749c5351692.htm">
+        <HelpTOCNode Id="794487e6-ca4f-4301-95bd-9e90aa375468" Title="pf Method " Url="html/a3cbdf14-5b61-e86b-ea9b-6749c5351692.htm">
           <HelpTOCNode Title="pf Method (String)" Url="html/d42ca599-34be-28f7-e0dd-fe64ccefd8ab.htm" />
           <HelpTOCNode Title="pf Method (SqlDataSource)" Url="html/04cbfab7-7704-c24b-d50d-8db25f37fa36.htm" />
         </HelpTOCNode>
@@ -791,7 +804,7 @@
         <HelpTOCNode Title="toFilter Method " Url="html/27ddb7de-1e07-4265-10c3-e81f67da70e5.htm" />
         <HelpTOCNode Title="ToString Method " Url="html/38458b46-e816-728f-e8ad-c41adf44c444.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="b0e58e28-a8fe-4fec-a5ee-3cb69e033adf" Title="SqlSelectItem Properties" Url="html/9f165475-dee1-553c-b651-13b0d834ff1d.htm">
+      <HelpTOCNode Id="6d2de677-ce96-4004-904e-8bac30db4260" Title="SqlSelectItem Properties" Url="html/9f165475-dee1-553c-b651-13b0d834ff1d.htm">
         <HelpTOCNode Title="ColAlias Property " Url="html/320ab38a-b423-081b-539c-78f34779e44f.htm" />
         <HelpTOCNode Title="IsGroupBy Property " Url="html/fc641d41-ef7b-d936-4ffa-8c0fe667a7bb.htm" />
         <HelpTOCNode Title="IsNoSelect Property " Url="html/fa928d79-54e3-5115-1eb9-f4c6a1ef64ee.htm" />
@@ -799,11 +812,11 @@
       </HelpTOCNode>
     </HelpTOCNode>
   </HelpTOCNode>
-  <HelpTOCNode Id="265b6793-e6b2-4343-9686-aeb68c638e63" Title="Gears.Util Namespace" Url="html/54198b15-1525-7fd4-8b18-70a8abac516a.htm">
-    <HelpTOCNode Id="00dbf2e4-359a-4394-aaa5-dd8d8a00a356" Title="ControlSearcher Class" Url="html/45494a5e-7166-baf6-18e9-003f60db161b.htm">
+  <HelpTOCNode Id="093fdd2c-abd1-4b68-b2af-3a8238bfe398" Title="Gears.Util Namespace" Url="html/54198b15-1525-7fd4-8b18-70a8abac516a.htm">
+    <HelpTOCNode Id="edc6aa6b-3fa1-43e9-babb-2a502be56643" Title="ControlSearcher Class" Url="html/45494a5e-7166-baf6-18e9-003f60db161b.htm">
       <HelpTOCNode Title="ControlSearcher Members" Url="html/0c4249b2-fff2-ac57-f26b-8005fdc4eceb.htm" />
       <HelpTOCNode Title="ControlSearcher Constructor " Url="html/6b4f308e-3d1e-72a5-3866-1138edd62ce4.htm" />
-      <HelpTOCNode Id="6ca426c6-fa17-4bb5-91be-b86e35a011d7" Title="ControlSearcher Methods" Url="html/814c8608-f146-3bf8-bfc4-7414b83b9491.htm">
+      <HelpTOCNode Id="0f40f234-b7c0-410a-bcfe-fb3fe1e82004" Title="ControlSearcher Methods" Url="html/814c8608-f146-3bf8-bfc4-7414b83b9491.htm">
         <HelpTOCNode Title="fetchControls Method " Url="html/6d64f147-2617-068e-8983-89f3ec641a27.htm" />
         <HelpTOCNode Title="findControl Method " Url="html/7af91c84-2292-28d8-4aec-51a07d93428b.htm" />
         <HelpTOCNode Title="GetAsynchronousPostBackPanel Method " Url="html/6b019313-aacf-7410-30bb-570f8b446a8d.htm" />
@@ -812,41 +825,43 @@
     </HelpTOCNode>
     <HelpTOCNode Title="ControlSearcher.fetchControl Delegate" Url="html/f9886b33-2b4b-a0b3-c595-c7419e194c15.htm" />
     <HelpTOCNode Title="ControlSearcher.isFetchTgt Delegate" Url="html/c8d39eee-f2e8-b0c2-6419-792764c787ea.htm" />
-    <HelpTOCNode Id="2b1027ef-acb1-4cca-8192-e9f9dfd9ff63" Title="DataSetReader Class" Url="html/d6748f99-dfe2-7b45-4e0b-1d7b881cf286.htm">
+    <HelpTOCNode Id="891fb12e-de7d-4e02-bdf3-10a134b56706" Title="DataSetReader Class" Url="html/d6748f99-dfe2-7b45-4e0b-1d7b881cf286.htm">
       <HelpTOCNode Title="DataSetReader Members" Url="html/1d2acd3d-386a-7a66-df27-7d2520d0b4ac.htm" />
       <HelpTOCNode Title="DataSetReader Constructor " Url="html/7263ea21-f314-89df-3045-dc0f4fd44241.htm" />
-      <HelpTOCNode Id="983ba369-730f-4a09-b33f-6e08a3b4f40d" Title="DataSetReader Methods" Url="html/db929d22-d8ba-b3f2-c35f-2dbac0088000.htm">
-        <HelpTOCNode Id="6d87ab78-dcab-4244-9fca-5cd2d1bba137" Title="Item Method " Url="html/5fcabbe6-32c3-cc69-2df0-e2ca04142f88.htm">
+      <HelpTOCNode Id="9aef03fa-fde4-46e3-8eae-747d80a37a34" Title="DataSetReader Methods" Url="html/db929d22-d8ba-b3f2-c35f-2dbac0088000.htm">
+        <HelpTOCNode Id="1efc3c18-1f52-4280-80ab-8649d1f138e4" Title="Item Method " Url="html/5fcabbe6-32c3-cc69-2df0-e2ca04142f88.htm">
           <HelpTOCNode Title="Item Method (DataTable, Int32, Int32)" Url="html/84aba6d7-cce3-ca55-f41c-de014a1f8d74.htm" />
           <HelpTOCNode Title="Item Method (DataTable, String, Int32)" Url="html/cc884eb4-e91a-1b40-96cd-e17eff341bdc.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="f81c191b-7bc3-4bf5-af9d-076e81e5b886" Title="IFormItem Interface" Url="html/6318d8be-bc64-a184-b08a-d3f3d4da2a01.htm">
+    <HelpTOCNode Id="d52a6024-f787-481e-9029-b8d381d3c0ca" Title="IFormItem Interface" Url="html/6318d8be-bc64-a184-b08a-d3f3d4da2a01.htm">
       <HelpTOCNode Title="IFormItem Members" Url="html/eb1f64df-045a-5289-de1a-f5e017960053.htm" />
-      <HelpTOCNode Id="3b2903d7-acd8-4abd-8dee-2baf8d34de85" Title="IFormItem Methods" Url="html/79288ebe-6e8c-b5ba-b429-e7b7215cd093.htm">
+      <HelpTOCNode Id="e1feb519-ed6f-48d7-87ec-e51a546f954d" Title="IFormItem Methods" Url="html/79288ebe-6e8c-b5ba-b429-e7b7215cd093.htm">
         <HelpTOCNode Title="getControl Method " Url="html/efcaf017-858a-c64e-390d-e3fef90211b2.htm" />
         <HelpTOCNode Title="getValue Method " Url="html/accc2437-c54b-843b-89d3-a9f40bae97ea.htm" />
         <HelpTOCNode Title="setValue Method " Url="html/9dd421d2-69ed-7367-d0f9-665ac6c69285.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="e84eb038-43dd-4e90-8775-343fb8029d20" Title="IFormItem Properties" Url="html/dcad21aa-b8e1-5426-a52f-2bf5cebd9b4b.htm">
+      <HelpTOCNode Id="235b9b0a-3227-48e5-983e-5656ce4d7266" Title="IFormItem Properties" Url="html/dcad21aa-b8e1-5426-a52f-2bf5cebd9b4b.htm">
+        <HelpTOCNode Title="ConnectionName Property " Url="html/aed498c8-0ae5-5f14-7352-abe5289becac.htm" />
         <HelpTOCNode Title="ControlId Property " Url="html/d8dc256b-67d5-0f68-ddaf-3a69dde31c1d.htm" />
         <HelpTOCNode Title="ControlKind Property " Url="html/ebe27345-a003-1aac-4ea7-67988bfd754b.htm" />
         <HelpTOCNode Title="CssClass Property " Url="html/0e045921-96b0-bab7-e117-23e72328c207.htm" />
+        <HelpTOCNode Title="DsNamespace Property " Url="html/ac2e7071-ac59-8172-a299-8c338ea4ec19.htm" />
         <HelpTOCNode Title="Height Property " Url="html/bc660fe8-3c41-31ce-2f05-963daace260f.htm" />
         <HelpTOCNode Title="IsEditable Property " Url="html/245894b0-bf4c-b72d-08cb-403d745e77eb.htm" />
         <HelpTOCNode Title="LabelText Property " Url="html/2fdee617-e79e-76e3-8584-9780d2e3be62.htm" />
         <HelpTOCNode Title="Width Property " Url="html/92a53d07-50ad-8a42-f98d-c4c711bea3d3.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="6209c9f3-f865-47e1-87eb-b9b53dcc651e" Title="RelationNode Class" Url="html/873d0a9b-3c1e-8fb7-5bea-15e72398f1fd.htm">
+    <HelpTOCNode Id="830b273b-f4f6-428b-bfef-eafe01aec839" Title="RelationNode Class" Url="html/873d0a9b-3c1e-8fb7-5bea-15e72398f1fd.htm">
       <HelpTOCNode Title="RelationNode Members" Url="html/14650131-ddb3-7509-ecc1-2b4e5a2f4cdc.htm" />
-      <HelpTOCNode Id="ccc2e0ab-b82f-49c6-9b74-3ef369ab2390" Title="RelationNode Constructor " Url="html/a54962aa-ed08-6b28-0e14-b8560c7c4dd0.htm">
+      <HelpTOCNode Id="20532895-046c-4b39-8227-3d8a0a150b23" Title="RelationNode Constructor " Url="html/a54962aa-ed08-6b28-0e14-b8560c7c4dd0.htm">
         <HelpTOCNode Title="RelationNode Constructor (String)" Url="html/b7834d8f-07f5-f73c-7562-faf21b4cf723.htm" />
         <HelpTOCNode Title="RelationNode Constructor (String, List(RelationNode))" Url="html/e97c125d-fd29-b7c6-6c89-38e15c22bacb.htm" />
         <HelpTOCNode Title="RelationNode Constructor (String, List(String))" Url="html/f6aa67e8-7115-88e8-8290-84545ef24d8a.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="d9f36744-6fab-4de7-914b-aa83f8ac33db" Title="RelationNode Methods" Url="html/d6548d85-14b9-920d-26df-cf6f3b5217b0.htm">
+      <HelpTOCNode Id="b4ec555e-9427-4cd5-b3d8-8ed4f694cf86" Title="RelationNode Methods" Url="html/d6548d85-14b9-920d-26df-cf6f3b5217b0.htm">
         <HelpTOCNode Title="addChild Method " Url="html/7299991d-afd4-583e-7126-a43e7a832b67.htm" />
         <HelpTOCNode Title="findNode Method " Url="html/d8ff5cc6-3f85-e278-3ddf-d95c68d6e85f.htm" />
         <HelpTOCNode Title="getBranches Method " Url="html/984ed1a4-363a-d9ac-7079-fd72bac2e9c4.htm" />
@@ -858,7 +873,7 @@
         <HelpTOCNode Title="visitChildren Method " Url="html/ed029f81-6dd7-6e27-c0ec-c7fc7c88b4c1.htm" />
         <HelpTOCNode Title="visitParents Method " Url="html/05b0d84f-b21e-8dc0-d1b2-7dde3a71a897.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="19da3c8b-d72a-473d-989f-4488c6ed4c92" Title="RelationNode Properties" Url="html/4949a5b8-7369-9fd7-d2b3-528dff4e3da0.htm">
+      <HelpTOCNode Id="31a0b491-cdd4-4e50-9c22-f096483e22c5" Title="RelationNode Properties" Url="html/4949a5b8-7369-9fd7-d2b3-528dff4e3da0.htm">
         <HelpTOCNode Title="Children Property " Url="html/3f50a982-18c8-50fe-d3b3-32a0d37cfed4.htm" />
         <HelpTOCNode Title="isLeaf Property " Url="html/ef1fe501-b6c4-6174-744b-dc699b16fd2c.htm" />
         <HelpTOCNode Title="isRoot Property " Url="html/60965705-e263-c6ba-9f32-bbb58a2bb870.htm" />
@@ -868,21 +883,21 @@
     </HelpTOCNode>
     <HelpTOCNode Title="RelationNode.nodeHandler Delegate" Url="html/cc41af67-ecd7-66f6-3df8-165ee06b3457.htm" />
   </HelpTOCNode>
-  <HelpTOCNode Id="f7f1be1a-6c58-4158-a156-e77ea50ce5b2" Title="Gears.Validation Namespace" Url="html/9ec42eea-fa01-df1d-90f3-5841bef47b12.htm">
-    <HelpTOCNode Id="342ae254-a3c0-4191-af4f-b78b86e72b18" Title="AbsModelValidator Class" Url="html/0fe47647-64bd-2beb-d722-daa2f3a07f37.htm">
+  <HelpTOCNode Id="c1304478-7e50-4f3d-9d3d-9ba9e875658c" Title="Gears.Validation Namespace" Url="html/9ec42eea-fa01-df1d-90f3-5841bef47b12.htm">
+    <HelpTOCNode Id="bfd26669-81a2-4d52-ae42-230b7db33ac1" Title="AbsModelValidator Class" Url="html/0fe47647-64bd-2beb-d722-daa2f3a07f37.htm">
       <HelpTOCNode Title="AbsModelValidator Members" Url="html/1c1e8d8e-934c-45e1-6c88-9d4468ac7469.htm" />
       <HelpTOCNode Title="AbsModelValidator Constructor " Url="html/1ec5dace-29af-3f42-569b-5e4428bf20a2.htm" />
-      <HelpTOCNode Id="26bfab5b-0783-4dc7-9291-97d1aef72e5c" Title="AbsModelValidator Methods" Url="html/c82500ef-92d4-abf6-ab8b-c2c09753c8f8.htm">
+      <HelpTOCNode Id="87f32011-a42a-45de-a983-ba70c7d734af" Title="AbsModelValidator Methods" Url="html/c82500ef-92d4-abf6-ab8b-c2c09753c8f8.htm">
         <HelpTOCNode Title="getValidateeValue Method " Url="html/8b01d98f-421a-ff9c-28ea-2e026b296de4.htm" />
         <HelpTOCNode Title="setUpValidation Method " Url="html/35d34781-888b-bfc1-fe7f-d04e4190f229.htm" />
         <HelpTOCNode Title="tearDownValidation Method " Url="html/e37c507a-bae2-346e-4bfe-aac5ab8febd5.htm" />
         <HelpTOCNode Title="throwException Method " Url="html/07a4bccf-ed3b-0cf7-6c64-9fef6fdcef33.htm" />
-        <HelpTOCNode Id="0218cc5a-6097-47c5-b392-0917ce1ab703" Title="Validate Method " Url="html/1a1306bc-9807-3648-29d3-463a7455df89.htm">
+        <HelpTOCNode Id="8dad3fbd-8d99-49c2-8068-0fc89635b83a" Title="Validate Method " Url="html/1a1306bc-9807-3648-29d3-463a7455df89.htm">
           <HelpTOCNode Title="Validate Method (SqlBuilder, Boolean)" Url="html/7ec13eb6-217b-4f92-049c-5e83bab1382b.htm" />
           <HelpTOCNode Title="Validate Method (SqlBuilder, List(AbsModelValidator.ModelValidator), Boolean)" Url="html/bbf3b07d-fcb0-493e-bd4c-51e7674d962b.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="539096cc-9158-4eaa-9d82-d8a11242f319" Title="AbsModelValidator Properties" Url="html/92f99322-0a9b-ae40-1d65-8af58219c294.htm">
+      <HelpTOCNode Id="218e78aa-b504-41c0-a6f0-52299b0db2c1" Title="AbsModelValidator Properties" Url="html/92f99322-0a9b-ae40-1d65-8af58219c294.htm">
         <HelpTOCNode Title="ErrorMessage Property " Url="html/d1035de1-490c-5db4-8e82-16ac30e1cf3a.htm" />
         <HelpTOCNode Title="ErrorSource Property " Url="html/ee843ab1-0533-5db0-cf80-60e4c094260b.htm" />
         <HelpTOCNode Title="IsValid Property " Url="html/607ecad5-c279-d886-7f78-ac6bd6c4043f.htm" />
@@ -891,70 +906,70 @@
       </HelpTOCNode>
     </HelpTOCNode>
     <HelpTOCNode Title="AbsModelValidator.ModelValidator Delegate" Url="html/1b12aa00-780f-b17a-84e4-c28d29175f6d.htm" />
-    <HelpTOCNode Id="8e14d407-95fc-4c30-b18b-ab247d1c35cb" Title="GAttributeHolderTemplate Class" Url="html/72896aa0-0915-5ea8-0416-405bb5125e75.htm">
+    <HelpTOCNode Id="2aa24ffb-da0e-4d0e-8b60-c2f5b1c1004b" Title="GAttributeHolderTemplate Class" Url="html/72896aa0-0915-5ea8-0416-405bb5125e75.htm">
       <HelpTOCNode Title="GAttributeHolderTemplate Members" Url="html/d4296bd8-8782-06b0-4ac8-c7a58c6b7633.htm" />
-      <HelpTOCNode Id="43781d8d-6c53-4369-b073-2fd861c3461a" Title="GAttributeHolderTemplate Constructor " Url="html/c7a2472d-5786-c821-65d9-b9e226acbc6b.htm">
+      <HelpTOCNode Id="8c1576ce-8ed1-454f-aad0-d5291f1ad24a" Title="GAttributeHolderTemplate Constructor " Url="html/c7a2472d-5786-c821-65d9-b9e226acbc6b.htm">
         <HelpTOCNode Title="GAttributeHolderTemplate Constructor (String, GearsAttribute)" Url="html/cfd1bc8b-80e1-476c-3905-e47d9cbc23e7.htm" />
         <HelpTOCNode Title="GAttributeHolderTemplate Constructor (String, String)" Url="html/c478a838-f0ce-36c7-f4f5-0264079cf657.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="6af3a80c-2d1d-4cbc-9405-22508ff1b393" Title="GAttributeHolderTemplate Methods" Url="html/de752b4f-40ca-7fc1-fb25-1e3b8247f662.htm">
+      <HelpTOCNode Id="246ae514-0597-490c-bf27-1c85817ef45f" Title="GAttributeHolderTemplate Methods" Url="html/de752b4f-40ca-7fc1-fb25-1e3b8247f662.htm">
         <HelpTOCNode Title="getValidationError Method " Url="html/ae7b11e0-98cf-04fc-5fe6-aff939e2db55.htm" />
         <HelpTOCNode Title="isValidateOk Method " Url="html/58b2939b-4e88-da67-3a94-5b7a920770f1.htm" />
         <HelpTOCNode Title="setValue Method " Url="html/8d931ec5-2668-6b32-5e96-72b1a657999b.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="8faaa2f2-103d-4f9e-b9b0-ca5a1a5a7aff" Title="GAttributeHolderTemplate Properties" Url="html/aad5c261-6873-841f-1310-9a0b00fdc608.htm">
+      <HelpTOCNode Id="51135747-dc90-439d-88b1-6f18cb0f5ac4" Title="GAttributeHolderTemplate Properties" Url="html/aad5c261-6873-841f-1310-9a0b00fdc608.htm">
         <HelpTOCNode Title="GAttribute Property " Url="html/d6fb25c3-1768-fdd2-79b6-3e4554c58a36.htm" />
         <HelpTOCNode Title="GCssClass Property " Url="html/429d6407-22f8-7b2e-b64a-9b819d3d5404.htm" />
         <HelpTOCNode Title="validateeValue Property " Url="html/39b9e85d-5e3f-6f5a-6aa8-d51ca33754f5.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="a542d25a-18ca-464e-a112-ffb9559c0a4d" Title="GearsAttribute Class" Url="html/0df4a09c-57b8-494b-7a66-8a205418c64d.htm">
+    <HelpTOCNode Id="84ef301c-3db5-4f93-b673-91b35b326f90" Title="GearsAttribute Class" Url="html/0df4a09c-57b8-494b-7a66-8a205418c64d.htm">
       <HelpTOCNode Title="GearsAttribute Members" Url="html/a7c81fd5-6083-2311-5f6e-57dacecb9072.htm" />
       <HelpTOCNode Title="GearsAttribute Constructor " Url="html/19b55e08-d209-504a-99f7-cbcf49daffa2.htm" />
-      <HelpTOCNode Id="43d2b485-e6b3-4b7f-9858-49383f230e07" Title="GearsAttribute Fields" Url="html/ad60c0e9-c5c6-eeb2-3768-82a39e944254.htm">
+      <HelpTOCNode Id="89eabae1-1a83-4ca6-a405-58520fadf7bd" Title="GearsAttribute Fields" Url="html/ad60c0e9-c5c6-eeb2-3768-82a39e944254.htm">
         <HelpTOCNode Title="ERR_STYLE Field" Url="html/bd8e6b62-a969-e5ca-e2e8-386a2e0e40b2.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="07f8e392-d2bd-4768-a373-992538d7001b" Title="GearsAttribute Methods" Url="html/8e5b4f47-840e-7865-ae7c-2f992f53c66d.htm">
+      <HelpTOCNode Id="7bd0f986-6d1d-4702-b935-64ab4fd26b5d" Title="GearsAttribute Methods" Url="html/8e5b4f47-840e-7865-ae7c-2f992f53c66d.htm">
         <HelpTOCNode Title="hasMarker Method " Url="html/78b1b1ca-ccfb-92ba-509e-20843f2fee33.htm" />
         <HelpTOCNode Title="initProperty Method " Url="html/f8a6d5c1-5f7c-3892-22c3-c6a8dcde5ed5.htm" />
         <HelpTOCNode Title="isValidateOk Method " Url="html/b21af461-5a97-7f22-77a1-81f658a6dd6c.htm" />
         <HelpTOCNode Title="ListUp Method " Url="html/c0644971-7b75-776e-f0b6-a1c914116466.htm" />
         <HelpTOCNode Title="Validate Method " Url="html/cbf2a24c-6ce8-7111-dce4-5785f6d4d106.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="ac84a885-7659-4dfa-afc3-beb3b77fd6a4" Title="GearsAttribute Properties" Url="html/60f616b8-0c84-69dc-e3d7-2e84c57a3a2e.htm">
+      <HelpTOCNode Id="37d7cfde-8182-485d-8e19-d8a0ff018f64" Title="GearsAttribute Properties" Url="html/60f616b8-0c84-69dc-e3d7-2e84c57a3a2e.htm">
         <HelpTOCNode Title="CssClass Property " Url="html/21fc9eef-44e9-cb47-4f48-12f2c1d3ebe0.htm" />
         <HelpTOCNode Title="ErrorMessage Property " Url="html/9b61c857-e7a2-ecab-d996-416978e052bf.htm" />
         <HelpTOCNode Title="IsValid Property " Url="html/8a8ca2c7-c952-4b66-4536-62d075ffe193.htm" />
         <HelpTOCNode Title="ValidateeValue Property " Url="html/7ffeda94-fe2d-4f5b-4419-669d8b54178f.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="564266fa-b296-4f48-b8a6-79cbc5c023b9" Title="GearsAttributeContainer Class" Url="html/392e9151-becd-8af0-1979-babd5254a9dc.htm">
+    <HelpTOCNode Id="4306f0c8-4304-4ab2-a6aa-d213be1bf25c" Title="GearsAttributeContainer Class" Url="html/392e9151-becd-8af0-1979-babd5254a9dc.htm">
       <HelpTOCNode Title="GearsAttributeContainer Members" Url="html/c76055ca-0d11-b2ea-4898-1df8e2aa0400.htm" />
-      <HelpTOCNode Id="0a42fc66-7ff4-4e50-9748-7489f7241855" Title="GearsAttributeContainer Constructor " Url="html/d502d598-406d-218f-8ccf-5224c59d3eb4.htm">
+      <HelpTOCNode Id="4f00f851-c3c9-4098-adc9-1773907c4e35" Title="GearsAttributeContainer Constructor " Url="html/d502d598-406d-218f-8ccf-5224c59d3eb4.htm">
         <HelpTOCNode Title="GearsAttributeContainer Constructor " Url="html/0968ad5a-24cf-3a38-e6fd-5429958b403b.htm" />
         <HelpTOCNode Title="GearsAttributeContainer Constructor (GearsAttributeContainer)" Url="html/a4a91151-dfca-6639-2553-e067eb18629f.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="fea9d3ad-595d-42a9-87f3-040b35addba9" Title="GearsAttributeContainer Methods" Url="html/d571eadf-6be1-3a76-e0a6-210a12fcb755.htm">
+      <HelpTOCNode Id="fa0bad02-f0c6-47dc-a303-2f3bfde6659b" Title="GearsAttributeContainer Methods" Url="html/d571eadf-6be1-3a76-e0a6-210a12fcb755.htm">
         <HelpTOCNode Title="addAttribute Method " Url="html/df20dabe-9a7e-3164-4deb-559c0921236e.htm" />
         <HelpTOCNode Title="clearAttributes Method " Url="html/7bf0bfb2-99fc-6a8c-690f-01e78192fd80.htm" />
         <HelpTOCNode Title="hasMarker Method " Url="html/f6b9054c-3110-7a9f-fe48-380fd10b8940.htm" />
         <HelpTOCNode Title="ListUp Method " Url="html/4bcc9514-ac30-2578-93af-c1ae2e1c385f.htm" />
         <HelpTOCNode Title="Validate Method " Url="html/297e2d63-8204-7470-8d88-ee58bb333837.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="61fc6526-bb76-440e-97cf-1c30e49b14a1" Title="GearsAttributeContainer Properties" Url="html/b2a01ba3-0fed-bed4-e6d6-adbd970eb7d7.htm">
+      <HelpTOCNode Id="0a15ae46-819c-48cf-9d60-d1eec7922145" Title="GearsAttributeContainer Properties" Url="html/b2a01ba3-0fed-bed4-e6d6-adbd970eb7d7.htm">
         <HelpTOCNode Title="CssClass Property " Url="html/718b5e03-1554-35bc-fc46-2482ddd12c0c.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="e89438c0-36a7-45b7-8dea-8f5efbfe02e2" Title="GearsAttributeCreator Class" Url="html/a006cea9-4261-a8c5-4829-94fa04b56b9a.htm">
+    <HelpTOCNode Id="d3557f38-cb4d-4e39-a9d2-e33ed566aa17" Title="GearsAttributeCreator Class" Url="html/a006cea9-4261-a8c5-4829-94fa04b56b9a.htm">
       <HelpTOCNode Title="GearsAttributeCreator Members" Url="html/0f753fb8-6c90-63b7-3b69-e29f741e07cc.htm" />
-      <HelpTOCNode Id="0c97a600-330a-4cf5-be66-6a21f60c6e8e" Title="GearsAttributeCreator Constructor " Url="html/c92e00b0-ccc5-0d24-ac09-1a8dbad37533.htm">
+      <HelpTOCNode Id="62f6dcfa-2be5-47af-b9ad-9811c50000a7" Title="GearsAttributeCreator Constructor " Url="html/c92e00b0-ccc5-0d24-ac09-1a8dbad37533.htm">
         <HelpTOCNode Title="GearsAttributeCreator Constructor " Url="html/20036e38-dcc8-79cf-538b-92d3c337443c.htm" />
         <HelpTOCNode Title="GearsAttributeCreator Constructor (String)" Url="html/48959cdc-c2cc-32ef-4276-83fd12f225d2.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="650a5d4f-f1f7-4ce7-87c8-9476a8bd2973" Title="GearsAttributeCreator Fields" Url="html/f3c02760-44be-994d-e7ec-3303292272e9.htm">
+      <HelpTOCNode Id="ed0ea76f-b4d4-42cc-a674-43b1026c5ae6" Title="GearsAttributeCreator Fields" Url="html/f3c02760-44be-994d-e7ec-3303292272e9.htm">
         <HelpTOCNode Title="CSS_HEAD Field" Url="html/356907f0-72e5-108c-e06b-3f2f7e518dab.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="076628aa-a226-4b02-ab0c-c3aa61498218" Title="GearsAttributeCreator Methods" Url="html/c7b91f93-d9e6-4480-ba9a-deb264a61fc7.htm">
+      <HelpTOCNode Id="56ad31ac-1ffc-4b3a-a933-99899ca5b725" Title="GearsAttributeCreator Methods" Url="html/c7b91f93-d9e6-4480-ba9a-deb264a61fc7.htm">
         <HelpTOCNode Title="createAttributesFromString Method " Url="html/99c9fdd3-b221-dbfd-d932-036d7332a687.htm" />
         <HelpTOCNode Title="getCssClass Method " Url="html/41267196-d409-bcb3-48ac-9ab3aadb34bf.htm" />
         <HelpTOCNode Title="isCompare Method " Url="html/1085917c-ff9b-f7c7-1a1b-73ed49b4dc2f.htm" />
@@ -968,22 +983,22 @@
         <HelpTOCNode Title="isStartWith Method " Url="html/384b01a4-5a4f-9170-7ab8-ab84bb4fe57b.htm" />
         <HelpTOCNode Title="pack Method " Url="html/c602d381-c1ed-f1a0-be89-0e91aff1b999.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="df067e31-84ca-400d-b175-3adfcc9e7ccd" Title="GearsAttributeCreator Properties" Url="html/2edf9926-303d-7dcf-0d80-623d06bce7ca.htm">
+      <HelpTOCNode Id="10f20194-0e88-4991-b798-67505fd2ca9b" Title="GearsAttributeCreator Properties" Url="html/2edf9926-303d-7dcf-0d80-623d06bce7ca.htm">
         <HelpTOCNode Title="AttributeNamespace Property " Url="html/69485564-9283-913d-fbc9-ddf23325f98a.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="f36aa39e-bae7-432c-a1e0-557e8de27e43" Title="GearsModelValidationException Class" Url="html/db4ca058-9ead-baa9-703e-f31b283f711a.htm">
+    <HelpTOCNode Id="be7a55db-6e05-490a-bcfa-df9704480e55" Title="GearsModelValidationException Class" Url="html/db4ca058-9ead-baa9-703e-f31b283f711a.htm">
       <HelpTOCNode Title="GearsModelValidationException Members" Url="html/db339435-7a81-100e-f24a-f9b75789542a.htm" />
       <HelpTOCNode Title="GearsModelValidationException Constructor " Url="html/49e7ab19-7942-b59a-108c-1f1e55ecad5a.htm" />
       <HelpTOCNode Title="GearsModelValidationException Methods" Url="html/d076f819-6e9d-ed4a-027f-a5f7ed532f36.htm" />
-      <HelpTOCNode Id="9b30ff3d-1ba8-4456-a86a-2a048baf6aaa" Title="GearsModelValidationException Properties" Url="html/75957b3c-d4b1-629c-e1f8-ef90fd93d302.htm">
+      <HelpTOCNode Id="2ad01f84-adb5-4c40-8f71-2c9e252f8800" Title="GearsModelValidationException Properties" Url="html/75957b3c-d4b1-629c-e1f8-ef90fd93d302.htm">
         <HelpTOCNode Title="Result Property " Url="html/0225d286-6ccf-041f-66b0-1402bf0db16b.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="GearsModelValidationException Events" Url="html/e1df0221-9784-8b25-685f-68df42f97845.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="3741a3f3-93f3-4de8-9bb1-4fd6dc985065" Title="GearsValidationException Class" Url="html/88b52349-c608-cb41-6c06-152046849a11.htm">
+    <HelpTOCNode Id="5cdd8efd-eb9e-45ff-ab3a-1133c31dbcba" Title="GearsValidationException Class" Url="html/88b52349-c608-cb41-6c06-152046849a11.htm">
       <HelpTOCNode Title="GearsValidationException Members" Url="html/82907aba-3799-f23d-1aa6-e68162a7ec61.htm" />
-      <HelpTOCNode Id="8efcaeeb-24d2-43c8-b4a2-491111050d5f" Title="GearsValidationException Constructor " Url="html/4fdf5fa5-bb87-de2b-504c-1b7725276ae7.htm">
+      <HelpTOCNode Id="c9515bd0-1ea8-4321-b74b-cc6f26e6b06b" Title="GearsValidationException Constructor " Url="html/4fdf5fa5-bb87-de2b-504c-1b7725276ae7.htm">
         <HelpTOCNode Title="GearsValidationException Constructor " Url="html/88e0cf61-0f0d-8d2a-0c68-c38ac90b5f73.htm" />
         <HelpTOCNode Title="GearsValidationException Constructor (String, Exception)" Url="html/cadc0ced-5c89-2892-da76-f5546b544f10.htm" />
         <HelpTOCNode Title="GearsValidationException Constructor (String, String[])" Url="html/35d2c5af-66a8-035f-06dd-df5926a5ce21.htm" />
@@ -992,198 +1007,198 @@
       <HelpTOCNode Title="GearsValidationException Properties" Url="html/09def3ab-f757-01eb-54d2-6ea29fcfb80b.htm" />
       <HelpTOCNode Title="GearsValidationException Events" Url="html/73820be2-1c9c-c08b-feab-631481a644b0.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="4e9fc287-8101-4b62-babd-46189ea970a0" Title="IAttributeHolder Interface" Url="html/ccc01267-ad16-249a-7c96-86bf71dff57c.htm">
+    <HelpTOCNode Id="4952d5f9-9002-41ef-b5cd-e9add4831139" Title="IAttributeHolder Interface" Url="html/ccc01267-ad16-249a-7c96-86bf71dff57c.htm">
       <HelpTOCNode Title="IAttributeHolder Members" Url="html/140ebf2e-558d-9d59-f99b-6844f72dcce9.htm" />
-      <HelpTOCNode Id="a55b03b7-8d0a-4b5d-83a5-102ab763ab39" Title="IAttributeHolder Methods" Url="html/d5c61615-6040-80e6-4488-cc0d515922c5.htm">
+      <HelpTOCNode Id="21e2fe6a-43df-41fc-90ef-4ff5cf85eef0" Title="IAttributeHolder Methods" Url="html/d5c61615-6040-80e6-4488-cc0d515922c5.htm">
         <HelpTOCNode Title="getValidationError Method " Url="html/b49b750c-c6ac-9c6a-3da7-16f7c1bb76a1.htm" />
         <HelpTOCNode Title="isValidateOk Method " Url="html/9898a66a-6ac3-27e6-a7ef-8fb90aa588f6.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="e73dabc8-d1c5-4308-8b67-9918b9acb929" Title="IAttributeHolder Properties" Url="html/e60dc972-51b4-e3b1-cbdd-1b5c69e0ab59.htm">
+      <HelpTOCNode Id="9560d943-4622-461d-9350-7525816a35ee" Title="IAttributeHolder Properties" Url="html/e60dc972-51b4-e3b1-cbdd-1b5c69e0ab59.htm">
         <HelpTOCNode Title="GAttribute Property " Url="html/8d206d2f-6b87-b2bc-5864-fdc0bf470f6a.htm" />
         <HelpTOCNode Title="GCssClass Property " Url="html/cd0ee80f-d701-fc70-2f91-136524fd9946.htm" />
         <HelpTOCNode Title="validateeValue Property " Url="html/aee39879-74c1-8268-0814-dafc66ebdb6c.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="f6dd48a7-30e9-4ae8-b1fe-aac0512ae2a3" Title="ModelValidationMethod Class" Url="html/dfb80a9d-58f7-182a-85b7-0b75b8676a2d.htm">
+    <HelpTOCNode Id="108c3816-68f8-42c8-84ad-927e760dbdb6" Title="ModelValidationMethod Class" Url="html/dfb80a9d-58f7-182a-85b7-0b75b8676a2d.htm">
       <HelpTOCNode Title="ModelValidationMethod Members" Url="html/08143a09-c33c-5fdb-9a27-74ab1cb520d7.htm" />
       <HelpTOCNode Title="ModelValidationMethod Constructor " Url="html/906a0b6b-ccd4-e473-70e9-593bf1a6d776.htm" />
-      <HelpTOCNode Id="7c1b7357-449b-465f-acd3-62e59b1d5b1c" Title="ModelValidationMethod Fields" Url="html/fb2d6eea-0488-adf4-4a8f-dc93b07db896.htm">
+      <HelpTOCNode Id="dfa8d855-e87e-4d3c-98f8-1f062b4b9cce" Title="ModelValidationMethod Fields" Url="html/fb2d6eea-0488-adf4-4a8f-dc93b07db896.htm">
         <HelpTOCNode Title="DEFAULT_ORDER Field" Url="html/f2c04e64-5b13-e149-4393-fd389d7cb09d.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="ModelValidationMethod Methods" Url="html/650469e0-9287-5a51-3d0c-9b60eb7afb75.htm" />
-      <HelpTOCNode Id="17e54606-5805-4fe6-b417-c464032b05d9" Title="ModelValidationMethod Properties" Url="html/c749a1b8-f875-5c36-11a4-c00596444988.htm">
+      <HelpTOCNode Id="1298bb9d-844f-466e-bd7f-ef4bc87e833d" Title="ModelValidationMethod Properties" Url="html/c749a1b8-f875-5c36-11a4-c00596444988.htm">
         <HelpTOCNode Title="FalseAsAlert Property " Url="html/b66c2660-91c2-ff1f-9d6e-f711f5ca6f1e.htm" />
         <HelpTOCNode Title="OnlyWhenTheseValueExist Property " Url="html/3d36dd5a-9125-e20d-7f46-a99ad50b5139.htm" />
         <HelpTOCNode Title="Order Property " Url="html/1bc751fe-604b-4b1b-2f6a-496c3e49e1cc.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="8dc1c7f2-7246-4bd0-a291-ccac8be4f463" Title="ValidationResult Class" Url="html/147d3948-9415-bea1-4bc5-d77811d9543e.htm">
+    <HelpTOCNode Id="a9d325eb-ba35-4d97-be81-b5723613deb7" Title="ValidationResult Class" Url="html/147d3948-9415-bea1-4bc5-d77811d9543e.htm">
       <HelpTOCNode Title="ValidationResult Members" Url="html/8930353d-ad8d-9c22-1600-c644f847e049.htm" />
-      <HelpTOCNode Id="541d0386-10cd-419f-8ffb-2980a21353cc" Title="ValidationResult Constructor " Url="html/c0968e7e-1728-c474-a79d-eaf841b68542.htm">
+      <HelpTOCNode Id="d4b4b4e3-700b-4f4a-af55-43e83accf3e8" Title="ValidationResult Constructor " Url="html/c0968e7e-1728-c474-a79d-eaf841b68542.htm">
         <HelpTOCNode Title="ValidationResult Constructor " Url="html/c460476a-e316-3c02-49aa-cdebff1654d4.htm" />
         <HelpTOCNode Title="ValidationResult Constructor (ValidationResultType, String, String)" Url="html/f9c91338-4cd8-35cf-0f64-9de39d481fea.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="ValidationResult Methods" Url="html/9dce45f3-3645-01d4-5779-3e36d847c903.htm" />
-      <HelpTOCNode Id="954a30ff-0717-4553-ab20-516a6ba49464" Title="ValidationResult Properties" Url="html/f726a27a-2054-17cf-f888-c0e8a6de13bb.htm">
+      <HelpTOCNode Id="8ba90d7f-f14f-4393-bc09-74972bc03ddd" Title="ValidationResult Properties" Url="html/f726a27a-2054-17cf-f888-c0e8a6de13bb.htm">
         <HelpTOCNode Title="ErrorMessage Property " Url="html/6f1b00ee-0db8-0502-bf9b-96d9b5967f96.htm" />
         <HelpTOCNode Title="ErrorSource Property " Url="html/62bb092b-bc62-5446-5bfa-ff747c6409a6.htm" />
         <HelpTOCNode Title="ValidResult Property " Url="html/3dc9e7c7-e448-fe77-801f-917ea7d9c0be.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="9f2426d9-4253-4c1d-9e1e-67f90ec66321" Title="ValidationResults Class" Url="html/d250d379-ba64-ea13-04a2-029ffcee8330.htm">
+    <HelpTOCNode Id="3f5c3339-e04c-44eb-ac62-8f4676348db9" Title="ValidationResults Class" Url="html/d250d379-ba64-ea13-04a2-029ffcee8330.htm">
       <HelpTOCNode Title="ValidationResults Members" Url="html/148406ad-34e0-cbd8-2825-fba38e223cfe.htm" />
       <HelpTOCNode Title="ValidationResults Constructor " Url="html/15dbf9c5-27a7-52bc-ca9c-d1fb0ea0e900.htm" />
-      <HelpTOCNode Id="d47e5dfb-3a62-406a-84b7-2530e3727aae" Title="ValidationResults Methods" Url="html/b81ec9ce-cc98-762f-1835-2c310e48c89b.htm">
+      <HelpTOCNode Id="a505b28d-82a6-4140-8faf-45156d29ecc7" Title="ValidationResults Methods" Url="html/b81ec9ce-cc98-762f-1835-2c310e48c89b.htm">
         <HelpTOCNode Title="Add Method " Url="html/e71f6d27-e6bc-7bd4-8146-31b7238427c4.htm" />
         <HelpTOCNode Title="Clear Method " Url="html/0489db1b-ff50-e85b-501b-d2053038a8fd.htm" />
         <HelpTOCNode Title="GetFails Method " Url="html/158abb37-270d-7d74-3c76-7860d1fe5800.htm" />
         <HelpTOCNode Title="IsValid Method " Url="html/a11d1815-f22a-e9bc-f814-f78ebb29bc5c.htm" />
         <HelpTOCNode Title="IsValidIgnoreAlert Method " Url="html/da849fdc-fea4-7932-dcfc-c1572ccc9f4b.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="8b2d1e4f-e347-4127-8608-46f3bd1716a0" Title="ValidationResults Properties" Url="html/718d0057-a496-5bfa-78e3-1ad9e900c912.htm">
+      <HelpTOCNode Id="91c589a6-4b4e-4935-aa13-72050ca5fa72" Title="ValidationResults Properties" Url="html/718d0057-a496-5bfa-78e3-1ad9e900c912.htm">
         <HelpTOCNode Title="ErrorMessage Property " Url="html/d7310a65-fbe1-016c-950f-7608899ad24e.htm" />
         <HelpTOCNode Title="ErrorSource Property " Url="html/f3d74af7-65c6-eab8-c143-0c729635aefd.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
     <HelpTOCNode Title="ValidationResultType Enumeration" Url="html/23f3ec51-62ea-cf58-82f9-ff390c4e4fc6.htm" />
   </HelpTOCNode>
-  <HelpTOCNode Id="12a698fa-b9aa-4488-a461-e6813c0cb844" Title="Gears.Validation.Marker Namespace" Url="html/4e727d92-2f0f-9bbb-2879-10208cf74760.htm">
-    <HelpTOCNode Id="2d0eeeb7-bb3c-44bf-aad6-bde1e2629aed" Title="GMarkerDate Class" Url="html/18199f5b-d271-0393-eeb0-bcccc019a32c.htm">
+  <HelpTOCNode Id="5a62b19d-27c6-4a97-a2df-501c45969878" Title="Gears.Validation.Marker Namespace" Url="html/4e727d92-2f0f-9bbb-2879-10208cf74760.htm">
+    <HelpTOCNode Id="02fa38a9-4bc7-420f-8776-e3e2a86dfb02" Title="GMarkerDate Class" Url="html/18199f5b-d271-0393-eeb0-bcccc019a32c.htm">
       <HelpTOCNode Title="GMarkerDate Members" Url="html/adbf05b2-c984-46cd-6aae-3f2f855d9775.htm" />
       <HelpTOCNode Title="GMarkerDate Constructor " Url="html/d3d6fdcd-0d39-9551-266b-0c669a1a5948.htm" />
-      <HelpTOCNode Id="6e85baa9-7f09-4826-95ca-a37c8696edfe" Title="GMarkerDate Fields" Url="html/1a1a7e2a-8248-c949-09ce-d193f1547f67.htm">
+      <HelpTOCNode Id="896b7570-d60e-40c2-aa61-2d0c74681ceb" Title="GMarkerDate Fields" Url="html/1a1a7e2a-8248-c949-09ce-d193f1547f67.htm">
         <HelpTOCNode Title="DATE_CSS Field" Url="html/81d78532-eaa1-3de9-8795-e4668f57cf1f.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="GMarkerDate Methods" Url="html/b50017b6-ccdd-f082-19de-96f7a61de532.htm" />
       <HelpTOCNode Title="GMarkerDate Properties" Url="html/1c7c809d-ed26-0f83-e57e-6e4319c870dd.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="5eff57e7-62eb-4b6e-9d3a-737c02b338fa" Title="GMarkerNumeric Class" Url="html/d4b51e43-0b27-3b83-9d5e-f81634c1f66c.htm">
+    <HelpTOCNode Id="02aa8638-08aa-419d-a837-119f2fc63d37" Title="GMarkerNumeric Class" Url="html/d4b51e43-0b27-3b83-9d5e-f81634c1f66c.htm">
       <HelpTOCNode Title="GMarkerNumeric Members" Url="html/eabf301f-f3a0-cbc8-eac2-df244a8a184c.htm" />
       <HelpTOCNode Title="GMarkerNumeric Constructor " Url="html/2deca576-1018-18a0-f377-c5f15eae5332.htm" />
-      <HelpTOCNode Id="d654d6d7-72a4-4ff4-a7c5-4b85c81a8aa1" Title="GMarkerNumeric Fields" Url="html/b71e7845-cd7e-14fe-1633-94ba03c7ad45.htm">
+      <HelpTOCNode Id="c1ad8da2-e945-45aa-bd70-0a580c5489d3" Title="GMarkerNumeric Fields" Url="html/b71e7845-cd7e-14fe-1633-94ba03c7ad45.htm">
         <HelpTOCNode Title="NUMBER_CSS Field" Url="html/2521d52f-c1ee-096b-5197-dc33afeb58b9.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="GMarkerNumeric Methods" Url="html/54e55622-9729-ddf6-a65d-1eb4c0f85365.htm" />
       <HelpTOCNode Title="GMarkerNumeric Properties" Url="html/a5bf064d-662d-c3df-1cba-d8f0734329b4.htm" />
     </HelpTOCNode>
   </HelpTOCNode>
-  <HelpTOCNode Id="32ef2612-7b89-4fc3-aaad-67f573b5a3d0" Title="Gears.Validation.Validator Namespace" Url="html/37d5a854-1b2d-c076-0ca7-6bfda1b78468.htm">
-    <HelpTOCNode Id="b3b3704f-edaf-464f-b35c-ee31402ff3ff" Title="GByteLength Class" Url="html/e0a683dd-7c47-0e53-57ba-d7cf9fb4ad8b.htm">
+  <HelpTOCNode Id="22adc012-1430-4f4a-a933-61c41e12b2fb" Title="Gears.Validation.Validator Namespace" Url="html/37d5a854-1b2d-c076-0ca7-6bfda1b78468.htm">
+    <HelpTOCNode Id="4aaa05f7-22d2-423f-8d92-21163633d14c" Title="GByteLength Class" Url="html/e0a683dd-7c47-0e53-57ba-d7cf9fb4ad8b.htm">
       <HelpTOCNode Title="GByteLength Members" Url="html/40027267-3b56-9bd8-186e-27e29c14f403.htm" />
-      <HelpTOCNode Id="622f5199-cc71-43dd-a337-2480ac1cfa12" Title="GByteLength Constructor " Url="html/ae249e4d-320d-3239-c5fe-02d245acb504.htm">
+      <HelpTOCNode Id="0097df17-70b2-4a79-bf73-e8f763a58f88" Title="GByteLength Constructor " Url="html/ae249e4d-320d-3239-c5fe-02d245acb504.htm">
         <HelpTOCNode Title="GByteLength Constructor " Url="html/9cd9af19-b34d-dd50-6bbc-0717909305ea.htm" />
         <HelpTOCNode Title="GByteLength Constructor (Int32)" Url="html/af08e10b-4c65-fdba-f6a1-41b00ddcfeb1.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="d51e6529-70d7-47c3-be5b-dff51bcb3100" Title="GByteLength Methods" Url="html/31dd1ab1-d4b7-8310-c231-6e3de705e544.htm">
+      <HelpTOCNode Id="5c9c144c-6ec3-4a0a-8af0-4e2e0c692afd" Title="GByteLength Methods" Url="html/31dd1ab1-d4b7-8310-c231-6e3de705e544.htm">
         <HelpTOCNode Title="LenB Method " Url="html/396ae4ed-3a30-ee35-892c-ff78050f5129.htm" />
         <HelpTOCNode Title="Validate Method " Url="html/98c24637-f7bc-291b-84e5-ecf0c3d191ff.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="74c33965-e75c-4984-867a-2697f96947fa" Title="GByteLength Properties" Url="html/6e1c5219-3f24-ab69-1ee9-b848c9b35020.htm">
+      <HelpTOCNode Id="dc21bbd0-303c-4899-be85-4fbb16168a53" Title="GByteLength Properties" Url="html/6e1c5219-3f24-ab69-1ee9-b848c9b35020.htm">
         <HelpTOCNode Title="Encode Property " Url="html/1efddff2-8c43-67b0-5bf1-fe67aa24887e.htm" />
         <HelpTOCNode Title="Length Property " Url="html/4901d095-25ae-7200-37e3-c4516ee488ef.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="3bf65fc8-a4be-4e63-a676-6e632a0d7a05" Title="GByteLengthBetween Class" Url="html/c4a887dd-8d8d-350e-59ea-0b18e5da67b2.htm">
+    <HelpTOCNode Id="f8b0f88e-982f-47bc-bf3b-f20b75ba86d5" Title="GByteLengthBetween Class" Url="html/c4a887dd-8d8d-350e-59ea-0b18e5da67b2.htm">
       <HelpTOCNode Title="GByteLengthBetween Members" Url="html/042d5409-f771-e5f2-b9ea-46695ead66d3.htm" />
-      <HelpTOCNode Id="4d0556ca-0c57-4a75-b812-dd92aea6b470" Title="GByteLengthBetween Constructor " Url="html/34da766c-e9e6-dade-258e-728d30a7046a.htm">
+      <HelpTOCNode Id="59406ebd-264e-4055-95ca-94300387e059" Title="GByteLengthBetween Constructor " Url="html/34da766c-e9e6-dade-258e-728d30a7046a.htm">
         <HelpTOCNode Title="GByteLengthBetween Constructor " Url="html/94581d86-cf05-cc7b-45de-a76907d35d32.htm" />
         <HelpTOCNode Title="GByteLengthBetween Constructor (Int32)" Url="html/9e006966-6caf-cf4c-21f0-9ed4b2a7e11a.htm" />
         <HelpTOCNode Title="GByteLengthBetween Constructor (Int32, Int32)" Url="html/dfa30d5d-1450-b64a-6e9c-bd678e62ffd4.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="0018339c-8105-4cf4-bbea-2e9e2b0f9739" Title="GByteLengthBetween Methods" Url="html/e96d65e0-8660-29d3-df93-73e74f210169.htm">
+      <HelpTOCNode Id="25c22572-e786-4e94-8715-eb8cd844be54" Title="GByteLengthBetween Methods" Url="html/e96d65e0-8660-29d3-df93-73e74f210169.htm">
         <HelpTOCNode Title="Validate Method " Url="html/737d1106-23f9-208b-6855-3e2ecd6be8e8.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="212ee0f5-7f32-46ac-982b-51b03993bd6a" Title="GByteLengthBetween Properties" Url="html/66cebda5-d974-2db4-ce73-61ee1700cb19.htm">
+      <HelpTOCNode Id="a92c1b95-220c-4fef-9c93-470cee724e28" Title="GByteLengthBetween Properties" Url="html/66cebda5-d974-2db4-ce73-61ee1700cb19.htm">
         <HelpTOCNode Title="MinLength Property " Url="html/eec844f2-67d7-5d69-0dbf-f89631503a74.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="f1c74e25-6559-4acd-85b9-3eb689569cad" Title="GCompare Class" Url="html/299baaf4-6f8a-b629-5ec3-4613811f9ab3.htm">
+    <HelpTOCNode Id="e3ae9496-51ac-4bbb-9009-870d7e203b34" Title="GCompare Class" Url="html/299baaf4-6f8a-b629-5ec3-4613811f9ab3.htm">
       <HelpTOCNode Title="GCompare Members" Url="html/ec720efe-25aa-9489-9de8-346e54034a7d.htm" />
       <HelpTOCNode Title="GCompare Constructor " Url="html/5b60f348-5b20-f48d-4595-01568e4e82ab.htm" />
-      <HelpTOCNode Id="c3a29967-fdf6-4688-aa1b-fe4970b88c84" Title="GCompare Methods" Url="html/566595a6-0b49-579f-ea3e-2321fd747d3f.htm">
-        <HelpTOCNode Id="3704d80b-14c4-46c6-a780-65781d72c812" Title="isValidateOk Method " Url="html/924307eb-76bf-413f-2eee-0943c6ad9b09.htm">
+      <HelpTOCNode Id="2b3ebc63-2066-486a-ad9d-09e6de113fec" Title="GCompare Methods" Url="html/566595a6-0b49-579f-ea3e-2321fd747d3f.htm">
+        <HelpTOCNode Id="e46537a8-4d4d-4ea7-bf22-5b0e43726798" Title="isValidateOk Method " Url="html/924307eb-76bf-413f-2eee-0943c6ad9b09.htm">
           <HelpTOCNode Title="isValidateOk Method (String, String, String)" Url="html/8d5e3a7e-bad7-5560-bb28-5b06e4d915e2.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="Validate Method " Url="html/1dcc5993-1e68-6e3b-8533-4c41feebf848.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="34b6e9a2-2f95-4aab-902e-b5a26a95b737" Title="GCompare Properties" Url="html/a1458fcb-4713-cdde-0d21-d99075b2b59e.htm">
+      <HelpTOCNode Id="24360d3c-a492-45bb-901a-5eaa5943cab5" Title="GCompare Properties" Url="html/a1458fcb-4713-cdde-0d21-d99075b2b59e.htm">
         <HelpTOCNode Title="Expected Property " Url="html/54613ce5-4937-eab5-948b-699976390d78.htm" />
         <HelpTOCNode Title="OperatorType Property " Url="html/d28072cc-853f-3a20-1a91-02307b7bc3ef.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="7d96bc14-0bb6-4ce2-9a37-ff3cd0de7c4b" Title="GDate Class" Url="html/84563ded-40de-21ea-bac3-257acf870e44.htm">
+    <HelpTOCNode Id="762c7b81-0055-4bcd-a746-fa201f18c892" Title="GDate Class" Url="html/84563ded-40de-21ea-bac3-257acf870e44.htm">
       <HelpTOCNode Title="GDate Members" Url="html/c6a3b1d0-7fb6-059b-a6f7-49c4489f23da.htm" />
       <HelpTOCNode Title="GDate Constructor " Url="html/2b1596db-eb11-ff4e-3ec0-17b676a22036.htm" />
-      <HelpTOCNode Id="d5c22520-5e86-4dbf-a4c5-55073c2fee34" Title="GDate Methods" Url="html/d0fa3da3-ae6d-a574-722a-9c8fd39ffc8e.htm">
+      <HelpTOCNode Id="ffe45665-9da0-4e5c-b645-2d8ac9e1618f" Title="GDate Methods" Url="html/d0fa3da3-ae6d-a574-722a-9c8fd39ffc8e.htm">
         <HelpTOCNode Title="Validate Method " Url="html/57e8aca9-8e0e-89fd-3586-56af7a615e58.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="871b1084-b98e-4e33-af21-0b2e78b5c74c" Title="GDate Properties" Url="html/ca5c5ce3-4893-8453-25aa-a0676c34c33e.htm">
+      <HelpTOCNode Id="aee64036-fada-4e99-8fdb-a64b0d67c107" Title="GDate Properties" Url="html/ca5c5ce3-4893-8453-25aa-a0676c34c33e.htm">
         <HelpTOCNode Title="Format Property " Url="html/9fb3c661-d726-95de-18c9-99431e8a61ef.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="19db61e1-94bf-44f0-92c6-479c2621119d" Title="GMatch Class" Url="html/053217f7-483b-e7a4-5c89-ccbbb46d6aea.htm">
+    <HelpTOCNode Id="5a1a30db-0290-40db-9b95-75ba3fe6d167" Title="GMatch Class" Url="html/053217f7-483b-e7a4-5c89-ccbbb46d6aea.htm">
       <HelpTOCNode Title="GMatch Members" Url="html/72ea28eb-1d12-a04d-f0d6-8fc91b29f7ac.htm" />
-      <HelpTOCNode Id="de7618f1-636c-427c-954b-2b357e3af7f1" Title="GMatch Constructor " Url="html/538943fa-0f2a-4ded-d7d0-87da9cd626af.htm">
+      <HelpTOCNode Id="d423b27d-446e-4bfc-89d1-a5b9a6e05384" Title="GMatch Constructor " Url="html/538943fa-0f2a-4ded-d7d0-87da9cd626af.htm">
         <HelpTOCNode Title="GMatch Constructor " Url="html/9a02f77c-6a6f-18b1-37c7-f34b96c1e1c7.htm" />
         <HelpTOCNode Title="GMatch Constructor (String)" Url="html/6023c4c6-8ef1-7b11-cd01-740a51ccf981.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="37028afb-bb6c-46fb-ba62-e3f82d083173" Title="GMatch Methods" Url="html/359285f9-efc9-62ad-1d0e-89a57d23b38b.htm">
+      <HelpTOCNode Id="c5856e42-2dfc-4f00-9f93-0cf01933af46" Title="GMatch Methods" Url="html/359285f9-efc9-62ad-1d0e-89a57d23b38b.htm">
         <HelpTOCNode Title="Validate Method " Url="html/65be2642-33bf-75e8-4989-d7506a1c577b.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="fa1c1e5f-c26e-4136-80e1-f1a4e0481ae4" Title="GMatch Properties" Url="html/79e0b348-0aa2-094d-4a78-d59bad9c1dce.htm">
+      <HelpTOCNode Id="49b743d0-2908-4773-ae0b-b1ca77937de6" Title="GMatch Properties" Url="html/79e0b348-0aa2-094d-4a78-d59bad9c1dce.htm">
         <HelpTOCNode Title="Pattern Property " Url="html/80ea2619-5cef-d85d-2f68-fa318ac7cfaa.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="4646bad5-6bd8-4f82-8569-0a4d1c97bad3" Title="GNumber Class" Url="html/e7f38db3-b7e4-93c0-4543-8661a42662e5.htm">
+    <HelpTOCNode Id="a74799e1-6f75-4a47-b179-65abb0589b2e" Title="GNumber Class" Url="html/e7f38db3-b7e4-93c0-4543-8661a42662e5.htm">
       <HelpTOCNode Title="GNumber Members" Url="html/81b48c43-2b4e-5382-5eec-65bd41e33a3e.htm" />
       <HelpTOCNode Title="GNumber Constructor " Url="html/44266db1-5035-fe04-a6b7-b19ffe4e530a.htm" />
-      <HelpTOCNode Id="7683aa81-35ac-4809-ad74-2f7c25a9db8f" Title="GNumber Methods" Url="html/3657bd9f-8506-460e-d3b3-3cc97e5777b8.htm">
+      <HelpTOCNode Id="c3e96321-978c-4f0d-a7b9-b73047351af4" Title="GNumber Methods" Url="html/3657bd9f-8506-460e-d3b3-3cc97e5777b8.htm">
         <HelpTOCNode Title="Validate Method " Url="html/38be7b32-6916-efe0-742f-1946ca2312a9.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="GNumber Properties" Url="html/5324ba1a-0aaa-48f4-f79f-5039d96d02c8.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="b7cdcab9-a614-4d34-8130-0c9a9afebd29" Title="GNumeric Class" Url="html/a828a79c-cb74-fa48-891c-89432d60dfcd.htm">
+    <HelpTOCNode Id="9c35532c-39e7-4ad7-b42f-3ee1f2e5813b" Title="GNumeric Class" Url="html/a828a79c-cb74-fa48-891c-89432d60dfcd.htm">
       <HelpTOCNode Title="GNumeric Members" Url="html/dddf751a-7451-5a1b-c873-642ea5c90f0a.htm" />
       <HelpTOCNode Title="GNumeric Constructor " Url="html/11822144-3a41-05b8-3e75-9d8e687bc0ce.htm" />
-      <HelpTOCNode Id="5dd2d30a-3dc2-4850-86fa-85046080a799" Title="GNumeric Methods" Url="html/8559926b-e514-5096-54f9-c3b2c0b5b303.htm">
+      <HelpTOCNode Id="c6a7e9e1-68ed-41ca-b4fa-7e048ca2632b" Title="GNumeric Methods" Url="html/8559926b-e514-5096-54f9-c3b2c0b5b303.htm">
         <HelpTOCNode Title="Validate Method " Url="html/4f84e3bd-a21c-9ac3-b79a-884fc98804a1.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="1cfd8019-002c-49df-a9ca-4a64b813316b" Title="GNumeric Properties" Url="html/0050e3ea-22e5-d4e8-bfe3-631ddf2905af.htm">
+      <HelpTOCNode Id="16b2d3f7-8110-4b63-bf89-f950edbe54f8" Title="GNumeric Properties" Url="html/0050e3ea-22e5-d4e8-bfe3-631ddf2905af.htm">
         <HelpTOCNode Title="WithSign Property " Url="html/5e5d32bd-80c5-417c-5f9a-05b5dba79241.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="5e7ebff3-a382-4f97-88bf-9124133198ce" Title="GPeriodPositionOk Class" Url="html/ca2725a2-275a-1e1b-edc2-83b444eaed62.htm">
+    <HelpTOCNode Id="60d73755-a2e5-47ca-a285-727befd4c308" Title="GPeriodPositionOk Class" Url="html/ca2725a2-275a-1e1b-edc2-83b444eaed62.htm">
       <HelpTOCNode Title="GPeriodPositionOk Members" Url="html/a9d39edd-ff7c-8ea7-ff1a-19d4ffadf74b.htm" />
-      <HelpTOCNode Id="3c7aae2f-5e75-4445-973e-46fe115cc085" Title="GPeriodPositionOk Constructor " Url="html/9bcd0e2e-87fb-3ac8-e182-6c8fe2b1c0ea.htm">
+      <HelpTOCNode Id="42756ebe-c8ab-48ba-826f-d803f2374e55" Title="GPeriodPositionOk Constructor " Url="html/9bcd0e2e-87fb-3ac8-e182-6c8fe2b1c0ea.htm">
         <HelpTOCNode Title="GPeriodPositionOk Constructor " Url="html/c9a26e2c-6958-4af1-0ddc-b119d5c148e1.htm" />
         <HelpTOCNode Title="GPeriodPositionOk Constructor (Int32, Int32)" Url="html/39ba9087-af33-e136-8c97-7de34c8cacf9.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="88cdb865-7d3d-49a9-a23c-8563baa46db0" Title="GPeriodPositionOk Methods" Url="html/5e257989-c410-92d4-e9ed-5574f97045b3.htm">
+      <HelpTOCNode Id="2c562141-cdfd-428a-a0ea-79cbdf659a27" Title="GPeriodPositionOk Methods" Url="html/5e257989-c410-92d4-e9ed-5574f97045b3.htm">
         <HelpTOCNode Title="Validate Method " Url="html/a304db88-22c8-1f81-5f16-35d9e072f044.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="368f90e5-b847-4257-a100-0e50f5f39bf6" Title="GPeriodPositionOk Properties" Url="html/59506052-4d61-75e0-7605-bdabdf5e703d.htm">
+      <HelpTOCNode Id="556d56f2-2efc-45ba-9111-52d743dd7c69" Title="GPeriodPositionOk Properties" Url="html/59506052-4d61-75e0-7605-bdabdf5e703d.htm">
         <HelpTOCNode Title="AfterP Property " Url="html/64dda4de-100d-e4bd-98a4-8466addd15cb.htm" />
         <HelpTOCNode Title="BeforeP Property " Url="html/7657e611-534a-e760-1c4a-c390da2a0a86.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="445f7f3d-717f-4336-b0f6-47d737c7791e" Title="GRequired Class" Url="html/999dc2c5-3ebf-7982-db67-7262b3f43615.htm">
+    <HelpTOCNode Id="003b00d1-7a94-446b-b19d-0eea59ae51aa" Title="GRequired Class" Url="html/999dc2c5-3ebf-7982-db67-7262b3f43615.htm">
       <HelpTOCNode Title="GRequired Members" Url="html/87f926ac-584e-5285-f120-7dca315ed336.htm" />
       <HelpTOCNode Title="GRequired Constructor " Url="html/98da71ca-a393-e4e8-9e2d-6cc493f196f5.htm" />
-      <HelpTOCNode Id="5a2e086d-2e65-4f74-8f9f-9be3e6682772" Title="GRequired Methods" Url="html/0739880f-26d7-ada1-6a0e-1b3f4bacef78.htm">
+      <HelpTOCNode Id="03058b29-ead7-4ab8-9015-62cec696193f" Title="GRequired Methods" Url="html/0739880f-26d7-ada1-6a0e-1b3f4bacef78.htm">
         <HelpTOCNode Title="Validate Method " Url="html/f4bc3aed-28a3-acef-5483-952e28431e2d.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="GRequired Properties" Url="html/a129fc16-b7b9-559c-9592-ff8ac3d9d387.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="3605d613-58c4-4fe1-b5d0-c75f3a0c0b92" Title="GStartWith Class" Url="html/5651d29a-b151-7c9c-36ef-61457f8b0912.htm">
+    <HelpTOCNode Id="d5a2fb38-6812-46a4-9280-a3c1b5fb7f9b" Title="GStartWith Class" Url="html/5651d29a-b151-7c9c-36ef-61457f8b0912.htm">
       <HelpTOCNode Title="GStartWith Members" Url="html/db3ca463-1c9b-7e5d-976a-5e1e63145cb1.htm" />
-      <HelpTOCNode Id="7c95dc35-6e8a-4d65-a475-6d99bd4b653a" Title="GStartWith Constructor " Url="html/cabfc621-faeb-b393-1a5d-1fcc569b315c.htm">
+      <HelpTOCNode Id="2af5361f-26e6-42ff-a745-6ec80e64945d" Title="GStartWith Constructor " Url="html/cabfc621-faeb-b393-1a5d-1fcc569b315c.htm">
         <HelpTOCNode Title="GStartWith Constructor " Url="html/f29e78f6-6d46-45e4-dc79-604d88f2155e.htm" />
         <HelpTOCNode Title="GStartWith Constructor (String)" Url="html/db4255bf-0f3b-e654-3386-0b4cdd2d802c.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="4f406f18-542f-4a47-8af6-2ed5507e1e52" Title="GStartWith Methods" Url="html/a0439fa0-c3db-5223-5547-165a37419d28.htm">
+      <HelpTOCNode Id="b7a6ca61-4073-47fa-94ac-3bb7a3d04968" Title="GStartWith Methods" Url="html/a0439fa0-c3db-5223-5547-165a37419d28.htm">
         <HelpTOCNode Title="Validate Method " Url="html/61b808fd-9d50-d6d5-97ee-f7a7f2e8b31b.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="ae944463-7ea0-441f-b6dd-8f422832c37a" Title="GStartWith Properties" Url="html/8932725b-43f2-6f37-036e-a26b3634ad71.htm">
+      <HelpTOCNode Id="d7e2a1dc-fc6b-462d-9986-5db4bd018e01" Title="GStartWith Properties" Url="html/8932725b-43f2-6f37-036e-a26b3634ad71.htm">
         <HelpTOCNode Title="Prefix Property " Url="html/8fe7e0e8-0591-83b9-120d-f4030710697c.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
