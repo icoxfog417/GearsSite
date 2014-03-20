@@ -313,11 +313,11 @@
   <HelpKINode Title="GDate.Format property" Url="html/9fb3c661-d726-95de-18c9-99431e8a61ef.htm" />
   <HelpKINode Title="GDate.GDate constructor" Url="html/2b1596db-eb11-ff4e-3ec0-17b676a22036.htm" />
   <HelpKINode Title="GDate.Validate method" Url="html/57e8aca9-8e0e-89fd-3586-56af7a615e58.htm" />
-  <HelpKINode Title="GDelete method" Url="html/ab02d0be-9f91-e754-d4e1-a4dd44cab194.htm" />
   <HelpKINode Title="gDelete method">
     <HelpKINode Title="GearsDataSource.gDelete Method " Url="html/c6946e99-df32-5c3f-0aa1-27a67e571fc2.htm" />
     <HelpKINode Title="IDataSource.gDelete Method " Url="html/34c6cb7c-e77c-4874-284f-384b08644228.htm" />
   </HelpKINode>
+  <HelpKINode Title="GDelete method" Url="html/ab02d0be-9f91-e754-d4e1-a4dd44cab194.htm" />
   <HelpKINode Title="Gears namespace" Url="html/0fba4094-7899-1c1a-9894-7b9a357e7117.htm" />
   <HelpKINode Title="Gears.ActionType enumeration" Url="html/d69200e1-ff26-2347-e147-51c5aacf2b28.htm" />
   <HelpKINode Title="Gears.Binder namespace" Url="html/6dcbf8fa-ac15-2df0-7208-cfd7d441763a.htm" />
@@ -1203,11 +1203,11 @@
   <HelpKINode Title="GStartWith.Validate method" Url="html/61b808fd-9d50-d6d5-97ee-f7a7f2e8b31b.htm" />
   <HelpKINode Title="gt method" Url="html/27f911bf-ea23-db1e-f851-dae70abff210.htm" />
   <HelpKINode Title="gteq method" Url="html/b0acc5d5-4d06-c118-77de-67a518df02e8.htm" />
-  <HelpKINode Title="GUpdate method" Url="html/e019230a-6601-938d-9ae2-c35a60a6102e.htm" />
   <HelpKINode Title="gUpdate method">
     <HelpKINode Title="GearsDataSource.gUpdate Method " Url="html/f1d4adf3-8ee9-d2cb-ea18-c5548d2b0c9e.htm" />
     <HelpKINode Title="IDataSource.gUpdate Method " Url="html/85a6665a-a271-ddff-6c7d-82bc4427ade5.htm" />
   </HelpKINode>
+  <HelpKINode Title="GUpdate method" Url="html/e019230a-6601-938d-9ae2-c35a60a6102e.htm" />
   <HelpKINode Title="hasMarker method">
     <HelpKINode Title="GearsAttribute.hasMarker Method " Url="html/78b1b1ca-ccfb-92ba-509e-20843f2fee33.htm" />
     <HelpKINode Title="GearsAttributeContainer.hasMarker Method " Url="html/f6b9054c-3110-7a9f-fe48-380fd10b8940.htm" />
