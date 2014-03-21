@@ -25,6 +25,9 @@ Partial Class pppMaster
     Protected Sub Page_Init(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Init
         'ブラウザにキャッシュさせない
         Response.Cache.SetCacheability(HttpCacheability.NoCache)
+
+        headMaster.DataBind()
+
     End Sub
 
 End Class

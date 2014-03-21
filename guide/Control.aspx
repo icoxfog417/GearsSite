@@ -1,6 +1,6 @@
-﻿<%@ Page Language="VB"  MasterPageFile="pppMaster.master" AutoEventWireup="false" CodeFile="GearsSampleControl.aspx.vb" Inherits="GearsSampleControl" %>
-<%@ Register src="./UnitItem.ascx" tagname="unitItem" tagprefix="ui" %>
-<%@ MasterType VirtualPath="pppMaster.master" %>
+﻿<%@ Page Language="VB"  MasterPageFile="~/pppMaster.master" AutoEventWireup="false" CodeFile="Control.aspx.vb" Inherits="_guide_Control" %>
+<%@ Register src="~/parts/Gears/UnitItem.ascx" tagname="unitItem" tagprefix="ui" %>
+<%@ MasterType VirtualPath="~/pppMaster.master" %>
 
 <asp:Content id="clientHead" ContentPlaceHolderID="pppHead" Runat="Server" ClientIDMode=Static>
     <title>What's DataSourceClass And Convension between Control And DataSourceClass</title>
@@ -30,8 +30,8 @@
         ただし、当然ゼロからこれらのコーディングをする必要はなく、実際にコーディングする必要があるのはほんの10数行程度です。これは、サンプルのApp_Code/DataSource内にある
         実際のコードを見ていただければ分かると思います。<br/>
         <br/>
-        データソースクラスの仕様についてはインタフェースGearsDataSourceにまとめられていますが、この実装クラスとしてGDSTemplateを提供しています。<br/>
-        GDSTemplateには良く使うほとんどの処理を実装済みのため、このクラスを継承して作成すれば実装は容易です。実際に記載する必要があるのは、
+        データソースクラスの仕様についてはインタフェースGearsDataSourceにまとめられていますが、この実装クラスとしてGearsDataSourceを提供しています。<br/>
+        GearsDataSourceには良く使うほとんどの処理を実装済みのため、このクラスを継承して作成すれば実装は容易です。実際に記載する必要があるのは、
         クラス名と、選択元のテーブル、選択列くらいです。<br/>
         <br/>
         具体的な例を示します。Categoryというテーブルがあり、そのテーブルのCatIDをキー、CatTextをテキストとして使用したドロップダウンリストを作成したいとします。
@@ -40,23 +40,23 @@
         <div class="ppp-indent" style="width:800px;">
             <pre class="ppp-box even" style="font-style:italic;font-size:12px">
  Public Class Category
-    Inherits GDSTemplate
+    Inherits GearsDataSource
 
     'コンストラクタ conNameは、DBへの接続文字列
     Public Sub New(ByVal conName As String) 
         'Categoryテーブルからデータを抽出
-        MyBase.New(conName, SqlBuilder.newDataSource("Category"))
+        MyBase.New(conName, SqlBuilder.DS("Category"))
     End Sub
 
     'データ抽出の実行 dataには、画面上の選択値などの情報が格納されており、ここからSQLを組み立てる
-    Public Overrides Function makeSqlBuilder(ByRef data As Gears.GearsDTO) As SqlBuilder
+    Public Overrides Function makeSqlBuilder(ByVal data As Gears.GearsDTO) As SqlBuilder
         'SQL構築用のクラスSqlBuilderを生成(この段階で、コンストラクタで設定した抽出元(Categoryテーブル)と
         '画面上での選択値(WHERE区)が設定されている。そのため、後は選択するキー・テキストに相当する列だけ設定すればよい)
         Dim sqlb As SqlBuilder = MyBase.makeSqlBuilder(data)
 
         '選択する列を設定
-        sqlb.addSelection(SqlBuilder.newSelect("CatID"))
-        sqlb.addSelection(SqlBuilder.newSelect("CatText"))
+        sqlb.addSelection(SqlBuilder.S("CatID"))
+        sqlb.addSelection(SqlBuilder.S("CatText"))
 
         Return sqlb
 
@@ -136,10 +136,10 @@
                         <%=chbSAMPLE_FLG.ID%>
                     </td>
                     <td>
-                        <%=getMyControl(chbSAMPLE_FLG.ID).DataSourceID%>
+                        <%=GGet(chbSAMPLE_FLG.ID).DataSourceID%>
                     </td>
                     <td>
-                        <% If Not getMyControl(chbSAMPLE_FLG.ID).DataSourceID Is Nothing Then%>
+                        <% If Not GGet(chbSAMPLE_FLG.ID).DataSourceID Is Nothing Then%>
                             <span class="ppp-msg success">データソースのロードに成功しました</span>
                         <% Else%>
                             <span class="ppp-msg error">データソースのロードに失敗しました</span>
@@ -154,10 +154,10 @@
                         <%=rblCOMP_UNIT.ID%>
                     </td>
                     <td>
-                        <%=getMyControl(rblCOMP_UNIT.ID).DataSourceID%>
+                        <%=GGet(rblCOMP_UNIT.ID).DataSourceID%>
                     </td>
                     <td>
-                        <% If Not getMyControl(rblCOMP_UNIT.ID).DataSourceID Is Nothing Then%>
+                        <% If Not GGet(rblCOMP_UNIT.ID).DataSourceID Is Nothing Then%>
                             <span class="ppp-msg success">データソースのロードに成功しました</span>
                         <% Else%>
                             <span class="ppp-msg error">データソースのロードに失敗しました</span>
@@ -172,10 +172,10 @@
                         <%=ddlCOMP_GRP.ID%>
                     </td>
                     <td>
-                        <%=getMyControl(ddlCOMP_GRP.ID).DataSourceID%>
+                        <%=GGet(ddlCOMP_GRP.ID).DataSourceID%>
                     </td>
                     <td>
-                        <% If Not getMyControl(ddlCOMP_GRP.ID).DataSourceID Is Nothing Then%>
+                        <% If Not GGet(ddlCOMP_GRP.ID).DataSourceID Is Nothing Then%>
                             <span class="ppp-msg success">データソースのロードに成功しました</span>
                         <% Else%>
                             <span class="ppp-msg error">データソースのロードに失敗しました</span>
@@ -191,10 +191,10 @@
                         <%=txtCOMP_UNIT.ID%>
                     </td>
                     <td>
-                        <%=getMyControl(txtCOMP_UNIT.ID).DataSourceID%>
+                        <%=GGet(txtCOMP_UNIT.ID).DataSourceID%>
                     </td>
                     <td>
-                        <% If Not getMyControl(txtCOMP_UNIT.ID).DataSourceID Is Nothing Then%>
+                        <% If Not GGet(txtCOMP_UNIT.ID).DataSourceID Is Nothing Then%>
                             <span class="ppp-msg success">データソースのロードに成功しました</span>
                         <% Else%>
                             <span class="ppp-msg error">データソースのロードに失敗しました</span>
@@ -210,10 +210,10 @@
                         <%=lblCOMP_UNIT__GCON.ID%>
                     </td>
                     <td>
-                        <%=getMyControl(lblCOMP_UNIT__GCON.ID).DataSourceID%>
+                        <%=GGet(lblCOMP_UNIT__GCON.ID).DataSourceID%>
                     </td>
                     <td>
-                        <% If Not getMyControl(lblCOMP_UNIT__GCON.ID).DataSourceID Is Nothing Then%>
+                        <% If Not GGet(lblCOMP_UNIT__GCON.ID).DataSourceID Is Nothing Then%>
                             <span class="ppp-msg success">データソースのロードに成功しました</span>
                         <% Else%>
                             <span class="ppp-msg error">データソースのロードに失敗しました</span>
@@ -232,7 +232,7 @@
                         COMP_UNIT
                     </td>
                     <td>
-                        <% If getMyControl(lblCOMP_UNIT.ID) Is Nothing Then%>
+                        <% If GGet(lblCOMP_UNIT.ID) Is Nothing Then%>
                             <span class="ppp-msg success">処理対象外です</span>
                         <% Else%>
                             <span class="ppp-msg error">__GCONを付与していないのに処理対象になっています</span>
@@ -249,7 +249,7 @@
         具体的には、以下のコードで登録を行います。<br/>
 
         <div class="ppp-indent">
-            <b><i> registerMyControl(ByRef control As Control, ByRef dataSourceClass As GearsDataSource)</i></b>
+            <b><i> GAdd(ByRef control As Control, ByRef dataSourceClass As GearsDataSource)</i></b>
         </div>
         ※<i>データソースクラス</i>の引数を省略し、コントロールのIDから名称規約に基づき推定させることも出来ます。<br/>
         <br/>
@@ -257,7 +257,7 @@
         内部的にはGearsControlというクラスで管理されます。<br/>
         GearsControlへは、以下のメソッドを使用しアクセスできます。<br/>
         <div class="ppp-indent">
-            <b><i> Dim gcon As GearsControl = getMyControl(control.ID)</i></b>
+            <b><i> Dim gcon As GearsControl = GGet(control.ID)</i></b>
         </div>
         
         <br/>

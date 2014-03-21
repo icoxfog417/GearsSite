@@ -1,6 +1,6 @@
-﻿<%@ Page Language="VB"  MasterPageFile="pppMaster.master" AutoEventWireup="false" CodeFile="GearsSampleLog.aspx.vb" Inherits="GearsSampleLog" %>
-<%@ Register src="./UnitItem.ascx" tagname="unitItem" tagprefix="ui" %>
-<%@ MasterType VirtualPath="pppMaster.master" %>
+﻿<%@ Page Language="VB"  MasterPageFile="~/pppMaster.master" AutoEventWireup="false" CodeFile="Log.aspx.vb" Inherits="_guide_Log" %>
+<%@ Register src="~/parts/Gears/UnitItem.ascx" tagname="unitItem" tagprefix="ui" %>
+<%@ MasterType VirtualPath="~/pppMaster.master" %>
 
 <asp:Content id="clientHead" ContentPlaceHolderID="pppHead" Runat="Server" ClientIDMode=Static>
     <title>Logging And Exception handling on GearsFramework</title>
@@ -51,8 +51,8 @@
         <asp:UpdatePanel id="udpLTest1" runat="server" UpdateMode=Conditional>
             <ContentTemplate>
                 <asp:Panel ID="pnlGFILTER__L1" runat="server">                
-                    <ui:unitItem ID="COMP_UNIT__L1" CtlKind="DDL" runat="server" LabelText="販売組織" />
-                    <ui:unitItem ID="ENAME__L1" CtlKind="TXT" runat="server" LabelText="名前" Operator="LIKE" />
+                    <ui:unitItem ID="COMP_UNIT__L1" ControlKind="DDL" runat="server" LabelText="販売組織" />
+                    <ui:unitItem ID="ENAME__L1" ControlKind="TXT" runat="server" LabelText="名前" Operator="LIKE" />
 		            <br style="clear:both"/>
 
                     <asp:Button ID="btnClick__L1" runat="server" Text="検索実行(トレース実行)" />

@@ -1,7 +1,7 @@
 ﻿Imports Gears
-Imports GSDataSource
+Imports DataSource
 
-Partial Class GearsSampleLog
+Partial Class _guide_Log
     Inherits GearsPage
 
     Protected Sub Page_Init(sender As Object, e As System.EventArgs) Handles Me.Init
@@ -10,8 +10,8 @@ Partial Class GearsSampleLog
         Dim dataSource As New EMP(Master.ConnectionName)
 
         'コントロール/データソースのペアの登録
-        registerMyControl(grvData__L1, dataSource)
-        registerMyControl(pnlGFILTER__L1)
+        GAdd(grvData__L1, dataSource)
+        GAdd(pnlGFILTER__L1)
 
     End Sub
 
@@ -19,7 +19,7 @@ Partial Class GearsSampleLog
         lblLog.Text = ""
 
         '関連の定義
-        addRelation(pnlGFILTER__L1, grvData__L1)
+        GRule(pnlGFILTER__L1).Relate(grvData__L1)
 
     End Sub
 
@@ -29,7 +29,7 @@ Partial Class GearsSampleLog
 
         GearsLogStack.setLog("ログトレースを開始します", "ボタンクリック処理を追跡します・・・")
         '本処理
-        executeBehavior(pnlGFILTER__L1)
+        GFilterBy(pnlGFILTER__L1)
 
         'トレースの終了
         lblLog.Text = GearsLogStack.makeDisplayString 'ログの書き込み

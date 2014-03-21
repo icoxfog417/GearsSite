@@ -1,6 +1,6 @@
-﻿<%@ Page Title="" Language="VB" MasterPageFile="~/pppMaster.master" AutoEventWireup="false" CodeFile="GearsSampleStyle.aspx.vb" Inherits="GearsSampleStyle" %>
-<%@ Register src="UnitItem.ascx" tagname="unitItem" tagprefix="ui" %>
-<%@ MasterType VirtualPath="pppMaster.master" %>
+﻿<%@ Page Title="" Language="VB" MasterPageFile="~/pppMaster.master" AutoEventWireup="false" CodeFile="Attribute.aspx.vb" Inherits="_guide_Attribute" %>
+<%@ Register src="~/parts/Gears/UnitItem.ascx" tagname="unitItem" tagprefix="ui" %>
+<%@ MasterType VirtualPath="~/pppMaster.master" %>
 
 <asp:Content ID="clientHead" ContentPlaceHolderID="pppHead" Runat="Server" ClientIDMode=Static>
     <title>Style In GearsFramework</title>
@@ -39,7 +39,7 @@ Pageディレクティブにて...
 ＜%@ Register src="UnitItem.ascx" tagname="unitItem" tagprefix="ui" %＞
 
 配置時
-＜ui:unitItem ID="Name" CtlKind="TXT" runat="server" LabelText="テキスト" /＞
+＜ui:unitItem ID="Name" ControlKind="TXT" runat="server" LabelText="テキスト" /＞
         </pre>
     </div>
     配置にあたり重要な属性は以下３点になります。<br/>
@@ -81,20 +81,20 @@ Pageディレクティブにて...
         <div class="ppp-box even">
             <b>ユーザーコントロール配置の例(float)</b>
             <br/>
-            <ui:unitItem ID="Name" CtlKind="TXT" runat="server" LabelText="名前" SearchAction="callName()" />
-            <ui:unitItem ID="Job" CtlKind="TXT" runat="server" LabelText="職種" Width=80 />
-            <ui:unitItem ID="COMP_UNIT" CtlKind="RBL" runat="server" LabelText="所属事業部" />
+            <ui:unitItem ID="Name" ControlKind="TXT" runat="server" LabelText="名前" SearchAction="callName()" />
+            <ui:unitItem ID="Job" ControlKind="TXT" runat="server" LabelText="職種" Width=80 />
+            <ui:unitItem ID="COMP_UNIT" ControlKind="RBL" runat="server" LabelText="所属事業部" />
             <br style="clear:both"/>
-            <ui:unitItem ID="Comment" CtlKind="TXTA" runat="server" LabelText="幅広いコメントを受け付けているのである" Width=300 Height=50 />
+            <ui:unitItem ID="Comment" ControlKind="TXTA" runat="server" LabelText="幅広いコメントを受け付けているのである" Width=300 Height=50 />
             <br style="clear:both"/>
         </div>
         <div class="ppp-box even">
             <b>ユーザーコントロール配置の例(horizon)</b>
             <br/>
-            <ui:unitItem ID="Name__H" CtlKind="TXT" runat="server" LabelText="名前" SearchAction="callName()" IsHorizontal="True" />
-            <ui:unitItem ID="Job__H" CtlKind="TXT" runat="server" LabelText="職種" Width=80 IsHorizontal="True"/>
-            <ui:unitItem ID="COMP_UNIT__H" CtlKind="RBL" runat="server" LabelText="所属事業部" IsHorizontal="True"/>
-            <ui:unitItem ID="Comment__H" CtlKind="TXTA" runat="server" LabelText="幅広いコメントを受け付けているのである" Width=300 Height=50 IsHorizontal="True"/>
+            <ui:unitItem ID="Name__H" ControlKind="TXT" runat="server" LabelText="名前" SearchAction="callName()" IsHorizontal="True" />
+            <ui:unitItem ID="Job__H" ControlKind="TXT" runat="server" LabelText="職種" Width=80 IsHorizontal="True"/>
+            <ui:unitItem ID="COMP_UNIT__H" ControlKind="RBL" runat="server" LabelText="所属事業部" IsHorizontal="True"/>
+            <ui:unitItem ID="Comment__H" ControlKind="TXTA" runat="server" LabelText="幅広いコメントを受け付けているのである" Width=300 Height=50 IsHorizontal="True"/>
         </div>
     </div>
     <br/>
@@ -106,7 +106,7 @@ Pageディレクティブにて...
         <div class="ppp-indent" style="width:800px;">
         <pre class="ppp-box even" style="font-style:italic;font-size:12px">
 
-addRelation(ddlCOMP_UNIT, COMP_GRP.getControl(Of DropDownList))
+GRule(ddlCOMP_UNIT, COMP_GRP.getControl(Of DropDownList))
         </pre>
     </div>
     getControlを使用し、中身のコントロールを取り出せます。また、ジェネリクスを指定することでコントロールの型を指定することが出来ます。<br/>

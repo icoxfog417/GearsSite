@@ -1,27 +1,29 @@
 ﻿Imports Gears
+Imports Gears.Util
 Imports System.ComponentModel
 
-Partial Class UnitItem
+Partial Class _Gears_UnitItem
     Inherits System.Web.UI.UserControl
+    Implements IFormItem
 
     Private _controlId As String = ""
-    Public ReadOnly Property ControlId() As String
+    Public ReadOnly Property ControlId() As String Implements IFormItem.ControlId
         Get
             Return _controlId
         End Get
     End Property
 
-    Private _ctlKind As String = ""
-    Public Property CtlKind() As String
+    Private _controlKind As String = ""
+    Public Property ControlKind() As String Implements IFormItem.ControlKind
         Get
-            Return _ctlKind
+            Return _controlKind
         End Get
-        Set(ByVal value As String)
-            _ctlKind = value
+        Set(value As String)
+            _controlKind = value
         End Set
     End Property
     Private _labelText As String = ""
-    Public Property LabelText() As String
+    Public Property LabelText() As String Implements IFormItem.LabelText
         Get
             Return _labelText
         End Get
@@ -30,7 +32,7 @@ Partial Class UnitItem
         End Set
     End Property
     Private _isEditable As Boolean = True
-    Public Property IsEditable() As Boolean
+    Public Property IsEditable() As Boolean Implements IFormItem.IsEditable
         Get
             Return _isEditable
         End Get
@@ -69,7 +71,7 @@ Partial Class UnitItem
     End Property
 
     Private _width As Integer = -1
-    Public Property Width() As Integer
+    Public Property Width() As Integer Implements IFormItem.Width
         Get
             Return _width
         End Get
@@ -78,7 +80,7 @@ Partial Class UnitItem
         End Set
     End Property
     Private _height As Integer = -1
-    Public Property Height() As Integer
+    Public Property Height() As Integer Implements IFormItem.Height
         Get
             Return _height
         End Get
@@ -87,7 +89,7 @@ Partial Class UnitItem
         End Set
     End Property
     Private _cssClass As String = ""
-    Public Property CssClass() As String
+    Public Property CssClass() As String Implements IFormItem.CssClass
         Get
             Return _cssClass
         End Get
@@ -126,15 +128,17 @@ Partial Class UnitItem
         End Set
     End Property
 
+    Public Property ConnectionName As String Implements IFormItem.ConnectionName
+    Public Property DsNamespace As String Implements IFormItem.DsNamespace
 
     Protected Sub Page_Init(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Init
         Dim suffix As String = ""
-        If _ctlKind <> "" Then
-            Dim kind As String = CtlKind.ToUpper
-            _controlId = CtlKind.ToLower + Me.ID
+        If _controlKind <> "" Then
+            Dim kind As String = ControlKind.ToUpper
+            _controlId = ControlKind.ToLower + Me.ID
 
             If ClientIDMode = UI.ClientIDMode.AutoID Then
-                _controlId = CtlKind.ToLower + Me.ID + "__" + Me.ClientID.Replace("_" + Me.ID, "")
+                _controlId = ControlKind.ToLower + Me.ID + "__" + Me.ClientID.Replace("_" + Me.ID, "")
             End If
 
             Select Case kind
@@ -194,7 +198,7 @@ Partial Class UnitItem
         Dim result As String = ""
 
         classes.Add("gs-layout-frame")
-        If Not String.IsNullOrEmpty(_cssClass) And String.IsNullOrEmpty(_ctlKind) Then classes.Add(_cssClass)
+        If Not String.IsNullOrEmpty(_cssClass) And String.IsNullOrEmpty(_controlKind) Then classes.Add(_cssClass)
         If IsHorizontal Then
             classes.Add("gs-frame-horizon")
         End If
@@ -216,13 +220,13 @@ Partial Class UnitItem
 
     End Function
 
-    Public Function getControl() As WebControl
+    Public Function getControl() As WebControl Implements IFormItem.getControl
         Return pnlCtlFolder.FindControl(ControlId)
     End Function
     Public Function getControl(Of T As WebControl)() As T
         Return CType(pnlCtlFolder.FindControl(ControlId), T)
     End Function
-    Public Sub setValue(ByVal value As String)
+    Public Sub setValue(ByVal value As String) Implements IFormItem.setValue
         Dim control As WebControl = getControl()
 
         If TypeOf control Is ITextControl Then
@@ -239,7 +243,7 @@ Partial Class UnitItem
         End If
 
     End Sub
-    Public Function getValue() As String
+    Public Function getValue() As String Implements IFormItem.getValue
         Dim control As WebControl = getControl()
 
         If TypeOf control Is ITextControl Then
@@ -320,6 +324,10 @@ Partial Class UnitItem
             con.CssClass = defaultCss
         End If
 
+        '接続文字列/名称空間
+        If Not String.IsNullOrEmpty(ConnectionName) Then con.Attributes.Add("ConnectionName", ConnectionName)
+        If Not String.IsNullOrEmpty(DsNamespace) Then con.Attributes.Add("DsNamespace", DsNamespace)
+
     End Sub
 
     Private Sub enableChange(ByRef control As WebControl, ByVal bool As Boolean)
@@ -378,4 +386,5 @@ Partial Class UnitItem
         End If
 
     End Sub
+
 End Class

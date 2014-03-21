@@ -1,4 +1,4 @@
-﻿<%@ Control Language="VB" AutoEventWireup="false" CodeFile="UnitItem.ascx.vb" Inherits="UnitItem" %>
+﻿<%@ Control Language="VB" AutoEventWireup="false" CodeFile="UnitItem.ascx.vb" Inherits="_Gears_UnitItem" %>
 <table <%= TableStyle()%>" >
     <tr >
         <td class="gs-layout-label" <%=If(IsHorizontal,"valign=""top""","")%> >
@@ -17,5 +17,5 @@
             <%End If%>
 
     <%If pnlCtlFolder.Controls.Count > 1 Then%>
-        <%= UnitItem.closing()%>
+        <%= _Gears_UnitItem.closing()%>
     <%End If%>

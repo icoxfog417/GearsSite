@@ -1,6 +1,6 @@
 ﻿Imports Gears
 
-Partial Class GearsSampleControl
+Partial Class _guide_Control
     Inherits GearsPage
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load

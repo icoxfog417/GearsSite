@@ -1,5 +1,7 @@
 ﻿Imports Microsoft.VisualBasic
 Imports Gears
+Imports Gears.DataSource
+Imports Gears.Validation
 
 Public Class EMPValidator
     Inherits AbsModelValidator
@@ -20,13 +22,13 @@ Public Class EMPValidator
         _connectionName = conName
     End Sub
 
-    Public Overrides Sub setUpValidation(sqlb As Gears.SqlBuilder)
+    Public Overrides Sub setUpValidation(sqlb As SqlBuilder)
         '従業員データの取得
         If Not String.IsNullOrEmpty(getValidateeValue(sqlb, "EMPNO")) Then
 
-            Dim emp As New GSDataSource.EMP(ConnectionName)
+            Dim emp As New DataSource.EMP(ConnectionName)
             Dim dto As New GearsDTO(ActionType.SEL)
-            dto.addFilter(SqlBuilder.newFilter("EMPNO").eq(getValidateeValue(sqlb, "EMPNO")))
+            dto.addFilter(SqlBuilder.F("EMPNO").eq(getValidateeValue(sqlb, "EMPNO")))
 
             empData = emp.gSelect(dto)
 
@@ -34,7 +36,7 @@ Public Class EMPValidator
 
     End Sub
 
-    Public Overrides Sub tearDownValidation(sqlb As Gears.SqlBuilder)
+    Public Overrides Sub tearDownValidation(sqlb As SqlBuilder)
         '従業員データの開放
         empData = Nothing
     End Sub
@@ -44,7 +46,7 @@ Public Class EMPValidator
         Dim fromSal As Decimal = 0
         Dim toSal As Decimal = 0
 
-        Decimal.TryParse(GearsSqlExecutor.getDataSetValue("SAL", empData), fromSal)
+        Decimal.TryParse(Util.DataSetReader.Item(empData, "SAL"), fromSal)
         Decimal.TryParse(getValidateeValue(sqlb, "SAL"), toSal)
 
         If toSal - fromSal > 1000 Then

@@ -1,6 +1,6 @@
-﻿<%@ Page Language="VB"  MasterPageFile="pppMaster.master" AutoEventWireup="false" CodeFile="GearsSampleRelation.aspx.vb" Inherits="GearsSampleRelation" %>
-<%@ Register src="./UnitItem.ascx" tagname="unitItem" tagprefix="ui" %>
-<%@ MasterType VirtualPath="pppMaster.master" %>
+﻿<%@ Page Language="VB"  MasterPageFile="~/pppMaster.master" AutoEventWireup="false" CodeFile="Relation.aspx.vb" Inherits="_guide_Relation" %>
+<%@ Register src="~/parts/Gears/UnitItem.ascx" tagname="unitItem" tagprefix="ui" %>
+<%@ MasterType VirtualPath="~/pppMaster.master" %>
 
 <asp:Content id="clientHead" ContentPlaceHolderID="pppHead" Runat="Server" ClientIDMode=Static>
     <title>Control Relation And Data Linkage on GFW</title>
@@ -62,7 +62,7 @@
     <br/>
     <div class="ppp-indent">
         Page_Loadで・・・<br/>
-        <b><i>addRelation(ddlCOMP_UNIT, ddlCOMP_GRP)</i></b>
+        <b><i>GRule(ddlCOMP_UNIT, ddlCOMP_GRP)</i></b>
         <br/><br/>
         ddlCOMP_UNIT_SelectedIndexChangedで・・・<br/>
         <b><i>executeBehavior(ddlCOMP_UNIT)</i></b>
@@ -127,7 +127,7 @@
         <li>Panelは手動で登録を行う必要がある<br/>
             関連を登録するには、コントロール・データソースのペアが登録されている必要があります。
             Panelはこの登録が自動的に行われないため、<i>registerControl</i>を使用し手動で登録する必要があります。<br/>
-            <a href="GearsSampleControl.aspx" class="ppp-link-item" ><i>GFWでのデータソースと規約</i>参照</a>
+            <a href="ListAndFormControl.aspx" class="ppp-link-item" ><i>GFWでのデータソースと規約</i>参照</a>
             <br/><br/>
         </li>
         <li>選択用と更新用で、使用すべきパネルは異なる<br/>
@@ -300,19 +300,19 @@
         <div class="ppp-indent" style="width:800px;">
             <pre class="ppp-box even" style="font-style:italic;font-size:12px">
 Public Class SalesData '売上データ抽出用のデータソースクラス
-    Inherits GDSTemplate
+    Inherits GearsDataSource
     Public Sub New(ByVal conName As String)
-        MyBase.New(conName, SqlBuilder.newDataSource("SalesData"))
+        MyBase.New(conName, SqlBuilder.DS("SalesData"))
 
     End Sub
 
-    Public Overrides Function makeSqlBuilder(ByRef data As Gears.GearsDTO) As SqlBuilder
+    Public Overrides Function makeSqlBuilder(ByVal data As Gears.GearsDTO) As SqlBuilder
         Dim sqlb As SqlBuilder = MyBase.makeSqlBuilder(data)
         
         '変換ルールを登録。テーブルSalesDataでは、Categoryの列がItem_Categoryという名称になっている
-        Dim convertor As New ViewItemAndColumnMapperTemplete
+        Dim convertor As New NameExchangerTemplate
         convertor.addRule("Category", "Item_Category") 'CategoryをItem_Categoryへ変換
-        sqlb.setdsColConvertor(convertor)
+        sqlb.ItemColExchanger = convertor
 
         Return sqlb
 
@@ -321,7 +321,7 @@ End Class
             </pre>
         </div>
 
-    変換ルールは、共通クラスのViewItemAndColumnMapperTempleteインタフェースを実装したクラスであれば可ですので、よく使う変換ルールなどは
+    変換ルールは、共通クラスのNameExchangerTemplateインタフェースを実装したクラスであれば可ですので、よく使う変換ルールなどは
     あらかじめクラス化可能です。<br/>
     <br/>
     以下では、実際に起点コントロールの値を関連先コントロールへ通知し、データの更新を行っています。<br/>

@@ -1,10 +1,10 @@
-﻿<%@ Page Language="VB" MasterPageFile="pppMaster.master" AutoEventWireup="false" CodeFile="GearsSample.aspx.vb" Inherits="GearsSample" %>
-<%@ Register src="UnitItem.ascx" tagname="unitItem" tagprefix="ui" %>
-<%@ MasterType VirtualPath="pppMaster.master" %>
+﻿<%@ Page Language="VB" MasterPageFile="~/pppMaster.master" AutoEventWireup="false" CodeFile="~/howtouse/ListAndForm.aspx.vb" Inherits="_howtouse_ListAndForm" %>
+<%@ Register src="~/parts/Gears/UnitItem.ascx" tagname="unitItem" tagprefix="ui" %>
+<%@ MasterType VirtualPath="~/pppMaster.master" %>
 
 <asp:Content id="clientHead" ContentPlaceHolderID="pppHead" Runat="Server" ClientIDMode=Static>
     <title>Demo of GearsFramework</title>
-    <script language="javascript">
+    <script type="text/javascript">
         $(function () {
             //※Comboboxがページ内にない場合不要
             //AjaxToolKitのComboBoxのバグを修正するためのスクリプト
@@ -43,18 +43,18 @@
         <asp:Panel id="pnlGFORM" runat="server" CssClass="ppp-include-combo-area">
 
         <!-- コントロールの配置に当たっては、ユーザーコントロールの使用により簡単に書ける -->
-        <ui:unitItem ID="EMPNO__KEY" CtlKind="TXT" runat="server" LabelText="※従業員番号" CssClass="gears-GRequired gears-GNumeric gears-GByteLength_Length_4 " />
-        <ui:unitItem ID="ENAME__FORM" CtlKind="TXT" runat="server" LabelText="※名前" CssClass="gears-GRequired"/>
+        <ui:unitItem ID="EMPNO__KEY" ControlKind="TXT" runat="server" LabelText="※従業員番号" CssClass="gears-GRequired gears-GNumeric gears-GByteLength_Length_4 " />
+        <ui:unitItem ID="ENAME__FORM" ControlKind="TXT" runat="server" LabelText="※名前" CssClass="gears-GRequired"/>
 		<asp:HiddenField ID="hdnCOMP_UNIT" runat="server" />
-        <ui:unitItem ID="COMP_UNIT_TXT__GCON" CtlKind="LBL" runat="server" LabelText="販売組織" />
-        <ui:unitItem ID="COMP_GRP__FORM" CtlKind="DDL" runat="server" LabelText="営業Ｇ" />		
+        <ui:unitItem ID="COMP_UNIT_TXT__DISP" ControlKind="LBL" runat="server" LabelText="販売組織" />
+        <ui:unitItem ID="COMP_GRP__FORM" ControlKind="DDL" runat="server" LabelText="営業Ｇ" />		
         <br style="clear:both"/>
 
         <ui:unitItem ID="JOB__FORM" runat="server" LabelText="職位" />
             <ajaxToolkit:ComboBox id="cbxJOB__FORM" runat="server" CssClass="ppp-combo" RenderMode=Block ClientIDMode=AutoID >
 			</ajaxToolkit:ComboBox>
-        <%= UnitItem.closing%>
-        <ui:unitItem ID="MK_FLG" CtlKind="CHB" runat="server" LabelText="無効フラグ" />
+        <%= _Gears_UnitItem.closing%>
+        <ui:unitItem ID="MK_FLG" ControlKind="CHB" runat="server" LabelText="無効フラグ" />
 
         <br style="clear:both"/>
         <br/>
@@ -67,11 +67,11 @@
         <asp:Panel id="pnlGFilter" runat="server"  >
             <asp:UpdatePanel id="udpArea" runat="server" UpdateMode=Conditional>
                 <ContentTemplate>
-                    <ui:unitItem ID="COMP_UNIT__FIL" CtlKind="RBL" runat="server" LabelText="販売組織" AutoPostBack=True IsHorizontal="True"/>
-                    <ui:unitItem ID="COMP_GRP__FIL" CtlKind="DDL" runat="server" LabelText="営業Ｇ" IsNeedAll=True IsHorizontal="True"/>
+                    <ui:unitItem ID="COMP_UNIT__FIL" ControlKind="RBL" runat="server" LabelText="販売組織" AutoPostBack=True IsHorizontal="True"/>
+                    <ui:unitItem ID="COMP_GRP__FIL" ControlKind="DDL" runat="server" LabelText="営業Ｇ" IsNeedAll=True IsHorizontal="True"/>
                 </ContentTemplate>
             </asp:UpdatePanel>            
-            <ui:unitItem ID="ENAME__FIL" CtlKind="TXT" runat="server" LabelText="名前(※LIKE検索 オプションにOperatorを指定)" Operator="LIKE" IsHorizontal="True"/>
+            <ui:unitItem ID="ENAME__FIL" ControlKind="TXT" runat="server" LabelText="名前(※LIKE検索 オプションにOperatorを指定)" Operator="LIKE" IsHorizontal="True"/>
 
             <br style="clear:both"/>
 
@@ -84,7 +84,7 @@
     
     <br/>
     <asp:Panel id="pnlList" runat="server"  >
-            <asp:GridView id="grvData" runat="server" 
+            <asp:GridView id="grvEMP" runat="server" DsNamespace ="DataSource"
                 AutoGenerateSelectButton=True 
                 AutoGenerateColumns=False
                 CssClass=ppp-table 

@@ -1,32 +1,30 @@
 ﻿Imports Gears
+Imports DataSource
 
-Partial Class GearsSampleValidation
+Partial Class _guide_Validation
     Inherits GearsPage
 
     Protected Sub Page_Init(sender As Object, e As System.EventArgs) Handles Me.Init
 
-        Dim emp As New GSDataSource.EMP(Master.ConnectionName)
-        emp.addLockCheckCol("UPD_YMD", LockType.UDATESTR)
-        emp.addLockCheckCol("UPD_HMS", LockType.UTIMESTR)
-        emp.ModelValidator = New EMPValidator(Master.ConnectionName)
+        Dim emp As New DataSource.EMP(Master.ConnectionName)
 
-        registerMyControl(pnlEMP_SAL__GFORM, emp)
-        registerMyControl(pnlEMPAttr, emp)
+        GAdd(pnlEMP_SAL__GFORM, emp)
+        GAdd(pnlEMPAttr, emp)
+
     End Sub
 
     Protected Sub Page_Load(sender As Object, e As System.EventArgs) Handles Me.Load
         lblVResult1.Text = ""
 
-        addRelation(ddlEMPNO__KEY, pnlEMPAttr)
-        addRelation(pnlEMP_SAL__GFORM, pnlEMP_SAL__GFORM)
+        GRule(ddlEMPNO__KEY).Relate(pnlEMPAttr)
 
     End Sub
 
     Protected Sub btnValidation1_Click(sender As Object, e As System.EventArgs) Handles btnValidation1.Click
         Dim result As Boolean = True
-        result = MyBase.isValidateOk(pnlValidation1)
-        If Not result AndAlso getLogCount() > 0 Then
-            lblVResult1.Text = getLogMsgFirst().Message
+        result = GIsValid(pnlValidation1)
+        If Not result AndAlso GLog.Count > 0 Then
+            lblVResult1.Text = GLog.FirstLog.Message
             lblVResult1.CssClass = "ppp-msg error"
         Else
             lblVResult1.Text = "バリデーションＯＫ"
@@ -36,11 +34,11 @@ Partial Class GearsSampleValidation
     End Sub
 
     Protected Sub ddlEMPNO_SelectedIndexChanged(sender As Object, e As System.EventArgs) Handles ddlEMPNO__KEY.SelectedIndexChanged
-        executeBehavior(ddlEMPNO__KEY)
+        GFilterBy(ddlEMPNO__KEY)
     End Sub
 
     Protected Sub btnSave_Click(sender As Object, e As System.EventArgs) Handles btnSave.Click
-        getLogMsgDescription(executeBehavior(pnlEMP_SAL__GFORM, ActionType.SAVE), lblMsgModelValid)
+        LogToLabel(GSave(pnlEMP_SAL__GFORM), lblMsgModelValid)
     End Sub
 
 End Class

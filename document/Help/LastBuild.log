@@ -1299,21 +1299,21 @@ Building reference help topics...
   Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.addExcept(System.Web.UI.Control,System.Web.UI.Control,System.Web.UI.Control[])] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
   Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.addExcept(System.Web.UI.Control,System.Web.UI.Control,System.Web.UI.Control[])] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
   Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.addExcept(System.Web.UI.Control,System.Web.UI.Control,System.Web.UI.Control[])] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
-  Warn: ShowMissingComponent: [M:Gears.GearsMediator.addRelation(Gears.GearsControl,Gears.GearsControl)] Missing &lt;summary&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.GearsMediator.addRelation(Gears.GearsControl,Gears.GearsControl)] Missing &lt;param name=&quot;fromControl&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.GearsMediator.addRelation(Gears.GearsControl,Gears.GearsControl)] Missing &lt;param name=&quot;toControl&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.GearsMediator.addRelation(System.String,System.String)] Missing &lt;param name=&quot;fromControlId&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.GearsMediator.addRelation(System.String,System.String)] Missing &lt;param name=&quot;toControlId&quot;/&gt; documentation
-  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.addRelation(System.String,System.String)] MSDN URL not found for target &#39;T:System.String&#39;.
-  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.addRelation(System.String,System.String)] MSDN URL not found for target &#39;T:System.String&#39;.
-  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.addRelation(System.String,System.String)] MSDN URL not found for target &#39;T:System.String&#39;.
-  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.addRelation(System.String,System.String)] MSDN URL not found for target &#39;T:System.String&#39;.
-  Warn: ShowMissingComponent: [M:Gears.GearsMediator.addRelation(System.Web.UI.Control,System.Web.UI.Control)] Missing &lt;param name=&quot;fromControl&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [M:Gears.GearsMediator.addRelation(System.Web.UI.Control,System.Web.UI.Control)] Missing &lt;param name=&quot;toControl&quot;/&gt; documentation
-  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.addRelation(System.Web.UI.Control,System.Web.UI.Control)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
-  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.addRelation(System.Web.UI.Control,System.Web.UI.Control)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
-  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.addRelation(System.Web.UI.Control,System.Web.UI.Control)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
-  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.addRelation(System.Web.UI.Control,System.Web.UI.Control)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ShowMissingComponent: [M:Gears.GearsMediator.GRule(Gears.GearsControl,Gears.GearsControl)] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.GearsMediator.GRule(Gears.GearsControl,Gears.GearsControl)] Missing &lt;param name=&quot;fromControl&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.GearsMediator.GRule(Gears.GearsControl,Gears.GearsControl)] Missing &lt;param name=&quot;toControl&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.GearsMediator.GRule(System.String,System.String)] Missing &lt;param name=&quot;fromControlId&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.GearsMediator.GRule(System.String,System.String)] Missing &lt;param name=&quot;toControlId&quot;/&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.GRule(System.String,System.String)] MSDN URL not found for target &#39;T:System.String&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.GRule(System.String,System.String)] MSDN URL not found for target &#39;T:System.String&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.GRule(System.String,System.String)] MSDN URL not found for target &#39;T:System.String&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.GRule(System.String,System.String)] MSDN URL not found for target &#39;T:System.String&#39;.
+  Warn: ShowMissingComponent: [M:Gears.GearsMediator.GRule(System.Web.UI.Control,System.Web.UI.Control)] Missing &lt;param name=&quot;fromControl&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:Gears.GearsMediator.GRule(System.Web.UI.Control,System.Web.UI.Control)] Missing &lt;param name=&quot;toControl&quot;/&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.GRule(System.Web.UI.Control,System.Web.UI.Control)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.GRule(System.Web.UI.Control,System.Web.UI.Control)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.GRule(System.Web.UI.Control,System.Web.UI.Control)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.GRule(System.Web.UI.Control,System.Web.UI.Control)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.clearExcept(System.Web.UI.Control,System.Web.UI.Control)] Missing &lt;param name=&quot;fromControl&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsMediator.clearExcept(System.Web.UI.Control,System.Web.UI.Control)] Missing &lt;param name=&quot;toControl&quot;/&gt; documentation
   Warn: ResolveReferenceLinksComponent2: [M:Gears.GearsMediator.clearExcept(System.Web.UI.Control,System.Web.UI.Control)] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.

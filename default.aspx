@@ -1,8 +1,8 @@
-﻿<%@ Page Language="VB" MasterPageFile="pppMaster.master" AutoEventWireup="false" CodeFile="default.aspx.vb" Inherits="_400_kakaku_menu" %>
+﻿<%@ Page Language="VB" MasterPageFile="~/pppMaster.master" AutoEventWireup="false" CodeFile="default.aspx.vb" Inherits="_400_kakaku_menu" %>
 
 <asp:Content id="clientHead" ContentPlaceHolderID="pppHead" Runat="Server" ClientIDMode=Static>
     <title>GearsFramework</title>
-    <script language="javascript">
+    <script type="text/javascript" >
         $(function () {
             setPPPMenuAction();
         })
@@ -21,25 +21,25 @@
 		<div id="ppp-menu-list">
             <ul class="ppp-menu-list">
 				<li class="ppp-menu-item">
-					<a href="GearsSampleControl.aspx" target="_detail" class="ppp-link-item">GFWでの<br/>データソースと規約</a>
+					<a href="./guide/Control.aspx" target="_detail" class="ppp-link-item">GFWでの<br/>データソースと規約</a>
 				</li>
 				<li class="ppp-menu-item">
-					<a href="GearsSampleRelation.aspx" target="_detail" class="ppp-link-item">GFWでの<br/>関連とデータ連動</a>
+					<a href="./guide/Relation.aspx" target="_detail" class="ppp-link-item">GFWでの<br/>関連とデータ連動</a>
 				</li>
 				<li class="ppp-menu-item">
-					<a href="GearsSampleValidation.aspx" target="_detail" class="ppp-link-item">GFWの<br/>バリデーション機能</a>
+					<a href="./guide/Validation.aspx" target="_detail" class="ppp-link-item">GFWの<br/>バリデーション機能</a>
 				</li>
 				<li class="ppp-menu-item">
-					<a href="GearsSampleAuthorization.aspx" target="_detail" class="ppp-link-item">GFWの<br/>権限制御機能</a>
+					<a href="./guide/Authorization.aspx" target="_detail" class="ppp-link-item">GFWの<br/>権限制御機能</a>
 				</li>
 				<li class="ppp-menu-item">
-					<a href="GearsSampleLog.aspx" target="_detail" class="ppp-link-item">GFWの<br/>ログ/例外処理機能</a>
+					<a href="./guide/Log.aspx" target="_detail" class="ppp-link-item">GFWの<br/>ログ/例外処理機能</a>
 				</li>
 				<li class="ppp-menu-item">
-					<a href="GearsSampleStyle.aspx" target="_detail" class="ppp-link-item">GFWのスタイル</a>
+					<a href="./guide/Attribute.aspx" target="_detail" class="ppp-link-item">GFWのスタイル</a>
 				</li>
 				<li class="ppp-menu-item">
-					<a href="GearsSample.aspx" target="_detail" class="ppp-link-item">GFW総集編</a>
+					<a href="./howtouse/ListAndForm.aspx" target="_detail" class="ppp-link-item">GFW総集編</a>
 				</li>
 
 			</ul>

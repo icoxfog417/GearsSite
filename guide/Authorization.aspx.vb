@@ -1,7 +1,6 @@
 ﻿Imports Gears
 
-Partial Class GearsSampleStyle
+Partial Class _guide_Authorization
     Inherits GearsPage
-
 
 End Class
