@@ -59,8 +59,9 @@ Partial Class _howtouse_ListAndForm
         GRule(grvEMP).Relate(pnlGFORM)
 
         If Not IsPostBack Then
-            '初回のフィルタ
+            '初回の抽出
             GFilterBy(DEPT)
+            GFilterBy(pnlGFilter)
         End If
 
     End Sub

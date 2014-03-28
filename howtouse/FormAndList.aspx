@@ -3,7 +3,7 @@
 <%@ MasterType VirtualPath="~/gearsMaster.master" %>
 
 <asp:Content id="clientHead" ContentPlaceHolderID="headerPart" Runat="Server" ClientIDMode=Static>
-    <title>Demo of GearsFramework</title>
+    <title>Form and Listk</title>
     <script type="text/javascript">
         $(function () {
             //JSVariableのAttributeをつけたプロパティは、JavaScript側で使用可能
@@ -27,7 +27,7 @@
 
 <asp:Content id="pageBody" ContentPlaceHolderID="contentBody" Runat="Server" ClientIDMode=Static>
     <div class="page-header">
-        <h1>List And Form</h1>
+        <h1>Form and List</h1>
     </div>
     <p >
         一覧から選択しフォームでメンテナンスする、マスタメンテナンスなどで使用される一般的なスタイルです。
