@@ -67,11 +67,11 @@ td.gs-layout-label{
     table-layout:fixed;
     width:175px;
 }
-td.gs-layout-label label {
+td.gs-layout-label label,td.gs-layout-label span {
     display:block;
     padding:2px 0px 0px 7px;
     color:#1188bb;  /* #884400 */
-    border-left: double 3px #55ccff;  /*  #FFDEAD; */
+    border-left: solid 3px #55ccff;  /*  #FFDEAD; */
 }
     
 td.gs-layout-ctrl
@@ -109,18 +109,23 @@ td.gs-layout-ctrl
     padding:0px;
     }   
 
+.gs-label-foritem
+{
+   margin-left:30px;
+    }   
+
+
 /* バリデーション用 */
 .gs-number
 {
+	/* 数値型のformに何らかの処理をするためのマーカークラス */
 	text-align:right;
 }
-.gs-length
-{
-	/* formにMax-lengthを指定するためのマーカークラス ※実際にはgs-length_1_3などのように、実際の長さがつく */
-}
+
 .gs-date
 {
 	/* date型のformに何らかの処理をするためのマーカークラス */
+    text-align:right;
 }
 .gs-validation-error
 {

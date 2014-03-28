@@ -1,8 +1,8 @@
-﻿<%@ Page Language="VB"  MasterPageFile="~/pppMaster.master" AutoEventWireup="false" CodeFile="Log.aspx.vb" Inherits="_guide_Log" %>
+﻿<%@ Page Language="VB"  MasterPageFile="~/gearsMaster.master" AutoEventWireup="false" CodeFile="Log.aspx.vb" Inherits="_guide_Log" %>
 <%@ Register src="~/parts/Gears/UnitItem.ascx" tagname="unitItem" tagprefix="ui" %>
-<%@ MasterType VirtualPath="~/pppMaster.master" %>
+<%@ MasterType VirtualPath="~/gearsMaster.master" %>
 
-<asp:Content id="clientHead" ContentPlaceHolderID="pppHead" Runat="Server" ClientIDMode=Static>
+<asp:Content id="clientHead" ContentPlaceHolderID="headerPart" Runat="Server" ClientIDMode=Static>
     <title>Logging And Exception handling on GearsFramework</title>
 
 </asp:Content>
@@ -17,7 +17,7 @@
             </ul>
 </asp:Content>
 
-<asp:Content id="clientCenter" ContentPlaceHolderID="pppContent" Runat="Server" ClientIDMode=Static>
+<asp:Content id="clientCenter" ContentPlaceHolderID="contentBody" Runat="Server" ClientIDMode=Static>
 <div class="document-body">
 
 <i>GFW</i>の中では様々な処理が行われています。<br/>

@@ -1,8 +1,8 @@
-﻿<%@ Page Language="VB"  MasterPageFile="~/pppMaster.master" AutoEventWireup="false" CodeFile="Validation.aspx.vb" Inherits="_guide_Validation" %>
+﻿<%@ Page Language="VB"  MasterPageFile="~/gearsMaster.master" AutoEventWireup="false" CodeFile="Validation.aspx.vb" Inherits="_guide_Validation" %>
 <%@ Register src="~/parts/Gears/UnitItem.ascx" tagname="unitItem" tagprefix="ui" %>
-<%@ MasterType VirtualPath="~/pppMaster.master" %>
+<%@ MasterType VirtualPath="~/gearsMaster.master" %>
 
-<asp:Content id="clientHead" ContentPlaceHolderID="pppHead" Runat="Server" ClientIDMode=Static>
+<asp:Content id="clientHead" ContentPlaceHolderID="headerPart" Runat="Server" ClientIDMode=Static>
     <title>Validation on GearsFramework</title>
 
 </asp:Content>
@@ -17,7 +17,7 @@
             </ul>
 </asp:Content>
 
-<asp:Content id="clientCenter" ContentPlaceHolderID="pppContent" Runat="Server" ClientIDMode=Static>
+<asp:Content id="clientCenter" ContentPlaceHolderID="contentBody" Runat="Server" ClientIDMode=Static>
 <div class="document-body">
 
 <i>GFW</i>におけるバリデーションは、<b>「コントロールのデータ型に基づくスタイル(CSS)設定」</b>を行うことで実現されます。<br/>

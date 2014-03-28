@@ -1,8 +1,8 @@
-﻿<%@ Page Language="VB"  MasterPageFile="~/pppMaster.master" AutoEventWireup="false" CodeFile="Control.aspx.vb" Inherits="_guide_Control" %>
+﻿<%@ Page Language="VB"  MasterPageFile="~/gearsMaster.master" AutoEventWireup="false" CodeFile="Control.aspx.vb" Inherits="_guide_Control" %>
 <%@ Register src="~/parts/Gears/UnitItem.ascx" tagname="unitItem" tagprefix="ui" %>
-<%@ MasterType VirtualPath="~/pppMaster.master" %>
+<%@ MasterType VirtualPath="~/gearsMaster.master" %>
 
-<asp:Content id="clientHead" ContentPlaceHolderID="pppHead" Runat="Server" ClientIDMode=Static>
+<asp:Content id="clientHead" ContentPlaceHolderID="headerPart" Runat="Server" ClientIDMode=Static>
     <title>What's DataSourceClass And Convension between Control And DataSourceClass</title>
 
 </asp:Content>
@@ -17,7 +17,7 @@
             </ul>
 </asp:Content>
 
-<asp:Content id="clientCenter" ContentPlaceHolderID="pppContent" Runat="Server" ClientIDMode=Static>
+<asp:Content id="clientCenter" ContentPlaceHolderID="contentBody" Runat="Server" ClientIDMode=Static>
     <div class="document-body">
         <i>GFW</i>では、データの抽出処理を<i>データソースクラス</i>として切り出し、それとコントロールの間を名称規約で結ぶことでコントロールへのデータロードを実現しています。<br/>
         そのため、ここでは<i>データソースクラス</i>と名称規約の２点に分けて解説をしていきます。

@@ -13,24 +13,9 @@ Partial Class _Gears_UnitItem
         End Get
     End Property
 
-    Private _controlKind As String = ""
     Public Property ControlKind() As String Implements IFormItem.ControlKind
-        Get
-            Return _controlKind
-        End Get
-        Set(value As String)
-            _controlKind = value
-        End Set
-    End Property
-    Private _labelText As String = ""
     Public Property LabelText() As String Implements IFormItem.LabelText
-        Get
-            Return _labelText
-        End Get
-        Set(ByVal value As String)
-            _labelText = value
-        End Set
-    End Property
+
     Private _isEditable As Boolean = True
     Public Property IsEditable() As Boolean Implements IFormItem.IsEditable
         Get
@@ -41,34 +26,12 @@ Partial Class _Gears_UnitItem
             enableChange(getControl(), _isEditable)
         End Set
     End Property
-    Private _isNeedAll As Boolean = False
-    Public Property IsNeedAll() As Boolean
-        Get
-            Return _isNeedAll
-        End Get
-        Set(ByVal value As Boolean)
-            _isNeedAll = value
-        End Set
-    End Property
 
-    Private _allText As String = "(すべて)"
-    Public Property AllText() As String
-        Get
-            Return _allText
-        End Get
-        Set(ByVal value As String)
-            _allText = value
-        End Set
-    End Property
-    Private _isReload As Boolean = False
-    Public Property IsReload() As Boolean
-        Get
-            Return _isReload
-        End Get
-        Set(ByVal value As Boolean)
-            _isReload = value
-        End Set
-    End Property
+    Public Property IsNeedAll() As Boolean = false
+
+    Public Property AllText() As String= "(すべて)"
+
+    Public Property IsReload() As Boolean= False
 
     Private _width As Integer = -1
     Public Property Width() As Integer Implements IFormItem.Width
@@ -79,6 +42,7 @@ Partial Class _Gears_UnitItem
             _width = value
         End Set
     End Property
+
     Private _height As Integer = -1
     Public Property Height() As Integer Implements IFormItem.Height
         Get
@@ -88,25 +52,10 @@ Partial Class _Gears_UnitItem
             _height = value
         End Set
     End Property
-    Private _cssClass As String = ""
-    Public Property CssClass() As String Implements IFormItem.CssClass
-        Get
-            Return _cssClass
-        End Get
-        Set(ByVal value As String)
-            _cssClass = value
-        End Set
-    End Property
 
-    Private _addSearchAction As String = ""
+    Public Property CssClass() As String Implements IFormItem.CssClass
+
     Public Property SearchAction() As String
-        Get
-            Return _addSearchAction
-        End Get
-        Set(ByVal value As String)
-            _addSearchAction = value
-        End Set
-    End Property
 
     Private _defaultCheckIndex As Integer = -1
     Public Property DefaultCheckIndex() As String
@@ -118,28 +67,23 @@ Partial Class _Gears_UnitItem
         End Set
     End Property
 
-    Private _isHorizontal As Boolean = False
-    Public Property IsHorizontal() As Boolean
-        Get
-            Return _isHorizontal
-        End Get
-        Set(ByVal value As Boolean)
-            _isHorizontal = value
-        End Set
-    End Property
+    Public Property IsHorizontal() As Boolean = false
 
     Public Property ConnectionName As String Implements IFormItem.ConnectionName
     Public Property DsNamespace As String Implements IFormItem.DsNamespace
 
     Protected Sub Page_Init(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Init
-        Dim suffix As String = ""
-        If _controlKind <> "" Then
+
+        If _ControlKind <> "" Then
             Dim kind As String = ControlKind.ToUpper
-            _controlId = ControlKind.ToLower + Me.ID
+            Dim mainPart As String = Me.ID
 
             If ClientIDMode = UI.ClientIDMode.AutoID Then
-                _controlId = ControlKind.ToLower + Me.ID + "__" + Me.ClientID.Replace("_" + Me.ID, "")
+                '意図して設定したIDを先頭に持ってくる
+                mainPart = Me.ID + "__" + Me.ClientID.Replace("_" + Me.ID, "")
             End If
+
+            _controlId = ControlKind.ToLower + mainPart
 
             Select Case kind
                 Case "TXT"
@@ -183,11 +127,11 @@ Partial Class _Gears_UnitItem
                     Dim con As New Label()
                     setDefaultState(ControlId, con)
                     pnlCtlFolder.Controls.Add(con)
-                    suffix = "__TL"
             End Select
+
         End If
 
-        labelItem.ID = labelItem.ID + Me.ID + suffix
+        labelItem.ID = labelItem.ID + Me.ID
         labelItem.AssociatedControlID = ControlId
 
     End Sub
@@ -313,7 +257,7 @@ Partial Class _Gears_UnitItem
         End If
 
         'css
-        If _addSearchAction <> "" Then
+        If SearchAction <> "" Then
             defaultCss = "gs-for-search-text"
         End If
 

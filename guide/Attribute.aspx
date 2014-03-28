@@ -1,8 +1,8 @@
-﻿<%@ Page Title="" Language="VB" MasterPageFile="~/pppMaster.master" AutoEventWireup="false" CodeFile="Attribute.aspx.vb" Inherits="_guide_Attribute" %>
+﻿<%@ Page Title="" Language="VB" MasterPageFile="~/gearsMaster.master" AutoEventWireup="false" CodeFile="Attribute.aspx.vb" Inherits="_guide_Attribute" %>
 <%@ Register src="~/parts/Gears/UnitItem.ascx" tagname="unitItem" tagprefix="ui" %>
-<%@ MasterType VirtualPath="~/pppMaster.master" %>
+<%@ MasterType VirtualPath="~/gearsMaster.master" %>
 
-<asp:Content ID="clientHead" ContentPlaceHolderID="pppHead" Runat="Server" ClientIDMode=Static>
+<asp:Content ID="clientHead" ContentPlaceHolderID="headerPart" Runat="Server" ClientIDMode=Static>
     <title>Style In GearsFramework</title>
     <script>
         function callName(){
@@ -26,7 +26,7 @@
         </ul>
 </asp:Content>
 
-<asp:Content ID="clientCenter" ContentPlaceHolderID="pppContent" Runat="Server" ClientIDMode=Static>
+<asp:Content ID="clientCenter" ContentPlaceHolderID="contentBody" Runat="Server" ClientIDMode=Static>
     <div class="document-body">
     <i>GFW</i>では、コントロールの配置だけでアプリケーションを作成できるよう、
     スタイルとコントロールを1セットにしたUnitItemというユーザーコントロールを提供しています。<br/>

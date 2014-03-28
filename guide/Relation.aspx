@@ -1,8 +1,8 @@
-﻿<%@ Page Language="VB"  MasterPageFile="~/pppMaster.master" AutoEventWireup="false" CodeFile="Relation.aspx.vb" Inherits="_guide_Relation" %>
+﻿<%@ Page Language="VB"  MasterPageFile="~/gearsMaster.master" AutoEventWireup="false" CodeFile="Relation.aspx.vb" Inherits="_guide_Relation" %>
 <%@ Register src="~/parts/Gears/UnitItem.ascx" tagname="unitItem" tagprefix="ui" %>
-<%@ MasterType VirtualPath="~/pppMaster.master" %>
+<%@ MasterType VirtualPath="~/gearsMaster.master" %>
 
-<asp:Content id="clientHead" ContentPlaceHolderID="pppHead" Runat="Server" ClientIDMode=Static>
+<asp:Content id="clientHead" ContentPlaceHolderID="headerPart" Runat="Server" ClientIDMode=Static>
     <title>Control Relation And Data Linkage on GFW</title>
 
 </asp:Content>
@@ -17,7 +17,7 @@
             </ul>
 </asp:Content>
 
-<asp:Content id="clientCenter" ContentPlaceHolderID="pppContent" Runat="Server" ClientIDMode=Static>
+<asp:Content id="clientCenter" ContentPlaceHolderID="contentBody" Runat="Server" ClientIDMode=Static>
  <div class="document-body">
     <i>GFW</i>では、コントロール間の関連をデータの関連に反映させることが出来ます。<br/>
     例えば、以下のように事業部の選択値が部門のリストに影響するといった例です。こうした動作を、
@@ -310,9 +310,9 @@ Public Class SalesData '売上データ抽出用のデータソースクラス
         Dim sqlb As SqlBuilder = MyBase.makeSqlBuilder(data)
         
         '変換ルールを登録。テーブルSalesDataでは、Categoryの列がItem_Categoryという名称になっている
-        Dim convertor As New NameExchangerTemplate
+        Dim convertor As New NameMapper
         convertor.addRule("Category", "Item_Category") 'CategoryをItem_Categoryへ変換
-        sqlb.ItemColExchanger = convertor
+        sqlb.Mapper = convertor
 
         Return sqlb
 
@@ -321,7 +321,7 @@ End Class
             </pre>
         </div>
 
-    変換ルールは、共通クラスのNameExchangerTemplateインタフェースを実装したクラスであれば可ですので、よく使う変換ルールなどは
+    変換ルールは、共通クラスのNameMapperインタフェースを実装したクラスであれば可ですので、よく使う変換ルールなどは
     あらかじめクラス化可能です。<br/>
     <br/>
     以下では、実際に起点コントロールの値を関連先コントロールへ通知し、データの更新を行っています。<br/>

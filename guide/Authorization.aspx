@@ -1,8 +1,8 @@
-﻿<%@ Page Title="" Language="VB" MasterPageFile="~/pppMaster.master" AutoEventWireup="false" CodeFile="Authorization.aspx.vb" Inherits="_guide_Authorization" %>
+﻿<%@ Page Title="" Language="VB" MasterPageFile="~/gearsMaster.master" AutoEventWireup="false" CodeFile="Authorization.aspx.vb" Inherits="_guide_Authorization" %>
 <%@ Register src="~/parts/Gears/UnitItem.ascx" tagname="unitItem" tagprefix="ui" %>
-<%@ MasterType VirtualPath="~/pppMaster.master" %>
+<%@ MasterType VirtualPath="~/gearsMaster.master" %>
 
-<asp:Content ID="clientHead" ContentPlaceHolderID="pppHead" Runat="Server" ClientIDMode=Static>
+<asp:Content ID="clientHead" ContentPlaceHolderID="headerPart" Runat="Server" ClientIDMode=Static>
     <title>Authorization Control In GearsFramework</title>
 </asp:Content>
 
@@ -16,7 +16,7 @@
         </ul>
 </asp:Content>
 
-<asp:Content ID="clientCenter" ContentPlaceHolderID="pppContent" Runat="Server" ClientIDMode=Static>
+<asp:Content ID="clientCenter" ContentPlaceHolderID="contentBody" Runat="Server" ClientIDMode=Static>
     <div class="document-body">
     ASP.NETでは標準で権限管理の機能(Membership/RoleProvider)が存在しますが、単純なページへのアクセス可否だけでなく、
     ページ内の操作についても権限で管理を行いたい場合があります。<br/>
