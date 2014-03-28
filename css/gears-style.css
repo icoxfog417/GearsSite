@@ -68,10 +68,10 @@ td.gs-layout-label{
     width:175px;
 }
 td.gs-layout-label label,td.gs-layout-label span {
-    display:block;
-    padding:2px 0px 0px 7px;
-    color:#1188bb;  /* #884400 */
-    border-left: solid 3px #55ccff;  /*  #FFDEAD; */
+    display: block;
+    padding: 2px 0px 0px 3px;
+    color: #333;
+    border-left: solid 3px darkgray;
 }
     
 td.gs-layout-ctrl
