@@ -1,6 +1,6 @@
 ﻿<%@ Page Language="VB" MasterPageFile="~/gearsMaster.master" AutoEventWireup="false" CodeFile="default.aspx.vb" Inherits="_400_kakaku_menu" %>
 
-<asp:Content id="pageHead" ContentPlaceHolderID="headerPart" Runat="Server" ClientIDMode=Static>
+<asp:Content id="pageHead" ContentPlaceHolderID="headerPart" Runat="Server" >
     <title>Gears Framework</title>
     <style>
         .top-header {
@@ -32,7 +32,7 @@
     </style>
 </asp:Content>
 
-<asp:Content id="pageBody" ContentPlaceHolderID="contentBody" Runat="Server" ClientIDMode=Static>
+<asp:Content id="pageBody" ContentPlaceHolderID="contentBody" Runat="Server" >
   <div class="top-header">
     <h1 class="top-title">Gears Framework</h1>
     <p class="lead top-description">ASP.NET WebForm Framework for Developing Business System Quickly.</p>
@@ -47,13 +47,13 @@
                     <li><a target="_blank" href="https://github.com/icoxfog417/Gears/wiki/3.DatabaseAccess">コントロールを使用したデータベース処理</a></li>
                 </ul>
             </li>
-            <li>既存データベース上での構築が考慮されており、項目の変換機能の実装、日本語名テーブルへの対応などが実装されています</li>
             <li>企業業務システムで求められる機能が多数実装されています。
                 <ul>
                     <li><a target="_blank" href="https://github.com/icoxfog417/Gears/wiki/4.Validation">バリデーション実装</a></li>
                     <li><a target="_blank" href="https://github.com/icoxfog417/Gears/wiki/5.Authorization">権限制御</a></li>
                 </ul>
             </li>
+            <li>既存データベース上での構築が考慮されており、項目の変換機能の実装、日本語名テーブルへの対応などが実装されています</li>
         </ul>
     </div>
   </div>
@@ -88,9 +88,8 @@
         <h4>Samples</h4>
             <ol class="list-unstyled">
               <li><a target="_blank" href="./howtouse/FormAndList.aspx">Form and List</a></li>
-              <li><a target="_blank" href="#">Multibyte Table Name</a></li>
-              <li><a target="_blank" href="#">Download the Excel File</a></li>
-              <li><a target="_blank" href="#">Ajax</a></li>
+              <li><a target="_blank" href="./howtouse/MultibyteTableName.aspx">Multibyte Table Name</a></li>
+              <li><a target="_blank" href="./howtouse/WithJavaScriptFramework.aspx">With JavaScript Framework</a></li>
             </ol>
       </div>
       <div class="sidebar-module">
@@ -100,5 +99,6 @@
               <li><a target="_blank" href="https://github.com/icoxfog417/Gears/tree/develop">GitHub</a></li>
             </ol>
       </div>
+    </div>
   </div>
 </asp:Content>

@@ -22,15 +22,15 @@
             margin-top: 50px;
         }
     </style>
-    <asp:ContentPlaceHolder id="headerPart" runat="server">
+    <asp:ContentPlaceHolder id="headerPart" runat="server" ClientIDMode="Static">
     </asp:ContentPlaceHolder>
 </head>
 <body >
   <form id="form1" runat="server">
 
-    <asp:ScriptManager ID="tsmMaster" runat="server">
+    <asp:ScriptManager ID="tsmMaster" runat="server" >
     </asp:ScriptManager>
-    <asp:ContentPlaceHolder id="preDeclare" runat="server">
+    <asp:ContentPlaceHolder id="preDeclare" runat="server" ClientIDMode="Static">
     </asp:ContentPlaceHolder>
 
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -53,15 +53,18 @@
     </div>
 
     <div class="pagebody container"> 
-        <asp:ContentPlaceHolder id="contentBody" runat="server">
+        <asp:ContentPlaceHolder id="contentBody" runat="server" ClientIDMode="Static">
         </asp:ContentPlaceHolder>
     </div>
 
 
-    <asp:ContentPlaceHolder id="contentFooter" runat="server">
+    <asp:ContentPlaceHolder id="contentFooter" runat="server" ClientIDMode="Static">
     </asp:ContentPlaceHolder>
 
   </form>
+    
+  <asp:ContentPlaceHolder id="bodyScriptBlock" runat="server" ClientIDMode="Static" >
+  </asp:ContentPlaceHolder>
 
 </body>
 </html>

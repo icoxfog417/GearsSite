@@ -2,7 +2,7 @@
 Partial Class gearsMaster
     Inherits System.Web.UI.MasterPage
 
-    Private _connectionName As String = "SqLiteConnect"
+    Private _connectionName As String = "DefaultConnection"
     ''' <summary>
     ''' Gears用デフォルト接続文字列<br/>
     ''' defaultConnection="Master.ConnectionName"の設定をしておくと参照される

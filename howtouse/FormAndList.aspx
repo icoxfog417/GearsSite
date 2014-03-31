@@ -2,7 +2,7 @@
 <%@ Register src="~/parts/Gears/UnitItem.ascx" tagname="unitItem" tagprefix="ui" %>
 <%@ MasterType VirtualPath="~/gearsMaster.master" %>
 
-<asp:Content id="clientHead" ContentPlaceHolderID="headerPart" Runat="Server" ClientIDMode=Static>
+<asp:Content id="clientHead" ContentPlaceHolderID="headerPart" Runat="Server" >
     <title>Form and Listk</title>
     <script type="text/javascript">
         $(function () {
@@ -25,7 +25,7 @@
     </script>
 </asp:Content>
 
-<asp:Content id="pageBody" ContentPlaceHolderID="contentBody" Runat="Server" ClientIDMode=Static>
+<asp:Content id="pageBody" ContentPlaceHolderID="contentBody" Runat="Server" >
     <div class="page-header">
         <h1>Form and List</h1>
     </div>
