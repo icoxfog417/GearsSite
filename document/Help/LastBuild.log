@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shfbBuild product="Sandcastle Help File Builder" version="1.9.7.0" projectFile="D:\project\GearsSite\document\GearsAPI.shfbproj" started="2014/04/01 16:04:45">
+<shfbBuild product="Sandcastle Help File Builder" version="1.9.7.0" projectFile="D:\project\GearsSite\document\GearsAPI.shfbproj" started="2014/04/01 18:55:17">
 <buildStep step="Initializing">
 Finding tools...
 Found Sandcastle tools in &#39;D:\Applications\Sandcastle\&#39;
@@ -17,11 +17,11 @@ Copying XML comments files
 </buildStep>
 <buildStep step="GenerateSharedContent">
 Generating shared content files (en-US, 英語 (米国))...
-    Last step completed in 00:00:00.1080
+    Last step completed in 00:00:00.1190
 </buildStep>
 <buildStep step="GenerateApiFilter">
 Generating API filter for MRefBuilder...
-    Last step completed in 00:00:00.0080
+    Last step completed in 00:00:00.0060
 </buildStep>
 <buildStep step="GenerateReflectionInfo">
 Generating reflection information...
@@ -35,18 +35,18 @@ Generating reflection information...
   Copyright c 2006-2013, Microsoft Corporation, All Rights Reserved.
   Portions Copyright c 2006-2013, Eric Woodruff, All Rights Reserved.
   Info: Applying XSL transformation &#39;D:\Applications\Sandcastle\ProductionTransforms\MergeDuplicates.xsl&#39;.
-    Last step completed in 00:00:01.8800
+    Last step completed in 00:00:01.9510
 </buildStep>
 <buildStep step="GenerateNamespaceSummaries">
 Generating namespace summary information...
-    Last step completed in 00:00:00.0060
+    Last step completed in 00:00:00.0070
 </buildStep>
 <buildStep step="ApplyVisibilityProperties">
 Applying visibility properties to reflection information file
     7 attribute nodes removed
     0 explicit interface implementations removed
     20 local and base class EII elements removed
-    Last step completed in 00:00:00.0530
+    Last step completed in 00:00:00.0510
 </buildStep>
 <buildStep step="TransformReflectionInfo">
 Transforming reflection output...
@@ -60,12 +60,12 @@ Transforming reflection output...
   Copyright c 2006-2013, Microsoft Corporation, All Rights Reserved.
   Portions Copyright c 2006-2013, Eric Woodruff, All Rights Reserved.
   Info: Applying XSL transformation &#39;D:\Applications\Sandcastle\ProductionTransforms\ReflectionToManifest.xsl&#39;.
-    Last step completed in 00:00:01.4480
+    Last step completed in 00:00:01.3010
 </buildStep>
 <buildStep step="ModifyHelpTopicFilenames">
 Modifying help topic filenames in reflection information file
     No changes required
-    Last step completed in 00:00:00.0520
+    Last step completed in 00:00:00.0550
 </buildStep>
 <buildStep step="CopyStandardContent">
 Copying standard help content...
@@ -457,16 +457,16 @@ D:\Applications\Sandcastle\\Presentation\VS2010\branding -&gt; D:\project\GearsS
     D:\Applications\Sandcastle\Presentation\VS2010\branding\ps-instrumentedLink.xslt -> D:\project\GearsSite\document\Help\Working\branding\ps-instrumentedLink.xslt
     D:\Applications\Sandcastle\Presentation\VS2010\branding\ps-languageSpecificText.xslt -> D:\project\GearsSite\document\Help\Working\branding\ps-languageSpecificText.xslt
     D:\Applications\Sandcastle\Presentation\VS2010\branding\ps-codesnippet.xslt -> D:\project\GearsSite\document\Help\Working\branding\ps-codesnippet.xslt
-    Last step completed in 00:00:01.8150
+    Last step completed in 00:00:02.3340
 </buildStep>
 <buildStep step="CopyAdditionalContent">
 Copying additional content files...
 No additional content to copy
-    Last step completed in 00:00:00.0050
+    Last step completed in 00:00:00.0300
 </buildStep>
 <buildStep step="MergeTablesOfContents">
 Merging conceptual and additional tables of contents...
-    Last step completed in 00:00:00.0010
+    Last step completed in 00:00:00.0030
 </buildStep>
 <buildStep step="GenerateIntermediateTableOfContents">
 Generating intermediate table of contents file...
@@ -481,12 +481,12 @@ Generating conceptual content intermediate TOC file...
 <buildStep step="CreateBuildAssemblerConfigs">
 Creating Sandcastle configuration files...
     sandcastle.config
-    Last step completed in 00:00:00.3400
+    Last step completed in 00:00:00.2790
 </buildStep>
 <buildStep step="MergeCustomConfigs">
 Merging custom build component configurations
 D:\project\GearsSite\document\Help\Working\sandcastle.config
-    Last step completed in 00:00:00.1110
+    Last step completed in 00:00:00.1060
 </buildStep>
 <buildStep step="BuildReferenceTopics">
 Building reference help topics...
@@ -1625,6 +1625,10 @@ Building reference help topics...
   Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsPage] MSDN URL not found for target &#39;T:System.Web.UI.Page&#39;.
   Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsPage] MSDN URL not found for target &#39;M:System.Web.UI.Page.AddOnPreRenderCompleteAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)&#39;.
   Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsPage] MSDN URL not found for target &#39;T:System.Web.UI.Page&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsPage] MSDN URL not found for target &#39;M:System.Web.UI.Control.AddParsedSubObject(System.Object)&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsPage] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsPage] MSDN URL not found for target &#39;M:System.Web.UI.Page.AddWrappedFileDependencies(System.Object)&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsPage] MSDN URL not found for target &#39;T:System.Web.UI.Page&#39;.
   Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsPage] MSDN web service failed.  No further look ups will be performed for this build.
   Reason: HTTP ステータス 407: Proxy Authentication Required ( The ISA Server requires authorization to fulfill the request. Access to the Web Proxy filter is denied.  ) で要求が失敗しました。
   Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsPage] MSDN URL not found for target &#39;M:System.Web.UI.Page.AddContentTemplate(System.String,System.Web.UI.ITemplate)&#39;.
@@ -1636,6 +1640,10 @@ Building reference help topics...
   Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsPage] MSDN URL not found for target &#39;M:System.Web.UI.Page.AddOnPreRenderCompleteAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)&#39;.
   Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsPage] MSDN URL not found for target &#39;T:System.Web.UI.Page&#39;.
   Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsPage] MSDN URL not found for target &#39;M:System.Web.UI.Control.AddParsedSubObject(System.Object)&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsPage] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsPage] MSDN URL not found for target &#39;M:System.Web.UI.Page.AddWrappedFileDependencies(System.Object)&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsPage] MSDN URL not found for target &#39;T:System.Web.UI.Page&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsPage] MSDN URL not found for target &#39;M:System.Web.UI.Control.ApplyStyleSheetSkin(System.Web.UI.Page)&#39;.
   Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsPage] MSDN URL not found for target &#39;T:System.Web.UI.Control&#39;.
   Warn: ResolveReferenceLinksComponent2: [AllMembers.T:Gears.GearsPage] MSDN web service failed.  No further look ups will be performed for this build.
   Reason: HTTP ステータス 407: Proxy Authentication Required ( The ISA Server requires authorization to fulfill the request. Access to the Web Proxy filter is denied.  ) で要求が失敗しました。
@@ -1705,7 +1713,6 @@ Building reference help topics...
   Warn: ShowMissingComponent: [M:Gears.GearsPage.QueryValue(System.String)] Missing &lt;param name=&quot;keyname&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsPageExtension.FirstLog(System.Collections.Generic.Dictionary{{System.String,Gears.GearsException}})] Missing &lt;returns&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.GearsPageExtension.FirstLog(System.Collections.Generic.Dictionary{{System.String,Gears.GearsException}})] Missing &lt;param name=&quot;log&quot;/&gt; documentation
-  Warn: ShowMissingComponent: [T:Gears.GearsSection] Missing &lt;summary&gt; documentation
   Warn: ShowMissingComponent: [P:Gears.GearsSection.DefaultConnection] Missing &lt;summary&gt; documentation
   Warn: ShowMissingComponent: [P:Gears.GearsSection.DefaultNamespace] Missing &lt;summary&gt; documentation
   Warn: ShowMissingComponent: [P:Gears.GearsSection.isDebug] Missing &lt;summary&gt; documentation
@@ -2320,17 +2327,17 @@ Building reference help topics...
   Warn: ShowMissingComponent: [M:Gears.Validation.Validator.GStartWith.#ctor(System.String)] Missing &lt;param name=&quot;p&quot;/&gt; documentation
   Warn: ShowMissingComponent: [M:Gears.Validation.Validator.GStartWith.Validate] Missing &lt;summary&gt; documentation
   Info: Processed 1039 topic(s)
-  Info: 1821 warning(s)
+  Info: 1828 warning(s)
   Diagnostic: CopyFromIndexComponent: &quot;reflection&quot; in-memory cache entries used: 10 of 15.
   Diagnostic: CopyFromIndexComponent: &quot;comments&quot; in-memory cache entries used: 1 of 30.
-  Diagnostic: ResolveReferenceLinksComponent2: New MSDN content ID cache size: 85 entries
-    Last step completed in 00:00:35.8120
+  Diagnostic: ResolveReferenceLinksComponent2: New MSDN content ID cache size: 87 entries
+    Last step completed in 00:00:33.4150
 </buildStep>
 <buildStep step="CombiningIntermediateTocFiles">
 Combining conceptual and API intermediate TOC files...
 
 Clearing any prior web output
-    Last step completed in 00:00:00.5850
+    Last step completed in 00:00:00.5800
 </buildStep>
 <buildStep step="ExtractingHtmlInfo">
 Extracting HTML info for HTML Help 1 and/or website...
@@ -2352,19 +2359,19 @@ Processed 1039 HTML files
 Sorting keywords and generating See Also indices
 Saving website keyword index to D:\project\GearsSite\document\Help\Working\WebKI.xml
 Saving website table of contents to D:\project\GearsSite\document\Help\Working\WebTOC.xml
-    Last step completed in 00:00:04.1860
+    Last step completed in 00:00:04.3490
 </buildStep>
 <buildStep step="GenerateHelpFormatTableOfContents">
 Generating HTML Help 1 table of contents file...
-    Last step completed in 00:00:00.0020
+    Last step completed in 00:00:00.0010
 </buildStep>
 <buildStep step="GenerateHelpFileIndex">
 Generating HTML Help 1 index file...
-    Last step completed in 00:00:00.0020
+    Last step completed in 00:00:00.0030
 </buildStep>
 <buildStep step="GenerateHelpProject">
 Generating HTML Help 1 project file...
-    Last step completed in 00:00:00.0210
+    Last step completed in 00:00:00.0170
 </buildStep>
 <buildStep step="CompilingHelpFile">
 Compiling HTML Help 1 file...
@@ -2393,11 +2400,11 @@ Compiling HTML Help 1 file...
   
   
   
-  Created d:\project\GearsSite\document\Help\Working\Output\HtmlHelp1\GearsAPI.chm, 1,446,089 bytes
+  Created d:\project\GearsSite\document\Help\Working\Output\HtmlHelp1\GearsAPI.chm, 1,446,193 bytes
   
-  Compression decreased file by 9,014,504 bytes.
+  Compression decreased file by 9,014,657 bytes.
   
-    Last step completed in 00:00:09.7400
+    Last step completed in 00:00:10.8320
 </buildStep>
 <buildStep step="GenerateHelpFormatTableOfContents">
 Generating website table of contents file...
@@ -2406,7 +2413,7 @@ Generating website table of contents file...
 <buildStep step="GenerateFullTextIndex">
 Generating full-text index for the website...
 
-    Last step completed in 00:00:03.0580
+    Last step completed in 00:00:02.9060
 </buildStep>
 <buildStep step="CopyingWebsiteFiles">
 Copying website files to output folder...
@@ -2424,15 +2431,15 @@ Copied 1000 files
 Copied 1100 files
 Copied 1200 files
 Copied 1287 files for the website content
-    Last step completed in 00:00:07.1110
+    Last step completed in 00:00:07.5860
 </buildStep>
 <buildStep step="CleanIntermediates">
 Removing intermediate files...
-    Last step completed in 00:00:00.7230
+    Last step completed in 00:00:00.7390
 </buildStep>
 <buildStep step="Completed">
 
-Build completed successfully at 04/01/2014 04:05 午後.  Total time: 00:01:07.6330
+Build completed successfully at 04/01/2014 06:56 午後.  Total time: 00:01:07.2080
 
 </buildStep>
 </shfbBuild>

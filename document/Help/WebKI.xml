@@ -1135,11 +1135,11 @@
   <HelpKINode Title="GFilterBy method" Url="html/9e24cf74-1e7b-d61e-d003-eadd461026bd.htm" />
   <HelpKINode Title="GFindControl method" Url="html/fb3a3767-23d9-9de3-2f53-bd6916452008.htm" />
   <HelpKINode Title="GGet method" Url="html/5c081f6d-8ac8-54ce-9212-0738be39f57c.htm" />
-  <HelpKINode Title="GInsert method" Url="html/7617afd1-3ed1-4157-80d6-590c193186aa.htm" />
   <HelpKINode Title="gInsert method">
-    <HelpKINode Title="GearsDataSource.gInsert Method " Url="html/116cd436-43d2-8a67-e2c6-6b4dc5f1fd90.htm" />
     <HelpKINode Title="IDataSource.gInsert Method " Url="html/533e9f84-8d7d-1e21-a087-fc151c76deb7.htm" />
+    <HelpKINode Title="GearsDataSource.gInsert Method " Url="html/116cd436-43d2-8a67-e2c6-6b4dc5f1fd90.htm" />
   </HelpKINode>
+  <HelpKINode Title="GInsert method" Url="html/7617afd1-3ed1-4157-80d6-590c193186aa.htm" />
   <HelpKINode Title="GIsAuth method" Url="html/317ee2de-0b49-4475-41f8-7753dcf71db2.htm" />
   <HelpKINode Title="GIsValid method" Url="html/5d7e96f4-912b-78c9-1fd9-60a1b9e1ee4b.htm" />
   <HelpKINode Title="GLoad method" Url="html/204452f0-4c22-0f7f-f65d-a6764e91e490.htm" />
@@ -1251,8 +1251,8 @@
   <HelpKINode Title="gRuleExpression.gRuleExpression constructor" Url="html/0c60216d-c240-f703-b081-aaf804d74795.htm" />
   <HelpKINode Title="gRuleExpression.Relate method" Url="html/a3f15c46-9e38-e8ff-f1e4-00b1d3f27948.htm" />
   <HelpKINode Title="gRuleExpression.When method" Url="html/b3e7646f-918b-86be-67a6-1319645c4d88.htm" />
-  <HelpKINode Title="gSave method" Url="html/6afd87ba-dae7-c469-1c0c-a929ead93359.htm" />
   <HelpKINode Title="GSave method" Url="html/c32ac9ca-a9cb-1b03-9c65-55aac1e5cc02.htm" />
+  <HelpKINode Title="gSave method" Url="html/6afd87ba-dae7-c469-1c0c-a929ead93359.htm" />
   <HelpKINode Title="gSelect method">
     <HelpKINode Title="GearsDataSource.gSelect Method " Url="html/90513a49-047c-d5c8-1d15-0102b7f44776.htm" />
     <HelpKINode Title="IDataSource.gSelect Method " Url="html/1c6135f9-11a3-3943-3a27-f38551a0f83d.htm" />
@@ -1303,11 +1303,11 @@
   <HelpKINode Title="GStartWith.Validate method" Url="html/61b808fd-9d50-d6d5-97ee-f7a7f2e8b31b.htm" />
   <HelpKINode Title="gt method" Url="html/27f911bf-ea23-db1e-f851-dae70abff210.htm" />
   <HelpKINode Title="gteq method" Url="html/b0acc5d5-4d06-c118-77de-67a518df02e8.htm" />
+  <HelpKINode Title="GUpdate method" Url="html/e019230a-6601-938d-9ae2-c35a60a6102e.htm" />
   <HelpKINode Title="gUpdate method">
     <HelpKINode Title="GearsDataSource.gUpdate Method " Url="html/f1d4adf3-8ee9-d2cb-ea18-c5548d2b0c9e.htm" />
     <HelpKINode Title="IDataSource.gUpdate Method " Url="html/85a6665a-a271-ddff-6c7d-82bc4427ade5.htm" />
   </HelpKINode>
-  <HelpKINode Title="GUpdate method" Url="html/e019230a-6601-938d-9ae2-c35a60a6102e.htm" />
   <HelpKINode Title="hasMarker method">
     <HelpKINode Title="GearsAttribute.hasMarker Method " Url="html/78b1b1ca-ccfb-92ba-509e-20843f2fee33.htm" />
     <HelpKINode Title="GearsAttributeContainer.hasMarker Method " Url="html/f6b9054c-3110-7a9f-fe48-380fd10b8940.htm" />

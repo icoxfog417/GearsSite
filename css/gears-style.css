@@ -84,7 +84,16 @@ td.gs-layout-ctrl
 
 .gs-repeat-horizontal div{
     float:left;
-    margin-right:5px;
+    margin-right:1px;
+}
+
+.gs-repeat-horizontal.flow{
+    display:inline-block;
+    vertical-align:middle;
+}
+
+.gs-repeat-vertical div{
+    margin-bottom:4px;
 }
 
 /*　検索ボタンつきフォーム部品->フォーム用とボタン用 */
