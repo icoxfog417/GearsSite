@@ -6,110 +6,221 @@ Gears
 </name>
 </assembly>
 <members>
-<member name="F:Gears.GearsLogStack._LogStack">
+<member name="T:Gears.Util.ButtonListAdapter">
 	<summary>
- ログを格納した配列
+ RadioButtonList/CheckboxListのレンダリング方法をカスタマイズするためのクラス<br/>
+ 本クラスを使用するためには、App_Browsersフォルダ内の.browserファイルでControlAdapterの指定を行う必要があります。<br/>
+		<a href="http://www.singingeels.com/Articles/How_To_Control_Adapters.aspx" target="_blank">How To: Control Adapters</a>を参考<br/>
+ この設定を行うことで、以下の処理が可能になります<br/>
+		<ul>
+			<li>ラジオボタン/チェックボックス本体への属性付与</li>
+			<li>jQuery等によるラジオボタン/チェックボックスの値の収集</li>
+		</ul>
+ 通常の場合、いくらListItemに属性を設定してもspanタグにつくのみでラジオボタン/チェックボックス本体には属性の付与ができませんでした。<br/>
+ これが、data-xxxx-ginputというスタイルで属性を付与すると、各inputにdata-xxxxの属性を与えることができるようになります<br/>
+ また、data-gnameにコントロールのIDが付与されるため、$("input[data-gname='rblList']")といった形でフォームを収集することができます。
  </summary>
 	<remarks></remarks>
-</member><member name="M:Gears.GearsLogStack.clearLogStack">
+</member><member name="M:Gears.Binder.GearsDataBinder.isBindable(System.Web.UI.Control@)">
 	<summary>
- ログをクリアする
+ バインド対象か否かを判定する<br/>
+ 標準では、リストかGridViewのような複合コントロールを対象とする
+ </summary>
+	<param name="con"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.Binder.GearsDataBinder.dataBind(System.Web.UI.Control@,Gears.DataSource.GearsDataSource@,Gears.GearsDTO)">
+	<summary>
+ データのバインド処理を行う<br/>
+ バインド対象データは、データソースクラスにdtoを渡した結果が使用される
+ </summary>
+	<param name="con"></param>
+	<param name="dsClass"></param>
+	<param name="dto"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.Binder.GearsDataBinder.dataBind(System.Web.UI.Control@,System.Data.DataTable@)">
+	<summary>
+ データのバインド処理を行う
+ </summary>
+	<param name="con"></param>
+	<param name="dset"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.Binder.GearsDataBinder.dataBind(Gears.GearsControl@,System.Data.DataTable@)">
+	<summary>
+ データのバインド処理を行う
+ </summary>
+	<param name="gcon"></param>
+	<param name="dset"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.Binder.GearsDataBinder.listBind(System.Web.UI.WebControls.ListControl@,System.Data.DataTable@)">
+	<summary>
+ リスト型コントロールに対しバインド処理を行う
+ </summary>
+	<param name="list"></param>
+	<param name="dset"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.Binder.GearsDataBinder.compositBind(System.Web.UI.WebControls.CompositeDataBoundControl@,System.Data.DataTable@)">
+	<summary>
+ GridViewなどの複合データソースに対するバインド処理
+ </summary>
+	<param name="dbound"></param>
+	<param name="dset"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.Binder.GearsDataBinder.dataAttach(System.Web.UI.Control@,System.Data.DataTable@)">
+	<summary>
+ コントロールに値を設定する
+ </summary>
+	<param name="con"></param>
+	<param name="dset"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.Binder.GearsDataBinder.dataAttach(Gears.GearsControl@,System.Data.DataTable@)">
+	<summary>
+ コントロールに値を設定する
+ </summary>
+	<param name="gcon"></param>
+	<param name="dset"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.Binder.GearsDataBinder.listAttach(System.Web.UI.WebControls.ListControl@,System.Data.DataTable@)">
+	<summary>
+ リストコントロールに値をセットする
+ </summary>
+	<param name="list"></param>
+	<param name="dset"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.Binder.GearsDataBinder.getValue(System.Web.UI.Control@)">
+	<summary>
+ コントロールから値を取得する
+ </summary>
+	<param name="con"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.Binder.GearsDataBinder.setValue(System.Web.UI.Control@,System.Object)">
+	<summary>
+ コントロールに対して値をセットする
+ </summary>
+	<param name="con"></param>
+	<param name="value"></param>
+	<remarks></remarks>
+</member><member name="T:Gears.Binder.GearsDataBinder">
+	<summary>
+ コントロールに対するDataBind/値設定処理を行う
  </summary>
 	<remarks></remarks>
-</member><member name="M:Gears.GearsLogStack.traceOn">
+</member><member name="F:Gears.Validation.Marker.GMarkerDate.DATE_CSS">
 	<summary>
- 現在位置でログトレースをオンにする<br/>
+ 日付属性に共通するCSSClass
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Gears.Validation.Marker.GMarkerDate.#ctor">
+	<summary>
+ コンストラクタで数値属性共通の値をセット
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Gears.Validation.Marker.GMarkerDate">
+	<summary>
+ 日付属性を表すマーカー<br/>
+ これを継承する属性については、共通のCssClass gs-date を付与する
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Gears.Validation.Validator.GNumber">
+	<summary>
+ 整数(小数点なし)であるかを検証する属性
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Gears.Validation.Validator.GRequired">
+	<summary>
+ 必須の入力を検証する属性
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Gears.Validation.Marker.IAttributeMarker.DoCast">
+	<summary>データベース保存時、マーカーの属性に応じたキャストを実行するか否か</summary>
+</member><member name="T:Gears.Validation.Marker.IAttributeMarker">
+	<summary>
+ 属性をまとめるためのマーカーであることを示すインタフェース
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Gears.Util.RelationNode.setParent(Gears.Util.RelationNode)">
+	<summary>親ノード</summary>
+</member><member name="M:Gears.Util.RelationNode.addChild(Gears.Util.RelationNode@)">
+	<summary>関連子ノード</summary>
+</member><member name="P:Gears.Util.RelationNode.Value">
+	<summary>値(キー)</summary>
+</member><member name="M:Gears.Util.RelationNode.findNode(System.String)">
+	<summary>指定されたキーを持つノードを探索する</summary>
+</member><member name="M:Gears.Util.RelationNode.hasThisParent(Gears.Util.RelationNode)">
+	<summary>指定されたノードを親に持つか判定する</summary>
+</member><member name="M:Gears.Util.RelationNode.getDepth">
+	<summary>ルートからの深さを返す</summary>
+</member><member name="M:Gears.Util.RelationNode.visitParents(Gears.Util.RelationNode.nodeHandler)">
+	<summary>親を探索し各要素に指定したデリゲートを適用する処理</summary>
+</member><member name="M:Gears.Util.RelationNode.visitChildren(Gears.Util.RelationNode.nodeHandler)">
+	<summary>子を探索し各要素に指定したデリゲートを適用する処理</summary>
+</member><member name="M:Gears.Util.RelationNode.getBranches(System.Collections.Generic.List{System.String})">
+	<summary>
+ 指定した値を関連の内に持つものを抽出する
+ </summary>
+	<param name="nodes"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.Util.RelationNode.makeTreeWithRoot(System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}})">
+	<summary>
+ 関連を定義したディクショナリからツリー構造を作成し、ノードとして返す
+ </summary>
+	<param name="relations"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.Util.RelationNode.makeTree(System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}})">
+	<summary>
+ 関連を定義したディクショナリからツリー構造を作成する
+ </summary>
+	<param name="relations"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Gears.Util.RelationNode.isLeaf">
+	<summary>末端要素であるか否か</summary>
+</member><member name="P:Gears.Util.RelationNode.isRoot">
+	<summary>ルート要素であるか否か</summary>
+</member><member name="T:Gears.Util.RelationNode">
+	<summary>
+ 関連を管理するためのクラス
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.NameMapper.addRule(System.String,System.String)">
+	<summary>
+ 指定した画面項目名をデータベースの列項目名に変換するルールを登録する<br/>
 	</summary>
+	<param name="item"></param>
+	<param name="column"></param>
 	<remarks></remarks>
-</member><member name="M:Gears.GearsLogStack.traceEnd">
+</member><member name="M:Gears.DataSource.NameMapper.changeColumnToItem(System.String)">
 	<summary>
- トレースをオフにする
+ 登録されたルールに基づき、列項目名を画面項目名に変換する
  </summary>
-	<remarks></remarks>
-</member><member name="M:Gears.GearsLogStack.IsTraceOn">
-	<summary>
- トレースがオンになっているか確認する
- </summary>
+	<param name="column"></param>
 	<returns></returns>
 	<remarks></remarks>
-</member><member name="M:Gears.GearsLogStack.setLog(System.String,System.String[])">
+</member><member name="M:Gears.DataSource.NameMapper.changeItemToColumn(System.String)">
 	<summary>
- メッセージログを書き込む(通常のメッセージで、エラーとしては扱われない)
+ 登録されたルールに基づき、画面項目名を列項目名に変換する
  </summary>
-	<param name="msg"></param>
-	<param name="msgDetail"></param>
-	<remarks></remarks>
-</member><member name="M:Gears.GearsLogStack.setLog(System.String,System.Int32,System.String[])">
-	<summary>呼出階層を指定してメッセージを書き込み</summary>
-	<param name="msg"></param>
-	<param name="depth">通常は、呼出元メソッド&gt;setLogメソッドで2階層。ログ出力用の関数などを使用している場合は、さらに+1する</param>
-	<param name="msgDetail"></param>
-	<remarks></remarks>
-</member><member name="M:Gears.GearsLogStack.setLog(Gears.GearsException@)">
-	<summary>
- 例外からログを書き込む
- </summary>
-	<param name="msg"></param>
-	<remarks></remarks>
-</member><member name="M:Gears.GearsLogStack.getLogStack">
-	<summary>
- ストアされたログを取得する
- </summary>
+	<param name="item"></param>
 	<returns></returns>
 	<remarks></remarks>
-</member><member name="M:Gears.GearsLogStack.makeDisplayString">
+</member><member name="M:Gears.DataSource.NameMapper.getDictionarySafe``2(System.Collections.Generic.Dictionary{``0,``1}@,``0)">
+	<summary>ディクショナリ/キーがNothingの場合も考慮し値を読み出す</summary>
+</member><member name="M:Gears.DataSource.NameMapper.addDictionarySafe``2(System.Collections.Generic.Dictionary{``0,``1}@,``0,``1)">
+	<summary>ディクショナリ/キーがNothingの場合も考慮し値を追加する</summary>
+</member><member name="T:Gears.DataSource.NameMapper">
 	<summary>
- ログをHTMLで出力する<br/>
- * gs-log-head:ログのタイトル
- * gs-log-table:ログ出力を表示しているtableのスタイル
- * gs-log-table-head":ログ出力を表示しているtableのヘッダのスタイル
- </summary>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.GearsLogStack.setTrace(System.Boolean)">
-	<summary>
- トレースのON/OFFを設定する
- </summary>
-	<param name="bool"></param>
-	<remarks></remarks>
-</member><member name="M:Gears.GearsLogStack.addLog(Gears.GearsException@)">
-	<summary>
- ログを書き込む
- </summary>
-	<param name="log"></param>
-	<remarks></remarks>
-</member><member name="M:Gears.GearsLogStack.getLogs">
-	<summary>
- ログを取得する
- </summary>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.GearsLogStack.getLogStackItem">
-	<summary>
- 自身のストアキーのオブジェクトを取り出す
- </summary>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.GearsLogStack.getStoreKey">
-	<summary>
- 自身のストアキーを作成する
- </summary>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="T:Gears.GearsLogStack">
-	<summary>
- ログを記録するためのクラス<br/>
- Sharedで履歴を管理し、各インスタンスをShared配列に格納する形でログを収集する
- </summary>
-	<remarks></remarks>
-</member><member name="P:Gears.Validation.Validator.GDate.Format">
-	<summary>日付フォーマットを指定する(指定がなくても一般的な書式はカバーされる)</summary>
-	<value></value>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="T:Gears.Validation.Validator.GDate">
-	<summary>
- 日付を検証するための属性
+ 項目変換を行うためのテンプレートとなる
  </summary>
 	<remarks></remarks>
 </member><member name="T:Gears.Util.ControlSearcher.fetchControl">
@@ -182,1003 +293,371 @@ Gears
  Controlを扱うためのユーティリティ
  </summary>
 	<remarks></remarks>
-</member><member name="M:Gears.GearsPageExtension.FirstLog(System.Collections.Generic.Dictionary{System.String,Gears.GearsException})">
-	<summary>最初のログを取得する</summary>
-</member><member name="T:Gears.GearsPageExtension">
+</member><member name="F:Gears.DataSource.GearsDataSource._selectView">
 	<summary>
- GearsPage内で使用する拡張ユーティリティ
+ データを選択するためのビュー/テーブル名。
  </summary>
-	<remarks></remarks>
-</member><member name="M:Gears.GearsControlExtension.toGControl(System.Web.UI.Control)">
-	<summary>ControlからGearsControlを作成する</summary>
-</member><member name="M:Gears.GearsControlExtension.toGControl(System.Web.UI.Control,System.String,System.String)">
-	<summary>ControlからGearsControlを作成する</summary>
-</member><member name="T:Gears.GearsControlExtension">
+</member><member name="P:Gears.DataSource.GearsDataSource.TargetTable">
 	<summary>
- コントロール拡張
+ データの更新対象となるビュー/テーブル名。
  </summary>
-	<remarks></remarks>
-</member><member name="T:Gears.DataSource.DbServerType">
+</member><member name="P:Gears.DataSource.GearsDataSource.IsMultiByte">
+	<summary>マルチバイト対応が必要なデータソースか否か(日本語名テーブルなど)</summary>
+</member><member name="P:Gears.DataSource.GearsDataSource.ModelValidator">
+	<summary>ビジネスロジックによるバリデーションを行うためのオブジェクト</summary>
+</member><member name="P:Gears.DataSource.GearsDataSource.Mapper">
+	<summary>項目変換ルールの設定</summary>
+</member><member name="P:Gears.DataSource.GearsDataSource.ConnectionName">
 	<summary>
- データベース種別を表すEnum
+ 接続文字列
  </summary>
-</member><member name="F:Gears.DataSource.LockType.UDATE">
-	<summary>日付型</summary>
-</member><member name="F:Gears.DataSource.LockType.UDATESTR">
-	<summary>日付文字列型(20110101など)</summary>
-</member><member name="F:Gears.DataSource.LockType.UTIMESTR">
-	<summary>時刻文字列型(120000など)</summary>
-</member><member name="F:Gears.DataSource.LockType.VNUM">
-	<summary>バージョン番号型</summary>
-</member><member name="F:Gears.DataSource.LockType.USER">
-	<summary>ユーザー</summary>
-</member><member name="T:Gears.DataSource.LockType">
-	<summary>
- 楽観ロックに使用する項目の種別
- </summary>
-	<remarks></remarks>
-</member><member name="F:Gears.DataSource.SqlBuilder.PARAM_HEAD">
-	<summary>パラメーターの接頭辞。SQL Serverなら@など</summary>
-</member><member name="F:Gears.DataSource.SqlBuilder.MULTIBYTE_FORMAT">
-	<summary>
- マルチバイトカラムを使用する際のエスケープ文字列<br/>
- Oracleの場合、マルチバイトのカラム(日本語名の列など)は""で囲う必要がある
- </summary>
-</member><member name="F:Gears.DataSource.SqlBuilder.DUMMY_INDEX_FOR_ORDER_BY">
-	<summary>
- ページングを行う際に使用する副問合せ表の名前(SqlServerで無名表が許されないため)
- </summary>
-</member><member name="P:Gears.DataSource.SqlBuilder.DataSource">
-	<summary>SQLの抽出元。Table/Viewが設定される</summary>
-</member><member name="P:Gears.DataSource.SqlBuilder.Mapper">
-	<summary>
- データベース上のカラムと画面で使用する項目名が一致しない場合、変換をかけるために使用<br/>
- (既存のテーブルを使用する場合など)
- </summary>
-</member><member name="P:Gears.DataSource.SqlBuilder.DbServer">
-	<summary>DBサーバーの種別</summary>
-</member><member name="M:Gears.DataSource.SqlBuilder.GetDbServerType(System.String)">
-	<summary>
- 接続文字列から、データべース種別を取得する
- </summary>
-	<param name="conName"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="P:Gears.DataSource.SqlBuilder.ValueSeparator">
-	<summary>
- 一度に値を複数設定する場合のセパレータ(カンマ区切りなど)
- </summary>
-</member><member name="M:Gears.DataSource.SqlBuilder.ImportSqlItem(Gears.DataSource.SqlBuilder@)">
-	<summary>
- 選択/抽出条件をコピーする
- </summary>
-	<param name="sb"></param>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.SqlBuilder.S(System.String,System.String)">
-	<summary>選択/更新項目(SqlSelectItem)を作成するためのユーティリティ</summary>
-	<param name="col"></param>
-	<param name="pf"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.SqlBuilder.F(System.String,System.String)">
-	<summary>条件(SqlFilterItem)を作成するためのユーティリティ</summary>
-	<param name="col"></param>
-	<param name="pf"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.SqlBuilder.DS(System.String,System.String)">
-	<summary>Table/View(SqlDataSource)を作成するためのユーティリティ</summary>
-	<param name="dsource"></param>
-	<param name="sf"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.SqlBuilder.LockFilter">
-	<summary>データソースの定義情報を元に、楽観ロック情報を抽出する</summary>
-</member><member name="M:Gears.DataSource.SqlBuilder.convertToDataSource(System.String)">
-	<summary>
- このSqlBuilderをSqlDataSource化する
- </summary>
-	<param name="suffix"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.SqlBuilder.confirmSql(Gears.ActionType,System.Boolean)">
-	<summary>
- SQL確認用メソッド
- </summary>
-	<param name="atype"></param>
-	<param name="sqlOnly"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.SqlBuilder.formatColumn(Gears.DataSource.SqlItem,System.Boolean)">
-	<summary>
- カラムをフォーマットする
- </summary>
-	<param name="item"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.SqlBuilder.formatSource(Gears.DataSource.SqlDataSource)">
-	<summary>
- データソースをフォーマットする
- </summary>
-	<param name="source"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.SqlBuilder.makeSql(System.Collections.Generic.Dictionary{System.String,System.Object}@,Gears.ActionType)">
-	<summary>
- SQLを作成する
- </summary>
-	<param name="params"></param>
-	<param name="atype"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.SqlBuilder.makeSelect(System.Collections.Generic.Dictionary{System.String,System.Object}@,System.Boolean)">
-	<summary>
- SELECTを作成する
- </summary>
-	<param name="params"></param>
-	<param name="isNeedOrder"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.SqlBuilder.makeUpdate(System.Collections.Generic.Dictionary{System.String,System.Object}@)">
-	<summary>
- UPDATE文を作成する
- </summary>
-	<param name="params"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.SqlBuilder.makeInsert(System.Collections.Generic.Dictionary{System.String,System.Object}@)">
-	<summary>
- INSERT文を作成する
- </summary>
-	<param name="params"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.SqlBuilder.makeDelete(System.Collections.Generic.Dictionary{System.String,System.Object}@)">
-	<summary>
- DELETE文を作成する
- </summary>
-	<param name="params"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.SqlBuilder.makeSelection">
-	<summary>
- SELECTの項目指定部分を作成する
- </summary>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.SqlBuilder.makeGroupBy">
-	<summary>
- SELECTのGROUP BY句を作成する
- </summary>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.SqlBuilder.makeOrderBy">
-	<summary>
- SELECTのORDER BY句を作成する
- </summary>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.SqlBuilder.makeFrom(System.Collections.Generic.Dictionary{System.String,System.Object}@)">
-	<summary>
- データソースを作成
- </summary>
-	<param name="params"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.SqlBuilder.makeRelationStr(Gears.DataSource.SqlDataSource,System.Collections.Generic.Dictionary{System.String,System.Object}@)">
-	<summary>
- データソースを作成
- </summary>
-	<param name="ds"></param>
-	<param name="params"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.SqlBuilder.makeWhere(System.Collections.Generic.Dictionary{System.String,System.Object}@)">
-	<summary>
- WHERE句を作成する
- </summary>
-	<param name="params"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.SqlBuilder.makeWhere(System.Collections.Generic.List{Gears.DataSource.SqlFilterItem}@,System.Collections.Generic.Dictionary{System.String,System.Object}@)">
-	<summary>
- WHERE句を作成する
- </summary>
-	<param name="fs"></param>
-	<param name="params"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="T:Gears.DataSource.SqlBuilder">
-	<summary>
- SQLを構築するためのクラス
- </summary>
-	<remarks></remarks>
-</member><member name="F:Gears.Validation.GearsAttribute.ERR_STYLE">
-	<summary>エラー時のスタイル</summary>
-</member><member name="P:Gears.Validation.GearsAttribute.ErrorMessage">
-	<summary>エラーメッセージを取得する</summary>
-</member><member name="P:Gears.Validation.GearsAttribute.IsValid">
-	<summary>バリデーション実行結果を取得する</summary>
-</member><member name="P:Gears.Validation.GearsAttribute.ValidateeValue">
-	<summary>検証対象の値</summary>
-</member><member name="P:Gears.Validation.GearsAttribute.CssClass">
-	<summary>属性のCSSスタイル</summary>
-</member><member name="M:Gears.Validation.GearsAttribute.hasMarker(System.Type)">
-	<summary>属性が指定されたマーカータイプを持つか判定する</summary>
-</member><member name="M:Gears.Validation.GearsAttribute.Validate">
-	<summary>
- 実装は継承先クラスに委譲する。ただし、IValidatorで定義されるこのメソッドはバリデーション対象の値を明示しないため、予想しない動作をする可能性がある。<br/>
- そのため、アクセスをProtectedにし公開範囲を限定する<br/>
- 通常は、isValidateOkを使用するようにする
- </summary>
-	<remarks></remarks>
-</member><member name="M:Gears.Validation.GearsAttribute.isValidateOk(System.String)">
-	<summary>
- 与えられた値に対しバリデーションを実施する
- </summary>
-	<param name="validateeValue"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.Validation.GearsAttribute.initProperty(System.Boolean)">
-	<summary>
- バリデーション実行前の初期化処理
- </summary>
-	<param name="defaultResult"></param>
-	<remarks></remarks>
-</member><member name="T:Gears.Validation.GearsAttribute">
-	<summary>
- 属性を表現するクラス
- </summary>
-	<remarks></remarks>
-</member><member name="F:Gears.Validation.GearsAttributeCreator.CSS_HEAD">
-	<summary>属性を定義するCSSクラスの接頭辞</summary>
-</member><member name="F:Gears.Validation.GearsAttributeCreator._ac">
-	<summary>属性のコンテナ</summary>
-</member><member name="F:Gears.Validation.GearsAttributeCreator.cssClass">
-	<summary>属性のスタイル</summary>
-</member><member name="P:Gears.Validation.GearsAttributeCreator.AttributeNamespace">
-	<summary>属性の名称空間を明示的に指定(デフォルトはGears.Validation.Validatorから生成される)</summary>
-</member><member name="M:Gears.Validation.GearsAttributeCreator.isNumeric">
-	<summary>数値型の属性を作成</summary>
-</member><member name="M:Gears.Validation.GearsAttributeCreator.isDate">
-	<summary>日付型の属性を作成</summary>
-</member><member name="M:Gears.Validation.GearsAttributeCreator.isRequired">
-	<summary>必須の属性を作成</summary>
-</member><member name="M:Gears.Validation.GearsAttributeCreator.isLength(System.Int32)">
-	<summary>項目のバイト長をチェックする属性を作成</summary>
-</member><member name="M:Gears.Validation.GearsAttributeCreator.isLengthBetween(System.Int32,System.Int32)">
-	<summary>項目のバイト長間隔をチェックする属性を作成</summary>
-</member><member name="M:Gears.Validation.GearsAttributeCreator.isStartWith(System.String)">
-	<summary>項目が特定文字で始まるかをチェックする属性を作成</summary>
-</member><member name="M:Gears.Validation.GearsAttributeCreator.isPeriodPositionOk(System.Int32,System.Int32)">
-	<summary>項目の整数部/小数点以下桁数をチェックする属性を作成</summary>
-</member><member name="M:Gears.Validation.GearsAttributeCreator.isMatch(System.String)">
-	<summary>指定正規表現への一致をチェックする属性を作成</summary>
-</member><member name="M:Gears.Validation.GearsAttributeCreator.isCompare(System.String,System.String)">
-	<summary>比較演算でのチェックをする属性を作成</summary>
-</member><member name="M:Gears.Validation.GearsAttributeCreator.#ctor(System.String)">
-	<summary>属性の名称空間を明示的に指定</summary>
-	<param name="attrNamespace"></param>
-	<remarks></remarks>
-</member><member name="M:Gears.Validation.GearsAttributeCreator.createAttributesFromString(System.String)">
-	<summary>
- CSS文字列から属性を作成する<br/>
- CSSはgears-属性クラス名_属性クラスのプロパティ_プロパティの値...という形式で構成される<br/>
- 例:gears-GByteLengthBetween_MinLength_0_Length_18
- </summary>
-	<param name="css"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.Validation.GearsAttributeCreator.createAttributeFromString(System.String)">
-	<summary>
- 単一のCSSクラス名から属性クラスを作成する
- </summary>
-	<param name="cssClass"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.Validation.GearsAttributeCreator.pack">
-	<summary>
- 作成した属性コンテナを取得する
- </summary>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.Validation.GearsAttributeCreator.getCssClass">
-	<summary>
- 作成されたCssClassを取得する
- </summary>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.Validation.GearsAttributeCreator.clearCreator">
-	<summary>
- 作成処理を初期化する
- </summary>
-	<remarks></remarks>
-</member><member name="T:Gears.Validation.GearsAttributeCreator">
-	<summary>
- 属性を作成するためのクラス
- </summary>
-	<remarks></remarks>
-</member><member name="T:Gears.Validation.Validator.GRequired">
-	<summary>
- 必須の入力を検証する属性
- </summary>
-	<remarks></remarks>
-</member><member name="T:Gears.DataSource.GearsSqlException">
-	<summary>
- SQL処理実行時の例外
- </summary>
-	<remarks></remarks>
-</member><member name="P:Gears.DataSource.GearsSqlExecutor.DbType">
-	<summary>データベース種別</summary>
-</member><member name="P:Gears.DataSource.GearsSqlExecutor.ConnectionString">
-	<summary>接続設定文字列</summary>
-</member><member name="P:Gears.DataSource.GearsSqlExecutor.DbServer">
-	<summary>データベース種別(Enum)</summary>
-</member><member name="P:Gears.DataSource.GearsSqlExecutor.ConnectionName">
-	<summary>接続文字列</summary>
-</member><member name="M:Gears.DataSource.GearsSqlExecutor.SqlElapsedTime">
-	<summary>SQL実行時間(ミリ秒)を取得する</summary>
-</member><member name="M:Gears.DataSource.GearsSqlExecutor.initConnection(System.String)">
-	<summary>
- 接続文字列からデータベースの情報を取得し、設定する
- </summary>
-	<param name="conName"></param>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.GearsSqlExecutor.GetConnectionString(System.String)">
-	<summary>
- 設定ファイルから接続文字列に定義された接続設定を取得する
- </summary>
-	<param name="conName"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.GearsSqlExecutor.createSqlCommand(Gears.DataSource.SqlBuilder,Gears.ActionType,System.Boolean)">
-	<summary>
- SqlBuilderからDbCommandを作成する
- </summary>
-	<param name="sql"></param>
-	<param name="asType"></param>
-	<param name="isNeedOrder"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.GearsSqlExecutor.createSqlCommand(System.String,System.Collections.Generic.Dictionary{System.String,System.Object}@,Gears.ActionType)">
-	<summary>
- SqlBuilderからDbCommandを作成する
- </summary>
-	<param name="sql"></param>
-	<param name="params"></param>
-	<param name="atype"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.GearsSqlExecutor.createSelectCount(Gears.DataSource.SqlBuilder@)">
-	<summary>
- 件数を取得するためのSQLを生成する
- </summary>
-	<param name="sql"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.GearsSqlExecutor.load(Gears.DataSource.SqlBuilder)">
-	<summary>
- データのロード処理
- </summary>
-	<param name="sql"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.GearsSqlExecutor.count(Gears.DataSource.SqlBuilder)">
-	<summary>
- データ件数の取得処理
- </summary>
-	<param name="sql"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.GearsSqlExecutor.execute(Gears.DataSource.SqlBuilder)">
-	<summary>
- データベースの実行処理
- </summary>
-	<param name="sql"></param>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.GearsSqlExecutor.execute(System.Collections.Generic.List{Gears.DataSource.SqlBuilder})">
-	<summary>
- データベースへの実行処理<br/>
- 受け取ったSqlBuilderの配列を、トランザクションで処理する
- </summary>
-	<param name="sqlbs"></param>
-	<remarks></remarks>
-</member><member name="T:Gears.DataSource.GearsSqlExecutor">
-	<summary>
- SqlBuilderを受け取り、データベースに対しSQLを実行する
- </summary>
-	<remarks></remarks>
-</member><member name="P:Gears.Validation.Validator.GNumeric.WithSign">
-	<summary>+-の符号を認めるか否か</summary>
 	<value></value>
 	<returns></returns>
 	<remarks></remarks>
-</member><member name="T:Gears.Validation.Validator.GNumeric">
+</member><member name="M:Gears.DataSource.GearsDataSource.gResultSet">
 	<summary>
- 値が単純に数値であるかを検証する属性
+ 実行後の結果セットを取得する
  </summary>
-	<remarks></remarks>
-</member><member name="M:Gears.gRuleExpression.#ctor(System.Web.UI.Control,Gears.GearsMediator)">
-	<summary>
- 関連を定義するコントロールと、それを管理するGearsMediatorを受け取る
- </summary>
-	<param name="con"></param>
-	<param name="mediator"></param>
-	<remarks></remarks>
-</member><member name="M:Gears.gRuleExpression.Relate(System.Web.UI.Control[])">
-	<summary>
- 関連を登録する
- </summary>
-	<param name="cons"></param>
 	<returns></returns>
 	<remarks></remarks>
-</member><member name="M:Gears.gRuleExpression.Relate(System.Collections.Generic.List{System.Web.UI.Control})">
+</member><member name="M:Gears.DataSource.GearsDataSource.Item(System.Int32,System.Int32)">
 	<summary>
- 関連を登録する
+ 結果セットから指定インデックス/行数の値を取得する
  </summary>
-	<param name="cons"></param>
+	<param name="index"></param>
+	<param name="rowIndex"></param>
 	<returns></returns>
 	<remarks></remarks>
-</member><member name="M:Gears.gRuleExpression.When(System.Web.UI.Control)">
+</member><member name="M:Gears.DataSource.GearsDataSource.Item(System.String,System.Int32)">
 	<summary>
- 関連を定義する際、明示的に相手を指定する
+ 結果セットから指定カラム/行数の値を取得する
  </summary>
-	<param name="toControl"></param>
-	<remarks></remarks>
-</member><member name="M:Gears.gRuleExpression.Except(System.Web.UI.Control[])">
-	<summary>
- 関連から除外するコントロールを指定する
- </summary>
-	<param name="excepts"></param>
-	<remarks></remarks>
-</member><member name="T:Gears.gRuleExpression">
-	<summary>
- Gearsにおける関連を作成するためのダミーオブジェクト(Expression)。<br/>
- 下記のようにメソッドチェーンで定義を行うために使用する<br/>
-		<code>
- GRule(someControl).Relate(otherControl).Except(thatControl)
- </code>
-	</summary>
-	<remarks></remarks>
-</member><member name="M:Gears.gSendExpression.#ctor(System.Web.UI.Control,Gears.gSendExpression.ExecuteSend)">
-	<summary>
- 起点となるコントロールと、処理定義を受け取る<br/>
- 起点に指定したコントロールからDTOが作成され、送信対象(のDataSource)に送られる
- </summary>
-	<param name="con"></param>
-	<param name="executor"></param>
-	<remarks></remarks>
-</member><member name="M:Gears.gSendExpression.#ctor(Gears.GearsDTO,Gears.gSendExpression.ExecuteSend)">
-	<summary>
- 送信対象のDTOを直接受け取る<br/>
- コントロールからではなく、直接作成したDTOを相手に送りたい場合に使用する
- </summary>
-	<param name="dto"></param>
-	<param name="executor"></param>
-	<remarks></remarks>
-</member><member name="M:Gears.gSendExpression.ToAll(Gears.GearsDTO)">
-	<summary>
- 相手を指定せず、関連先のコントロール全体に対して送信する
- </summary>
-	<param name="dto"></param>
+	<param name="index"></param>
+	<param name="rowIndex"></param>
 	<returns></returns>
 	<remarks></remarks>
-</member><member name="M:Gears.gSendExpression.ToThe(System.Web.UI.Control,Gears.GearsDTO)">
+</member><member name="M:Gears.DataSource.GearsDataSource.setLockCheckColumn(System.String,Gears.DataSource.LockType)">
 	<summary>
- 相手を指定して送信する
+ 楽観ロック用の列の設定
  </summary>
-	<param name="toControl"></param>
-	<param name="dto"></param>
+	<param name="colname"></param>
+	<param name="ltype"></param>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.GearsDataSource.getLockValue">
+	<summary>
+ SQL実行結果から楽観ロック用列の値を取得する
+ </summary>
 	<returns></returns>
 	<remarks></remarks>
-</member><member name="M:Gears.gSendExpression.ToMyself(Gears.GearsDTO)">
+</member><member name="M:Gears.DataSource.GearsDataSource.addLockValue(Gears.DataSource.SqlBuilder)">
 	<summary>
- 自分自身に対して送信する
+ SQLに楽観ロック列を更新する値をセットする
+ </summary>
+	<param name="sqlb"></param>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.GearsDataSource.getLockTypeValue(Gears.DataSource.LockType)">
+	<summary>
+ 楽観ロックの各タイプに応じた更新値の取得
+ </summary>
+	<param name="ltype"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.GearsDataSource.#ctor(System.String,Gears.DataSource.SqlDataSource)">
+	<summary>データソースとなるテーブルを指定しインスタンスを作成する</summary>
+	<param name="conName">接続文字列</param>
+	<param name="table">テーブルを示すSqlDataSource</param>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.GearsDataSource.#ctor(System.String,System.String)">
+	<summary>データソースとなるテーブル名を文字列で指定しインスタンスを作成する</summary>
+	<param name="conName">接続文字列</param>
+	<param name="tableName">テーブル名</param>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.GearsDataSource.#ctor(System.String,Gears.DataSource.SqlDataSource,Gears.DataSource.SqlDataSource)">
+	<summary>選択用のビューと更新用のテーブルをそれぞれ指定してインスタンスを作成する</summary>
+	<param name="conName">接続文字列</param>
+	<param name="view">選択用のビュー</param>
+	<param name="table">更新用のテーブル</param>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.GearsDataSource.#ctor(System.String,System.String,System.String)">
+	<summary>選択用のビューと更新用のテーブルをそれぞれ文字列で指定してインスタンスを作成する</summary>
+	<param name="conName">接続文字列</param>
+	<param name="viewName">選択用のビュー名</param>
+	<param name="tableName">更新用のテーブル名</param>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.GearsDataSource.execute(Gears.GearsDTO)">
+	<summary>
+ 選択/更新処理を実行する
  </summary>
 	<param name="dto"></param>
 	<returns></returns>
 	<remarks></remarks>
-</member><member name="T:Gears.gSendExpression">
+</member><member name="M:Gears.DataSource.GearsDataSource.makeSqlBuilder(Gears.GearsDTO)">
 	<summary>
- GearsでのSend処理(DTOをターゲットとなるDataSourceに届ける)を記述するためのダミーオブジェクト(Expression)<br/>
- 下記のようにメソッドチェーンで記述するために使用する<br/>
-		<code>
- GSend(fromControl).ToThe(otherControl,dto)
- </code>
-	</summary>
-	<remarks></remarks>
-</member><member name="M:Gears.gSourceExpression.#ctor(Gears.DataSource.GearsDataSource,Gears.ActionType,System.Collections.Generic.List{Gears.DataSource.SqlSelectItem})">
-	<summary>
- データソース、実行処理タイプ、対象の設定を行う
+ 受け取ったDTOをSQL実行用のオブジェクトに変換する
  </summary>
-	<param name="source"></param>
+	<param name="data"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.GearsDataSource.makeExecute(Gears.GearsDTO)">
+	<summary>
+ 実行用のSQLを作成するためのメソッド
+ </summary>
+	<param name="dto"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.GearsDataSource.gSelect(Gears.GearsDTO)">
+	<summary>
+ Selectを実行する
+ </summary>
+	<param name="data"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.GearsDataSource.gSelect(Gears.DataSource.SqlSelectItem[])">
+	<summary>
+ メソッドチェーンを利用したSelectを実行する
+ </summary>
+	<param name="selection"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.GearsDataSource.gSelect(System.Collections.Generic.List{Gears.DataSource.SqlSelectItem})">
+	<summary>
+ メソッドチェーンを利用したSelectを実行する
+ </summary>
 	<param name="selection"></param>
 	<remarks></remarks>
-</member><member name="M:Gears.gSourceExpression.Where(Gears.DataSource.SqlFilterItem[])">
+</member><member name="M:Gears.DataSource.GearsDataSource.gSelect(System.Web.UI.Control[])">
 	<summary>
- 抽出条件をSqlFilterItemの配列で受け取る
+ メソッドチェーンを利用したSelectを実行する
  </summary>
-	<param name="filter"></param>
+	<param name="cons"></param>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.GearsDataSource.gSelectPageBy(System.Int32,System.Int32,Gears.GearsDTO)">
+	<summary>
+ ページサイズを指定したSelectを行う
+ </summary>
+	<param name="maximumRows"></param>
+	<param name="startRowIndex"></param>
+	<param name="data"></param>
 	<returns></returns>
 	<remarks></remarks>
-</member><member name="M:Gears.gSourceExpression.Where(System.Collections.Generic.List{Gears.DataSource.SqlFilterItem})">
+</member><member name="M:Gears.DataSource.GearsDataSource.gSelect(Gears.DataSource.SqlBuilder)">
 	<summary>
- 抽出条件をSqlFilterItemのリストで受け取る
+ Selectを実行する
  </summary>
-	<param name="filter"></param>
+	<param name="sqlb"></param>
 	<returns></returns>
 	<remarks></remarks>
-</member><member name="M:Gears.gSourceExpression.Where(System.Web.UI.Control[])">
+</member><member name="M:Gears.DataSource.GearsDataSource.convertResultSet(System.Data.DataTable@,Gears.DataSource.SqlBuilder)">
 	<summary>
- 抽出条件をControlの配列で受け取る
+ SqlBuilderに設定された項目変換に基づき、DataTableのカラム名を変換する
  </summary>
+	<param name="dataSet"></param>
+	<param name="sqlb"></param>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.GearsDataSource.gSelectCount(Gears.GearsDTO)">
+	<summary>
+ 件数の取得
+ </summary>
+	<param name="data"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.GearsDataSource.gSelectCount(Gears.DataSource.SqlBuilder)">
+	<summary>
+ 件数の取得
+ </summary>
+	<param name="sqlb"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.GearsDataSource.gInsert(Gears.GearsDTO)">
+	<summary>
+ Insertを実行する
+ </summary>
+	<param name="data"></param>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.GearsDataSource.gInsert(Gears.DataSource.SqlBuilder)">
+	<summary>
+ Insertを実行する
+ </summary>
+	<param name="sqlb"></param>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.GearsDataSource.gUpdate(Gears.GearsDTO)">
+	<summary>
+ Updateを実行する
+ </summary>
+	<param name="data"></param>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.GearsDataSource.gUpdate(Gears.DataSource.SqlBuilder)">
+	<summary>
+ Updateを実行する
+ </summary>
+	<param name="sqlb"></param>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.GearsDataSource.gDelete(Gears.GearsDTO)">
+	<summary>
+ Deleteを実行する
+ </summary>
+	<param name="data"></param>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.GearsDataSource.gDelete(Gears.DataSource.SqlBuilder)">
+	<summary>
+ Deleteを実行する
+ </summary>
+	<param name="sqlb"></param>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.GearsDataSource.gSave(Gears.GearsDTO)">
+	<summary>
+ Saveを実行する(一致するキーがある場合Update/なければInsert)
+ </summary>
+	<param name="data"></param>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.GearsDataSource.gSave(Gears.DataSource.SqlBuilder)">
+	<summary>
+ Saveを実行する(一致するキーがある場合Update/なければInsert)
+ </summary>
+	<param name="sqlb"></param>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.GearsDataSource.gSave(Gears.DataSource.SqlSelectItem[])">
+	<summary>
+ メソッドチェーンを利用したSaveを実行する
+ </summary>
+	<param name="selection"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.GearsDataSource.gSave(System.Collections.Generic.List{Gears.DataSource.SqlSelectItem})">
+	<summary>
+ メソッドチェーンを利用したSaveを実行する
+ </summary>
+	<param name="selection"></param>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.GearsDataSource.gSave(System.Web.UI.Control[])">
+	<summary>
+ メソッドチェーンを利用したSaveを実行する
+ </summary>
+	<param name="cons"></param>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.GearsDataSource.gExecute(Gears.ActionType,System.Collections.Generic.List{Gears.DataSource.SqlSelectItem})">
+	<summary>
+ メソッドチェーンで処理を行うためのダミーオブジェクト(Expression)を作成する
+ </summary>
+	<param name="action"></param>
+	<param name="selection"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.GearsDataSource.gExecute(Gears.ActionType,System.Collections.Generic.List{System.Web.UI.Control})">
+	<summary>
+ メソッドチェーンで処理を行うためのダミーオブジェクト(Expression)を作成する
+ </summary>
+	<param name="action"></param>
 	<param name="cons"></param>
 	<returns></returns>
 	<remarks></remarks>
-</member><member name="M:Gears.gSourceExpression.Where(System.Collections.Generic.List{System.Web.UI.Control})">
+</member><member name="M:Gears.DataSource.GearsDataSource.executeProcess(Gears.DataSource.SqlBuilder)">
 	<summary>
- 抽出条件をControlのリストで受け取る
+ 更新系処理を行うメソッド
  </summary>
-	<param name="cons"></param>
+	<param name="sqlb"></param>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.GearsDataSource.loadExecuted(Gears.DataSource.SqlBuilder)">
+	<summary>
+ データベース更新後の値を読み込む
+ </summary>
+	<param name="sqlb"></param>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.GearsDataSource.beforeExecute(Gears.DataSource.SqlBuilder)">
+	<summary>
+ 更新処理実行前に行われるトリガ処理
+ </summary>
+	<param name="sqlb"></param>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.GearsDataSource.afterExecute(Gears.DataSource.SqlBuilder)">
+	<summary>
+ 更新処理実行後に行われるトリガ処理
+ </summary>
+	<param name="sqlb"></param>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.GearsDataSource.confirmRecord(Gears.GearsDTO)">
+	<summary>
+ Saveの場合のInsert/Update判定、また楽観ロックのチェックを行う
+ </summary>
+	<param name="confirmData"></param>
 	<returns></returns>
 	<remarks></remarks>
-</member><member name="M:Gears.gSourceExpression.execute">
+</member><member name="M:Gears.DataSource.GearsDataSource.confirmRecord(Gears.DataSource.SqlBuilder)">
 	<summary>
- 実行処理の実体(実際の処理はデータソースのexecuteに委譲)
+ Saveの場合のInsert/Update判定、また楽観ロックのチェックを行う
  </summary>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="T:Gears.gSourceExpression">
-	<summary>
- データ抽出/更新処理を記述するためのダミーオブジェクト(Expression)
- </summary>
-	<remarks></remarks>
-</member><member name="T:Gears.Validation.GearsValidationException">
-	<summary>
- バリデーションの例外を表すクラス
- </summary>
-	<remarks></remarks>
-</member><member name="P:My.Resources.Resources.ResourceManager">
-	<summary>
-  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
-</summary>
-</member><member name="P:My.Resources.Resources.Culture">
-	<summary>
-  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
-  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
-</summary>
-</member><member name="T:My.Resources.Resources">
-	<summary>
-  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
-</summary>
-</member><member name="F:Gears.Validation.ModelValidationMethod.DEFAULT_ORDER">
-	<summary>デフォルトの検証順序</summary>
-</member><member name="P:Gears.Validation.ModelValidationMethod.Order">
-	<summary>検証を行う順番</summary>
-</member><member name="P:Gears.Validation.ModelValidationMethod.FalseAsAlert">
-	<summary>検証結果がNGであった場合、警告として扱うか(デフォルトはエラーになる)</summary>
-</member><member name="P:Gears.Validation.ModelValidationMethod.OnlyWhenTheseValueExist">
-	<summary>指定した項目に値があった場合のみ検証を行う</summary>
-</member><member name="T:Gears.Validation.ModelValidationMethod">
-	<summary>
- モデルバリデーションを行うメソッドに付与するアノテーション定義
- </summary>
-</member><member name="T:Gears.Validation.AbsModelValidator.ModelValidator">
-	<summary>バリデーションを行うメソッド定義</summary>
 	<param name="sqlb"></param>
 	<returns></returns>
 	<remarks></remarks>
-</member><member name="P:Gears.Validation.AbsModelValidator.ValidResults">
-	<summary>各バリデーションの実行結果を収めたコンテナ</summary>
-</member><member name="P:Gears.Validation.AbsModelValidator.IsValid">
-	<summary>バリデーション実行結果</summary>
-</member><member name="P:Gears.Validation.AbsModelValidator.IsValidIgnoreAlert">
-	<summary>バリデーション実行結果(警告を除く)</summary>
-</member><member name="P:Gears.Validation.AbsModelValidator.ErrorMessage">
-	<summary>検証結果メッセージを取得する</summary>
-</member><member name="P:Gears.Validation.AbsModelValidator.ErrorSource">
-	<summary>エラーの発生した項目名</summary>
-</member><member name="M:Gears.Validation.AbsModelValidator.setUpValidation(Gears.DataSource.SqlBuilder)">
-	<summary>
- 検証実行前処理
- </summary>
+</member><member name="M:Gears.DataSource.GearsDataSource.LogMessage(Gears.DataSource.SqlBuilder,Gears.DataSource.GearsSqlExecutor)">
+	<summary>SQL実行のメッセージをログに書き込む</summary>
 	<param name="sqlb"></param>
-</member><member name="M:Gears.Validation.AbsModelValidator.tearDownValidation(Gears.DataSource.SqlBuilder)">
+	<param name="executor"></param>
+	<remarks></remarks>
+</member><member name="T:Gears.DataSource.GearsDataSource">
 	<summary>
- 検証実行後処理
- </summary>
-	<param name="sqlb"></param>
-</member><member name="M:Gears.Validation.AbsModelValidator.Validate(Gears.DataSource.SqlBuilder,System.Boolean)">
-	<summary>
- ModelValidationMethodアノテーションの付与された、返り値が BooleanのPublicメソッドを実行していく
- </summary>
-	<param name="sqlb">バリデーション対象のSqlBuilder</param>
-	<param name="isStockError">致命的エラーがあっても続行してエラーをため続ける場合はTrue</param>
-	<returns></returns>
-</member><member name="M:Gears.Validation.AbsModelValidator.Validate(Gears.DataSource.SqlBuilder,System.Collections.Generic.List{Gears.Validation.AbsModelValidator.ModelValidator},System.Boolean)">
-	<summary>
- 対象のバリデーションを実行する
- </summary>
-	<param name="validatee">バリデーション対象のSqlBuilder</param>
-	<param name="validates">バリデーションメソッドのリスト</param>
-	<param name="isStockError">致命的エラーがあっても続行してエラーをため続ける場合はTrue</param>
-	<returns></returns>
-	<remarks>
-		<example>
-			<para>
-				<code>
-   Dim sb As SqlBuilder = dto.generateSqlBuilder
-   Dim hinValidator = New AstMasterHinmokuValidator(Master.ConnectionName)
-   Dim validates As New List(Of AbsModelValidator.ModelValidator)
-   '必要なバリデーションの追加
-   validates.Add(AddressOf hinValidator.isHinCodeValid)
-   validates.Add(AddressOf hinValidator.isNisgataNew)
-   Dim result As ValidationResults = hinValidator.Validate(sb, validates, True)
- </code>
-			</para>
-		</example>
-	</remarks>
-</member><member name="M:Gears.Validation.AbsModelValidator.throwException">
-	<summary>
- バリデーションエラーがあった場合に例外をスローする
- </summary>
-	<returns></returns>
-</member><member name="M:Gears.Validation.AbsModelValidator.getValidateeValue(Gears.DataSource.SqlBuilder,System.String,System.Boolean)">
-	<summary>
- 検証用値取得メソッド
- </summary>
-	<param name="sqlb"></param>
-	<param name="colName"></param>
-	<param name="nothingAsSpace"></param>
-	<returns></returns>
-</member><member name="T:Gears.Validation.AbsModelValidator">
-	<summary>
- モデル(データソースクラス)での検証を行うためのバリデーター
+ データソースクラス作成用の抽象クラス
  </summary>
 	<remarks></remarks>
-</member><member name="M:Gears.Util.RelationNode.setParent(Gears.Util.RelationNode)">
-	<summary>親ノード</summary>
-</member><member name="M:Gears.Util.RelationNode.addChild(Gears.Util.RelationNode@)">
-	<summary>関連子ノード</summary>
-</member><member name="P:Gears.Util.RelationNode.Value">
-	<summary>値(キー)</summary>
-</member><member name="M:Gears.Util.RelationNode.findNode(System.String)">
-	<summary>指定されたキーを持つノードを探索する</summary>
-</member><member name="M:Gears.Util.RelationNode.hasThisParent(Gears.Util.RelationNode)">
-	<summary>指定されたノードを親に持つか判定する</summary>
-</member><member name="M:Gears.Util.RelationNode.getDepth">
-	<summary>ルートからの深さを返す</summary>
-</member><member name="M:Gears.Util.RelationNode.visitParents(Gears.Util.RelationNode.nodeHandler)">
-	<summary>親を探索し各要素に指定したデリゲートを適用する処理</summary>
-</member><member name="M:Gears.Util.RelationNode.visitChildren(Gears.Util.RelationNode.nodeHandler)">
-	<summary>子を探索し各要素に指定したデリゲートを適用する処理</summary>
-</member><member name="M:Gears.Util.RelationNode.getBranches(System.Collections.Generic.List{System.String})">
+</member><member name="F:Gears.ActionType.NONE">
+	<summary>NONE:Nothingに該当。初期値用</summary>
+</member><member name="F:Gears.ActionType.SEL">
+	<summary>SEL :SELECT処理を表す</summary>
+</member><member name="F:Gears.ActionType.UPD">
+	<summary>UPD :UPDATE処理を表す</summary>
+</member><member name="F:Gears.ActionType.INS">
+	<summary>INS :INSERT処理を表す</summary>
+</member><member name="F:Gears.ActionType.DEL">
+	<summary>DEL :DELETE処理を表す</summary>
+</member><member name="F:Gears.ActionType.SAVE">
+	<summary>SAVE:既に該当キーが存在する場合UPDATE、そうでない場合INSERTを行う</summary>
+</member><member name="T:Gears.ActionType">
 	<summary>
- 指定した値を関連の内に持つものを抽出する
+ データベースへの更新の種別を表す
  </summary>
-	<param name="nodes"></param>
-	<returns></returns>
+</member><member name="F:Gears.GearsDTO._controlInfo">
+	<summary>コントロール情報</summary>
+</member><member name="M:Gears.GearsDTO.ControlInfo">
+	<summary>コントロール情報の取得</summary>
+</member><member name="M:Gears.GearsDTO.ControlInfo(System.String)">
+	<summary>コントロール情報の取得(ID指定)</summary>
+</member><member name="M:Gears.GearsDTO.#ctor(Gears.ActionType)">
+	<summary>
+ コンストラクタ
+ </summary>
+	<param name="atype"></param>
+</member><member name="M:Gears.GearsDTO.#ctor(Gears.GearsDTO@)">
+	<summary>
+ コピーコンストラクタ
+ </summary>
+	<param name="gto"></param>
 	<remarks></remarks>
-</member><member name="M:Gears.Util.RelationNode.makeTreeWithRoot(System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}})">
+</member><member name="M:Gears.GearsDTO.addControlInfo(Gears.GearsControlInfo@)">
+	<summary>Control情報の追加</summary>
+</member><member name="M:Gears.GearsDTO.addControlInfo(Gears.GearsControl@)">
+	<summary>Control情報の追加(GearsControlから)</summary>
+</member><member name="M:Gears.GearsDTO.removeControlInfo(System.String)">
+	<summary>Control情報の削除</summary>
+</member><member name="M:Gears.GearsDTO.toSqlBuilder(Gears.DataSource.SqlDataSource)">
 	<summary>
- 関連を定義したディクショナリからツリー構造を作成し、ノードとして返す
- </summary>
-	<param name="relations"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.Util.RelationNode.makeTree(System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}})">
-	<summary>
- 関連を定義したディクショナリからツリー構造を作成する
- </summary>
-	<param name="relations"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="P:Gears.Util.RelationNode.isLeaf">
-	<summary>末端要素であるか否か</summary>
-</member><member name="P:Gears.Util.RelationNode.isRoot">
-	<summary>ルート要素であるか否か</summary>
-</member><member name="T:Gears.Util.RelationNode">
-	<summary>
- 関連を管理するためのクラス
- </summary>
-	<remarks></remarks>
-</member><member name="F:Gears.GearsControl.ID_ATTR_FORM">
-	<summary>IDに含まれることで、更新用フォームであることを示す文字列</summary>
-</member><member name="F:Gears.GearsControl.ID_ATTR_FILTER">
-	<summary>IDに含まれることで、検索フォームであることを示す文字列</summary>
-</member><member name="F:Gears.GearsControl.ID_ATTR_KEY">
-	<summary>IDに含まれることで、更新キーであることを示す文字列</summary>
-</member><member name="F:Gears.GearsControl.ID_ATTR_GCON">
-	<summary>IDに含まれることで、登録対象コントロールであることを示す文字列</summary>
-</member><member name="F:Gears.GearsControl.ID_ATTR_GDISP">
-	<summary>IDに含まれることで、登録対象だが送信対象外であることを示す文字列</summary>
-</member><member name="F:Gears.GearsControl.ATTR_OPERATOR">
-	<summary>検索時のオペレーターを指定するための属性</summary>
-</member><member name="F:Gears.GearsControl.ATTR_DS_NAMESPACE">
-	<summary>名称空間を指定するための属性</summary>
-</member><member name="F:Gears.GearsControl.ATTR_DS_CONNECTION_NAME">
-	<summary>接続文字列を指定するための属性</summary>
-</member><member name="F:Gears.GearsControl.VALUE_SEPARATOR">
-	<summary>Serializeを行うための区切り文字</summary>
-</member><member name="F:Gears.GearsControl.ID_SEPARATOR">
-	<summary>ID内をSplitするためのSeparator</summary>
-</member><member name="F:Gears.GearsControl.DataSourceAssembleyName">
-	<summary>
- データソースクラスが格納されているアセンブリ名
- </summary>
-</member><member name="M:Gears.GearsControl.Control">
-	<summary>
- コントロールの取得
- </summary>
-</member><member name="M:Gears.GearsControl.Control``1">
-	<summary>
- 型指定によるコントロールの取得
- </summary>
-	<typeparam name="T">WebControl型</typeparam>
-</member><member name="P:Gears.GearsControl.ControlID">
-	<summary>
- コントロールID(Control.IDと等価)
- </summary>
-</member><member name="P:Gears.GearsControl.ConnectionName">
-	<summary>
- DBにアクセスするための接続文字列
- </summary>
-</member><member name="P:Gears.GearsControl.DsNamespace">
-	<summary>
- データソースクラスの名称空間
- </summary>
-</member><member name="F:Gears.GearsControl._idAttributes">
-	<summary>コントロールに設定されたIDをID_SEPARATORでSplitしたもの</summary>
-</member><member name="M:Gears.GearsControl.extractControlType(System.String)">
-	<summary>
- コントロール種別を抽出するクラス関数
- </summary>
-	<param name="id"></param>
-</member><member name="P:Gears.GearsControl.IsKey">
-	<summary>
- コントロールがキーか否か
- </summary>
-</member><member name="M:Gears.GearsControl.asKey">
-	<summary>
- このコントロールをキーとして設定する
- </summary>
-	<remarks></remarks>
-</member><member name="P:Gears.GearsControl.IsFormAttribute">
-	<summary>
- コントロールが更新フォームか否か
- </summary>
-</member><member name="P:Gears.GearsControl.IsFilterAttribute">
-	<summary>
- コントロールが検索フォームか否か
- </summary>
-</member><member name="P:Gears.GearsControl.IsDisplayOnly">
-	<summary>
- 値がセットされるのみで、フォーム等で送信対象から除外されるか否か<br/>
- ID属性にGDISPが指定されている場合、デフォルトでこの設定となる
- </summary>
-	<value></value>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="P:Gears.GearsControl.OperatorAttribute">
-	<summary>
- 検索時のオペレーターを示す値(主に検索フォームでのlikeなど)
- </summary>
-</member><member name="P:Gears.GearsControl.DataSourceID">
-	<summary>
- データロード元となるデータソースクラスの名称(基本的にIDから判断される)
- </summary>
-</member><member name="M:Gears.GearsControl.extractDataSourceid(System.String)">
-	<summary>
- データソースクラスIDを取得するクラス関数
- </summary>
-	<param name="id"></param>
-</member><member name="P:Gears.GearsControl.DataSource">
-	<summary>
- データベースからデータを抽出するGearsDataSource
- </summary>
-</member><member name="P:Gears.GearsControl.DataBinder">
-	<summary>
- データソースの値をコントロールにバインドするIDataBinder
- </summary>
-</member><member name="P:Gears.GearsControl.GAttribute">
-	<summary>
- バリデーションを行うための情報となるGearsAttribute<see cref="T:Gears.Validation.GearsAttribute"/><br/>
-	</summary>
-	<remarks></remarks>
-</member><member name="P:Gears.GearsControl.GCssClass">
-	<summary>
- コントロールに適用するスタイルを表す文字列
- </summary>
-</member><member name="P:Gears.GearsControl.LoadedValue">
-	<summary>ロード時の値</summary>
-</member><member name="M:Gears.GearsControl.#ctor(System.Web.UI.Control@,System.String,System.String,System.Boolean)">
-	<summary>
- コンストラクタ<br/>
- Controlと接続文字列を受け取り、ControlのIDからデータソースクラスを判定し設定する
- </summary>
-	<param name="con">コントロール</param>
-	<param name="conName">接続文字列</param>
-	<param name="dns">データソースクラスの名称空間</param>
-	<param name="isAutoLoadAttr">属性を自動ロードするか(デフォルトTrue)</param>
-	<remarks></remarks>
-</member><member name="M:Gears.GearsControl.#ctor(System.Web.UI.Control@,Gears.DataSource.GearsDataSource@,System.Boolean)">
-	<summary>
- データソースクラスを直接受け取るコンストラクタ
- </summary>
-	<param name="con"></param>
-	<param name="gds"></param>
-	<param name="isAutoLoadAttr"></param>
-	<remarks></remarks>
-</member><member name="M:Gears.GearsControl.initInstance(System.Web.UI.Control@,System.Boolean)">
-	<summary>
- GearsControlの初期化処理を行う
- </summary>
-	<param name="con"></param>
-	<param name="isAutoLoadAttr"></param>
-	<remarks></remarks>
-</member><member name="M:Gears.GearsControl.readIDByGearsRule(System.String)">
-	<summary>
- Controlに設定されたIDから、コントロール種別、データソース名などを読み込む
- </summary>
-	<param name="id"></param>
-	<remarks></remarks>
-</member><member name="M:Gears.GearsControl.loadDataSource">
-	<summary>
- データソースクラスのロード
- </summary>
-	<remarks></remarks>
-</member><member name="M:Gears.GearsControl.loadAttribute(System.String)">
-	<summary>
- 設定されたCSSからバリデーションのための属性をロードする
- </summary>
-	<param name="css"></param>
-	<remarks></remarks>
-</member><member name="M:Gears.GearsControl.isIdAttributeExist(System.String)">
-	<summary>
- 特定のアトリビュートを保持しているか判定する
- </summary>
-	<param name="attr"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.GearsControl.isIdAttributeExist(System.String,System.String)">
-	<summary>
- IDに特定のアトリビュートが含まれているか判定する
- </summary>
-	<param name="attr"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.GearsControl.getControlAttribute(System.String)">
-	<summary>
- コントロールのアトリビュートを取得する
- </summary>
-	<param name="attr"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.GearsControl.getControlAttribute(System.Web.UI.Control,System.String)">
-	<summary>
- コントロールのアトリビュートを取得する
- </summary>
-	<param name="attr"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.GearsControl.dataBind(Gears.GearsDTO)">
-	<summary>
- 自身のデータソースをロードし、バインドする
- </summary>
-	<param name="dto"></param>
-	<remarks></remarks>
-</member><member name="M:Gears.GearsControl.dataBind(System.Data.DataTable)">
-	<summary>
- データテーブルをコントロールにバインドする
- </summary>
-	<param name="dset"></param>
-</member><member name="M:Gears.GearsControl.dataAttach(Gears.DataSource.GearsDataSource@)">
-	<summary>
- 他のデータソースの値を自身に適用する(値としてセットする)
- </summary>
-	<param name="gds"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.GearsControl.dataAttach(System.Data.DataTable@)">
-	<summary>
- 他のデータソースの値を自身に適用する(値としてセットする)<br/>
- DataTableの指定がない場合は、自身のデータソースを使用
- </summary>
-	<param name="dset"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.GearsControl.getValue">
-	<summary>
- コントロールの値を取得する
+ DTOをSqlBuilderに変換する<br/>
+ 具体的には、コントロール情報(GearsControlInfo)をSQLの選択項目/抽出条件に変換します。
  </summary>
 	<returns></returns>
 	<remarks></remarks>
-</member><member name="M:Gears.GearsControl.getAsObject">
+</member><member name="M:Gears.GearsDTO.confirmSql(Gears.DataSource.SqlDataSource)">
 	<summary>
- Attributeに応じた変換などをかけた値を取得する。<br/>
- SqlBuilderなど、データベース問合せ時にはこちらを使用した方が良い。
+ DTOの段階でSQLを確認するためのメソッド<br/>
+ SqlDataSourceを引数として渡さない場合、table/viewに当たる個所はdummyで表示されます
  </summary>
+	<param name="ds"></param>
 	<returns></returns>
 	<remarks></remarks>
-</member><member name="M:Gears.GearsControl.setValue(System.Object)">
+</member><member name="T:Gears.GearsDTO">
 	<summary>
- コントロールへ値をセットする
+ Controlなどの画面上の値をGearsDataSourceへ渡す役割を担うクラス<br/>
+ 最終的には、SQLの実行体であるSqlBuilderへ変換される。
  </summary>
-	<param name="value"></param>
-	<remarks></remarks>
-</member><member name="M:Gears.GearsControl.toControlInfo">
-	<summary>
- 自身の情報をControlInfoオブジェクトへ格納する
- </summary>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.GearsControl.serializeValue(System.Collections.ArrayList@)">
-	<summary>
- リスト値のシリアライズを行う(主にMultiSelect等の場合、値をシリアライズし複数値を単一値にする)
- </summary>
-	<param name="list"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.GearsControl.serializeValue(System.Web.UI.WebControls.ListControl@)">
-	<summary>
- リスト値のシリアライズを行う(リストコントロール)
- </summary>
-	<param name="list"></param>
-</member><member name="M:Gears.GearsControl.serializeValue(System.Web.UI.WebControls.DataKey@)">
-	<summary>
- リスト値のシリアライズを行う(GridView用)
- </summary>
-	<param name="list"></param>
-</member><member name="M:Gears.GearsControl.serializeValue(System.Data.DataTable@,System.Int32)">
-	<summary>
- リスト値のシリアライズを行う(DataTable用)
- </summary>
-	<param name="dset"></param>
-	<param name="index"></param>
-</member><member name="M:Gears.GearsControl.extractControl(System.Web.UI.Control)">
-	<summary>
- IFormItemからControlを取得する<br/>
- IFormItemはラベルとコントロールが一体となったようなコントロールをイメージしています
- </summary>
-	<param name="con"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.GearsControl.deSerializeValue(System.String)">
-	<summary>
- シリアライズしたオブジェクトを元に戻す
- </summary>
-	<param name="str"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.GearsControl.getValidationError">
-	<summary>
- バリデーション結果のメッセージを取得
- </summary>
-</member><member name="M:Gears.GearsControl.isValidateOk">
-	<summary>
- バリデーションの実行
- </summary>
-</member><member name="P:Gears.GearsControl.validateeValue">
-	<summary>
- バリデーション対象となる値を取得するための関数実装
- </summary>
-</member><member name="T:Gears.GearsControl">
-	<summary>
- System.Web.UI.WebControlをラップするControl<br/>
- 1.値のセットについて<br/>
- 基本的にdataBindにより選択リストの取得、dataAttachにより値のセットが行われます。<br/>
- 例えば、A・B・Cというの選択肢があり選択中の値はB、という場合、A・B・Cという値はdataBindによりロードされ、
- Bという値はdataAttachにより設定されます。dataAttachは主に特定の一行のDataTableを引数とし、この中で自Controlに該当する値を選択しセットします
- <see cref="M:Gears.Binder.GearsDataBinder.dataAttach(System.Web.UI.Control@,System.Data.DataTable@)"/>。<br/>
- なお、値の取得/設定はgetValue/setValueを使用し直接的に行うことも可能です。<br/>
-		<br/>
- dataBindに使用されるGearsDataSourceは、基本的にIDから推定されます<a href="http://gearssite.apphb.com/GearsSampleControl.aspx" target="_blank">名称規約について</a><br/>
- 簡単な例としては、ddlUNITというコントロールの場合「UNIT」がデータソースクラス名称として推定されます。<br/>
-		<br/>
- 2.値の検証(バリデーション)について<br/>
- GearsControlはバリデーションの機能も保持しています。バリデーションのための設定情報はCssClassから抽出されます。<br/>
-		<seealso cref="M:Gears.GearsControl.loadAttribute(System.String)"/>
-	</summary>
 	<remarks></remarks>
 </member><member name="F:Gears.GearsPage.V_LIST_ATTRIBUTES">
 	<summary>
@@ -1566,31 +1045,6 @@ Gears
  Gearsフレームワークを使用する場合の、継承元となるページ
  </summary>
 	<remarks></remarks>
-</member><member name="P:Gears.Validation.Validator.GCompare.OperatorType">
-	<summary>比較を行うためのオペレーター</summary>
-</member><member name="P:Gears.Validation.Validator.GCompare.Expected">
-	<summary>期待される値</summary>
-</member><member name="M:Gears.Validation.Validator.GCompare.isValidateOk(System.String,System.String,System.String)">
-	<summary>
- 比較値・期待値・演算子を直接指定してバリデーションを行う
- </summary>
-	<param name="leftValue"></param>
-	<param name="rightValue"></param>
-	<param name="opr"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.Validation.Validator.GCompare.compare(System.String,System.String,System.String)">
-	<summary>比較を行うための関数。与えられた値が数値/日付に見える場合それを考慮し演算</summary>
-	<param name="leftValue"></param>
-	<param name="rightValue"></param>
-	<param name="ct"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="T:Gears.Validation.Validator.GCompare">
-	<summary>
- 値の比較検証を行うための属性
- </summary>
-	<remarks></remarks>
 </member><member name="P:Gears.Util.IFormItem.ControlId">
 	<summary>内部のコントロールID</summary>
 </member><member name="P:Gears.Util.IFormItem.ControlKind">
@@ -1691,1164 +1145,6 @@ Gears
 	<remarks></remarks>
 </member><member name="T:Gears.GearsLog">
 	<summary>ログメッセージ用の例外</summary>
-	<remarks></remarks>
-</member><member name="T:Gears.DataSource.RelationKind">
-	<summary>
- 結合条件種別
- </summary>
-	<remarks></remarks>
-</member><member name="P:Gears.DataSource.SqlDataSource.Name">
-	<summary>
- データソース名(テーブル/ビュー)
- </summary>
-</member><member name="P:Gears.DataSource.SqlDataSource.Schema">
-	<summary>スキーマ名称</summary>
-</member><member name="P:Gears.DataSource.SqlDataSource.Suffix">
-	<summary>
- 後置詞<br/>
- (SELECT * FROM tab a の aにあたる部分)
- </summary>
-	<value></value>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="P:Gears.DataSource.SqlDataSource.LockCheckColumn">
-	<summary>
- 楽観ロックチェックに使用する列項目
- </summary>
-	<value></value>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.SqlDataSource.setLockCheckColumn(System.String,Gears.DataSource.LockType)">
-	<summary>
- 楽観ロック用の列を設定する
- </summary>
-	<param name="colname"></param>
-	<param name="ltype"></param>
-	<remarks></remarks>
-</member><member name="P:Gears.DataSource.SqlDataSource.Parameter">
-	<summary>
- 特にパイプライン表関数などで、パラメーターを使用する場合に使用する値
- </summary>
-	<value></value>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.SqlDataSource.readParameter(System.Collections.Generic.Dictionary{System.String,System.Object}@)">
-	<summary>
- ディクショナリにSqlDataSourceに設定された値情報を読み込む
- </summary>
-	<param name="params"></param>
-	<remarks></remarks>
-</member><member name="P:Gears.DataSource.SqlDataSource.JoinTargets">
-	<summary>結合の相手先を取得する</summary>
-	<value></value>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.SqlDataSource.getRelation(System.String)">
-	<summary>指定対象の結合種別を取得する</summary>
-	<param name="target">結合対象</param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.SqlDataSource.getJoinKey(System.String)">
-	<summary>指定対象の結合キーを取得する</summary>
-	<param name="target"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.SqlDataSource.inSchema(System.String)">
-	<summary>スキーマを指定する</summary>
-	<param name="strSchema"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.SqlDataSource.hasRelation">
-	<summary>リレーションを持つか否か</summary>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.SqlDataSource.addParameter(System.String,System.Object)">
-	<summary>パラメータの設定</summary>
-	<param name="pname"></param>
-	<param name="value"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.SqlDataSource.addParameter(Gears.DataSource.SqlItem)">
-	<summary>パラメータの設定(SqlItemから)</summary>
-	<param name="item"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.SqlDataSource.leftOuterJoin(System.String,System.String,Gears.DataSource.SqlFilterItem[])">
-	<summary>左結合を行う</summary>
-	<param name="dsName">結合対象データソース</param>
-	<param name="sf">後置詞</param>
-	<param name="cr">結合カラム</param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.SqlDataSource.leftOuterJoin(Gears.DataSource.SqlDataSource@,Gears.DataSource.SqlFilterItem[])">
-	<summary>左結合を行う</summary>
-	<param name="sd">結合対象データソース</param>
-	<param name="cr">結合カラム</param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.SqlDataSource.innerJoin(System.String,System.String,Gears.DataSource.SqlFilterItem[])">
-	<summary>内部結合を行う</summary>
-	<param name="dsName">結合対象データソース</param>
-	<param name="sf">後置詞</param>
-	<param name="cr">結合カラム</param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.SqlDataSource.innerJoin(Gears.DataSource.SqlDataSource@,Gears.DataSource.SqlFilterItem[])">
-	<summary>内部合を行う</summary>
-	<param name="sd">結合対象データソース</param>
-	<param name="cr">結合カラム</param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.SqlDataSource.makeRelation(Gears.DataSource.SqlDataSource@,Gears.DataSource.SqlFilterItem[])">
-	<summary>
- 結合のための設定を行う内部関数
- </summary>
-	<param name="sd"></param>
-	<param name="cr"></param>
-	<remarks></remarks>
-</member><member name="T:Gears.DataSource.SqlDataSource">
-	<summary>
- SQLの実行対象(Table/View)を表すクラス
- </summary>
-	<remarks></remarks>
-</member><member name="P:Gears.DataSource.SqlFilterGroup.Name">
-	<summary>グループ名</summary>
-</member><member name="M:Gears.DataSource.SqlFilterGroup.isAndGroup">
-	<summary>グループ内の条件をANDで結合する</summary>
-</member><member name="M:Gears.DataSource.SqlFilterGroup.isOrGroup">
-	<summary>グループ内の条件をORで結合する(デフォルトTrue)</summary>
-</member><member name="M:Gears.DataSource.SqlFilterGroup.Ors(Gears.DataSource.SqlFilterItem[])">
-	<summary>Orで囲うグループを作成する</summary>
-</member><member name="M:Gears.DataSource.SqlFilterGroup.Ors(System.Collections.Generic.List{Gears.DataSource.SqlFilterItem}@)">
-	<summary>Orで囲うグループを作成する</summary>
-</member><member name="M:Gears.DataSource.SqlFilterGroup.Ands(Gears.DataSource.SqlFilterItem[])">
-	<summary>Andで囲うグループを作成する</summary>
-</member><member name="M:Gears.DataSource.SqlFilterGroup.Ands(System.Collections.Generic.List{Gears.DataSource.SqlFilterItem}@)">
-	<summary>Andで囲うグループを作成する</summary>
-</member><member name="M:Gears.DataSource.SqlFilterGroup.grouping(Gears.DataSource.SqlFilterItem[])">
-	<summary>
- 与えられたSqlFilterItemに自身をグループとして設定する(任意引数指定)
- </summary>
-	<param name="filters"></param>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.SqlFilterGroup.grouping(System.Collections.Generic.List{Gears.DataSource.SqlFilterItem}@)">
-	<summary>
- 与えられたSqlFilterItemに自身をグループとして設定する(配列指定)
- </summary>
-	<param name="filters"></param>
-	<remarks></remarks>
-</member><member name="T:Gears.DataSource.SqlFilterGroup">
-	<summary>
- SQLの選択条件をグループ化するためのクラス<br/>
- SqlFilterItemに設定することで、設定した条件をOR/ANDでまとめ括弧でくくることができる
- </summary>
-	<remarks></remarks>
-</member><member name="P:Gears.DataSource.SqlFilterItem.Operand">
-	<summary>比較演算子</summary>
-</member><member name="P:Gears.DataSource.SqlFilterItem.Group">
-	<summary>グループ設定</summary>
-</member><member name="P:Gears.DataSource.SqlFilterItem.JoinTarget">
-	<summary>JOIN時の結合対象列</summary>
-</member><member name="P:Gears.DataSource.SqlFilterItem.Negation">
-	<summary>JOIN時の結合対象列</summary>
-</member><member name="M:Gears.DataSource.SqlFilterItem.filterAs(System.String,System.Object,System.Boolean)">
-	<summary>文字列からSqlFilterItemを作成する</summary>
-	<param name="filterType"></param>
-	<param name="value"></param>
-	<param name="isWrapWhenLike">Likeの場合、%で囲うか否か</param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.SqlFilterItem.pf(System.String)">
-	<summary>前置詞を付与する</summary>
-</member><member name="M:Gears.DataSource.SqlFilterItem.pf(Gears.DataSource.SqlDataSource@)">
-	<summary>データソースから前置詞を付与する</summary>
-</member><member name="M:Gears.DataSource.SqlFilterItem.asKey">
-	<summary>キーを設定する</summary>
-</member><member name="M:Gears.DataSource.SqlFilterItem.asNoFormat">
-	<summary>フォーマット処理を無効にし、設定したColumnをそのまま使用する</summary>
-</member><member name="M:Gears.DataSource.SqlFilterItem.eq(System.Object)">
-	<summary>評価式を設定する(equal)</summary>
-</member><member name="M:Gears.DataSource.SqlFilterItem.neq(System.Object)">
-	<summary>評価式を設定する(not equal)</summary>
-</member><member name="M:Gears.DataSource.SqlFilterItem.joinOn(Gears.DataSource.SqlFilterItem)">
-	<summary>表同士の結合式を設定する(equal)</summary>
-</member><member name="M:Gears.DataSource.SqlFilterItem.joinOn(System.String)">
-	<summary>表同士の結合式を設定する(equal)</summary>
-</member><member name="M:Gears.DataSource.SqlFilterItem.lt(System.Object)">
-	<summary>評価式を設定する(less than)</summary>
-</member><member name="M:Gears.DataSource.SqlFilterItem.gt(System.Object)">
-	<summary>評価式を設定する(grater than)</summary>
-</member><member name="M:Gears.DataSource.SqlFilterItem.lteq(System.Object)">
-	<summary>評価式を設定する(less than or equal)</summary>
-</member><member name="M:Gears.DataSource.SqlFilterItem.gteq(System.Object)">
-	<summary>評価式を設定する(grater than or equal)</summary>
-</member><member name="M:Gears.DataSource.SqlFilterItem.likes(System.Object)">
-	<summary>評価式を設定する(LIKE)</summary>
-</member><member name="M:Gears.DataSource.SqlFilterItem.inGroup(Gears.DataSource.SqlFilterGroup)">
-	<summary>条件式のグループを設定する</summary>
-</member><member name="M:Gears.DataSource.SqlFilterItem.nots">
-	<summary>否定式を設定する</summary>
-</member><member name="T:Gears.DataSource.SqlFilterItem">
-	<summary>
- SQLの抽出条件を管理するクラス
- </summary>
-	<remarks></remarks>
-</member><member name="F:Gears.Validation.ValidationResultType.Critical">
-	<summary>エラー</summary>
-</member><member name="F:Gears.Validation.ValidationResultType.Alert">
-	<summary>警告</summary>
-</member><member name="F:Gears.Validation.ValidationResultType.Success">
-	<summary>成功</summary>
-</member><member name="T:Gears.Validation.ValidationResultType">
-	<summary>
- 検証結果の種別
- </summary>
-</member><member name="M:Gears.Validation.ValidationResults.GetFails">
-	<summary>
- 成功以外のバリデーション結果を抽出する
- </summary>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="P:Gears.Validation.ValidationResults.ErrorMessage">
-	<summary>
- エラーメッセージを取得する<br/>
- エラーが複数ある場合は初回のものを取得。警告については、全て連結して一つの文字列にする<br/>
- ※警告はこれを無視するかどうかプロンプトで確認するため、何度も確認をさせないよう一つにまとめる
- </summary>
-	<value></value>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="P:Gears.Validation.ValidationResults.ErrorSource">
-	<summary>
- エラーの発生源を取得する。複数のエラーが存在する場合は、最初の一つを取得する
- </summary>
-	<value></value>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.Validation.ValidationResults.IsValid">
-	<summary>
- バリデーションの判定結果を取得する(エラー/警告がある場合NG)
- </summary>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.Validation.ValidationResults.IsValidIgnoreAlert">
-	<summary>
- バリデーションの判定結果を取得する(警告を除外)
- </summary>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.Validation.ValidationResults.Add(Gears.Validation.ValidationResultType,System.String,System.String)">
-	<summary>
- バリデーション結果を追加する
- </summary>
-	<param name="vResult"></param>
-	<param name="msg"></param>
-	<param name="source"></param>
-	<remarks></remarks>
-</member><member name="T:Gears.Validation.ValidationResults">
-	<summary>
- 検証結果を格納、評価するためのクラス
- </summary>
-</member><member name="P:Gears.Validation.ValidationResult.ValidResult">
-	<summary>バリデーション結果</summary>
-</member><member name="P:Gears.Validation.ValidationResult.ErrorMessage">
-	<summary>エラーメッセージ</summary>
-</member><member name="P:Gears.Validation.ValidationResult.ErrorSource">
-	<summary>エラー発生源</summary>
-</member><member name="T:Gears.Validation.ValidationResult">
-	<summary>
- 検証結果オブジェクト
- </summary>
-</member><member name="P:Gears.Validation.Validator.GMatch.Pattern">
-	<summary>正規表現パターン</summary>
-	<value></value>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="T:Gears.Validation.Validator.GMatch">
-	<summary>
- 指定された正規表現の値と一致するか検証する属性
- </summary>
-	<remarks></remarks>
-</member><member name="P:Gears.JS.JSVariableAttribute.Name">
-	<summary>JavaScript側とサーバーサイドのプロパティ名で名前を変えたい場合に使用</summary>
-</member><member name="T:Gears.JS.JSVariableAttribute">
-	<summary>
- WebPage上で、JavaScriptオブジェクトとして扱いたい変数に対し付与するAttribute。<br/>
- このアトリビュートを指定した変数は、gears.v.xxx で値を取得できる。
- </summary>
-	<remarks></remarks>
-</member><member name="T:Gears.DataSource.OrderKind">
-	<summary>
- ORDER の種類
- </summary>
-	<remarks></remarks>
-</member><member name="P:Gears.DataSource.SqlSelectItem.ColAlias">
-	<summary>選択列の別名(AS)</summary>
-</member><member name="P:Gears.DataSource.SqlSelectItem.IsGroupBy">
-	<summary>Group BY句の対象か否か</summary>
-</member><member name="P:Gears.DataSource.SqlSelectItem.OrderBy">
-	<summary>ORDER BY設定</summary>
-</member><member name="P:Gears.DataSource.SqlSelectItem.IsNoSelect">
-	<summary>SELECT選択の対象としない(ORDER BYのみに使いたいなど)</summary>
-</member><member name="M:Gears.DataSource.SqlSelectItem.ColumnWithAlias">
-	<summary>
- 別名を考慮したカラム名
- </summary>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.SqlSelectItem.pf(System.String)">
-	<summary>前置詞を付与する</summary>
-</member><member name="M:Gears.DataSource.SqlSelectItem.pf(Gears.DataSource.SqlDataSource@)">
-	<summary>データソースから前置詞を付与する</summary>
-</member><member name="M:Gears.DataSource.SqlSelectItem.asKey">
-	<summary>キーを設定する</summary>
-</member><member name="M:Gears.DataSource.SqlSelectItem.asNoFormat">
-	<summary>フォーマット処理を無効にし、設定したColumnをそのまま使用する</summary>
-</member><member name="M:Gears.DataSource.SqlSelectItem.asName(System.String)">
-	<summary>別名を設定する</summary>
-	<param name="colalias"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.SqlSelectItem.inGroup">
-	<summary>Group by句に含む</summary>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.SqlSelectItem.ASC">
-	<summary>昇順に設定</summary>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.SqlSelectItem.DESC">
-	<summary>降順に設定</summary>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.SqlSelectItem.asNoSelect">
-	<summary>選択をしない</summary>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.SqlSelectItem.toFilter">
-	<summary>選択項目を条件項目に変換する</summary>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.SqlSelectItem.setValue(System.Object)">
-	<summary>パラメータの値を設定する</summary>
-	<param name="val"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.SqlSelectItem.hasValue">
-	<summary>
- 値を保持しているか否かを判定する。IsNoSelectが設定された項目は値があってもFalseとなる
- </summary>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="T:Gears.DataSource.SqlSelectItem">
-	<summary>
- SQLの選択条件を管理するクラス
- </summary>
-	<remarks></remarks>
-</member><member name="M:Gears.Validation.Validator.GByteLengthBetween.#ctor(System.Int32)">
-	<summary>最大長を指定し作成</summary>
-	<param name="len"></param>
-	<remarks></remarks>
-</member><member name="M:Gears.Validation.Validator.GByteLengthBetween.#ctor(System.Int32,System.Int32)">
-	<summary>最小～最大の範囲を指定して作成</summary>
-	<param name="min"></param>
-	<param name="max"></param>
-	<remarks></remarks>
-</member><member name="P:Gears.Validation.Validator.GByteLengthBetween.MinLength">
-	<summary>バイト長の最小値</summary>
-</member><member name="T:Gears.Validation.Validator.GByteLengthBetween">
-	<summary>
- 項目長が指定されたバイト長の範囲に収まっているかを検証する属性
- </summary>
-	<remarks></remarks>
-</member><member name="P:Gears.Validation.Marker.IAttributeMarker.DoCast">
-	<summary>データベース保存時、マーカーの属性に応じたキャストを実行するか否か</summary>
-</member><member name="T:Gears.Validation.Marker.IAttributeMarker">
-	<summary>
- 属性をまとめるためのマーカーであることを示すインタフェース
- </summary>
-	<remarks></remarks>
-</member><member name="P:Gears.DataSource.AbsKeyValueSource.KeyColumn">
-	<summary>キーとなる列</summary>
-</member><member name="P:Gears.DataSource.AbsKeyValueSource.ValueColumn">
-	<summary>値(テキスト)となる列</summary>
-</member><member name="T:Gears.DataSource.AbsKeyValueSource">
-	<summary>
- リストアイテムのように、Key/Valueで構成されるデータソースのためのクラス
- </summary>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.INameMapper.addRule(System.String,System.String)">
-	<summary>変換ルールの登録を行う</summary>
-	<param name="item"></param>
-	<param name="column"></param>
-</member><member name="M:Gears.DataSource.INameMapper.changeItemToColumn(System.String)">
-	<summary>項目名をDB上の列名に変換するメソッド</summary>
-</member><member name="M:Gears.DataSource.INameMapper.changeColumnToItem(System.String)">
-	<summary>DB上の列名を項目名に変換するメソッド</summary>
-</member><member name="T:Gears.DataSource.INameMapper">
-	<summary>
- 項目名を変換するためのクラス
- </summary>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.NameMapper.addRule(System.String,System.String)">
-	<summary>
- 指定した画面項目名をデータベースの列項目名に変換するルールを登録する<br/>
-	</summary>
-	<param name="item"></param>
-	<param name="column"></param>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.NameMapper.changeColumnToItem(System.String)">
-	<summary>
- 登録されたルールに基づき、列項目名を画面項目名に変換する
- </summary>
-	<param name="column"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.NameMapper.changeItemToColumn(System.String)">
-	<summary>
- 登録されたルールに基づき、画面項目名を列項目名に変換する
- </summary>
-	<param name="item"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.NameMapper.getDictionarySafe``2(System.Collections.Generic.Dictionary{``0,``1}@,``0)">
-	<summary>ディクショナリ/キーがNothingの場合も考慮し値を読み出す</summary>
-</member><member name="M:Gears.DataSource.NameMapper.addDictionarySafe``2(System.Collections.Generic.Dictionary{``0,``1}@,``0,``1)">
-	<summary>ディクショナリ/キーがNothingの場合も考慮し値を追加する</summary>
-</member><member name="T:Gears.DataSource.NameMapper">
-	<summary>
- 項目変換を行うためのテンプレートとなる
- </summary>
-	<remarks></remarks>
-</member><member name="F:Gears.Validation.Marker.GMarkerDate.DATE_CSS">
-	<summary>
- 日付属性に共通するCSSClass
- </summary>
-	<remarks></remarks>
-</member><member name="M:Gears.Validation.Marker.GMarkerDate.#ctor">
-	<summary>
- コンストラクタで数値属性共通の値をセット
- </summary>
-	<remarks></remarks>
-</member><member name="T:Gears.Validation.Marker.GMarkerDate">
-	<summary>
- 日付属性を表すマーカー<br/>
- これを継承する属性については、共通のCssClass gs-date を付与する
- </summary>
-	<remarks></remarks>
-</member><member name="M:Gears.Util.DataSetReader.Item(System.Data.DataTable,System.String,System.Int32)">
-	<summary>データデータブルの指定箇所の値を取得する(列名指定)</summary>
-</member><member name="M:Gears.Util.DataSetReader.Item(System.Data.DataTable,System.Int32,System.Int32)">
-	<summary>データデータブルの指定箇所の値を取得する(列番号指定)</summary>
-</member><member name="M:Gears.Util.DataSetReader.Item(System.Data.DataRow,System.String)">
-	<summary>指定行、指定列の値を取得する(列名指定)</summary>
-</member><member name="M:Gears.Util.DataSetReader.Item(System.Data.DataRow,System.Int32)">
-	<summary>指定行、指定列の値を取得する(列番号指定)</summary>
-</member><member name="M:Gears.Util.DataSetReader.Item``1(System.Data.DataTable,``0,System.Int32)">
-	<summary>データデータブルの指定箇所の値を取得する</summary>
-</member><member name="M:Gears.Util.DataSetReader.Item``1(System.Data.DataRow,``0)">
-	<summary>指定行、指定列の値を取得する</summary>
-</member><member name="M:Gears.Util.DataSetReader.Item``1(System.Data.DataColumnCollection,System.Data.DataRow,``0)">
-	<summary>データテーブルの値を安全に取得する</summary>
-</member><member name="T:Gears.Util.DataSetReader">
-	<summary>
- DataTableの値を読み込むためのユーティリティクラス
- </summary>
-	<remarks></remarks>
-</member><member name="M:Gears.Util.DataSetExtension.ItemOrDefault(System.Data.DataRow,System.String)">
-	<summary>指定行、指定列の値を取得する(列名指定)</summary>
-	<param name="row"></param>
-	<param name="colName"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.Util.DataSetExtension.ItemOrDefault(System.Data.DataRow,System.Int32)">
-	<summary>指定行、指定列の値を取得する(列番号指定)</summary>
-	<param name="row"></param>
-	<param name="colIndex"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.Util.DataSetExtension.ToListOfDictionary(System.Data.DataTable)">
-	<summary>
- JSONへ変換する
- </summary>
-	<param name="table"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="T:Gears.Util.DataSetExtension">
-	<summary>
- データテーブル/列/行を扱いやすくするための拡張
- </summary>
-	<remarks></remarks>
-</member><member name="P:Gears.Validation.IAttributeHolder.GAttribute">
-	<summary>保持している属性</summary>
-</member><member name="P:Gears.Validation.IAttributeHolder.validateeValue">
-	<summary>
- 検証対象となる値を取得する<br/>
- Validator側で変更が行われないよう、ReadOnly扱いにする。Setterは独自に実装する必要あり
- </summary>
-</member><member name="P:Gears.Validation.IAttributeHolder.GCssClass">
-	<summary>表示用スタイル</summary>
-</member><member name="M:Gears.Validation.IAttributeHolder.isValidateOk">
-	<summary>バリデーションを実行する</summary>
-</member><member name="M:Gears.Validation.IAttributeHolder.getValidationError">
-	<summary>バリデーションを行った結果のメッセージを取得する</summary>
-</member><member name="T:Gears.Validation.IAttributeHolder">
-	<summary>
- 属性を保持する要素を定義するインタフェース<br/>
- 属性に基づき、どのような検証を行うか、またどのようなスタイルで表示するかが決定される
- </summary>
-	<remarks></remarks>
-</member><member name="M:Gears.Binder.GearsDataBinder.isBindable(System.Web.UI.Control@)">
-	<summary>
- バインド対象か否かを判定する<br/>
- 標準では、リストかGridViewのような複合コントロールを対象とする
- </summary>
-	<param name="con"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.Binder.GearsDataBinder.dataBind(System.Web.UI.Control@,Gears.DataSource.GearsDataSource@,Gears.GearsDTO)">
-	<summary>
- データのバインド処理を行う<br/>
- バインド対象データは、データソースクラスにdtoを渡した結果が使用される
- </summary>
-	<param name="con"></param>
-	<param name="dsClass"></param>
-	<param name="dto"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.Binder.GearsDataBinder.dataBind(System.Web.UI.Control@,System.Data.DataTable@)">
-	<summary>
- データのバインド処理を行う
- </summary>
-	<param name="con"></param>
-	<param name="dset"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.Binder.GearsDataBinder.dataBind(Gears.GearsControl@,System.Data.DataTable@)">
-	<summary>
- データのバインド処理を行う
- </summary>
-	<param name="gcon"></param>
-	<param name="dset"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.Binder.GearsDataBinder.listBind(System.Web.UI.WebControls.ListControl@,System.Data.DataTable@)">
-	<summary>
- リスト型コントロールに対しバインド処理を行う
- </summary>
-	<param name="list"></param>
-	<param name="dset"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.Binder.GearsDataBinder.compositBind(System.Web.UI.WebControls.CompositeDataBoundControl@,System.Data.DataTable@)">
-	<summary>
- GridViewなどの複合データソースに対するバインド処理
- </summary>
-	<param name="dbound"></param>
-	<param name="dset"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.Binder.GearsDataBinder.dataAttach(System.Web.UI.Control@,System.Data.DataTable@)">
-	<summary>
- コントロールに値を設定する
- </summary>
-	<param name="con"></param>
-	<param name="dset"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.Binder.GearsDataBinder.dataAttach(Gears.GearsControl@,System.Data.DataTable@)">
-	<summary>
- コントロールに値を設定する
- </summary>
-	<param name="gcon"></param>
-	<param name="dset"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.Binder.GearsDataBinder.listAttach(System.Web.UI.WebControls.ListControl@,System.Data.DataTable@)">
-	<summary>
- リストコントロールに値をセットする
- </summary>
-	<param name="list"></param>
-	<param name="dset"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.Binder.GearsDataBinder.getValue(System.Web.UI.Control@)">
-	<summary>
- コントロールから値を取得する
- </summary>
-	<param name="con"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.Binder.GearsDataBinder.setValue(System.Web.UI.Control@,System.Object)">
-	<summary>
- コントロールに対して値をセットする
- </summary>
-	<param name="con"></param>
-	<param name="value"></param>
-	<remarks></remarks>
-</member><member name="T:Gears.Binder.GearsDataBinder">
-	<summary>
- コントロールに対するDataBind/値設定処理を行う
- </summary>
-	<remarks></remarks>
-</member><member name="P:Gears.GearsControlInfo.ControlID">
-	<summary>
- コントロールID
- </summary>
-</member><member name="P:Gears.GearsControlInfo.DataSourceID">
-	<summary>
- データソースクラス名
- </summary>
-</member><member name="P:Gears.GearsControlInfo.Value">
-	<summary>
- コントロールの値
- </summary>
-</member><member name="P:Gears.GearsControlInfo.IsFormAttribute">
-	<summary>
- 更新フォーム属性
- </summary>
-</member><member name="P:Gears.GearsControlInfo.IsFilterAttribute">
-	<summary>
- 検索フォーム属性
- </summary>
-</member><member name="P:Gears.GearsControlInfo.IsKey">
-	<summary>
- キーか否か
- </summary>
-</member><member name="P:Gears.GearsControlInfo.OperatorAttribute">
-	<summary>
- 検索する際のオペレーター設定(=や&gt;=など)
- </summary>
-</member><member name="P:Gears.GearsControlInfo.LoadedValue">
-	<summary>前回ロードされた値</summary>
-</member><member name="M:Gears.GearsControlInfo.#ctor(System.String,System.String,System.String)">
-	<summary>
- 最低限の情報をセットするコンストラクタ
- </summary>
-	<param name="conId"></param>
-	<param name="dsID"></param>
-	<param name="value"></param>
-	<remarks></remarks>
-</member><member name="M:Gears.GearsControlInfo.#ctor(Gears.GearsControl@)">
-	<summary>
- GearsControlから生成を行うコンストラクタ
- </summary>
-	<param name="gcon"></param>
-	<remarks></remarks>
-</member><member name="M:Gears.GearsControlInfo.#ctor(Gears.GearsControlInfo@)">
-	<summary>
- コピーコンストラクタ
- </summary>
-	<param name="cInfo"></param>
-	<remarks></remarks>
-</member><member name="M:Gears.GearsControlInfo.toSelection">
-	<summary>
- ControlInfoをSqlSelectItemに変換する
- </summary>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.GearsControlInfo.toFilter">
-	<summary>
- ControlInfoをSqlFilterItemに変換する
- </summary>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.GearsControlInfo.setToSqlItem(Gears.DataSource.SqlItem@)">
-	<summary>Selection/Filterに共通のプロパティをセットする</summary>
-	<param name="item"></param>
-	<remarks></remarks>
-</member><member name="T:Gears.GearsControlInfo">
-	<summary>
- GearsControlの値や設定情報をまとめたクラス。<br/>
- GearsControl本体はWebControlを含む重たいクラスであるため、本クラスに値を移すことで扱いやすくする
- </summary>
-	<remarks></remarks>
-</member><member name="M:Gears.Binder.IDataBinder.dataBind(System.Web.UI.Control@,System.Data.DataTable@)">
-	<summary>
- データのバインド処理を行う
- </summary>
-	<param name="con"></param>
-	<param name="dset"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.Binder.IDataBinder.dataBind(Gears.GearsControl@,System.Data.DataTable@)">
-	<summary>
- データのバインド処理を行う
- </summary>
-	<param name="gcon"></param>
-	<param name="dset"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.Binder.IDataBinder.isBindable(System.Web.UI.Control@)">
-	<summary>
- バインド対象か否かの判定を行う
- </summary>
-	<param name="con"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.Binder.IDataBinder.dataAttach(System.Web.UI.Control@,System.Data.DataTable@)">
-	<summary>
- 値を設定する処理を行う
- </summary>
-	<param name="con"></param>
-	<param name="dset"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.Binder.IDataBinder.dataAttach(Gears.GearsControl@,System.Data.DataTable@)">
-	<summary>
- 値を設定する処理を行う
- </summary>
-	<param name="gcon"></param>
-	<param name="dset"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.Binder.IDataBinder.getValue(System.Web.UI.Control@)">
-	<summary>
- コントロールから値を取得する処理
- </summary>
-	<param name="con"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.Binder.IDataBinder.setValue(System.Web.UI.Control@,System.Object)">
-	<summary>
- コントロールに値をセットする処理
- </summary>
-	<param name="con"></param>
-	<param name="value"></param>
-	<remarks></remarks>
-</member><member name="T:Gears.Binder.IDataBinder">
-	<summary>
- データバインディング処理を実装するクラスのインタフェース
- </summary>
-	<remarks></remarks>
-</member><member name="T:Gears.Validation.Validator.GNumber">
-	<summary>
- 整数(小数点なし)であるかを検証する属性
- </summary>
-	<remarks></remarks>
-</member><member name="M:Gears.Validation.Validator.GStartWith.#ctor(System.String)">
-	<summary>開始文字列を指定</summary>
-	<param name="p"></param>
-	<remarks></remarks>
-</member><member name="P:Gears.Validation.Validator.GStartWith.Prefix">
-	<summary>開始文字列</summary>
-</member><member name="T:Gears.Validation.Validator.GStartWith">
-	<summary>
- 指定された文字列で始まることを検証する属性
- </summary>
-	<remarks></remarks>
-</member><member name="T:Gears.Validation.GearsModelValidationException">
-	<summary>
- モデルバリデーションのエラーを表す例外
- </summary>
-	<remarks></remarks>
-</member><member name="P:Gears.DataSource.SqlItem.Column">
-	<summary>列項目名</summary>
-</member><member name="P:Gears.DataSource.SqlItem.Value">
-	<summary>値</summary>
-</member><member name="P:Gears.DataSource.SqlItem.Prefix">
-	<summary>前置詞</summary>
-</member><member name="P:Gears.DataSource.SqlItem.IsKey">
-	<summary>キー項目の判定</summary>
-</member><member name="P:Gears.DataSource.SqlItem.IsNeedFormat">
-	<summary>関数か否か</summary>
-</member><member name="P:Gears.DataSource.SqlItem.ParamName">
-	<summary>
- パラメーター名称<br/>
- 実際にフィルタをかけるパラーメータ名(USERID = :pUserというSQLならpUserがパラメーター名)
- </summary>
-</member><member name="M:Gears.DataSource.SqlItem.hasValue">
-	<summary>
- 値があるか否かの判定
- </summary>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.SqlItem.basePf(System.String)">
-	<summary>
- prefixを付与する<br/>
- 例:SELECT * FROM tab t WHERE t.DATE &gt; '20121212' としたい場合、filter.pf("t")としてprefixを付与する
- </summary>
-	<param name="pf"></param>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.SqlItem.basePf(Gears.DataSource.SqlDataSource@)">
-	<summary>
- SqlDataSourceに設定されたsuffixをprefixとして付与する<br/>
- 例:SELECT * FROM tab t WHERE t.DATE &gt; '20121212' とする場合、DataSourceであるtabのsuffixはtであるため、これをフィルタのprefixとして付与
- </summary>
-	<param name="sds"></param>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.SqlItem.baseAsKey">
-	<summary>
- キーとして設定する
- </summary>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.SqlItem.baseAsNoFormat">
-	<summary>
- マルチバイト対応などのためのフォーマット処理を無効にし、設定したColumnをそのまま使用する
- </summary>
-	<remarks></remarks>
-</member><member name="T:Gears.DataSource.SqlItem">
-	<summary>
- SQL内で使用する項目を表す抽象クラス
- </summary>
-	<remarks></remarks>
-</member><member name="M:Gears.Validation.GAttributeHolderTemplate.#ctor(System.String,Gears.Validation.GearsAttribute)">
-	<summary>バリデーション対象の値と属性を使用し作成する</summary>
-	<param name="v"></param>
-	<param name="attr"></param>
-	<remarks></remarks>
-</member><member name="M:Gears.Validation.GAttributeHolderTemplate.#ctor(System.String,System.String)">
-	<summary>バリデーション対象の値とCSSクラスから作成する(CSSから属性を動的に作成)</summary>
-	<param name="v"></param>
-	<param name="css"></param>
-	<remarks></remarks>
-</member><member name="P:Gears.Validation.GAttributeHolderTemplate.GAttribute">
-	<summary>属性を取得する</summary>
-</member><member name="P:Gears.Validation.GAttributeHolderTemplate.GCssClass">
-	<summary>CSSクラスを取得する</summary>
-</member><member name="M:Gears.Validation.GAttributeHolderTemplate.getValidationError">
-	<summary>
- バリデーション結果を取得する
- </summary>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.Validation.GAttributeHolderTemplate.isValidateOk">
-	<summary>
- バリデーションを実施する
- </summary>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="P:Gears.Validation.GAttributeHolderTemplate.validateeValue">
-	<summary>バリデーション対象の値を取得する</summary>
-	<value></value>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.Validation.GAttributeHolderTemplate.setValue(System.String)">
-	<summary>
- バリデーション対象の値をセットする
- </summary>
-	<param name="value"></param>
-	<remarks></remarks>
-</member><member name="T:Gears.Validation.GAttributeHolderTemplate">
-	<summary>
- カスタム属性用のテンプレートクラス
- </summary>
-	<remarks></remarks>
-</member><member name="T:Gears.Binder.GearsDataAttachException">
-	<summary>
- コントロールへの値設定時の例外
- </summary>
-	<remarks></remarks>
-</member><member name="T:Gears.Binder.GearsDataBindException">
-	<summary>
- コントロールへのDataBind時の例外
- </summary>
-	<remarks></remarks>
-</member><member name="F:Gears.DataSource.GearsDataSource._selectView">
-	<summary>
- データを選択するためのビュー/テーブル名。
- </summary>
-</member><member name="P:Gears.DataSource.GearsDataSource.TargetTable">
-	<summary>
- データの更新対象となるビュー/テーブル名。
- </summary>
-</member><member name="P:Gears.DataSource.GearsDataSource.IsMultiByte">
-	<summary>マルチバイト対応が必要なデータソースか否か(日本語名テーブルなど)</summary>
-</member><member name="P:Gears.DataSource.GearsDataSource.ModelValidator">
-	<summary>ビジネスロジックによるバリデーションを行うためのオブジェクト</summary>
-</member><member name="P:Gears.DataSource.GearsDataSource.Mapper">
-	<summary>項目変換ルールの設定</summary>
-</member><member name="P:Gears.DataSource.GearsDataSource.ConnectionName">
-	<summary>
- 接続文字列
- </summary>
-	<value></value>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.GearsDataSource.gResultSet">
-	<summary>
- 実行後の結果セットを取得する
- </summary>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.GearsDataSource.Item(System.Int32,System.Int32)">
-	<summary>
- 結果セットから指定インデックス/行数の値を取得する
- </summary>
-	<param name="index"></param>
-	<param name="rowIndex"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.GearsDataSource.Item(System.String,System.Int32)">
-	<summary>
- 結果セットから指定カラム/行数の値を取得する
- </summary>
-	<param name="index"></param>
-	<param name="rowIndex"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.GearsDataSource.setLockCheckColumn(System.String,Gears.DataSource.LockType)">
-	<summary>
- 楽観ロック用の列の設定
- </summary>
-	<param name="colname"></param>
-	<param name="ltype"></param>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.GearsDataSource.getLockValue">
-	<summary>
- SQL実行結果から楽観ロック用列の値を取得する
- </summary>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.GearsDataSource.addLockValue(Gears.DataSource.SqlBuilder)">
-	<summary>
- SQLに楽観ロック列を更新する値をセットする
- </summary>
-	<param name="sqlb"></param>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.GearsDataSource.getLockTypeValue(Gears.DataSource.LockType)">
-	<summary>
- 楽観ロックの各タイプに応じた更新値の取得
- </summary>
-	<param name="ltype"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.GearsDataSource.#ctor(System.String,Gears.DataSource.SqlDataSource)">
-	<summary>データソースとなるテーブルを指定しインスタンスを作成する</summary>
-	<param name="conName">接続文字列</param>
-	<param name="table">テーブルを示すSqlDataSource</param>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.GearsDataSource.#ctor(System.String,System.String)">
-	<summary>データソースとなるテーブル名を文字列で指定しインスタンスを作成する</summary>
-	<param name="conName">接続文字列</param>
-	<param name="tableName">テーブル名</param>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.GearsDataSource.#ctor(System.String,Gears.DataSource.SqlDataSource,Gears.DataSource.SqlDataSource)">
-	<summary>選択用のビューと更新用のテーブルをそれぞれ指定してインスタンスを作成する</summary>
-	<param name="conName">接続文字列</param>
-	<param name="view">選択用のビュー</param>
-	<param name="table">更新用のテーブル</param>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.GearsDataSource.#ctor(System.String,System.String,System.String)">
-	<summary>選択用のビューと更新用のテーブルをそれぞれ文字列で指定してインスタンスを作成する</summary>
-	<param name="conName">接続文字列</param>
-	<param name="viewName">選択用のビュー名</param>
-	<param name="tableName">更新用のテーブル名</param>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.GearsDataSource.execute(Gears.GearsDTO)">
-	<summary>
- 選択/更新処理を実行する
- </summary>
-	<param name="dto"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.GearsDataSource.makeSqlBuilder(Gears.GearsDTO)">
-	<summary>
- 受け取ったDTOをSQL実行用のオブジェクトに変換する
- </summary>
-	<param name="data"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.GearsDataSource.makeExecute(Gears.GearsDTO)">
-	<summary>
- 実行用のSQLを作成するためのメソッド
- </summary>
-	<param name="dto"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.GearsDataSource.gSelect(Gears.GearsDTO)">
-	<summary>
- Selectを実行する
- </summary>
-	<param name="data"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.GearsDataSource.gSelect(Gears.DataSource.SqlSelectItem[])">
-	<summary>
- メソッドチェーンを利用したSelectを実行する
- </summary>
-	<param name="selection"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.GearsDataSource.gSelect(System.Collections.Generic.List{Gears.DataSource.SqlSelectItem})">
-	<summary>
- メソッドチェーンを利用したSelectを実行する
- </summary>
-	<param name="selection"></param>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.GearsDataSource.gSelect(System.Web.UI.Control[])">
-	<summary>
- メソッドチェーンを利用したSelectを実行する
- </summary>
-	<param name="cons"></param>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.GearsDataSource.gSelectPageBy(System.Int32,System.Int32,Gears.GearsDTO)">
-	<summary>
- ページサイズを指定したSelectを行う
- </summary>
-	<param name="maximumRows"></param>
-	<param name="startRowIndex"></param>
-	<param name="data"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.GearsDataSource.gSelect(Gears.DataSource.SqlBuilder)">
-	<summary>
- Selectを実行する
- </summary>
-	<param name="sqlb"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.GearsDataSource.convertResultSet(System.Data.DataTable@,Gears.DataSource.SqlBuilder)">
-	<summary>
- SqlBuilderに設定された項目変換に基づき、DataTableのカラム名を変換する
- </summary>
-	<param name="dataSet"></param>
-	<param name="sqlb"></param>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.GearsDataSource.gSelectCount(Gears.GearsDTO)">
-	<summary>
- 件数の取得
- </summary>
-	<param name="data"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.GearsDataSource.gSelectCount(Gears.DataSource.SqlBuilder)">
-	<summary>
- 件数の取得
- </summary>
-	<param name="sqlb"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.GearsDataSource.gInsert(Gears.GearsDTO)">
-	<summary>
- Insertを実行する
- </summary>
-	<param name="data"></param>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.GearsDataSource.gInsert(Gears.DataSource.SqlBuilder)">
-	<summary>
- Insertを実行する
- </summary>
-	<param name="sqlb"></param>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.GearsDataSource.gUpdate(Gears.GearsDTO)">
-	<summary>
- Updateを実行する
- </summary>
-	<param name="data"></param>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.GearsDataSource.gUpdate(Gears.DataSource.SqlBuilder)">
-	<summary>
- Updateを実行する
- </summary>
-	<param name="sqlb"></param>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.GearsDataSource.gDelete(Gears.GearsDTO)">
-	<summary>
- Deleteを実行する
- </summary>
-	<param name="data"></param>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.GearsDataSource.gDelete(Gears.DataSource.SqlBuilder)">
-	<summary>
- Deleteを実行する
- </summary>
-	<param name="sqlb"></param>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.GearsDataSource.gSave(Gears.GearsDTO)">
-	<summary>
- Saveを実行する(一致するキーがある場合Update/なければInsert)
- </summary>
-	<param name="data"></param>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.GearsDataSource.gSave(Gears.DataSource.SqlBuilder)">
-	<summary>
- Saveを実行する(一致するキーがある場合Update/なければInsert)
- </summary>
-	<param name="sqlb"></param>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.GearsDataSource.gSave(Gears.DataSource.SqlSelectItem[])">
-	<summary>
- メソッドチェーンを利用したSaveを実行する
- </summary>
-	<param name="selection"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.GearsDataSource.gSave(System.Collections.Generic.List{Gears.DataSource.SqlSelectItem})">
-	<summary>
- メソッドチェーンを利用したSaveを実行する
- </summary>
-	<param name="selection"></param>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.GearsDataSource.gSave(System.Web.UI.Control[])">
-	<summary>
- メソッドチェーンを利用したSaveを実行する
- </summary>
-	<param name="cons"></param>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.GearsDataSource.gExecute(Gears.ActionType,System.Collections.Generic.List{Gears.DataSource.SqlSelectItem})">
-	<summary>
- メソッドチェーンで処理を行うためのダミーオブジェクト(Expression)を作成する
- </summary>
-	<param name="action"></param>
-	<param name="selection"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.GearsDataSource.gExecute(Gears.ActionType,System.Collections.Generic.List{System.Web.UI.Control})">
-	<summary>
- メソッドチェーンで処理を行うためのダミーオブジェクト(Expression)を作成する
- </summary>
-	<param name="action"></param>
-	<param name="cons"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.GearsDataSource.executeProcess(Gears.DataSource.SqlBuilder)">
-	<summary>
- 更新系処理を行うメソッド
- </summary>
-	<param name="sqlb"></param>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.GearsDataSource.loadExecuted(Gears.DataSource.SqlBuilder)">
-	<summary>
- データベース更新後の値を読み込む
- </summary>
-	<param name="sqlb"></param>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.GearsDataSource.beforeExecute(Gears.DataSource.SqlBuilder)">
-	<summary>
- 更新処理実行前に行われるトリガ処理
- </summary>
-	<param name="sqlb"></param>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.GearsDataSource.afterExecute(Gears.DataSource.SqlBuilder)">
-	<summary>
- 更新処理実行後に行われるトリガ処理
- </summary>
-	<param name="sqlb"></param>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.GearsDataSource.confirmRecord(Gears.GearsDTO)">
-	<summary>
- Saveの場合のInsert/Update判定、また楽観ロックのチェックを行う
- </summary>
-	<param name="confirmData"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.GearsDataSource.confirmRecord(Gears.DataSource.SqlBuilder)">
-	<summary>
- Saveの場合のInsert/Update判定、また楽観ロックのチェックを行う
- </summary>
-	<param name="sqlb"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.DataSource.GearsDataSource.LogMessage(Gears.DataSource.SqlBuilder,Gears.DataSource.GearsSqlExecutor)">
-	<summary>SQL実行のメッセージをログに書き込む</summary>
-	<param name="sqlb"></param>
-	<param name="executor"></param>
-	<remarks></remarks>
-</member><member name="T:Gears.DataSource.GearsDataSource">
-	<summary>
- データソースクラス作成用の抽象クラス
- </summary>
 	<remarks></remarks>
 </member><member name="P:Gears.GearsMediator.DsNamespace">
 	<summary>デフォルトで使用する名称空間</summary>
@@ -3137,6 +1433,1148 @@ Gears
  Gearsフレームワークにおけるデータソースを定義するためのインタフェース
  </summary>
 	<remarks></remarks>
+</member><member name="F:Gears.Validation.ValidationResultType.Critical">
+	<summary>エラー</summary>
+</member><member name="F:Gears.Validation.ValidationResultType.Alert">
+	<summary>警告</summary>
+</member><member name="F:Gears.Validation.ValidationResultType.Success">
+	<summary>成功</summary>
+</member><member name="T:Gears.Validation.ValidationResultType">
+	<summary>
+ 検証結果の種別
+ </summary>
+</member><member name="M:Gears.Validation.ValidationResults.GetFails">
+	<summary>
+ 成功以外のバリデーション結果を抽出する
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Gears.Validation.ValidationResults.ErrorMessage">
+	<summary>
+ エラーメッセージを取得する<br/>
+ エラーが複数ある場合は初回のものを取得。警告については、全て連結して一つの文字列にする<br/>
+ ※警告はこれを無視するかどうかプロンプトで確認するため、何度も確認をさせないよう一つにまとめる
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Gears.Validation.ValidationResults.ErrorSource">
+	<summary>
+ エラーの発生源を取得する。複数のエラーが存在する場合は、最初の一つを取得する
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.Validation.ValidationResults.IsValid">
+	<summary>
+ バリデーションの判定結果を取得する(エラー/警告がある場合NG)
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.Validation.ValidationResults.IsValidIgnoreAlert">
+	<summary>
+ バリデーションの判定結果を取得する(警告を除外)
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.Validation.ValidationResults.Add(Gears.Validation.ValidationResultType,System.String,System.String)">
+	<summary>
+ バリデーション結果を追加する
+ </summary>
+	<param name="vResult"></param>
+	<param name="msg"></param>
+	<param name="source"></param>
+	<remarks></remarks>
+</member><member name="T:Gears.Validation.ValidationResults">
+	<summary>
+ 検証結果を格納、評価するためのクラス
+ </summary>
+</member><member name="P:Gears.Validation.ValidationResult.ValidResult">
+	<summary>バリデーション結果</summary>
+</member><member name="P:Gears.Validation.ValidationResult.ErrorMessage">
+	<summary>エラーメッセージ</summary>
+</member><member name="P:Gears.Validation.ValidationResult.ErrorSource">
+	<summary>エラー発生源</summary>
+</member><member name="T:Gears.Validation.ValidationResult">
+	<summary>
+ 検証結果オブジェクト
+ </summary>
+</member><member name="P:Gears.Validation.Validator.GMatch.Pattern">
+	<summary>正規表現パターン</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Gears.Validation.Validator.GMatch">
+	<summary>
+ 指定された正規表現の値と一致するか検証する属性
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Gears.Validation.Validator.GStartWith.#ctor(System.String)">
+	<summary>開始文字列を指定</summary>
+	<param name="p"></param>
+	<remarks></remarks>
+</member><member name="P:Gears.Validation.Validator.GStartWith.Prefix">
+	<summary>開始文字列</summary>
+</member><member name="T:Gears.Validation.Validator.GStartWith">
+	<summary>
+ 指定された文字列で始まることを検証する属性
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Gears.Validation.Validator.GDate.Format">
+	<summary>日付フォーマットを指定する(指定がなくても一般的な書式はカバーされる)</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Gears.Validation.Validator.GDate">
+	<summary>
+ 日付を検証するための属性
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Gears.Binder.GearsDataBindException">
+	<summary>
+ コントロールへのDataBind時の例外
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Gears.gRuleExpression.#ctor(System.Web.UI.Control,Gears.GearsMediator)">
+	<summary>
+ 関連を定義するコントロールと、それを管理するGearsMediatorを受け取る
+ </summary>
+	<param name="con"></param>
+	<param name="mediator"></param>
+	<remarks></remarks>
+</member><member name="M:Gears.gRuleExpression.Relate(System.Web.UI.Control[])">
+	<summary>
+ 関連を登録する
+ </summary>
+	<param name="cons"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.gRuleExpression.Relate(System.Collections.Generic.List{System.Web.UI.Control})">
+	<summary>
+ 関連を登録する
+ </summary>
+	<param name="cons"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.gRuleExpression.When(System.Web.UI.Control)">
+	<summary>
+ 関連を定義する際、明示的に相手を指定する
+ </summary>
+	<param name="toControl"></param>
+	<remarks></remarks>
+</member><member name="M:Gears.gRuleExpression.Except(System.Web.UI.Control[])">
+	<summary>
+ 関連から除外するコントロールを指定する
+ </summary>
+	<param name="excepts"></param>
+	<remarks></remarks>
+</member><member name="T:Gears.gRuleExpression">
+	<summary>
+ Gearsにおける関連を作成するためのダミーオブジェクト(Expression)。<br/>
+ 下記のようにメソッドチェーンで定義を行うために使用する<br/>
+		<code>
+ GRule(someControl).Relate(otherControl).Except(thatControl)
+ </code>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Gears.gSendExpression.#ctor(System.Web.UI.Control,Gears.gSendExpression.ExecuteSend)">
+	<summary>
+ 起点となるコントロールと、処理定義を受け取る<br/>
+ 起点に指定したコントロールからDTOが作成され、送信対象(のDataSource)に送られる
+ </summary>
+	<param name="con"></param>
+	<param name="executor"></param>
+	<remarks></remarks>
+</member><member name="M:Gears.gSendExpression.#ctor(Gears.GearsDTO,Gears.gSendExpression.ExecuteSend)">
+	<summary>
+ 送信対象のDTOを直接受け取る<br/>
+ コントロールからではなく、直接作成したDTOを相手に送りたい場合に使用する
+ </summary>
+	<param name="dto"></param>
+	<param name="executor"></param>
+	<remarks></remarks>
+</member><member name="M:Gears.gSendExpression.ToAll(Gears.GearsDTO)">
+	<summary>
+ 相手を指定せず、関連先のコントロール全体に対して送信する
+ </summary>
+	<param name="dto"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.gSendExpression.ToThe(System.Web.UI.Control,Gears.GearsDTO)">
+	<summary>
+ 相手を指定して送信する
+ </summary>
+	<param name="toControl"></param>
+	<param name="dto"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.gSendExpression.ToMyself(Gears.GearsDTO)">
+	<summary>
+ 自分自身に対して送信する
+ </summary>
+	<param name="dto"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Gears.gSendExpression">
+	<summary>
+ GearsでのSend処理(DTOをターゲットとなるDataSourceに届ける)を記述するためのダミーオブジェクト(Expression)<br/>
+ 下記のようにメソッドチェーンで記述するために使用する<br/>
+		<code>
+ GSend(fromControl).ToThe(otherControl,dto)
+ </code>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Gears.gSourceExpression.#ctor(Gears.DataSource.GearsDataSource,Gears.ActionType,System.Collections.Generic.List{Gears.DataSource.SqlSelectItem})">
+	<summary>
+ データソース、実行処理タイプ、対象の設定を行う
+ </summary>
+	<param name="source"></param>
+	<param name="selection"></param>
+	<remarks></remarks>
+</member><member name="M:Gears.gSourceExpression.Where(Gears.DataSource.SqlFilterItem[])">
+	<summary>
+ 抽出条件をSqlFilterItemの配列で受け取る
+ </summary>
+	<param name="filter"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.gSourceExpression.Where(System.Collections.Generic.List{Gears.DataSource.SqlFilterItem})">
+	<summary>
+ 抽出条件をSqlFilterItemのリストで受け取る
+ </summary>
+	<param name="filter"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.gSourceExpression.Where(System.Web.UI.Control[])">
+	<summary>
+ 抽出条件をControlの配列で受け取る
+ </summary>
+	<param name="cons"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.gSourceExpression.Where(System.Collections.Generic.List{System.Web.UI.Control})">
+	<summary>
+ 抽出条件をControlのリストで受け取る
+ </summary>
+	<param name="cons"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.gSourceExpression.execute">
+	<summary>
+ 実行処理の実体(実際の処理はデータソースのexecuteに委譲)
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Gears.gSourceExpression">
+	<summary>
+ データ抽出/更新処理を記述するためのダミーオブジェクト(Expression)
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Gears.GearsControl.ID_ATTR_FORM">
+	<summary>IDに含まれることで、更新用フォームであることを示す文字列</summary>
+</member><member name="F:Gears.GearsControl.ID_ATTR_FILTER">
+	<summary>IDに含まれることで、検索フォームであることを示す文字列</summary>
+</member><member name="F:Gears.GearsControl.ID_ATTR_KEY">
+	<summary>IDに含まれることで、更新キーであることを示す文字列</summary>
+</member><member name="F:Gears.GearsControl.ID_ATTR_GCON">
+	<summary>IDに含まれることで、登録対象コントロールであることを示す文字列</summary>
+</member><member name="F:Gears.GearsControl.ID_ATTR_GDISP">
+	<summary>IDに含まれることで、登録対象だが送信対象外であることを示す文字列</summary>
+</member><member name="F:Gears.GearsControl.ATTR_OPERATOR">
+	<summary>検索時のオペレーターを指定するための属性</summary>
+</member><member name="F:Gears.GearsControl.ATTR_DS_NAMESPACE">
+	<summary>名称空間を指定するための属性</summary>
+</member><member name="F:Gears.GearsControl.ATTR_DS_CONNECTION_NAME">
+	<summary>接続文字列を指定するための属性</summary>
+</member><member name="F:Gears.GearsControl.VALUE_SEPARATOR">
+	<summary>Serializeを行うための区切り文字</summary>
+</member><member name="F:Gears.GearsControl.ID_SEPARATOR">
+	<summary>ID内をSplitするためのSeparator</summary>
+</member><member name="F:Gears.GearsControl.DataSourceAssembleyName">
+	<summary>
+ データソースクラスが格納されているアセンブリ名
+ </summary>
+</member><member name="M:Gears.GearsControl.Control">
+	<summary>
+ コントロールの取得
+ </summary>
+</member><member name="M:Gears.GearsControl.Control``1">
+	<summary>
+ 型指定によるコントロールの取得
+ </summary>
+	<typeparam name="T">WebControl型</typeparam>
+</member><member name="P:Gears.GearsControl.ControlID">
+	<summary>
+ コントロールID(Control.IDと等価)
+ </summary>
+</member><member name="P:Gears.GearsControl.ConnectionName">
+	<summary>
+ DBにアクセスするための接続文字列
+ </summary>
+</member><member name="P:Gears.GearsControl.DsNamespace">
+	<summary>
+ データソースクラスの名称空間
+ </summary>
+</member><member name="F:Gears.GearsControl._idAttributes">
+	<summary>コントロールに設定されたIDをID_SEPARATORでSplitしたもの</summary>
+</member><member name="M:Gears.GearsControl.extractControlType(System.String)">
+	<summary>
+ コントロール種別を抽出するクラス関数
+ </summary>
+	<param name="id"></param>
+</member><member name="P:Gears.GearsControl.IsKey">
+	<summary>
+ コントロールがキーか否か
+ </summary>
+</member><member name="M:Gears.GearsControl.asKey">
+	<summary>
+ このコントロールをキーとして設定する
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Gears.GearsControl.IsFormAttribute">
+	<summary>
+ コントロールが更新フォームか否か
+ </summary>
+</member><member name="P:Gears.GearsControl.IsFilterAttribute">
+	<summary>
+ コントロールが検索フォームか否か
+ </summary>
+</member><member name="P:Gears.GearsControl.IsDisplayOnly">
+	<summary>
+ 値がセットされるのみで、フォーム等で送信対象から除外されるか否か<br/>
+ ID属性にGDISPが指定されている場合、デフォルトでこの設定となる
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Gears.GearsControl.OperatorAttribute">
+	<summary>
+ 検索時のオペレーターを示す値(主に検索フォームでのlikeなど)
+ </summary>
+</member><member name="P:Gears.GearsControl.DataSourceID">
+	<summary>
+ データロード元となるデータソースクラスの名称(基本的にIDから判断される)
+ </summary>
+</member><member name="M:Gears.GearsControl.extractDataSourceid(System.String)">
+	<summary>
+ データソースクラスIDを取得するクラス関数
+ </summary>
+	<param name="id"></param>
+</member><member name="P:Gears.GearsControl.DataSource">
+	<summary>
+ データベースからデータを抽出するGearsDataSource
+ </summary>
+</member><member name="P:Gears.GearsControl.DataBinder">
+	<summary>
+ データソースの値をコントロールにバインドするIDataBinder
+ </summary>
+</member><member name="P:Gears.GearsControl.GAttribute">
+	<summary>
+ バリデーションを行うための情報となるGearsAttribute<see cref="T:Gears.Validation.GearsAttribute"/><br/>
+	</summary>
+	<remarks></remarks>
+</member><member name="P:Gears.GearsControl.GCssClass">
+	<summary>
+ コントロールに適用するスタイルを表す文字列
+ </summary>
+</member><member name="P:Gears.GearsControl.LoadedValue">
+	<summary>ロード時の値</summary>
+</member><member name="M:Gears.GearsControl.#ctor(System.Web.UI.Control@,System.String,System.String,System.Boolean)">
+	<summary>
+ コンストラクタ<br/>
+ Controlと接続文字列を受け取り、ControlのIDからデータソースクラスを判定し設定する
+ </summary>
+	<param name="con">コントロール</param>
+	<param name="conName">接続文字列</param>
+	<param name="dns">データソースクラスの名称空間</param>
+	<param name="isAutoLoadAttr">属性を自動ロードするか(デフォルトTrue)</param>
+	<remarks></remarks>
+</member><member name="M:Gears.GearsControl.#ctor(System.Web.UI.Control@,Gears.DataSource.GearsDataSource@,System.Boolean)">
+	<summary>
+ データソースクラスを直接受け取るコンストラクタ
+ </summary>
+	<param name="con"></param>
+	<param name="gds"></param>
+	<param name="isAutoLoadAttr"></param>
+	<remarks></remarks>
+</member><member name="M:Gears.GearsControl.initInstance(System.Web.UI.Control@,System.Boolean)">
+	<summary>
+ GearsControlの初期化処理を行う
+ </summary>
+	<param name="con"></param>
+	<param name="isAutoLoadAttr"></param>
+	<remarks></remarks>
+</member><member name="M:Gears.GearsControl.readIDByGearsRule(System.String)">
+	<summary>
+ Controlに設定されたIDから、コントロール種別、データソース名などを読み込む
+ </summary>
+	<param name="id"></param>
+	<remarks></remarks>
+</member><member name="M:Gears.GearsControl.loadDataSource">
+	<summary>
+ データソースクラスのロード
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Gears.GearsControl.loadAttribute(System.String)">
+	<summary>
+ 設定されたCSSからバリデーションのための属性をロードする
+ </summary>
+	<param name="css"></param>
+	<remarks></remarks>
+</member><member name="M:Gears.GearsControl.isIdAttributeExist(System.String)">
+	<summary>
+ 特定のアトリビュートを保持しているか判定する
+ </summary>
+	<param name="attr"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.GearsControl.isIdAttributeExist(System.String,System.String)">
+	<summary>
+ IDに特定のアトリビュートが含まれているか判定する
+ </summary>
+	<param name="attr"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.GearsControl.getControlAttribute(System.String)">
+	<summary>
+ コントロールのアトリビュートを取得する
+ </summary>
+	<param name="attr"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.GearsControl.getControlAttribute(System.Web.UI.Control,System.String)">
+	<summary>
+ コントロールのアトリビュートを取得する
+ </summary>
+	<param name="attr"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.GearsControl.dataBind(Gears.GearsDTO)">
+	<summary>
+ 自身のデータソースをロードし、バインドする
+ </summary>
+	<param name="dto"></param>
+	<remarks></remarks>
+</member><member name="M:Gears.GearsControl.dataBind(System.Data.DataTable)">
+	<summary>
+ データテーブルをコントロールにバインドする
+ </summary>
+	<param name="dset"></param>
+</member><member name="M:Gears.GearsControl.dataAttach(Gears.DataSource.GearsDataSource@)">
+	<summary>
+ 他のデータソースの値を自身に適用する(値としてセットする)
+ </summary>
+	<param name="gds"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.GearsControl.dataAttach(System.Data.DataTable@)">
+	<summary>
+ 他のデータソースの値を自身に適用する(値としてセットする)<br/>
+ DataTableの指定がない場合は、自身のデータソースを使用
+ </summary>
+	<param name="dset"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.GearsControl.getValue">
+	<summary>
+ コントロールの値を取得する
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.GearsControl.getAsObject">
+	<summary>
+ Attributeに応じた変換などをかけた値を取得する。<br/>
+ SqlBuilderなど、データベース問合せ時にはこちらを使用した方が良い。
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.GearsControl.setValue(System.Object)">
+	<summary>
+ コントロールへ値をセットする
+ </summary>
+	<param name="value"></param>
+	<remarks></remarks>
+</member><member name="M:Gears.GearsControl.toControlInfo">
+	<summary>
+ 自身の情報をControlInfoオブジェクトへ格納する
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.GearsControl.serializeValue(System.Collections.ArrayList@)">
+	<summary>
+ リスト値のシリアライズを行う(主にMultiSelect等の場合、値をシリアライズし複数値を単一値にする)
+ </summary>
+	<param name="list"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.GearsControl.serializeValue(System.Web.UI.WebControls.ListControl@)">
+	<summary>
+ リスト値のシリアライズを行う(リストコントロール)
+ </summary>
+	<param name="list"></param>
+</member><member name="M:Gears.GearsControl.serializeValue(System.Web.UI.WebControls.DataKey@)">
+	<summary>
+ リスト値のシリアライズを行う(GridView用)
+ </summary>
+	<param name="list"></param>
+</member><member name="M:Gears.GearsControl.serializeValue(System.Data.DataTable@,System.Int32)">
+	<summary>
+ リスト値のシリアライズを行う(DataTable用)
+ </summary>
+	<param name="dset"></param>
+	<param name="index"></param>
+</member><member name="M:Gears.GearsControl.extractControl(System.Web.UI.Control)">
+	<summary>
+ IFormItemからControlを取得する<br/>
+ IFormItemはラベルとコントロールが一体となったようなコントロールをイメージしています
+ </summary>
+	<param name="con"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.GearsControl.deSerializeValue(System.String)">
+	<summary>
+ シリアライズしたオブジェクトを元に戻す
+ </summary>
+	<param name="str"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.GearsControl.getValidationError">
+	<summary>
+ バリデーション結果のメッセージを取得
+ </summary>
+</member><member name="M:Gears.GearsControl.isValidateOk">
+	<summary>
+ バリデーションの実行
+ </summary>
+</member><member name="P:Gears.GearsControl.validateeValue">
+	<summary>
+ バリデーション対象となる値を取得するための関数実装
+ </summary>
+</member><member name="T:Gears.GearsControl">
+	<summary>
+ System.Web.UI.WebControlをラップするControl<br/>
+ 1.値のセットについて<br/>
+ 基本的にdataBindにより選択リストの取得、dataAttachにより値のセットが行われます。<br/>
+ 例えば、A・B・Cというの選択肢があり選択中の値はB、という場合、A・B・Cという値はdataBindによりロードされ、
+ Bという値はdataAttachにより設定されます。dataAttachは主に特定の一行のDataTableを引数とし、この中で自Controlに該当する値を選択しセットします
+ <see cref="M:Gears.Binder.GearsDataBinder.dataAttach(System.Web.UI.Control@,System.Data.DataTable@)"/>。<br/>
+ なお、値の取得/設定はgetValue/setValueを使用し直接的に行うことも可能です。<br/>
+		<br/>
+ dataBindに使用されるGearsDataSourceは、基本的にIDから推定されます<a href="http://gearssite.apphb.com/GearsSampleControl.aspx" target="_blank">名称規約について</a><br/>
+ 簡単な例としては、ddlUNITというコントロールの場合「UNIT」がデータソースクラス名称として推定されます。<br/>
+		<br/>
+ 2.値の検証(バリデーション)について<br/>
+ GearsControlはバリデーションの機能も保持しています。バリデーションのための設定情報はCssClassから抽出されます。<br/>
+		<seealso cref="M:Gears.GearsControl.loadAttribute(System.String)"/>
+	</summary>
+	<remarks></remarks>
+</member><member name="T:Gears.Validation.GearsValidationException">
+	<summary>
+ バリデーションの例外を表すクラス
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Gears.Validation.Validator.GByteLength.#ctor(System.Int32)">
+	<summary>
+ 項目長を指定して作成
+ </summary>
+	<param name="len"></param>
+	<remarks></remarks>
+</member><member name="P:Gears.Validation.Validator.GByteLength.Length">
+	<summary>チェックするバイト長</summary>
+</member><member name="P:Gears.Validation.Validator.GByteLength.Encode">
+	<summary>バイト長を算出するためのエンコード(デフォルト Shift_JIS)</summary>
+</member><member name="M:Gears.Validation.Validator.GByteLength.LenB(System.String)">
+	<summary>
+ バイト長を取得するための関数
+ </summary>
+	<param name="st"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Gears.Validation.Validator.GByteLength">
+	<summary>
+ 項目長の検証を行うための属性
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Gears.Validation.Marker.GMarkerNumeric.NUMBER_CSS">
+	<summary>
+ 数値属性に共通するCSSClass
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Gears.Validation.Marker.GMarkerNumeric.#ctor">
+	<summary>
+ コンストラクタで数値属性共通の値をセット
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Gears.Validation.Marker.GMarkerNumeric">
+	<summary>
+ 数値属性を表すマーカー<br/>
+ これを継承する属性については、共通のCssClass gs-number を付与する
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Gears.Binder.GearsDataAttachException">
+	<summary>
+ コントロールへの値設定時の例外
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Gears.GearsLogStack._LogStack">
+	<summary>
+ ログを格納した配列
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Gears.GearsLogStack.clearLogStack">
+	<summary>
+ ログをクリアする
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Gears.GearsLogStack.traceOn">
+	<summary>
+ 現在位置でログトレースをオンにする<br/>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Gears.GearsLogStack.traceEnd">
+	<summary>
+ トレースをオフにする
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Gears.GearsLogStack.IsTraceOn">
+	<summary>
+ トレースがオンになっているか確認する
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.GearsLogStack.setLog(System.String,System.String[])">
+	<summary>
+ メッセージログを書き込む(通常のメッセージで、エラーとしては扱われない)
+ </summary>
+	<param name="msg"></param>
+	<param name="msgDetail"></param>
+	<remarks></remarks>
+</member><member name="M:Gears.GearsLogStack.setLog(System.String,System.Int32,System.String[])">
+	<summary>呼出階層を指定してメッセージを書き込み</summary>
+	<param name="msg"></param>
+	<param name="depth">通常は、呼出元メソッド&gt;setLogメソッドで2階層。ログ出力用の関数などを使用している場合は、さらに+1する</param>
+	<param name="msgDetail"></param>
+	<remarks></remarks>
+</member><member name="M:Gears.GearsLogStack.setLog(Gears.GearsException@)">
+	<summary>
+ 例外からログを書き込む
+ </summary>
+	<param name="msg"></param>
+	<remarks></remarks>
+</member><member name="M:Gears.GearsLogStack.getLogStack">
+	<summary>
+ ストアされたログを取得する
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.GearsLogStack.makeDisplayString">
+	<summary>
+ ログをHTMLで出力する<br/>
+ * gs-log-head:ログのタイトル
+ * gs-log-table:ログ出力を表示しているtableのスタイル
+ * gs-log-table-head":ログ出力を表示しているtableのヘッダのスタイル
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.GearsLogStack.setTrace(System.Boolean)">
+	<summary>
+ トレースのON/OFFを設定する
+ </summary>
+	<param name="bool"></param>
+	<remarks></remarks>
+</member><member name="M:Gears.GearsLogStack.addLog(Gears.GearsException@)">
+	<summary>
+ ログを書き込む
+ </summary>
+	<param name="log"></param>
+	<remarks></remarks>
+</member><member name="M:Gears.GearsLogStack.getLogs">
+	<summary>
+ ログを取得する
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.GearsLogStack.getLogStackItem">
+	<summary>
+ 自身のストアキーのオブジェクトを取り出す
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.GearsLogStack.getStoreKey">
+	<summary>
+ 自身のストアキーを作成する
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Gears.GearsLogStack">
+	<summary>
+ ログを記録するためのクラス<br/>
+ Sharedで履歴を管理し、各インスタンスをShared配列に格納する形でログを収集する
+ </summary>
+	<remarks></remarks>
+</member><member name="P:My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member><member name="M:Gears.Validation.GearsAttributeContainer.ListUp">
+	<summary>
+ 内部に格納している属性を取得する
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.Validation.GearsAttributeContainer.addAttribute(Gears.Validation.GearsAttribute)">
+	<summary>
+ 属性を追加する
+ </summary>
+	<param name="a"></param>
+	<remarks></remarks>
+</member><member name="M:Gears.Validation.GearsAttributeContainer.clearAttributes">
+	<summary>
+ 格納している属性をクリアする
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Gears.Validation.GearsAttributeContainer.hasMarker(System.Type)">
+	<summary>
+ 格納している属性の中に、指定されたマーカータイプを持つものがないか確認する
+ </summary>
+	<param name="m"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Gears.Validation.GearsAttributeContainer.CssClass">
+	<summary>
+ 格納されている属性のCssClassを結合し、返却する
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.Validation.GearsAttributeContainer.Validate">
+	<summary>
+ 格納されている属性を使用し検証処理を実施する(外部からの呼び出し不可、isValidateOkからコールされる)
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Gears.Validation.GearsAttributeContainer">
+	<summary>
+ 複数の属性を格納するコンテナ
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Gears.Validation.IAttributeHolder.GAttribute">
+	<summary>保持している属性</summary>
+</member><member name="P:Gears.Validation.IAttributeHolder.validateeValue">
+	<summary>
+ 検証対象となる値を取得する<br/>
+ Validator側で変更が行われないよう、ReadOnly扱いにする。Setterは独自に実装する必要あり
+ </summary>
+</member><member name="P:Gears.Validation.IAttributeHolder.GCssClass">
+	<summary>表示用スタイル</summary>
+</member><member name="M:Gears.Validation.IAttributeHolder.isValidateOk">
+	<summary>バリデーションを実行する</summary>
+</member><member name="M:Gears.Validation.IAttributeHolder.getValidationError">
+	<summary>バリデーションを行った結果のメッセージを取得する</summary>
+</member><member name="T:Gears.Validation.IAttributeHolder">
+	<summary>
+ 属性を保持する要素を定義するインタフェース<br/>
+ 属性に基づき、どのような検証を行うか、またどのようなスタイルで表示するかが決定される
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Gears.Validation.Validator.GByteLengthBetween.#ctor(System.Int32)">
+	<summary>最大長を指定し作成</summary>
+	<param name="len"></param>
+	<remarks></remarks>
+</member><member name="M:Gears.Validation.Validator.GByteLengthBetween.#ctor(System.Int32,System.Int32)">
+	<summary>最小～最大の範囲を指定して作成</summary>
+	<param name="min"></param>
+	<param name="max"></param>
+	<remarks></remarks>
+</member><member name="P:Gears.Validation.Validator.GByteLengthBetween.MinLength">
+	<summary>バイト長の最小値</summary>
+</member><member name="T:Gears.Validation.Validator.GByteLengthBetween">
+	<summary>
+ 項目長が指定されたバイト長の範囲に収まっているかを検証する属性
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Gears.DataSource.GearsSqlException">
+	<summary>
+ SQL処理実行時の例外
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Gears.DataSource.RelationKind">
+	<summary>
+ 結合条件種別
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Gears.DataSource.SqlDataSource.Name">
+	<summary>
+ データソース名(テーブル/ビュー)
+ </summary>
+</member><member name="P:Gears.DataSource.SqlDataSource.Schema">
+	<summary>スキーマ名称</summary>
+</member><member name="P:Gears.DataSource.SqlDataSource.Suffix">
+	<summary>
+ 後置詞<br/>
+ (SELECT * FROM tab a の aにあたる部分)
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Gears.DataSource.SqlDataSource.LockCheckColumn">
+	<summary>
+ 楽観ロックチェックに使用する列項目
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.SqlDataSource.setLockCheckColumn(System.String,Gears.DataSource.LockType)">
+	<summary>
+ 楽観ロック用の列を設定する
+ </summary>
+	<param name="colname"></param>
+	<param name="ltype"></param>
+	<remarks></remarks>
+</member><member name="P:Gears.DataSource.SqlDataSource.Parameter">
+	<summary>
+ 特にパイプライン表関数などで、パラメーターを使用する場合に使用する値
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.SqlDataSource.readParameter(System.Collections.Generic.Dictionary{System.String,System.Object}@)">
+	<summary>
+ ディクショナリにSqlDataSourceに設定された値情報を読み込む
+ </summary>
+	<param name="params"></param>
+	<remarks></remarks>
+</member><member name="P:Gears.DataSource.SqlDataSource.JoinTargets">
+	<summary>結合の相手先を取得する</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.SqlDataSource.getRelation(System.String)">
+	<summary>指定対象の結合種別を取得する</summary>
+	<param name="target">結合対象</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.SqlDataSource.getJoinKey(System.String)">
+	<summary>指定対象の結合キーを取得する</summary>
+	<param name="target"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.SqlDataSource.inSchema(System.String)">
+	<summary>スキーマを指定する</summary>
+	<param name="strSchema"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.SqlDataSource.hasRelation">
+	<summary>リレーションを持つか否か</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.SqlDataSource.addParameter(System.String,System.Object)">
+	<summary>パラメータの設定</summary>
+	<param name="pname"></param>
+	<param name="value"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.SqlDataSource.addParameter(Gears.DataSource.SqlItem)">
+	<summary>パラメータの設定(SqlItemから)</summary>
+	<param name="item"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.SqlDataSource.leftOuterJoin(System.String,System.String,Gears.DataSource.SqlFilterItem[])">
+	<summary>左結合を行う</summary>
+	<param name="dsName">結合対象データソース</param>
+	<param name="sf">後置詞</param>
+	<param name="cr">結合カラム</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.SqlDataSource.leftOuterJoin(Gears.DataSource.SqlDataSource@,Gears.DataSource.SqlFilterItem[])">
+	<summary>左結合を行う</summary>
+	<param name="sd">結合対象データソース</param>
+	<param name="cr">結合カラム</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.SqlDataSource.innerJoin(System.String,System.String,Gears.DataSource.SqlFilterItem[])">
+	<summary>内部結合を行う</summary>
+	<param name="dsName">結合対象データソース</param>
+	<param name="sf">後置詞</param>
+	<param name="cr">結合カラム</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.SqlDataSource.innerJoin(Gears.DataSource.SqlDataSource@,Gears.DataSource.SqlFilterItem[])">
+	<summary>内部合を行う</summary>
+	<param name="sd">結合対象データソース</param>
+	<param name="cr">結合カラム</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.SqlDataSource.makeRelation(Gears.DataSource.SqlDataSource@,Gears.DataSource.SqlFilterItem[])">
+	<summary>
+ 結合のための設定を行う内部関数
+ </summary>
+	<param name="sd"></param>
+	<param name="cr"></param>
+	<remarks></remarks>
+</member><member name="T:Gears.DataSource.SqlDataSource">
+	<summary>
+ SQLの実行対象(Table/View)を表すクラス
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Gears.DataSource.SqlFilterGroup.Name">
+	<summary>グループ名</summary>
+</member><member name="M:Gears.DataSource.SqlFilterGroup.isAndGroup">
+	<summary>グループ内の条件をANDで結合する</summary>
+</member><member name="M:Gears.DataSource.SqlFilterGroup.isOrGroup">
+	<summary>グループ内の条件をORで結合する(デフォルトTrue)</summary>
+</member><member name="M:Gears.DataSource.SqlFilterGroup.Ors(Gears.DataSource.SqlFilterItem[])">
+	<summary>Orで囲うグループを作成する</summary>
+</member><member name="M:Gears.DataSource.SqlFilterGroup.Ors(System.Collections.Generic.List{Gears.DataSource.SqlFilterItem}@)">
+	<summary>Orで囲うグループを作成する</summary>
+</member><member name="M:Gears.DataSource.SqlFilterGroup.Ands(Gears.DataSource.SqlFilterItem[])">
+	<summary>Andで囲うグループを作成する</summary>
+</member><member name="M:Gears.DataSource.SqlFilterGroup.Ands(System.Collections.Generic.List{Gears.DataSource.SqlFilterItem}@)">
+	<summary>Andで囲うグループを作成する</summary>
+</member><member name="M:Gears.DataSource.SqlFilterGroup.grouping(Gears.DataSource.SqlFilterItem[])">
+	<summary>
+ 与えられたSqlFilterItemに自身をグループとして設定する(任意引数指定)
+ </summary>
+	<param name="filters"></param>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.SqlFilterGroup.grouping(System.Collections.Generic.List{Gears.DataSource.SqlFilterItem}@)">
+	<summary>
+ 与えられたSqlFilterItemに自身をグループとして設定する(配列指定)
+ </summary>
+	<param name="filters"></param>
+	<remarks></remarks>
+</member><member name="T:Gears.DataSource.SqlFilterGroup">
+	<summary>
+ SQLの選択条件をグループ化するためのクラス<br/>
+ SqlFilterItemに設定することで、設定した条件をOR/ANDでまとめ括弧でくくることができる
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Gears.DataSource.SqlFilterItem.Operand">
+	<summary>比較演算子</summary>
+</member><member name="P:Gears.DataSource.SqlFilterItem.Group">
+	<summary>グループ設定</summary>
+</member><member name="P:Gears.DataSource.SqlFilterItem.JoinTarget">
+	<summary>JOIN時の結合対象列</summary>
+</member><member name="P:Gears.DataSource.SqlFilterItem.Negation">
+	<summary>JOIN時の結合対象列</summary>
+</member><member name="M:Gears.DataSource.SqlFilterItem.filterAs(System.String,System.Object,System.Boolean)">
+	<summary>文字列からSqlFilterItemを作成する</summary>
+	<param name="filterType"></param>
+	<param name="value"></param>
+	<param name="isWrapWhenLike">Likeの場合、%で囲うか否か</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.SqlFilterItem.pf(System.String)">
+	<summary>前置詞を付与する</summary>
+</member><member name="M:Gears.DataSource.SqlFilterItem.pf(Gears.DataSource.SqlDataSource@)">
+	<summary>データソースから前置詞を付与する</summary>
+</member><member name="M:Gears.DataSource.SqlFilterItem.asKey">
+	<summary>キーを設定する</summary>
+</member><member name="M:Gears.DataSource.SqlFilterItem.asNoFormat">
+	<summary>フォーマット処理を無効にし、設定したColumnをそのまま使用する</summary>
+</member><member name="M:Gears.DataSource.SqlFilterItem.eq(System.Object)">
+	<summary>評価式を設定する(equal)</summary>
+</member><member name="M:Gears.DataSource.SqlFilterItem.neq(System.Object)">
+	<summary>評価式を設定する(not equal)</summary>
+</member><member name="M:Gears.DataSource.SqlFilterItem.joinOn(Gears.DataSource.SqlFilterItem)">
+	<summary>表同士の結合式を設定する(equal)</summary>
+</member><member name="M:Gears.DataSource.SqlFilterItem.joinOn(System.String)">
+	<summary>表同士の結合式を設定する(equal)</summary>
+</member><member name="M:Gears.DataSource.SqlFilterItem.lt(System.Object)">
+	<summary>評価式を設定する(less than)</summary>
+</member><member name="M:Gears.DataSource.SqlFilterItem.gt(System.Object)">
+	<summary>評価式を設定する(grater than)</summary>
+</member><member name="M:Gears.DataSource.SqlFilterItem.lteq(System.Object)">
+	<summary>評価式を設定する(less than or equal)</summary>
+</member><member name="M:Gears.DataSource.SqlFilterItem.gteq(System.Object)">
+	<summary>評価式を設定する(grater than or equal)</summary>
+</member><member name="M:Gears.DataSource.SqlFilterItem.likes(System.Object)">
+	<summary>評価式を設定する(LIKE)</summary>
+</member><member name="M:Gears.DataSource.SqlFilterItem.inGroup(Gears.DataSource.SqlFilterGroup)">
+	<summary>条件式のグループを設定する</summary>
+</member><member name="M:Gears.DataSource.SqlFilterItem.nots">
+	<summary>否定式を設定する</summary>
+</member><member name="T:Gears.DataSource.SqlFilterItem">
+	<summary>
+ SQLの抽出条件を管理するクラス
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Gears.DataSource.OrderKind">
+	<summary>
+ ORDER の種類
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Gears.DataSource.SqlSelectItem.ColAlias">
+	<summary>選択列の別名(AS)</summary>
+</member><member name="P:Gears.DataSource.SqlSelectItem.IsGroupBy">
+	<summary>Group BY句の対象か否か</summary>
+</member><member name="P:Gears.DataSource.SqlSelectItem.OrderBy">
+	<summary>ORDER BY設定</summary>
+</member><member name="P:Gears.DataSource.SqlSelectItem.IsNoSelect">
+	<summary>SELECT選択の対象としない(ORDER BYのみに使いたいなど)</summary>
+</member><member name="M:Gears.DataSource.SqlSelectItem.ColumnWithAlias">
+	<summary>
+ 別名を考慮したカラム名
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.SqlSelectItem.pf(System.String)">
+	<summary>前置詞を付与する</summary>
+</member><member name="M:Gears.DataSource.SqlSelectItem.pf(Gears.DataSource.SqlDataSource@)">
+	<summary>データソースから前置詞を付与する</summary>
+</member><member name="M:Gears.DataSource.SqlSelectItem.asKey">
+	<summary>キーを設定する</summary>
+</member><member name="M:Gears.DataSource.SqlSelectItem.asNoFormat">
+	<summary>フォーマット処理を無効にし、設定したColumnをそのまま使用する</summary>
+</member><member name="M:Gears.DataSource.SqlSelectItem.asName(System.String)">
+	<summary>別名を設定する</summary>
+	<param name="colalias"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.SqlSelectItem.inGroup">
+	<summary>Group by句に含む</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.SqlSelectItem.ASC">
+	<summary>昇順に設定</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.SqlSelectItem.DESC">
+	<summary>降順に設定</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.SqlSelectItem.asNoSelect">
+	<summary>選択をしない</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.SqlSelectItem.toFilter">
+	<summary>選択項目を条件項目に変換する</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.SqlSelectItem.setValue(System.Object)">
+	<summary>パラメータの値を設定する</summary>
+	<param name="val"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.SqlSelectItem.hasValue">
+	<summary>
+ 値を保持しているか否かを判定する。IsNoSelectが設定された項目は値があってもFalseとなる
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Gears.DataSource.SqlSelectItem">
+	<summary>
+ SQLの選択条件を管理するクラス
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Gears.Validation.GearsAttributeCreator.CSS_HEAD">
+	<summary>属性を定義するCSSクラスの接頭辞</summary>
+</member><member name="F:Gears.Validation.GearsAttributeCreator._ac">
+	<summary>属性のコンテナ</summary>
+</member><member name="F:Gears.Validation.GearsAttributeCreator.cssClass">
+	<summary>属性のスタイル</summary>
+</member><member name="P:Gears.Validation.GearsAttributeCreator.AttributeNamespace">
+	<summary>属性の名称空間を明示的に指定(デフォルトはGears.Validation.Validatorから生成される)</summary>
+</member><member name="M:Gears.Validation.GearsAttributeCreator.isNumeric">
+	<summary>数値型の属性を作成</summary>
+</member><member name="M:Gears.Validation.GearsAttributeCreator.isDate">
+	<summary>日付型の属性を作成</summary>
+</member><member name="M:Gears.Validation.GearsAttributeCreator.isRequired">
+	<summary>必須の属性を作成</summary>
+</member><member name="M:Gears.Validation.GearsAttributeCreator.isLength(System.Int32)">
+	<summary>項目のバイト長をチェックする属性を作成</summary>
+</member><member name="M:Gears.Validation.GearsAttributeCreator.isLengthBetween(System.Int32,System.Int32)">
+	<summary>項目のバイト長間隔をチェックする属性を作成</summary>
+</member><member name="M:Gears.Validation.GearsAttributeCreator.isStartWith(System.String)">
+	<summary>項目が特定文字で始まるかをチェックする属性を作成</summary>
+</member><member name="M:Gears.Validation.GearsAttributeCreator.isPeriodPositionOk(System.Int32,System.Int32)">
+	<summary>項目の整数部/小数点以下桁数をチェックする属性を作成</summary>
+</member><member name="M:Gears.Validation.GearsAttributeCreator.isMatch(System.String)">
+	<summary>指定正規表現への一致をチェックする属性を作成</summary>
+</member><member name="M:Gears.Validation.GearsAttributeCreator.isCompare(System.String,System.String)">
+	<summary>比較演算でのチェックをする属性を作成</summary>
+</member><member name="M:Gears.Validation.GearsAttributeCreator.#ctor(System.String)">
+	<summary>属性の名称空間を明示的に指定</summary>
+	<param name="attrNamespace"></param>
+	<remarks></remarks>
+</member><member name="M:Gears.Validation.GearsAttributeCreator.createAttributesFromString(System.String)">
+	<summary>
+ CSS文字列から属性を作成する<br/>
+ CSSはgears-属性クラス名_属性クラスのプロパティ_プロパティの値...という形式で構成される<br/>
+ 例:gears-GByteLengthBetween_MinLength_0_Length_18
+ </summary>
+	<param name="css"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.Validation.GearsAttributeCreator.createAttributeFromString(System.String)">
+	<summary>
+ 単一のCSSクラス名から属性クラスを作成する
+ </summary>
+	<param name="cssClass"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.Validation.GearsAttributeCreator.pack">
+	<summary>
+ 作成した属性コンテナを取得する
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.Validation.GearsAttributeCreator.getCssClass">
+	<summary>
+ 作成されたCssClassを取得する
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.Validation.GearsAttributeCreator.clearCreator">
+	<summary>
+ 作成処理を初期化する
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Gears.Validation.GearsAttributeCreator">
+	<summary>
+ 属性を作成するためのクラス
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Gears.GearsPageExtension.FirstLog(System.Collections.Generic.Dictionary{System.String,Gears.GearsException})">
+	<summary>最初のログを取得する</summary>
+</member><member name="T:Gears.GearsPageExtension">
+	<summary>
+ GearsPage内で使用する拡張ユーティリティ
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Gears.GearsControlExtension.toGControl(System.Web.UI.Control)">
+	<summary>ControlからGearsControlを作成する</summary>
+</member><member name="M:Gears.GearsControlExtension.toGControl(System.Web.UI.Control,System.String,System.String)">
+	<summary>ControlからGearsControlを作成する</summary>
+</member><member name="T:Gears.GearsControlExtension">
+	<summary>
+ コントロール拡張
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Gears.Validation.Validator.GPeriodPositionOk.#ctor(System.Int32,System.Int32)">
+	<summary>
+ 小数点前/後の定義長を指定し作成する
+ </summary>
+	<param name="beforep"></param>
+	<param name="afterp"></param>
+	<remarks></remarks>
+</member><member name="P:Gears.Validation.Validator.GPeriodPositionOk.BeforeP">
+	<summary>整数部の最大長</summary>
+</member><member name="P:Gears.Validation.Validator.GPeriodPositionOk.AfterP">
+	<summary>小数点以下桁数の最大長</summary>
+</member><member name="T:Gears.Validation.Validator.GPeriodPositionOk">
+	<summary>
+ 整数部/小数部が定義長の範囲内であるか検証する属性
+ </summary>
+	<remarks></remarks>
 </member><member name="P:Gears.DataSource.SqlItemContainer.Action">
 	<summary>イベントタイプ</summary>
 </member><member name="F:Gears.DataSource.SqlItemContainer._selection">
@@ -3233,10 +2671,662 @@ Gears
  SQL実行に必要なパラメータを管理するコンテナ
  </summary>
 	<remarks></remarks>
+</member><member name="M:Gears.Util.DataSetReader.Item(System.Data.DataTable,System.String,System.Int32)">
+	<summary>データデータブルの指定箇所の値を取得する(列名指定)</summary>
+</member><member name="M:Gears.Util.DataSetReader.Item(System.Data.DataTable,System.Int32,System.Int32)">
+	<summary>データデータブルの指定箇所の値を取得する(列番号指定)</summary>
+</member><member name="M:Gears.Util.DataSetReader.Item(System.Data.DataRow,System.String)">
+	<summary>指定行、指定列の値を取得する(列名指定)</summary>
+</member><member name="M:Gears.Util.DataSetReader.Item(System.Data.DataRow,System.Int32)">
+	<summary>指定行、指定列の値を取得する(列番号指定)</summary>
+</member><member name="M:Gears.Util.DataSetReader.Item``1(System.Data.DataTable,``0,System.Int32)">
+	<summary>データデータブルの指定箇所の値を取得する</summary>
+</member><member name="M:Gears.Util.DataSetReader.Item``1(System.Data.DataRow,``0)">
+	<summary>指定行、指定列の値を取得する</summary>
+</member><member name="M:Gears.Util.DataSetReader.Item``1(System.Data.DataColumnCollection,System.Data.DataRow,``0)">
+	<summary>データテーブルの値を安全に取得する</summary>
+</member><member name="T:Gears.Util.DataSetReader">
+	<summary>
+ DataTableの値を読み込むためのユーティリティクラス
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Gears.Util.DataSetExtension.ItemOrDefault(System.Data.DataRow,System.String)">
+	<summary>指定行、指定列の値を取得する(列名指定)</summary>
+	<param name="row"></param>
+	<param name="colName"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.Util.DataSetExtension.ItemOrDefault(System.Data.DataRow,System.Int32)">
+	<summary>指定行、指定列の値を取得する(列番号指定)</summary>
+	<param name="row"></param>
+	<param name="colIndex"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.Util.DataSetExtension.ToListOfDictionary(System.Data.DataTable)">
+	<summary>
+ JSONへ変換する
+ </summary>
+	<param name="table"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Gears.Util.DataSetExtension">
+	<summary>
+ データテーブル/列/行を扱いやすくするための拡張
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Gears.Validation.GearsModelValidationException">
+	<summary>
+ モデルバリデーションのエラーを表す例外
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Gears.GearsControlInfo.ControlID">
+	<summary>
+ コントロールID
+ </summary>
+</member><member name="P:Gears.GearsControlInfo.DataSourceID">
+	<summary>
+ データソースクラス名
+ </summary>
+</member><member name="P:Gears.GearsControlInfo.Value">
+	<summary>
+ コントロールの値
+ </summary>
+</member><member name="P:Gears.GearsControlInfo.IsFormAttribute">
+	<summary>
+ 更新フォーム属性
+ </summary>
+</member><member name="P:Gears.GearsControlInfo.IsFilterAttribute">
+	<summary>
+ 検索フォーム属性
+ </summary>
+</member><member name="P:Gears.GearsControlInfo.IsKey">
+	<summary>
+ キーか否か
+ </summary>
+</member><member name="P:Gears.GearsControlInfo.OperatorAttribute">
+	<summary>
+ 検索する際のオペレーター設定(=や&gt;=など)
+ </summary>
+</member><member name="P:Gears.GearsControlInfo.LoadedValue">
+	<summary>前回ロードされた値</summary>
+</member><member name="M:Gears.GearsControlInfo.#ctor(System.String,System.String,System.String)">
+	<summary>
+ 最低限の情報をセットするコンストラクタ
+ </summary>
+	<param name="conId"></param>
+	<param name="dsID"></param>
+	<param name="value"></param>
+	<remarks></remarks>
+</member><member name="M:Gears.GearsControlInfo.#ctor(Gears.GearsControl@)">
+	<summary>
+ GearsControlから生成を行うコンストラクタ
+ </summary>
+	<param name="gcon"></param>
+	<remarks></remarks>
+</member><member name="M:Gears.GearsControlInfo.#ctor(Gears.GearsControlInfo@)">
+	<summary>
+ コピーコンストラクタ
+ </summary>
+	<param name="cInfo"></param>
+	<remarks></remarks>
+</member><member name="M:Gears.GearsControlInfo.toSelection">
+	<summary>
+ ControlInfoをSqlSelectItemに変換する
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.GearsControlInfo.toFilter">
+	<summary>
+ ControlInfoをSqlFilterItemに変換する
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.GearsControlInfo.setToSqlItem(Gears.DataSource.SqlItem@)">
+	<summary>Selection/Filterに共通のプロパティをセットする</summary>
+	<param name="item"></param>
+	<remarks></remarks>
+</member><member name="T:Gears.GearsControlInfo">
+	<summary>
+ GearsControlの値や設定情報をまとめたクラス。<br/>
+ GearsControl本体はWebControlを含む重たいクラスであるため、本クラスに値を移すことで扱いやすくする
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Gears.DataSource.DbServerType">
+	<summary>
+ データベース種別を表すEnum
+ </summary>
+</member><member name="F:Gears.DataSource.LockType.UDATE">
+	<summary>日付型</summary>
+</member><member name="F:Gears.DataSource.LockType.UDATESTR">
+	<summary>日付文字列型(20110101など)</summary>
+</member><member name="F:Gears.DataSource.LockType.UTIMESTR">
+	<summary>時刻文字列型(120000など)</summary>
+</member><member name="F:Gears.DataSource.LockType.VNUM">
+	<summary>バージョン番号型</summary>
+</member><member name="F:Gears.DataSource.LockType.USER">
+	<summary>ユーザー</summary>
+</member><member name="T:Gears.DataSource.LockType">
+	<summary>
+ 楽観ロックに使用する項目の種別
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Gears.DataSource.SqlBuilder.PARAM_HEAD">
+	<summary>パラメーターの接頭辞。SQL Serverなら@など</summary>
+</member><member name="F:Gears.DataSource.SqlBuilder.MULTIBYTE_FORMAT">
+	<summary>
+ マルチバイトカラムを使用する際のエスケープ文字列<br/>
+ Oracleの場合、マルチバイトのカラム(日本語名の列など)は""で囲う必要がある
+ </summary>
+</member><member name="F:Gears.DataSource.SqlBuilder.DUMMY_INDEX_FOR_ORDER_BY">
+	<summary>
+ ページングを行う際に使用する副問合せ表の名前(SqlServerで無名表が許されないため)
+ </summary>
+</member><member name="P:Gears.DataSource.SqlBuilder.DataSource">
+	<summary>SQLの抽出元。Table/Viewが設定される</summary>
+</member><member name="P:Gears.DataSource.SqlBuilder.Mapper">
+	<summary>
+ データベース上のカラムと画面で使用する項目名が一致しない場合、変換をかけるために使用<br/>
+ (既存のテーブルを使用する場合など)
+ </summary>
+</member><member name="P:Gears.DataSource.SqlBuilder.DbServer">
+	<summary>DBサーバーの種別</summary>
+</member><member name="M:Gears.DataSource.SqlBuilder.GetDbServerType(System.String)">
+	<summary>
+ 接続文字列から、データべース種別を取得する
+ </summary>
+	<param name="conName"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Gears.DataSource.SqlBuilder.ValueSeparator">
+	<summary>
+ 一度に値を複数設定する場合のセパレータ(カンマ区切りなど)
+ </summary>
+</member><member name="M:Gears.DataSource.SqlBuilder.ImportSqlItem(Gears.DataSource.SqlBuilder@)">
+	<summary>
+ 選択/抽出条件をコピーする
+ </summary>
+	<param name="sb"></param>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.SqlBuilder.S(System.String,System.String)">
+	<summary>選択/更新項目(SqlSelectItem)を作成するためのユーティリティ</summary>
+	<param name="col"></param>
+	<param name="pf"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.SqlBuilder.F(System.String,System.String)">
+	<summary>条件(SqlFilterItem)を作成するためのユーティリティ</summary>
+	<param name="col"></param>
+	<param name="pf"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.SqlBuilder.DS(System.String,System.String)">
+	<summary>Table/View(SqlDataSource)を作成するためのユーティリティ</summary>
+	<param name="dsource"></param>
+	<param name="sf"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.SqlBuilder.LockFilter">
+	<summary>データソースの定義情報を元に、楽観ロック情報を抽出する</summary>
+</member><member name="M:Gears.DataSource.SqlBuilder.convertToDataSource(System.String)">
+	<summary>
+ このSqlBuilderをSqlDataSource化する
+ </summary>
+	<param name="suffix"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.SqlBuilder.confirmSql(Gears.ActionType,System.Boolean)">
+	<summary>
+ SQL確認用メソッド
+ </summary>
+	<param name="atype"></param>
+	<param name="sqlOnly"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.SqlBuilder.formatColumn(Gears.DataSource.SqlItem,System.Boolean)">
+	<summary>
+ カラムをフォーマットする
+ </summary>
+	<param name="item"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.SqlBuilder.formatSource(Gears.DataSource.SqlDataSource)">
+	<summary>
+ データソースをフォーマットする
+ </summary>
+	<param name="source"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.SqlBuilder.makeSql(System.Collections.Generic.Dictionary{System.String,System.Object}@,Gears.ActionType)">
+	<summary>
+ SQLを作成する
+ </summary>
+	<param name="params"></param>
+	<param name="atype"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.SqlBuilder.makeSelect(System.Collections.Generic.Dictionary{System.String,System.Object}@,System.Boolean)">
+	<summary>
+ SELECTを作成する
+ </summary>
+	<param name="params"></param>
+	<param name="isNeedOrder"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.SqlBuilder.makeUpdate(System.Collections.Generic.Dictionary{System.String,System.Object}@)">
+	<summary>
+ UPDATE文を作成する
+ </summary>
+	<param name="params"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.SqlBuilder.makeInsert(System.Collections.Generic.Dictionary{System.String,System.Object}@)">
+	<summary>
+ INSERT文を作成する
+ </summary>
+	<param name="params"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.SqlBuilder.makeDelete(System.Collections.Generic.Dictionary{System.String,System.Object}@)">
+	<summary>
+ DELETE文を作成する
+ </summary>
+	<param name="params"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.SqlBuilder.makeSelection">
+	<summary>
+ SELECTの項目指定部分を作成する
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.SqlBuilder.makeGroupBy">
+	<summary>
+ SELECTのGROUP BY句を作成する
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.SqlBuilder.makeOrderBy">
+	<summary>
+ SELECTのORDER BY句を作成する
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.SqlBuilder.makeFrom(System.Collections.Generic.Dictionary{System.String,System.Object}@)">
+	<summary>
+ データソースを作成
+ </summary>
+	<param name="params"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.SqlBuilder.makeRelationStr(Gears.DataSource.SqlDataSource,System.Collections.Generic.Dictionary{System.String,System.Object}@)">
+	<summary>
+ データソースを作成
+ </summary>
+	<param name="ds"></param>
+	<param name="params"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.SqlBuilder.makeWhere(System.Collections.Generic.Dictionary{System.String,System.Object}@)">
+	<summary>
+ WHERE句を作成する
+ </summary>
+	<param name="params"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.SqlBuilder.makeWhere(System.Collections.Generic.List{Gears.DataSource.SqlFilterItem}@,System.Collections.Generic.Dictionary{System.String,System.Object}@)">
+	<summary>
+ WHERE句を作成する
+ </summary>
+	<param name="fs"></param>
+	<param name="params"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Gears.DataSource.SqlBuilder">
+	<summary>
+ SQLを構築するためのクラス
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Gears.Validation.ModelValidationMethod.DEFAULT_ORDER">
+	<summary>デフォルトの検証順序</summary>
+</member><member name="P:Gears.Validation.ModelValidationMethod.Order">
+	<summary>検証を行う順番</summary>
+</member><member name="P:Gears.Validation.ModelValidationMethod.FalseAsAlert">
+	<summary>検証結果がNGであった場合、警告として扱うか(デフォルトはエラーになる)</summary>
+</member><member name="P:Gears.Validation.ModelValidationMethod.OnlyWhenTheseValueExist">
+	<summary>指定した項目に値があった場合のみ検証を行う</summary>
+</member><member name="T:Gears.Validation.ModelValidationMethod">
+	<summary>
+ モデルバリデーションを行うメソッドに付与するアノテーション定義
+ </summary>
+</member><member name="T:Gears.Validation.AbsModelValidator.ModelValidator">
+	<summary>バリデーションを行うメソッド定義</summary>
+	<param name="sqlb"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Gears.Validation.AbsModelValidator.ValidResults">
+	<summary>各バリデーションの実行結果を収めたコンテナ</summary>
+</member><member name="P:Gears.Validation.AbsModelValidator.IsValid">
+	<summary>バリデーション実行結果</summary>
+</member><member name="P:Gears.Validation.AbsModelValidator.IsValidIgnoreAlert">
+	<summary>バリデーション実行結果(警告を除く)</summary>
+</member><member name="P:Gears.Validation.AbsModelValidator.ErrorMessage">
+	<summary>検証結果メッセージを取得する</summary>
+</member><member name="P:Gears.Validation.AbsModelValidator.ErrorSource">
+	<summary>エラーの発生した項目名</summary>
+</member><member name="M:Gears.Validation.AbsModelValidator.setUpValidation(Gears.DataSource.SqlBuilder)">
+	<summary>
+ 検証実行前処理
+ </summary>
+	<param name="sqlb"></param>
+</member><member name="M:Gears.Validation.AbsModelValidator.tearDownValidation(Gears.DataSource.SqlBuilder)">
+	<summary>
+ 検証実行後処理
+ </summary>
+	<param name="sqlb"></param>
+</member><member name="M:Gears.Validation.AbsModelValidator.Validate(Gears.DataSource.SqlBuilder,System.Boolean)">
+	<summary>
+ ModelValidationMethodアノテーションの付与された、返り値が BooleanのPublicメソッドを実行していく
+ </summary>
+	<param name="sqlb">バリデーション対象のSqlBuilder</param>
+	<param name="isStockError">致命的エラーがあっても続行してエラーをため続ける場合はTrue</param>
+	<returns></returns>
+</member><member name="M:Gears.Validation.AbsModelValidator.Validate(Gears.DataSource.SqlBuilder,System.Collections.Generic.List{Gears.Validation.AbsModelValidator.ModelValidator},System.Boolean)">
+	<summary>
+ 対象のバリデーションを実行する
+ </summary>
+	<param name="validatee">バリデーション対象のSqlBuilder</param>
+	<param name="validates">バリデーションメソッドのリスト</param>
+	<param name="isStockError">致命的エラーがあっても続行してエラーをため続ける場合はTrue</param>
+	<returns></returns>
+	<remarks>
+		<example>
+			<para>
+				<code>
+   Dim sb As SqlBuilder = dto.generateSqlBuilder
+   Dim hinValidator = New AstMasterHinmokuValidator(Master.ConnectionName)
+   Dim validates As New List(Of AbsModelValidator.ModelValidator)
+   '必要なバリデーションの追加
+   validates.Add(AddressOf hinValidator.isHinCodeValid)
+   validates.Add(AddressOf hinValidator.isNisgataNew)
+   Dim result As ValidationResults = hinValidator.Validate(sb, validates, True)
+ </code>
+			</para>
+		</example>
+	</remarks>
+</member><member name="M:Gears.Validation.AbsModelValidator.throwException">
+	<summary>
+ バリデーションエラーがあった場合に例外をスローする
+ </summary>
+	<returns></returns>
+</member><member name="M:Gears.Validation.AbsModelValidator.getValidateeValue(Gears.DataSource.SqlBuilder,System.String,System.Boolean)">
+	<summary>
+ 検証用値取得メソッド
+ </summary>
+	<param name="sqlb"></param>
+	<param name="colName"></param>
+	<param name="nothingAsSpace"></param>
+	<returns></returns>
+</member><member name="T:Gears.Validation.AbsModelValidator">
+	<summary>
+ モデル(データソースクラス)での検証を行うためのバリデーター
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Gears.Binder.IDataBinder.dataBind(System.Web.UI.Control@,System.Data.DataTable@)">
+	<summary>
+ データのバインド処理を行う
+ </summary>
+	<param name="con"></param>
+	<param name="dset"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.Binder.IDataBinder.dataBind(Gears.GearsControl@,System.Data.DataTable@)">
+	<summary>
+ データのバインド処理を行う
+ </summary>
+	<param name="gcon"></param>
+	<param name="dset"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.Binder.IDataBinder.isBindable(System.Web.UI.Control@)">
+	<summary>
+ バインド対象か否かの判定を行う
+ </summary>
+	<param name="con"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.Binder.IDataBinder.dataAttach(System.Web.UI.Control@,System.Data.DataTable@)">
+	<summary>
+ 値を設定する処理を行う
+ </summary>
+	<param name="con"></param>
+	<param name="dset"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.Binder.IDataBinder.dataAttach(Gears.GearsControl@,System.Data.DataTable@)">
+	<summary>
+ 値を設定する処理を行う
+ </summary>
+	<param name="gcon"></param>
+	<param name="dset"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.Binder.IDataBinder.getValue(System.Web.UI.Control@)">
+	<summary>
+ コントロールから値を取得する処理
+ </summary>
+	<param name="con"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.Binder.IDataBinder.setValue(System.Web.UI.Control@,System.Object)">
+	<summary>
+ コントロールに値をセットする処理
+ </summary>
+	<param name="con"></param>
+	<param name="value"></param>
+	<remarks></remarks>
+</member><member name="T:Gears.Binder.IDataBinder">
+	<summary>
+ データバインディング処理を実装するクラスのインタフェース
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Gears.Validation.Validator.GNumeric.WithSign">
+	<summary>+-の符号を認めるか否か</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Gears.Validation.Validator.GNumeric">
+	<summary>
+ 値が単純に数値であるかを検証する属性
+ </summary>
+	<remarks></remarks>
 </member><member name="T:Gears.IGearsTarget">
 	<summary>
  このインタフェースは、UserControlなどで実装します。<br/>
  これを実装することで、UserControl配下のコントロールはGearsMediatorの管理対象となります。
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Gears.JS.JSVariableAttribute.Name">
+	<summary>JavaScript側とサーバーサイドのプロパティ名で名前を変えたい場合に使用</summary>
+</member><member name="T:Gears.JS.JSVariableAttribute">
+	<summary>
+ WebPage上で、JavaScriptオブジェクトとして扱いたい変数に対し付与するAttribute。<br/>
+ このアトリビュートを指定した変数は、gears.v.xxx で値を取得できる。
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Gears.Validation.Validator.GCompare.OperatorType">
+	<summary>比較を行うためのオペレーター</summary>
+</member><member name="P:Gears.Validation.Validator.GCompare.Expected">
+	<summary>期待される値</summary>
+</member><member name="M:Gears.Validation.Validator.GCompare.isValidateOk(System.String,System.String,System.String)">
+	<summary>
+ 比較値・期待値・演算子を直接指定してバリデーションを行う
+ </summary>
+	<param name="leftValue"></param>
+	<param name="rightValue"></param>
+	<param name="opr"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.Validation.Validator.GCompare.compare(System.String,System.String,System.String)">
+	<summary>比較を行うための関数。与えられた値が数値/日付に見える場合それを考慮し演算</summary>
+	<param name="leftValue"></param>
+	<param name="rightValue"></param>
+	<param name="ct"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Gears.Validation.Validator.GCompare">
+	<summary>
+ 値の比較検証を行うための属性
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Gears.DataSource.SqlItem.Column">
+	<summary>列項目名</summary>
+</member><member name="P:Gears.DataSource.SqlItem.Value">
+	<summary>値</summary>
+</member><member name="P:Gears.DataSource.SqlItem.Prefix">
+	<summary>前置詞</summary>
+</member><member name="P:Gears.DataSource.SqlItem.IsKey">
+	<summary>キー項目の判定</summary>
+</member><member name="P:Gears.DataSource.SqlItem.IsNeedFormat">
+	<summary>関数か否か</summary>
+</member><member name="P:Gears.DataSource.SqlItem.ParamName">
+	<summary>
+ パラメーター名称<br/>
+ 実際にフィルタをかけるパラーメータ名(USERID = :pUserというSQLならpUserがパラメーター名)
+ </summary>
+</member><member name="M:Gears.DataSource.SqlItem.hasValue">
+	<summary>
+ 値があるか否かの判定
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.SqlItem.basePf(System.String)">
+	<summary>
+ prefixを付与する<br/>
+ 例:SELECT * FROM tab t WHERE t.DATE &gt; '20121212' としたい場合、filter.pf("t")としてprefixを付与する
+ </summary>
+	<param name="pf"></param>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.SqlItem.basePf(Gears.DataSource.SqlDataSource@)">
+	<summary>
+ SqlDataSourceに設定されたsuffixをprefixとして付与する<br/>
+ 例:SELECT * FROM tab t WHERE t.DATE &gt; '20121212' とする場合、DataSourceであるtabのsuffixはtであるため、これをフィルタのprefixとして付与
+ </summary>
+	<param name="sds"></param>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.SqlItem.baseAsKey">
+	<summary>
+ キーとして設定する
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.SqlItem.baseAsNoFormat">
+	<summary>
+ マルチバイト対応などのためのフォーマット処理を無効にし、設定したColumnをそのまま使用する
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Gears.DataSource.SqlItem">
+	<summary>
+ SQL内で使用する項目を表す抽象クラス
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Gears.Validation.GAttributeHolderTemplate.#ctor(System.String,Gears.Validation.GearsAttribute)">
+	<summary>バリデーション対象の値と属性を使用し作成する</summary>
+	<param name="v"></param>
+	<param name="attr"></param>
+	<remarks></remarks>
+</member><member name="M:Gears.Validation.GAttributeHolderTemplate.#ctor(System.String,System.String)">
+	<summary>バリデーション対象の値とCSSクラスから作成する(CSSから属性を動的に作成)</summary>
+	<param name="v"></param>
+	<param name="css"></param>
+	<remarks></remarks>
+</member><member name="P:Gears.Validation.GAttributeHolderTemplate.GAttribute">
+	<summary>属性を取得する</summary>
+</member><member name="P:Gears.Validation.GAttributeHolderTemplate.GCssClass">
+	<summary>CSSクラスを取得する</summary>
+</member><member name="M:Gears.Validation.GAttributeHolderTemplate.getValidationError">
+	<summary>
+ バリデーション結果を取得する
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.Validation.GAttributeHolderTemplate.isValidateOk">
+	<summary>
+ バリデーションを実施する
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Gears.Validation.GAttributeHolderTemplate.validateeValue">
+	<summary>バリデーション対象の値を取得する</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.Validation.GAttributeHolderTemplate.setValue(System.String)">
+	<summary>
+ バリデーション対象の値をセットする
+ </summary>
+	<param name="value"></param>
+	<remarks></remarks>
+</member><member name="T:Gears.Validation.GAttributeHolderTemplate">
+	<summary>
+ カスタム属性用のテンプレートクラス
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.INameMapper.addRule(System.String,System.String)">
+	<summary>変換ルールの登録を行う</summary>
+	<param name="item"></param>
+	<param name="column"></param>
+</member><member name="M:Gears.DataSource.INameMapper.changeItemToColumn(System.String)">
+	<summary>項目名をDB上の列名に変換するメソッド</summary>
+</member><member name="M:Gears.DataSource.INameMapper.changeColumnToItem(System.String)">
+	<summary>DB上の列名を項目名に変換するメソッド</summary>
+</member><member name="T:Gears.DataSource.INameMapper">
+	<summary>
+ 項目名を変換するためのクラス
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Gears.Validation.GearsAttribute.ERR_STYLE">
+	<summary>エラー時のスタイル</summary>
+</member><member name="P:Gears.Validation.GearsAttribute.ErrorMessage">
+	<summary>エラーメッセージを取得する</summary>
+</member><member name="P:Gears.Validation.GearsAttribute.IsValid">
+	<summary>バリデーション実行結果を取得する</summary>
+</member><member name="P:Gears.Validation.GearsAttribute.ValidateeValue">
+	<summary>検証対象の値</summary>
+</member><member name="P:Gears.Validation.GearsAttribute.CssClass">
+	<summary>属性のCSSスタイル</summary>
+</member><member name="M:Gears.Validation.GearsAttribute.hasMarker(System.Type)">
+	<summary>属性が指定されたマーカータイプを持つか判定する</summary>
+</member><member name="M:Gears.Validation.GearsAttribute.Validate">
+	<summary>
+ 実装は継承先クラスに委譲する。ただし、IValidatorで定義されるこのメソッドはバリデーション対象の値を明示しないため、予想しない動作をする可能性がある。<br/>
+ そのため、アクセスをProtectedにし公開範囲を限定する<br/>
+ 通常は、isValidateOkを使用するようにする
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Gears.Validation.GearsAttribute.isValidateOk(System.String)">
+	<summary>
+ 与えられた値に対しバリデーションを実施する
+ </summary>
+	<param name="validateeValue"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.Validation.GearsAttribute.initProperty(System.Boolean)">
+	<summary>
+ バリデーション実行前の初期化処理
+ </summary>
+	<param name="defaultResult"></param>
+	<remarks></remarks>
+</member><member name="T:Gears.Validation.GearsAttribute">
+	<summary>
+ 属性を表現するクラス
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Gears.DataSource.AbsKeyValueSource.KeyColumn">
+	<summary>キーとなる列</summary>
+</member><member name="P:Gears.DataSource.AbsKeyValueSource.ValueColumn">
+	<summary>値(テキスト)となる列</summary>
+</member><member name="T:Gears.DataSource.AbsKeyValueSource">
+	<summary>
+ リストアイテムのように、Key/Valueで構成されるデータソースのためのクラス
  </summary>
 	<remarks></remarks>
 </member><member name="T:Gears.DataSource.GearsOptimisticLockException">
@@ -3244,159 +3334,84 @@ Gears
  楽観ロックの例外
  </summary>
 	<remarks></remarks>
-</member><member name="M:Gears.Validation.GearsAttributeContainer.ListUp">
+</member><member name="P:Gears.DataSource.GearsSqlExecutor.DbType">
+	<summary>データベース種別</summary>
+</member><member name="P:Gears.DataSource.GearsSqlExecutor.ConnectionString">
+	<summary>接続設定文字列</summary>
+</member><member name="P:Gears.DataSource.GearsSqlExecutor.DbServer">
+	<summary>データベース種別(Enum)</summary>
+</member><member name="P:Gears.DataSource.GearsSqlExecutor.ConnectionName">
+	<summary>接続文字列</summary>
+</member><member name="M:Gears.DataSource.GearsSqlExecutor.SqlElapsedTime">
+	<summary>SQL実行時間(ミリ秒)を取得する</summary>
+</member><member name="M:Gears.DataSource.GearsSqlExecutor.initConnection(System.String)">
 	<summary>
- 内部に格納している属性を取得する
+ 接続文字列からデータベースの情報を取得し、設定する
  </summary>
+	<param name="conName"></param>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.GearsSqlExecutor.GetConnectionString(System.String)">
+	<summary>
+ 設定ファイルから接続文字列に定義された接続設定を取得する
+ </summary>
+	<param name="conName"></param>
 	<returns></returns>
 	<remarks></remarks>
-</member><member name="M:Gears.Validation.GearsAttributeContainer.addAttribute(Gears.Validation.GearsAttribute)">
+</member><member name="M:Gears.DataSource.GearsSqlExecutor.createSqlCommand(Gears.DataSource.SqlBuilder,Gears.ActionType,System.Boolean)">
 	<summary>
- 属性を追加する
+ SqlBuilderからDbCommandを作成する
  </summary>
-	<param name="a"></param>
-	<remarks></remarks>
-</member><member name="M:Gears.Validation.GearsAttributeContainer.clearAttributes">
-	<summary>
- 格納している属性をクリアする
- </summary>
-	<remarks></remarks>
-</member><member name="M:Gears.Validation.GearsAttributeContainer.hasMarker(System.Type)">
-	<summary>
- 格納している属性の中に、指定されたマーカータイプを持つものがないか確認する
- </summary>
-	<param name="m"></param>
+	<param name="sql"></param>
+	<param name="asType"></param>
+	<param name="isNeedOrder"></param>
 	<returns></returns>
 	<remarks></remarks>
-</member><member name="P:Gears.Validation.GearsAttributeContainer.CssClass">
+</member><member name="M:Gears.DataSource.GearsSqlExecutor.createSqlCommand(System.String,System.Collections.Generic.Dictionary{System.String,System.Object}@,Gears.ActionType)">
 	<summary>
- 格納されている属性のCssClassを結合し、返却する
+ SqlBuilderからDbCommandを作成する
  </summary>
-	<value></value>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Gears.Validation.GearsAttributeContainer.Validate">
-	<summary>
- 格納されている属性を使用し検証処理を実施する(外部からの呼び出し不可、isValidateOkからコールされる)
- </summary>
-	<remarks></remarks>
-</member><member name="T:Gears.Validation.GearsAttributeContainer">
-	<summary>
- 複数の属性を格納するコンテナ
- </summary>
-	<remarks></remarks>
-</member><member name="M:Gears.Validation.Validator.GByteLength.#ctor(System.Int32)">
-	<summary>
- 項目長を指定して作成
- </summary>
-	<param name="len"></param>
-	<remarks></remarks>
-</member><member name="P:Gears.Validation.Validator.GByteLength.Length">
-	<summary>チェックするバイト長</summary>
-</member><member name="P:Gears.Validation.Validator.GByteLength.Encode">
-	<summary>バイト長を算出するためのエンコード(デフォルト Shift_JIS)</summary>
-</member><member name="M:Gears.Validation.Validator.GByteLength.LenB(System.String)">
-	<summary>
- バイト長を取得するための関数
- </summary>
-	<param name="st"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="T:Gears.Validation.Validator.GByteLength">
-	<summary>
- 項目長の検証を行うための属性
- </summary>
-	<remarks></remarks>
-</member><member name="F:Gears.Validation.Marker.GMarkerNumeric.NUMBER_CSS">
-	<summary>
- 数値属性に共通するCSSClass
- </summary>
-	<remarks></remarks>
-</member><member name="M:Gears.Validation.Marker.GMarkerNumeric.#ctor">
-	<summary>
- コンストラクタで数値属性共通の値をセット
- </summary>
-	<remarks></remarks>
-</member><member name="T:Gears.Validation.Marker.GMarkerNumeric">
-	<summary>
- 数値属性を表すマーカー<br/>
- これを継承する属性については、共通のCssClass gs-number を付与する
- </summary>
-	<remarks></remarks>
-</member><member name="M:Gears.Validation.Validator.GPeriodPositionOk.#ctor(System.Int32,System.Int32)">
-	<summary>
- 小数点前/後の定義長を指定し作成する
- </summary>
-	<param name="beforep"></param>
-	<param name="afterp"></param>
-	<remarks></remarks>
-</member><member name="P:Gears.Validation.Validator.GPeriodPositionOk.BeforeP">
-	<summary>整数部の最大長</summary>
-</member><member name="P:Gears.Validation.Validator.GPeriodPositionOk.AfterP">
-	<summary>小数点以下桁数の最大長</summary>
-</member><member name="T:Gears.Validation.Validator.GPeriodPositionOk">
-	<summary>
- 整数部/小数部が定義長の範囲内であるか検証する属性
- </summary>
-	<remarks></remarks>
-</member><member name="F:Gears.ActionType.NONE">
-	<summary>NONE:Nothingに該当。初期値用</summary>
-</member><member name="F:Gears.ActionType.SEL">
-	<summary>SEL :SELECT処理を表す</summary>
-</member><member name="F:Gears.ActionType.UPD">
-	<summary>UPD :UPDATE処理を表す</summary>
-</member><member name="F:Gears.ActionType.INS">
-	<summary>INS :INSERT処理を表す</summary>
-</member><member name="F:Gears.ActionType.DEL">
-	<summary>DEL :DELETE処理を表す</summary>
-</member><member name="F:Gears.ActionType.SAVE">
-	<summary>SAVE:既に該当キーが存在する場合UPDATE、そうでない場合INSERTを行う</summary>
-</member><member name="T:Gears.ActionType">
-	<summary>
- データベースへの更新の種別を表す
- </summary>
-</member><member name="F:Gears.GearsDTO._controlInfo">
-	<summary>コントロール情報</summary>
-</member><member name="M:Gears.GearsDTO.ControlInfo">
-	<summary>コントロール情報の取得</summary>
-</member><member name="M:Gears.GearsDTO.ControlInfo(System.String)">
-	<summary>コントロール情報の取得(ID指定)</summary>
-</member><member name="M:Gears.GearsDTO.#ctor(Gears.ActionType)">
-	<summary>
- コンストラクタ
- </summary>
+	<param name="sql"></param>
+	<param name="params"></param>
 	<param name="atype"></param>
-</member><member name="M:Gears.GearsDTO.#ctor(Gears.GearsDTO@)">
-	<summary>
- コピーコンストラクタ
- </summary>
-	<param name="gto"></param>
-	<remarks></remarks>
-</member><member name="M:Gears.GearsDTO.addControlInfo(Gears.GearsControlInfo@)">
-	<summary>Control情報の追加</summary>
-</member><member name="M:Gears.GearsDTO.addControlInfo(Gears.GearsControl@)">
-	<summary>Control情報の追加(GearsControlから)</summary>
-</member><member name="M:Gears.GearsDTO.removeControlInfo(System.String)">
-	<summary>Control情報の削除</summary>
-</member><member name="M:Gears.GearsDTO.toSqlBuilder(Gears.DataSource.SqlDataSource)">
-	<summary>
- DTOをSqlBuilderに変換する<br/>
- 具体的には、コントロール情報(GearsControlInfo)をSQLの選択項目/抽出条件に変換します。
- </summary>
 	<returns></returns>
 	<remarks></remarks>
-</member><member name="M:Gears.GearsDTO.confirmSql(Gears.DataSource.SqlDataSource)">
+</member><member name="M:Gears.DataSource.GearsSqlExecutor.createSelectCount(Gears.DataSource.SqlBuilder@)">
 	<summary>
- DTOの段階でSQLを確認するためのメソッド<br/>
- SqlDataSourceを引数として渡さない場合、table/viewに当たる個所はdummyで表示されます
+ 件数を取得するためのSQLを生成する
  </summary>
-	<param name="ds"></param>
+	<param name="sql"></param>
 	<returns></returns>
 	<remarks></remarks>
-</member><member name="T:Gears.GearsDTO">
+</member><member name="M:Gears.DataSource.GearsSqlExecutor.load(Gears.DataSource.SqlBuilder)">
 	<summary>
- Controlなどの画面上の値をGearsDataSourceへ渡す役割を担うクラス<br/>
- 最終的には、SQLの実行体であるSqlBuilderへ変換される。
+ データのロード処理
+ </summary>
+	<param name="sql"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.GearsSqlExecutor.count(Gears.DataSource.SqlBuilder)">
+	<summary>
+ データ件数の取得処理
+ </summary>
+	<param name="sql"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.GearsSqlExecutor.execute(Gears.DataSource.SqlBuilder)">
+	<summary>
+ データベースの実行処理
+ </summary>
+	<param name="sql"></param>
+	<remarks></remarks>
+</member><member name="M:Gears.DataSource.GearsSqlExecutor.execute(System.Collections.Generic.List{Gears.DataSource.SqlBuilder})">
+	<summary>
+ データベースへの実行処理<br/>
+ 受け取ったSqlBuilderの配列を、トランザクションで処理する
+ </summary>
+	<param name="sqlbs"></param>
+	<remarks></remarks>
+</member><member name="T:Gears.DataSource.GearsSqlExecutor">
+	<summary>
+ SqlBuilderを受け取り、データベースに対しSQLを実行する
  </summary>
 	<remarks></remarks>
 </member>

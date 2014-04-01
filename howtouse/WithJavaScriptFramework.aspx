@@ -19,7 +19,7 @@
     </div>
     <p >
         PostBackでなくJsonでデータの送受信をするサンプルです。このページではデモとして<a href="http://knockoutjs.com/index.html" target="_blank">knockout.js</a>を使用しています。<br/>
-        ドロップダウンリストの項目値など、基本的な機能は十分使えますが、RadioButtomListなど特殊なコントロールは工夫が必要です。
+        リスト項目のセットなど、基本的な機能はそのまま使えます。PostBackを発生させる際は、UpdatePanelで処理する必要があります。
     </p>
 
     <asp:Panel ID="pnlList" runat="server" CssClass="panel panel-default col-sm-4" style="padding:7px" Height="470">
@@ -32,13 +32,21 @@
         
     </asp:Panel>
 
-    <asp:Panel ID="pnlDetail" runat="server" CssClass="panel panel-default col-sm-4  col-sm-offset-1" Height="470">
+    <asp:Panel ID="pnlEMP__GFORM" runat="server" CssClass="panel panel-default col-sm-4  col-sm-offset-1" Height="470" DsNamespace="DataSource">
         <table class="table" data-bind="with: selectedEmp">
-            <tr><td>人事ID</td><td data-bind="text:HR_ID"></td></tr>
-            <tr><td>名前</td><td data-bind="text: NAME"></td></tr>
+            <tr><td>人事ID</td><td>
+                <asp:Label   ID="lblHR_ID" runat="server" data-bind="text:HR_ID" ></asp:Label>
+                <asp:TextBox ID="txtHR_ID__KEY" runat="server" data-bind="value:HR_ID,visible:false" ></asp:TextBox>
+            </td></tr>
+            <tr><td>名前</td><td ><asp:TextBox ID="txtNAME" runat="server" data-bind="value:NAME"></asp:TextBox></td></tr>
             <tr><td>役職</td><td ><asp:DropDownList runat="server" ID="ddlRANK" data-bind="value:RANK" ></asp:DropDownList></td></tr>
-            <tr><td>性別</td><td ><asp:DropDownList runat="server" ID="ddlGENDER" data-bind="value:GENDER" ></asp:DropDownList></td></tr>
+            <tr><td>性別</td><td ><asp:RadioButtonList runat="server" ID="rblGENDER" data-bind-ginput="checked: GENDER" RepeatDirection="Horizontal" ></asp:RadioButtonList></td></tr>
         </table>
+        <asp:UpdatePanel id="updForm" runat="server" UpdateMode=Conditional>
+          <ContentTemplate>
+            <asp:Button ID="btnSave" runat="server" Text="保存" CssClass="btn btn-primary" />
+          </ContentTemplate>
+        </asp:UpdatePanel> 
     </asp:Panel>
 
 </asp:Content>
@@ -85,7 +93,12 @@
 
         var vm = new EmpViewModel()
         ko.applyBindings(vm);
-        vm.searchEmp("");
+
+        function pageLoad() {
+            //ページのロード/更新が行われた場合、データを再取得
+            var val = $("txtSearch").val() === undefined ? "" : $("txtSearch").val();
+            vm.searchEmp(val);
+        }
 
     </script>
 

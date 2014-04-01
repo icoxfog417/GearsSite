@@ -82,6 +82,11 @@ td.gs-layout-ctrl
     padding-left:10px;
 }
 
+.gs-repeat-horizontal div{
+    float:left;
+    margin-right:5px;
+}
+
 /*　検索ボタンつきフォーム部品->フォーム用とボタン用 */
 .gs-layout-frame td.gs-for-search input[type="text"]
 {

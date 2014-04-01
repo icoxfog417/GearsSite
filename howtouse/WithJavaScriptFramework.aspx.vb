@@ -21,4 +21,8 @@ Partial Class howtouse_WithJavascriptFramework
 
     End Function
 
+    Protected Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
+        GSave(pnlEMP__GFORM)
+    End Sub
+
 End Class
