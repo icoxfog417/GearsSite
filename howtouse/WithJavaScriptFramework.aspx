@@ -96,7 +96,7 @@
 
         function pageLoad() {
             //ページのロード/更新が行われた場合、データを再取得
-            var val = $("txtSearch").val() === undefined ? "" : $("txtSearch").val();
+            var val = $("#txtSearch").val() === undefined ? "" : $("#txtSearch").val();
             vm.searchEmp(val);
         }
 
