@@ -19,7 +19,8 @@
     </div>
     <p >
         PostBackでなくJsonでデータの送受信をするサンプルです。このページではデモとして<a href="http://knockoutjs.com/index.html" target="_blank">knockout.js</a>を使用しています。<br/>
-        リスト項目のセットなど、基本的な機能はそのまま使えます。PostBackを発生させる際は、UpdatePanelで処理する必要があります。
+        RadioButtonList/CheckBoxListなど、標準のレンダリングがJavaScript/CSSフレンドリーではないものについては
+        <a href="https://github.com/icoxfog417/Gears/blob/master/Gears/Code/Util/ButtonListAdapter.vb">ButtonListAdapter</a>にて出力HTMLのカスタマイズを行っています。
     </p>
 
     <asp:Panel ID="pnlList" runat="server" CssClass="panel panel-default col-sm-4" style="padding:7px" Height="470">

@@ -90,6 +90,8 @@
               <li><a target="_blank" href="./howtouse/FormAndList.aspx">Form and List</a></li>
               <li><a target="_blank" href="./howtouse/MultibyteTableName.aspx">Multibyte Table Name</a></li>
               <li><a target="_blank" href="./howtouse/WithJavaScriptFramework.aspx">With JavaScript Framework</a></li>
+              <li><div style="width:100px;border-bottom:1px solid silver;padding-top:5px;margin-bottom:5px"></div></li>
+              <li><a target="_blank" href="https://github.com/icoxfog417/GearsSite/tree/master/howtouse">Source Code</a></li>
             </ol>
       </div>
       <div class="sidebar-module">

@@ -3,7 +3,7 @@
 <%@ MasterType VirtualPath="~/gearsMaster.master" %>
 
 <asp:Content id="clientHead" ContentPlaceHolderID="headerPart" Runat="Server" >
-    <title>Form and Listk</title>
+    <title>Form and List</title>
     <script type="text/javascript">
         $(function () {
             //JSVariableのAttributeをつけたプロパティは、JavaScript側で使用可能

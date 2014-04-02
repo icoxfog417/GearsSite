@@ -6,22 +6,7 @@ Gears
 </name>
 </assembly>
 <members>
-<member name="T:Gears.Util.ButtonListAdapter">
-	<summary>
- RadioButtonList/CheckboxListのレンダリング方法をカスタマイズするためのクラス<br/>
- 本クラスを使用するためには、App_Browsersフォルダ内の.browserファイルでControlAdapterの指定を行う必要があります。<br/>
-		<a href="http://www.singingeels.com/Articles/How_To_Control_Adapters.aspx" target="_blank">How To: Control Adapters</a>を参考<br/>
- この設定を行うことで、以下の処理が可能になります<br/>
-		<ul>
-			<li>ラジオボタン/チェックボックス本体への属性付与</li>
-			<li>jQuery等によるラジオボタン/チェックボックスの値の収集</li>
-		</ul>
- 通常の場合、いくらListItemに属性を設定してもspanタグにつくのみでラジオボタン/チェックボックス本体には属性の付与ができませんでした。<br/>
- これが、data-xxxx-ginputというスタイルで属性を付与すると、各inputにdata-xxxxの属性を与えることができるようになります<br/>
- また、data-gnameにコントロールのIDが付与されるため、$("input[data-gname='rblList']")といった形でフォームを収集することができます。
- </summary>
-	<remarks></remarks>
-</member><member name="M:Gears.Binder.GearsDataBinder.isBindable(System.Web.UI.Control@)">
+<member name="M:Gears.Binder.GearsDataBinder.isBindable(System.Web.UI.Control@)">
 	<summary>
  バインド対象か否かを判定する<br/>
  標準では、リストかGridViewのような複合コントロールを対象とする
@@ -112,6 +97,21 @@ Gears
 </member><member name="T:Gears.Binder.GearsDataBinder">
 	<summary>
  コントロールに対するDataBind/値設定処理を行う
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Gears.Util.ButtonListAdapter">
+	<summary>
+ RadioButtonList/CheckboxListのレンダリング方法をカスタマイズするためのクラス<br/>
+ 本クラスを使用するためには、App_Browsersフォルダ内の.browserファイルでControlAdapterの指定を行う必要があります。<br/>
+		<a href="http://www.singingeels.com/Articles/How_To_Control_Adapters.aspx" target="_blank">How To: Control Adapters</a>を参考<br/>
+ この設定を行うことで、以下の処理が可能になります<br/>
+		<ul>
+			<li>ラジオボタン/チェックボックス本体への属性付与</li>
+			<li>jQuery等によるラジオボタン/チェックボックスの値の収集</li>
+		</ul>
+ 通常の場合、いくらListItemに属性を設定してもspanタグにつくのみでラジオボタン/チェックボックス本体には属性の付与ができませんでした。<br/>
+ これが、data-xxxx-ginputというスタイルで属性を付与すると、各inputにdata-xxxxの属性を与えることができるようになります<br/>
+ また、data-gnameにコントロールのIDが付与されるため、$("input[data-gname='rblList']")といった形でフォームを収集することができます。
  </summary>
 	<remarks></remarks>
 </member><member name="F:Gears.Validation.Marker.GMarkerDate.DATE_CSS">
@@ -597,6 +597,11 @@ Gears
 </member><member name="T:Gears.DataSource.GearsDataSource">
 	<summary>
  データソースクラス作成用の抽象クラス
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Gears.GearsSection">
+	<summary>
+ Gearsの設定をするための構成セクションの定義
  </summary>
 	<remarks></remarks>
 </member><member name="F:Gears.ActionType.NONE">

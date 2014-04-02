@@ -11,7 +11,8 @@
         <h1>Multibyte Table Name</h1>
     </div>
     <p >
-        日本語のテーブルやカラム名などをラップして使用する例です。データソースとしてはObjectDataSourceを使用しています。
+        日本語のテーブルやカラム名などをラップして使用する例です。
+        詳細は<a href="https://github.com/icoxfog417/GearsSite/blob/master/App_Code/DataSource/Customer.vb" target="_blank">データソースクラスのコード</a>を参照ください。
     </p>
 
     <asp:Panel runat="server" CssClass="panel panel-default" >
