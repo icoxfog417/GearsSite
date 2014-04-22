@@ -1,52 +1,9 @@
 ﻿@charset "utf-8"; 
 /*
-    Gearsフレームワーク用スタイルシート
+    style sheet for Gears Framework
 */
 
-/* ログ出力スタイル */
-.gs-log-head
-{
-    font-weight:bold;
-    font-size:medium;
-}
-.gs-log-table
-{
-    border:1px solid steelblue;
-    font-size:small;
-}
-.gs-log-table-head td
-{
-    font-weight:bold;
-    background-color:steelblue;
-    color:White;
-}
-
-.g-msg-success
-{
-    font-weight:bold;
-    color:royalblue;
-    }
-
-.g-msg-warning
-{
-    font-weight:bold;
-    color:darkorange;
-    }
-
-.g-msg-error
-{
-    font-weight:bold;
-    color:firebrick;
-    }
-
-.gs-modal-overlay {
-    background-color:gray;
-    opacity:0.5;
-    filter:alpha(opacity=50);
-    z-index:9000;
-}
-
-/*　フォーム部品用CSS　*/
+/* for form style ------------------------------ */
 .gs-layout-frame
 {
     height:55px;
@@ -96,7 +53,7 @@ td.gs-layout-ctrl
     margin-bottom:4px;
 }
 
-/*　検索ボタンつきフォーム部品->フォーム用とボタン用 */
+/*　for form with button */
 .gs-layout-frame td.gs-for-search input[type="text"]
 {
     width:115px;
@@ -106,7 +63,7 @@ td.gs-layout-ctrl
     width:25px;
    }    
 
-/* 検索ボタンつきフォーム部品-> IE6用。IE6出ない場合はフォームのセレクタがきく */
+/*　for form with button (for ie6) */
 .gs-for-search-text
 {
     width:125px;
@@ -128,6 +85,46 @@ td.gs-layout-ctrl
    margin-left:30px;
     }   
 
+/* for message ------------------------------ */
+.g-msg-success
+{
+    font-weight:bold;
+    color:royalblue;
+    }
+
+.g-msg-warning
+{
+    font-weight:bold;
+    color:darkorange;
+    }
+
+.g-msg-error
+{
+    font-weight:bold;
+    color:firebrick;
+    }
+
+/* for modal window ------------------------------ */
+.gs-modal-overlay {
+    background-color:snow;
+    opacity:0.5;
+    filter:alpha(opacity=50);  /* ie 6,7 */
+    -ms-filter: "alpha(opacity=50)";  /* ie 8 */
+    z-index:9000;
+}
+
+.gs-loading-image {
+    position:relative;
+    top:35%;
+    left:40%;
+    color:gray;
+    font-size:20px;
+    font-weight:bold;
+    text-align:center;
+    background-image:url(ajax-loader.gif) ;
+    width:100px;
+    height:100px;
+}
 
 /* バリデーション用 */
 .gs-number
@@ -145,4 +142,22 @@ td.gs-layout-ctrl
 {
     /* バリデーションエラーの項目に対するスタイル */
     border: medium solid coral;
+}
+
+/* for log style ------------------------------ */
+.gs-log-head
+{
+    font-weight:bold;
+    font-size:medium;
+}
+.gs-log-table
+{
+    border:1px solid steelblue;
+    font-size:small;
+}
+.gs-log-table-head td
+{
+    font-weight:bold;
+    background-color:steelblue;
+    color:White;
 }

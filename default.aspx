@@ -40,20 +40,25 @@
         Gears Frameworkは、<a target="_blank" href="http://www.asp.net/web-forms">ASP.NET WebForm</a>で、業務システムを素早く開発するためのフレームワークです。<br/>
         本フレームワークの特徴は、以下の通りです。<br/>
         <ul>
-            <li>ASP.NET WebFormの「コントロールを配置して開発する」という特色をつきつめ、簡易かつ素早い開発が可能になっています
+            <li>ASP.NET WebFormの「コントロールを配置して開発する」という特色をつきつめ、簡易かつ素早い開発が可能になっています。
                 <ul>
                     <li><a target="_blank" href="https://github.com/icoxfog417/Gears/wiki/1.GearsConvention">規約に基づくデータバインド</a></li>
                     <li><a target="_blank" href="https://github.com/icoxfog417/Gears/wiki/2.Relation">関連定義によるデータ連動</a></li>
                     <li><a target="_blank" href="https://github.com/icoxfog417/Gears/wiki/3.DatabaseAccess">コントロールを使用したデータベース処理</a></li>
                 </ul>
             </li>
-            <li>企業業務システムで求められる機能が多数実装されています。
+            <li>業務システム開発での利用を考慮し、よく利用される汎用機能、また既存データベース上に構築するための機能を実装しています。
                 <ul>
                     <li><a target="_blank" href="https://github.com/icoxfog417/Gears/wiki/4.Validation">バリデーション実装</a></li>
                     <li><a target="_blank" href="https://github.com/icoxfog417/Gears/wiki/5.Authorization">権限制御</a></li>
+                    <li><a target="_blank" href="https://github.com/icoxfog417/Gears/wiki/MultiByte-Table-Name">日本語名テーブル対応</a></li>
                 </ul>
             </li>
-            <li>既存データベース上での構築が考慮されており、項目の変換機能の実装、日本語名テーブルへの対応などが実装されています</li>
+            <li>Ajax/JavaScript Frameworkを利用した開発をサポートするための機能を実装しています。
+                <ul>
+                    <li><a target="_blank" href="https://github.com/icoxfog417/Gears/wiki/6.JavaScriptCollaboration">JavaScript連携のための機能</a></li>
+                </ul>
+            </li>
         </ul>
     </div>
   </div>

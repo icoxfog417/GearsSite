@@ -13,7 +13,7 @@ if (typeof gears.fn == "undefined") { gears.fn = {}; }
     var GS_LIBRARY = gears.fn;
 
     /* 関数/プロパティ宣言部 */
-    GS_LIBRARY.LoadingImage = "./css/ajax-loader.gif";
+    GS_LIBRARY.LoadingImage = "images/ajax-loader.gif";
 
     //汎用要素削除関数
     GS_LIBRARY.removeElementById = function (id) {
@@ -31,7 +31,7 @@ if (typeof gears.fn == "undefined") { gears.fn = {}; }
 
         var screen = ""
         screen += '<div id="gearsLockScreen" style="position:absolute;left:0;top:0;width:' + windowWidth + 'px;height:' + windowHeight + 'px;" class="gs-modal-overlay">';
-        screen += '<img src="' + GS_LIBRARY.LoadingImage + '" style="position:relative;top:35%;left:40%"/>';
+        screen += '<div class="gs-loading-image" ></div>';
         screen += '</div>';
 
         $("body").append(screen);
