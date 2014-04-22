@@ -12,9 +12,6 @@ if (typeof gears.fn == "undefined") { gears.fn = {}; }
     /* 名称空間セット */
     var GS_LIBRARY = gears.fn;
 
-    /* 関数/プロパティ宣言部 */
-    GS_LIBRARY.LoadingImage = "images/ajax-loader.gif";
-
     //汎用要素削除関数
     GS_LIBRARY.removeElementById = function (id) {
       var el = document.getElementById(id);
