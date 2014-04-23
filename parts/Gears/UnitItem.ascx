@@ -3,7 +3,9 @@
     <tr >
         <td class="gs-layout-label" <%=If(IsHorizontal,"valign=""top""","")%> >
 			<%-- Gearsコントロール対象外にするために、あえてidのネーミングルールをはずす --%>
-            <asp:Label id="labelItem" runat="server" Text="" CssClass="gs-label" ClientIDMode=Static><%= LabelText%></asp:Label>
+            <% If Not String.IsNullOrEmpty(LabelText) Then%>
+                <asp:Label id="labelItem" runat="server" Text="" CssClass="gs-label" ClientIDMode=Static><%= LabelText%></asp:Label>
+            <%End If%>
         </td>
     <%If Not IsHorizontal Then%>
      </tr>

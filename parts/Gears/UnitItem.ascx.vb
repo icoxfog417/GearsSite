@@ -33,6 +33,7 @@ Partial Class _Gears_UnitItem
 
     Public Property IsReload() As Boolean= False
 
+    Private _defaultWidth As Integer = 150
     Private _width As Integer = -1
     Public Property Width() As Integer Implements IFormItem.Width
         Get
@@ -43,6 +44,7 @@ Partial Class _Gears_UnitItem
         End Set
     End Property
 
+    Private _defaultHeight As Integer = 50
     Private _height As Integer = -1
     Public Property Height() As Integer Implements IFormItem.Height
         Get
@@ -148,8 +150,11 @@ Partial Class _Gears_UnitItem
         End If
 
         If Not IsHorizontal Then
-            If _width > 0 Then style += "width:" + (_width + 25).ToString + "px;" '完全に合わせてしまうと狭くなるので、少し調整
-            If _height > 0 Then style += "height:" + (_height + 5).ToString + "px;"
+            Dim width As Integer = If(_width > 0, _width, _defaultWidth)
+            Dim height As Integer = If(_height > 0, _height, _defaultHeight)
+
+            style += "width:" + (width + 25).ToString + "px;" '完全に合わせてしまうと狭くなるので、少し調整
+            style += "height:" + (height + 5).ToString + "px;"
         End If
 
         If classes.Count > 0 Then result += "class=""" + String.Join(" ", classes) + """"
@@ -251,6 +256,8 @@ Partial Class _Gears_UnitItem
         Dim style As String = ""
         If _width > 0 Then
             con.Width = _width
+        Else
+            con.Width = _defaultWidth
         End If
         If _height > 0 Then
             con.Height = _height
